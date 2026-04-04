@@ -31,6 +31,7 @@ public class Account {
     private Institution institution;
 
     @Column
+    @Enumerated(EnumType.STRING)
     private AccountTypeEnum accountType;
 
     @Column(nullable = false)

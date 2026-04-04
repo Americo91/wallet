@@ -54,10 +54,28 @@ class AccountMapperTest {
     }
 
     @Test
+    void toDto_noInstitution() {
+        Account account = Account.builder()
+                .id(UUID.randomUUID())
+                .name("Cash")
+                .institution(null)
+                .accountType(AccountTypeEnum.LIQUIDITY)
+                .balance(new BigDecimal("200.00"))
+                .currency("EUR")
+                .build();
+
+        AccountDto dto = mapper.toDto(account);
+
+        assertThat(dto.getInstitution()).isNull();
+        assertThat(dto.getName()).isEqualTo(account.getName());
+    }
+
+    @Test
     void toDomain() {
         AccountDto dto = AccountDto.builder()
                 .id(UUID.randomUUID())
                 .name("Savings")
+                .institution("Some Bank")
                 .accountType(AccountTypeEnum.SAVINGS)
                 .balance(new BigDecimal("3000.00"))
                 .currency("USD")
@@ -71,6 +89,7 @@ class AccountMapperTest {
         assertThat(account.getAccountType()).isEqualTo(dto.getAccountType());
         assertThat(account.getBalance()).isEqualByComparingTo(dto.getBalance());
         assertThat(account.getCurrency()).isEqualTo(dto.getCurrency());
+        assertThat(account.getInstitution()).isNull();
         assertThat(account.getCreatedAt()).isNull();
         assertThat(account.getUpdatedAt()).isNull();
     }

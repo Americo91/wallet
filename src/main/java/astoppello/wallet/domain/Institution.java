@@ -5,7 +5,6 @@ import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.sql.Timestamp;
-import java.time.OffsetDateTime;
 import java.util.Set;
 import java.util.UUID;
 

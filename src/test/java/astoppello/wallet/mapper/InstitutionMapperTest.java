@@ -40,6 +40,19 @@ class InstitutionMapperTest {
     }
 
     @Test
+    void toDto_nullColor() {
+        Institution institution = Institution.builder()
+                .id(UUID.randomUUID())
+                .name("Test")
+                .color(null)
+                .build();
+
+        InstitutionDto dto = mapper.toDto(institution);
+        assertThat(dto.getColor()).isNull();
+        assertThat(dto.getName()).isEqualTo(institution.getName());
+    }
+
+    @Test
     void toDomain() {
         InstitutionDto dto = InstitutionDto.builder()
                 .id(UUID.randomUUID())
