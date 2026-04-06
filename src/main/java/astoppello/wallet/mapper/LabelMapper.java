@@ -12,6 +12,6 @@ public interface LabelMapper {
     LabelDto toDto(Label domain);
 
     @Mapping(target = "trackingDate", ignore = true)
-    @Mapping(target = "transaction", ignore = true)
+    @Mapping(target = "transactions", ignore = true)
     Label toDomain(LabelDto dto);
 }

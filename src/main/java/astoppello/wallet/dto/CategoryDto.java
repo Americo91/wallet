@@ -1,6 +1,6 @@
 package astoppello.wallet.dto;
 
-import astoppello.wallet.domain.CategoryType;
+import astoppello.wallet.model.CategoryType;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.NotNull;

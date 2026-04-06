@@ -1,7 +1,7 @@
 package astoppello.wallet.mapper;
 
 import astoppello.wallet.domain.Category;
-import astoppello.wallet.domain.CategoryType;
+import astoppello.wallet.model.CategoryType;
 import astoppello.wallet.dto.CategoryDto;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

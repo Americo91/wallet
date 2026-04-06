@@ -1,11 +1,11 @@
 package astoppello.wallet.mapper;
 
 import astoppello.wallet.domain.Account;
-import astoppello.wallet.domain.AccountTypeEnum;
+import astoppello.wallet.model.AccountTypeEnum;
 import astoppello.wallet.domain.Institution;
-import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.AccountDto;
 import astoppello.wallet.dto.TrackingDateDto;
+import astoppello.wallet.model.Currency;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,7 +41,7 @@ class AccountMapperTest {
                 .institution(institution)
                 .accountType(AccountTypeEnum.LIQUIDITY)
                 .balance(new BigDecimal("1500.00"))
-                .currency("EUR")
+                .currency(Currency.EUR)
                 .trackingDate(TrackingMapperTest.trackingDate)
                 .build();
 
@@ -65,7 +65,7 @@ class AccountMapperTest {
                 .institution(null)
                 .accountType(AccountTypeEnum.LIQUIDITY)
                 .balance(new BigDecimal("200.00"))
-                .currency("EUR")
+                .currency(Currency.EUR)
                 .build();
 
         AccountDto dto = mapper.toDto(account);
@@ -87,7 +87,7 @@ class AccountMapperTest {
                 .institution("Some Bank")
                 .accountType(AccountTypeEnum.SAVINGS)
                 .balance(new BigDecimal("3000.00"))
-                .currency("USD")
+                .currency(Currency.USD)
                 .trackingDate(trackingDateDto)
                 .build();
 

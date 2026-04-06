@@ -1,7 +1,11 @@
 package astoppello.wallet.domain;
 
+import astoppello.wallet.model.AccountTypeEnum;
+import astoppello.wallet.model.Currency;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import java.math.BigDecimal;
 import java.util.UUID;
@@ -25,6 +29,7 @@ public class Account {
 
     @ManyToOne
     @JoinColumn(name = "institution_id")
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Institution institution;
 
     @Column
@@ -35,7 +40,8 @@ public class Account {
     private BigDecimal balance = BigDecimal.ZERO;
 
     @Column(nullable = false)
-    private String currency;
+    @Enumerated(EnumType.STRING)
+    private Currency currency;
 
     @Embedded
     private TrackingDate trackingDate;

@@ -1,6 +1,6 @@
 package astoppello.wallet.dto;
 
-import astoppello.wallet.domain.TransactionType;
+import astoppello.wallet.model.TransactionType;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import jakarta.annotation.Nullable;

@@ -2,7 +2,7 @@ package astoppello.wallet.event;
 
 import astoppello.wallet.domain.Account;
 import astoppello.wallet.domain.Transaction;
-import astoppello.wallet.domain.TransactionType;
+import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.repository.AccountRepository;
 import astoppello.wallet.repository.TransactionRepository;
 import lombok.RequiredArgsConstructor;

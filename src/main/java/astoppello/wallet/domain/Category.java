@@ -1,5 +1,6 @@
 package astoppello.wallet.domain;
 
+import astoppello.wallet.model.CategoryType;
 import jakarta.persistence.*;
 import lombok.*;
 

@@ -23,7 +23,7 @@ public class Institution {
     @Column
     private String name;
 
-    @OneToMany
+    @OneToMany(mappedBy = "institution")
     private Set<Account> accounts;
 
     @Column

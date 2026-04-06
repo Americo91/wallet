@@ -3,7 +3,7 @@ package astoppello.wallet.mapper;
 import astoppello.wallet.domain.Account;
 import astoppello.wallet.domain.Category;
 import astoppello.wallet.domain.Transaction;
-import astoppello.wallet.domain.TransactionType;
+import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.dto.TransactionDto;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

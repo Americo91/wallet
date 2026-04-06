@@ -1,6 +1,7 @@
 package astoppello.wallet.dto;
 
-import astoppello.wallet.domain.AccountTypeEnum;
+import astoppello.wallet.model.AccountTypeEnum;
+import astoppello.wallet.model.Currency;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import jakarta.validation.constraints.NotNull;
@@ -35,7 +36,7 @@ public class AccountDto {
     private BigDecimal balance;
 
     @NotNull
-    private String currency;
+    private Currency currency;
 
     @JsonUnwrapped
     @Null

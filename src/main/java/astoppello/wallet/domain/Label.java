@@ -3,6 +3,7 @@ package astoppello.wallet.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.Set;
 import java.util.UUID;
 
 @Data
@@ -25,5 +26,5 @@ public class Label {
     private TrackingDate trackingDate;
 
     @ManyToMany(mappedBy = "labels")
-    private Transaction transaction;
+    private Set<Transaction> transactions;
 }
