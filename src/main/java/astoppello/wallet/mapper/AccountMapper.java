@@ -5,7 +5,7 @@ import astoppello.wallet.dto.AccountDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper(uses = {DateMapper.class})
+@Mapper(uses = {TrackingMapper.class})
 public interface AccountMapper {
 
     @Mapping(target = "institution", source = "institution.name")

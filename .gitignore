@@ -5,6 +5,7 @@ target/
 !**/src/test/**/target/
 
 CLAUDE.md
+.DS_Store
 
 ### STS ###
 .apt_generated

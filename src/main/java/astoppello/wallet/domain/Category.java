@@ -1,13 +1,15 @@
 package astoppello.wallet.domain;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Getter
 @Setter
@@ -22,6 +24,7 @@ public class Category {
     private String name;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private CategoryType type;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -30,4 +33,7 @@ public class Category {
 
     @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Category> subcategories = new ArrayList<>();
+
+    @Embedded
+    private TrackingDate trackingDate;
 }

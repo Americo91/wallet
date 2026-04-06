@@ -1,5 +1,5 @@
 package astoppello.wallet.domain;
 
 public enum TransactionType {
-    INCOME, EXPENSE
+    EXPENSE, INCOME, TRANSFER
 }

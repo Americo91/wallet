@@ -2,22 +2,16 @@ package astoppello.wallet.dto;
 
 import astoppello.wallet.domain.AccountTypeEnum;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.annotation.Nullable;
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Null;
 import jakarta.validation.constraints.Positive;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
-import java.time.OffsetDateTime;
 import java.util.UUID;
 
-@Getter
-@Setter
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -29,7 +23,7 @@ public class AccountDto {
     @NotNull
     private String name;
 
-    @Nullable
+    @Null
     private String institution;
 
     @NotNull
@@ -43,11 +37,7 @@ public class AccountDto {
     @NotNull
     private String currency;
 
+    @JsonUnwrapped
     @Null
-    @JsonFormat(pattern = "yyyy-MM-dd-'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
-    private OffsetDateTime createdAt;
-
-    @Null
-    @JsonFormat(pattern = "yyyy-MM-dd-'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
-    private OffsetDateTime updatedAt;
+    private TrackingDateDto trackingDate;
 }

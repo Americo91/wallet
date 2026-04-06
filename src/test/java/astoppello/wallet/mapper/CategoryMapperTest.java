@@ -15,7 +15,7 @@ import java.util.UUID;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {CategoryMapperImpl.class})
+@ContextConfiguration(classes = {CategoryMapperImpl.class, TrackingMapperImpl.class, DateMapper.class})
 class CategoryMapperTest {
 
     @Autowired
@@ -27,6 +27,7 @@ class CategoryMapperTest {
         parent.setId(UUID.randomUUID());
         parent.setName("Housing");
         parent.setType(CategoryType.EXPENSE);
+        parent.setTrackingDate(TrackingMapperTest.trackingDate);
 
         CategoryDto dto = mapper.toDto(parent);
 
@@ -34,6 +35,9 @@ class CategoryMapperTest {
         assertThat(dto.getName()).isEqualTo("Housing");
         assertThat(dto.getType()).isEqualTo(CategoryType.EXPENSE);
         assertThat(dto.getParentId()).isNull();
+        assertThat(dto.getSubcategories()).isEmpty();
+        assertThat(dto.getTrackingDate().getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
+        assertThat(dto.getTrackingDate().getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
     }
 
     @Test
@@ -54,6 +58,8 @@ class CategoryMapperTest {
         assertThat(dto.getName()).isEqualTo("Rent & Mortgage");
         assertThat(dto.getType()).isNull();
         assertThat(dto.getParentId()).isEqualTo(parent.getId());
+        assertThat(dto.getSubcategories()).isEmpty();
+        assertThat(dto.getTrackingDate()).isNull();
     }
 
     @Test
@@ -101,7 +107,7 @@ class CategoryMapperTest {
         assertThat(domain.getName()).isEqualTo("Electricity");
         assertThat(domain.getType()).isNull();
         assertThat(domain.getParent()).isNull();
-        assertThat(domain.getSubcategories()).isEmpty();
+        assertThat(domain.getSubcategories()).isNull();
     }
 
     @Test

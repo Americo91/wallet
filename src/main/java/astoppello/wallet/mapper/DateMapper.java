@@ -3,6 +3,7 @@ package astoppello.wallet.mapper;
 import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
+import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 
@@ -23,5 +24,19 @@ public class DateMapper {
             return null;
         }
         return Timestamp.valueOf(offsetDateTime.atZoneSameInstant(ZoneOffset.UTC).toLocalDateTime());
+    }
+
+    public LocalDate asLocalDate(Timestamp ts) {
+        if (ts == null) {
+            return null;
+        }
+        return ts.toLocalDateTime().toLocalDate();
+    }
+
+    public Timestamp asTimestamp(LocalDate localDate) {
+        if (localDate == null) {
+            return null;
+        }
+        return Timestamp.valueOf(localDate.atStartOfDay());
     }
 }

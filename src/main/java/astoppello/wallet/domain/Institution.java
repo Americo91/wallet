@@ -2,9 +2,7 @@ package astoppello.wallet.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.hibernate.annotations.CreationTimestamp;
 
-import java.sql.Timestamp;
 import java.util.Set;
 import java.util.UUID;
 
@@ -31,8 +29,6 @@ public class Institution {
     @Column
     private String color;
 
-    @CreationTimestamp
-    @Column(updatable = false)
-    private Timestamp createdAt;
-
+    @Embedded
+    private TrackingDate trackingDate;
 }

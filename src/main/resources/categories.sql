@@ -19,9 +19,8 @@ INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-000
 INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000002', 'Food & Dining', 'EXPENSE', NULL);
 INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000201', 'Groceries',       NULL, '00000000-0000-0000-0000-000000000002');
 INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000202', 'Restaurants',     NULL, '00000000-0000-0000-0000-000000000002');
-INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000203', 'Fast Food',       NULL, '00000000-0000-0000-0000-000000000002');
-INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000204', 'Coffee & Drinks', NULL, '00000000-0000-0000-0000-000000000002');
-INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000205', 'Bars & Alcohol',  NULL, '00000000-0000-0000-0000-000000000002');
+INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000203', 'Coffee & Drinks', NULL, '00000000-0000-0000-0000-000000000002');
+INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000204', 'Bars & Alcohol',  NULL, '00000000-0000-0000-0000-000000000002');
 
 -- Transportation (EXPENSE)
 INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000003', 'Transportation', 'EXPENSE', NULL);
@@ -51,7 +50,7 @@ INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-000
 
 -- Shopping (EXPENSE)
 INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000006', 'Shopping', 'EXPENSE', NULL);
-INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000601', 'Clothing & Apparel',     NULL, '00000000-0000-0000-0000-000000000006');
+INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000601', 'Clothing',               NULL, '00000000-0000-0000-0000-000000000006');
 INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000602', 'Electronics',            NULL, '00000000-0000-0000-0000-000000000006');
 INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000603', 'Personal Care & Beauty', NULL, '00000000-0000-0000-0000-000000000006');
 INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000604', 'Household Supplies',     NULL, '00000000-0000-0000-0000-000000000006');
@@ -94,4 +93,4 @@ INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-000
 -- Communication, PC & Software (EXPENSE)
 INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000012', 'Communication, PC & Software', 'EXPENSE', NULL);
 INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000c01', 'Postal Service',NULL, '00000000-0000-0000--0000-000000000012');
-INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000c02', 'Software',NULL, '00000000-0000-0000--0000-000000000012');
+INSERT INTO category (id, name, type, parent_id) VALUES ('00000000-0000-0000-0000-000000000c02', 'Software',      NULL, '00000000-0000-0000--0000-000000000012');

@@ -1,18 +1,21 @@
 package astoppello.wallet.domain;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.UUID;
 
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Table
 public class Transaction {
 
     @Id
@@ -21,6 +24,7 @@ public class Transaction {
     private UUID id;
 
     @ManyToOne(optional = false)
+    @JoinColumn(name = "account_id", nullable = false)
     private Account account;
 
     @Enumerated(EnumType.STRING)
@@ -31,17 +35,20 @@ public class Transaction {
     private BigDecimal amount;
 
     @Column(nullable = false)
-    private LocalDate date;
+    private Timestamp date;
 
     @ManyToOne
+    @JoinColumn(name = "category_name", nullable = false)
     private Category category;
 
     private String description;
 
-    private String payee;
+    private String merchant;
 
-    @ElementCollection
-    @CollectionTable(name = "transaction_labels", joinColumns = @JoinColumn(name = "transaction_id"))
-    @Column(name = "label")
-    private List<String> labels = new ArrayList<>();
+    @ManyToMany
+    @JoinTable(name = "transaction_label", joinColumns = @JoinColumn(name = "transaction_id"), inverseJoinColumns = @JoinColumn(name = "label_id"))
+    private Set<Label> labels = new HashSet<>();
+
+    @Embedded
+    private TrackingDate trackingDate;
 }

@@ -5,7 +5,7 @@ import astoppello.wallet.dto.CategoryDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper
+@Mapper(uses = {TrackingMapper.class})
 public interface CategoryMapper {
 
     @Mapping(target = "parentId", source = "parent.id")

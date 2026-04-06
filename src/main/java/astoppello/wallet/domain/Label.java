@@ -3,17 +3,15 @@ package astoppello.wallet.domain;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.math.BigDecimal;
 import java.util.UUID;
 
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Getter
-@Setter
-@Table(name = "accounts")
-public class Account {
+@Table(name = "labels")
+public class Label {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -23,20 +21,9 @@ public class Account {
     @Column(unique = true, nullable = false)
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "institution_id")
-    private Institution institution;
-
-    @Column
-    @Enumerated(EnumType.STRING)
-    private AccountTypeEnum accountType;
-
-    @Column(nullable = false)
-    private BigDecimal balance = BigDecimal.ZERO;
-
-    @Column(nullable = false)
-    private String currency;
-
     @Embedded
     private TrackingDate trackingDate;
+
+    @ManyToMany(mappedBy = "labels")
+    private Transaction transaction;
 }

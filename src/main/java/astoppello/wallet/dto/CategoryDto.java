@@ -1,6 +1,8 @@
 package astoppello.wallet.dto;
 
 import astoppello.wallet.domain.CategoryType;
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
+import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Null;
 import lombok.AllArgsConstructor;
@@ -25,10 +27,16 @@ public class CategoryDto {
     @NotNull
     private String name;
 
+    @NotNull
     private CategoryType type;
 
+    @Nullable
     private UUID parentId;
 
     @Null
     private List<CategoryDto> subcategories;
+
+    @JsonUnwrapped
+    @Null
+    private TrackingDateDto trackingDate;
 }
