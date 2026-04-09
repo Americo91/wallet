@@ -19,9 +19,4 @@ class LabelRepositoryTest {
         labelRepository.save(Label.builder().name(name).build());
         assertThat(labelRepository.findByName(name).isPresent()).isTrue();
     }
-
-    @Test
-    void testManyToManyCascadeDelete() {
-        //TODO
-    }
 }
