@@ -56,7 +56,7 @@ class CategoryMapperTest {
 
         assertThat(dto.getId()).isEqualTo(sub.getId());
         assertThat(dto.getName()).isEqualTo("Rent & Mortgage");
-        assertThat(dto.getType()).isNull();
+        assertThat(dto.getType()).isEqualTo(parent.getType());
         assertThat(dto.getParentId()).isEqualTo(parent.getId());
         assertThat(dto.getSubcategories()).isEmpty();
         assertThat(dto.getTrackingDate()).isNull();

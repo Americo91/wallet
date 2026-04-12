@@ -2,6 +2,7 @@ package astoppello.wallet.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Null;
 import lombok.AllArgsConstructor;
@@ -27,6 +28,6 @@ public class LabelDto {
     private String name;
 
     @JsonUnwrapped
-    @Null
+    @Valid
     private TrackingDateDto trackingDate;
 }

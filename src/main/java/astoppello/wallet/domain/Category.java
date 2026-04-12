@@ -14,6 +14,7 @@ import java.util.UUID;
 @Entity
 @Getter
 @Setter
+@Table(name = "categories")
 public class Category {
 
     @Id
@@ -25,8 +26,14 @@ public class Category {
     private String name;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false)
+    @Column
+    @Getter(lombok.AccessLevel.NONE)
     private CategoryType type;
+
+    public CategoryType getType() {
+        if (type != null) return type;
+        return parent != null ? parent.getType() : null;
+    }
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parent_id")

@@ -16,7 +16,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table
+@Table(name = "transactions")
 public class Transaction {
 
     @Id
@@ -39,7 +39,7 @@ public class Transaction {
     private Timestamp date;
 
     @ManyToOne
-    @JoinColumn(name = "category_name", nullable = false)
+    @JoinColumn(name = "category_id", nullable = false)
     private Category category;
 
     private String description;

@@ -16,10 +16,10 @@ import java.time.OffsetDateTime;
 public class TrackingDateDto {
 
     @Null
-    @JsonFormat(pattern = "yyyy-MM-dd-'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy-MM-dd-'T'HH:mm:ss", shape = JsonFormat.Shape.STRING)
     private OffsetDateTime createdAt;
 
     @Null
-    @JsonFormat(pattern = "yyyy-MM-dd-'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy-MM-dd-'T'HH:mm:ss", shape = JsonFormat.Shape.STRING)
     private OffsetDateTime updatedAt;
 }

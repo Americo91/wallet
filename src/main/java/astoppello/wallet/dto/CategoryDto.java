@@ -3,6 +3,7 @@ package astoppello.wallet.dto;
 import astoppello.wallet.model.CategoryType;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import jakarta.annotation.Nullable;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Null;
 import lombok.AllArgsConstructor;
@@ -37,6 +38,6 @@ public class CategoryDto {
     private List<CategoryDto> subcategories;
 
     @JsonUnwrapped
-    @Null
+    @Valid
     private TrackingDateDto trackingDate;
 }

@@ -1,6 +1,7 @@
 package astoppello.wallet.service.impl;
 
 import astoppello.wallet.domain.Institution;
+import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.InstitutionDto;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.InstitutionMapper;
@@ -26,7 +27,9 @@ public class InstitutionServiceImpl implements InstitutionService {
 
     @Override
     public InstitutionDto save(InstitutionDto dto) {
-        return mapper.toDto(repository.save(mapper.toDomain(dto)));
+        Institution domain = mapper.toDomain(dto);
+        fillCreatedTimestamp(domain);
+        return mapper.toDto(repository.save(domain));
     }
 
     @Override
@@ -39,7 +42,7 @@ public class InstitutionServiceImpl implements InstitutionService {
         if (dto.getName() != null) {
             byId.setName(dto.getName());
         }
-        byId.getTrackingDate().setUpdatedAt(Timestamp.valueOf(LocalDateTime.now()));
+        fillUpdatedTimestamp(byId);
 
         return mapper.toDto(repository.save(byId));
     }
@@ -70,5 +73,16 @@ public class InstitutionServiceImpl implements InstitutionService {
     public InstitutionDto getByName(String name) {
         Institution institution = repository.findByName(name).orElseThrow(() -> new NotFoundException(Institution.class, name));
         return mapper.toDto(institution);
+    }
+
+    private void fillCreatedTimestamp(Institution institution) {
+        Timestamp ts = Timestamp.valueOf(LocalDateTime.now());
+        institution.setTrackingDate(TrackingDate.builder()
+                .createdAt(ts)
+                .updatedAt(ts).build());
+    }
+
+    private void fillUpdatedTimestamp(Institution institution) {
+        institution.getTrackingDate().setUpdatedAt(Timestamp.valueOf(LocalDateTime.now()));
     }
 }
