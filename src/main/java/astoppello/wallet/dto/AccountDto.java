@@ -5,6 +5,7 @@ import astoppello.wallet.model.Currency;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Null;
 import jakarta.validation.constraints.Positive;
@@ -32,7 +33,7 @@ public class AccountDto {
     private AccountTypeEnum accountType;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING)
-    @Positive
+    @DecimalMin(value = "0")
     @NotNull
     private BigDecimal balance;
 

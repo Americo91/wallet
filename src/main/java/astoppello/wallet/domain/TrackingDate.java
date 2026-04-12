@@ -10,6 +10,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Embeddable
 @Data
@@ -25,4 +26,13 @@ public class TrackingDate {
     @UpdateTimestamp
     @Column(nullable = false)
     private Timestamp updatedAt;
+
+    public static TrackingDate now() {
+        Timestamp ts = Timestamp.valueOf(LocalDateTime.now());
+        return TrackingDate.builder().createdAt(ts).updatedAt(ts).build();
+    }
+
+    public void touch() {
+        this.updatedAt = Timestamp.valueOf(LocalDateTime.now());
+    }
 }

@@ -7,18 +7,16 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.UUID;
 
-@Validated
 @RequiredArgsConstructor
 @RestController
-@RequestMapping(value = InstitutionController.API_V_1_INSTITUTIONS)
+@RequestMapping(value = InstitutionController.INSTITUTIONS_BASE_URL)
 public class InstitutionController {
-    public static final String API_V_1_INSTITUTIONS = "/api/v1/institutions";
+    public static final String INSTITUTIONS_BASE_URL = "/api/v1/institutions";
     public static final String INSTITUTION_ID_PATH = "/{institutionId}";
 
     private final InstitutionService institutionService;
@@ -31,6 +29,11 @@ public class InstitutionController {
     @GetMapping("/")
     public ResponseEntity<List<InstitutionDto>> getAll() {
         return new ResponseEntity<>(institutionService.getAll(), HttpStatus.OK);
+    }
+
+    @GetMapping()
+    public ResponseEntity<InstitutionDto> getByName(@RequestParam("name") String name) {
+        return new ResponseEntity<>(institutionService.getByName(name), HttpStatus.OK);
     }
 
     @PostMapping("/")

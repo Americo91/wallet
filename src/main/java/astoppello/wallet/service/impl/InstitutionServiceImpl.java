@@ -9,11 +9,10 @@ import astoppello.wallet.repository.InstitutionRepository;
 import astoppello.wallet.service.InstitutionService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.jspecify.annotations.NonNull;
 import org.springframework.stereotype.Service;
 
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -28,7 +27,7 @@ public class InstitutionServiceImpl implements InstitutionService {
     @Override
     public InstitutionDto save(InstitutionDto dto) {
         Institution domain = mapper.toDomain(dto);
-        fillCreatedTimestamp(domain);
+        domain.setTrackingDate(TrackingDate.now());
         return mapper.toDto(repository.save(domain));
     }
 
@@ -36,13 +35,13 @@ public class InstitutionServiceImpl implements InstitutionService {
     public InstitutionDto update(UUID id, InstitutionDto dto) {
         Institution byId = getById(id);
 
-        if (dto.getColor() != null) {
+        if (StringUtils.isNotEmpty(dto.getColor())) {
             byId.setColor(dto.getColor());
         }
-        if (dto.getName() != null) {
+        if (StringUtils.isNotEmpty(dto.getName())) {
             byId.setName(dto.getName());
         }
-        fillUpdatedTimestamp(byId);
+        byId.getTrackingDate().touch();
 
         return mapper.toDto(repository.save(byId));
     }
@@ -73,16 +72,5 @@ public class InstitutionServiceImpl implements InstitutionService {
     public InstitutionDto getByName(String name) {
         Institution institution = repository.findByName(name).orElseThrow(() -> new NotFoundException(Institution.class, name));
         return mapper.toDto(institution);
-    }
-
-    private void fillCreatedTimestamp(Institution institution) {
-        Timestamp ts = Timestamp.valueOf(LocalDateTime.now());
-        institution.setTrackingDate(TrackingDate.builder()
-                .createdAt(ts)
-                .updatedAt(ts).build());
-    }
-
-    private void fillUpdatedTimestamp(Institution institution) {
-        institution.getTrackingDate().setUpdatedAt(Timestamp.valueOf(LocalDateTime.now()));
     }
 }
