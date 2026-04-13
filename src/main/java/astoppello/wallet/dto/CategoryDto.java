@@ -28,7 +28,7 @@ public class CategoryDto {
     @NotNull
     private String name;
 
-    @NotNull
+    @Nullable
     private CategoryType type;
 
     @Nullable

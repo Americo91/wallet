@@ -11,6 +11,7 @@ import astoppello.wallet.model.Currency;
 import astoppello.wallet.repository.AccountRepository;
 import astoppello.wallet.repository.InstitutionRepository;
 import astoppello.wallet.service.impl.AccountServiceImpl;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -25,8 +26,7 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class AccountServiceTest {
@@ -45,9 +45,11 @@ class AccountServiceTest {
 
     private static final String ACCOUNT_NAME = "Checking";
     private static final String INSTITUTION_NAME = "Bank";
+    private AccountDto dto;
 
-    private AccountDto buildDto() {
-        return AccountDto.builder()
+    @BeforeEach
+    void setUp() {
+        dto =  AccountDto.builder()
                 .name(ACCOUNT_NAME)
                 .accountType(AccountTypeEnum.LIQUIDITY)
                 .balance(BigDecimal.ZERO)
@@ -73,7 +75,6 @@ class AccountServiceTest {
     void save() {
         UUID institutionId = UUID.randomUUID();
         Institution institution = Institution.builder().id(institutionId).name(INSTITUTION_NAME).build();
-        AccountDto dto = buildDto();
         Account domain = buildDomain(null);
         Account saved = buildDomain(UUID.randomUUID());
         AccountDto savedDto = AccountDto.builder().id(saved.getId()).name(ACCOUNT_NAME).build();
@@ -96,7 +97,7 @@ class AccountServiceTest {
         UUID institutionId = UUID.randomUUID();
         when(institutionRepository.findById(institutionId)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> service.save(institutionId, buildDto()))
+        assertThatThrownBy(() -> service.save(institutionId, dto))
                 .isInstanceOf(NotFoundException.class);
         verify(institutionRepository).findById(institutionId);
     }
@@ -104,7 +105,6 @@ class AccountServiceTest {
     @Test
     void getAll() {
         Account account = buildDomain(UUID.randomUUID());
-        AccountDto dto = buildDto();
 
         when(repository.findAll()).thenReturn(List.of(account));
         when(mapper.toDto(account)).thenReturn(dto);
@@ -120,7 +120,6 @@ class AccountServiceTest {
     void getByID() {
         UUID id = UUID.randomUUID();
         Account account = buildDomain(id);
-        AccountDto dto = buildDto();
         dto.setId(id);
 
         when(repository.findById(id)).thenReturn(Optional.of(account));
@@ -139,12 +138,12 @@ class AccountServiceTest {
 
         assertThatThrownBy(() -> service.getByID(id))
                 .isInstanceOf(NotFoundException.class);
+        verifyNoInteractions(mapper);
     }
 
     @Test
     void getByName() {
         Account account = buildDomain(UUID.randomUUID());
-        AccountDto dto = buildDto();
 
         when(repository.findByName(ACCOUNT_NAME)).thenReturn(Optional.of(account));
         when(mapper.toDto(account)).thenReturn(dto);

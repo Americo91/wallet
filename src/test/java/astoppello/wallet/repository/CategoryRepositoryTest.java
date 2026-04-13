@@ -20,6 +20,6 @@ class CategoryRepositoryTest {
         String name = "categoryName";
         categoryRepository.save(Category.builder().type(CategoryType.INCOME).name(name).build());
 
-        assertThat(categoryRepository.findByName(name).isPresent()).isTrue();
+        assertThat(categoryRepository.findByName(name)).isNotEmpty();
     }
 }
