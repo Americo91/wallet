@@ -1,4 +1,4 @@
-package astoppello.wallet.service;
+package astoppello.wallet.service.impl;
 
 import astoppello.wallet.domain.Institution;
 import astoppello.wallet.domain.TrackingDate;
@@ -8,7 +8,7 @@ import astoppello.wallet.mapper.DateMapper;
 import astoppello.wallet.mapper.InstitutionMapperImpl;
 import astoppello.wallet.mapper.TrackingMapperImpl;
 import astoppello.wallet.repository.InstitutionRepository;
-import astoppello.wallet.service.impl.InstitutionServiceImpl;
+import astoppello.wallet.service.InstitutionService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;

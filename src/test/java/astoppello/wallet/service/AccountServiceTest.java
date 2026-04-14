@@ -179,6 +179,7 @@ class AccountServiceTest {
         assertThat(result.getAccountType()).isEqualTo(AccountTypeEnum.SAVINGS);
         verify(repository).findById(id);
         verify(repository).save(existing);
+        verify(mapper).toDto(existing);
     }
 
     @Test

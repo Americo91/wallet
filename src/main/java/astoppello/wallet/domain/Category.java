@@ -3,6 +3,7 @@ package astoppello.wallet.domain;
 import astoppello.wallet.model.CategoryType;
 import jakarta.persistence.*;
 import lombok.*;
+import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,19 +30,23 @@ public class Category {
     @Column
     @Getter(lombok.AccessLevel.NONE)
     private CategoryType type;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "parent_id")
+    private Category parent;
+    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Category> subcategories = new ArrayList<>();
+    @Embedded
+    private TrackingDate trackingDate;
 
     public CategoryType getType() {
         if (type != null) return type;
         return parent != null ? parent.getType() : null;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "parent_id")
-    private Category parent;
-
-    @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Category> subcategories = new ArrayList<>();
-
-    @Embedded
-    private TrackingDate trackingDate;
+    public void addSubcategory(Category category) {
+        if (CollectionUtils.isEmpty(subcategories)) {
+            subcategories = new ArrayList<>();
+        }
+        subcategories.add(category);
+    }
 }

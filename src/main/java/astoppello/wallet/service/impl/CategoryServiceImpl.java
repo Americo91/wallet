@@ -47,6 +47,7 @@ public class CategoryServiceImpl implements CategoryService {
             Category parent = getById(dto.getParentId());
             domain.setParent(parent);
             domain.setType(null);
+            parent.addSubcategory(domain);
         }
         domain.setTrackingDate(TrackingDate.now());
         return mapper.toDto(repository.save(domain));
