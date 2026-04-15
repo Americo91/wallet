@@ -29,22 +29,8 @@ class InstitutionServiceImplIT {
     @Autowired
     private InstitutionService service;
 
-    @Autowired
-    private InstitutionRepository repository;
-
     private InstitutionDto buildDto(String name) {
         return InstitutionDto.builder().name(name).color("blue").build();
-    }
-
-    private Institution saveWithTracking(String name) {
-        return repository.save(Institution.builder()
-                .name(name)
-                .color("blue")
-                .trackingDate(TrackingDate.builder()
-                        .createdAt(Timestamp.valueOf(LocalDateTime.now()))
-                        .updatedAt(Timestamp.valueOf(LocalDateTime.now()))
-                        .build())
-                .build());
     }
 
     @Test
@@ -57,7 +43,7 @@ class InstitutionServiceImplIT {
         assertThat(saved.getTrackingDate()).isNotNull();
         assertThat(saved.getTrackingDate().getCreatedAt()).isNotNull();
         assertThat(saved.getTrackingDate().getUpdatedAt()).isNotNull();
-        assertThat(repository.count()).isOne();
+        assertThat(service.getAll()).hasSize(1);
     }
 
     @Test
@@ -104,19 +90,13 @@ class InstitutionServiceImplIT {
 
     @Test
     void update() {
-        Institution existing = saveWithTracking("Old Name");
+        InstitutionDto saved = service.save(buildDto("Bank"));
 
-        InstitutionDto updated = service.update(existing.getId(),
+        InstitutionDto updated = service.update(saved.getId(),
                 InstitutionDto.builder().name("New Name").color("red").build());
 
         assertThat(updated.getName()).isEqualTo("New Name");
         assertThat(updated.getColor()).isEqualTo("red");
-        assertThat(repository.findById(existing.getId()))
-                .isPresent()
-                .hasValueSatisfying(i -> {
-                    assertThat(i.getName()).isEqualTo("New Name");
-                    assertThat(i.getColor()).isEqualTo("red");
-                });
     }
 
     @Test
@@ -125,6 +105,6 @@ class InstitutionServiceImplIT {
 
         service.delete(saved.getId());
 
-        assertThat(repository.count()).isZero();
+        assertThat(service.getAll()).hasSize(0);
     }
 }

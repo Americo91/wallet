@@ -1,17 +1,16 @@
 package astoppello.wallet.service.impl;
 
-import astoppello.wallet.domain.Institution;
-import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.AccountDto;
+import astoppello.wallet.dto.InstitutionDto;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.AccountMapperImpl;
 import astoppello.wallet.mapper.DateMapper;
+import astoppello.wallet.mapper.InstitutionMapperImpl;
 import astoppello.wallet.mapper.TrackingMapperImpl;
 import astoppello.wallet.model.AccountTypeEnum;
 import astoppello.wallet.model.Currency;
-import astoppello.wallet.repository.AccountRepository;
-import astoppello.wallet.repository.InstitutionRepository;
 import astoppello.wallet.service.AccountService;
+import astoppello.wallet.service.InstitutionService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,25 +25,21 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @DataJpaTest
-@Import({AccountServiceImpl.class, AccountMapperImpl.class, TrackingMapperImpl.class, DateMapper.class})
+@Import({AccountServiceImpl.class, InstitutionServiceImpl.class, AccountMapperImpl.class, TrackingMapperImpl.class, DateMapper.class, InstitutionMapperImpl.class})
 class AccountServiceImplIT {
 
     @Autowired
     private AccountService service;
 
     @Autowired
-    private AccountRepository accountRepository;
+    private InstitutionService institutionService;
 
-    @Autowired
-    private InstitutionRepository institutionRepository;
-
-    private Institution institution;
+    private InstitutionDto institutionDto;
 
     @BeforeEach
     void setUp() {
-        institution = institutionRepository.save(Institution.builder()
+        institutionDto = institutionService.save(InstitutionDto.builder()
                 .name("Bank")
-                .trackingDate(TrackingDate.now())
                 .build());
     }
 
@@ -59,7 +54,7 @@ class AccountServiceImplIT {
 
     @Test
     void save() {
-        AccountDto saved = service.save(institution.getId(), buildDto("Checking"));
+        AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
         assertThat(saved.getId()).isNotNull();
         assertThat(saved.getName()).isEqualTo("Checking");
@@ -69,7 +64,7 @@ class AccountServiceImplIT {
         assertThat(saved.getTrackingDate()).isNotNull();
         assertThat(saved.getTrackingDate().getCreatedAt()).isNotNull();
         assertThat(saved.getTrackingDate().getUpdatedAt()).isNotNull();
-        assertThat(accountRepository.count()).isOne();
+        assertThat(service.getAll()).hasSize(1);
     }
 
     @Test
@@ -80,8 +75,8 @@ class AccountServiceImplIT {
 
     @Test
     void getAll() {
-        service.save(institution.getId(), buildDto("Checking"));
-        service.save(institution.getId(), buildDto("Savings"));
+        service.save(institutionDto.getId(), buildDto("Checking"));
+        service.save(institutionDto.getId(), buildDto("Savings"));
 
         List<AccountDto> result = service.getAll();
 
@@ -91,7 +86,7 @@ class AccountServiceImplIT {
 
     @Test
     void getByID() {
-        AccountDto saved = service.save(institution.getId(), buildDto("Checking"));
+        AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
         AccountDto found = service.getByID(saved.getId());
 
@@ -107,7 +102,7 @@ class AccountServiceImplIT {
 
     @Test
     void getByName() {
-        service.save(institution.getId(), buildDto("Checking"));
+        service.save(institutionDto.getId(), buildDto("Checking"));
 
         AccountDto found = service.getByName("Checking");
 
@@ -122,7 +117,7 @@ class AccountServiceImplIT {
 
     @Test
     void update_nameAndType() {
-        AccountDto saved = service.save(institution.getId(), buildDto("Checking"));
+        AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
         AccountDto updated = service.update(saved.getId(),
                 AccountDto.builder().name("Updated").accountType(AccountTypeEnum.SAVINGS).build());
@@ -133,11 +128,10 @@ class AccountServiceImplIT {
 
     @Test
     void update_institution() {
-        institutionRepository.save(Institution.builder()
+        institutionService.save(InstitutionDto.builder()
                 .name("Other Bank")
-                .trackingDate(TrackingDate.now())
                 .build());
-        AccountDto saved = service.save(institution.getId(), buildDto("Checking"));
+        AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
         AccountDto updated = service.update(saved.getId(),
                 AccountDto.builder().institution("Other Bank").build());
@@ -147,10 +141,10 @@ class AccountServiceImplIT {
 
     @Test
     void delete() {
-        AccountDto saved = service.save(institution.getId(), buildDto("Checking"));
+        AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
         service.delete(saved.getId());
 
-        assertThat(accountRepository.count()).isZero();
+        assertThat(service.getAll()).hasSize(0);
     }
 }

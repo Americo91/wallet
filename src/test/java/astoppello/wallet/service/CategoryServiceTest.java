@@ -24,7 +24,7 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-class CategoryServiceImplTest {
+class CategoryServiceTest {
 
     private static final String CATEGORY_NAME = "CategoryName";
     @Mock
@@ -112,6 +112,7 @@ class CategoryServiceImplTest {
 
         dto.setId(id);
         when(repository.save(category)).thenReturn(saved);
+        when(mapper.toDomain(dto)).thenReturn(category);
         when(mapper.toDto(saved)).thenReturn(dto);
 
         CategoryDto save = service.save(dto);

@@ -27,8 +27,6 @@ public class CategoryServiceImplIT {
     private static final String CATEGORY_NAME = "CategoryName";
     @Autowired
     private CategoryService service;
-    @Autowired
-    private CategoryRepository repository;
 
     private CategoryDto parentCategory;
 
@@ -58,7 +56,7 @@ public class CategoryServiceImplIT {
         assertThat(saved.getTrackingDate()).isNotNull();
         assertThat(saved.getTrackingDate().getCreatedAt()).isNotNull();
         assertThat(saved.getTrackingDate().getUpdatedAt()).isNotNull();
-        assertThat(repository.count()).isOne();
+        assertThat(service.getAll()).hasSize(1);
     }
 
     @Test
@@ -146,7 +144,7 @@ public class CategoryServiceImplIT {
         CategoryDto saved = service.save(buildDto(checking));
 
         service.delete(saved.getId());
-        assertThat(repository.count()).isZero();
+        assertThat(service.getAll()).hasSize(0);
     }
 
 

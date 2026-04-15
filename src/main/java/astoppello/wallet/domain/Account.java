@@ -21,7 +21,7 @@ public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(length = 36, columnDefinition = "varchar", updatable = false, nullable = false)
+    @Column(columnDefinition = "uuid", updatable = false, nullable = false)
     private UUID id;
 
     @Column(unique = true, nullable = false)

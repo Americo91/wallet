@@ -20,7 +20,7 @@ public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(length = 36, columnDefinition = "varchar", updatable = false, nullable = false)
+    @Column(columnDefinition = "uuid", updatable = false, nullable = false)
     private UUID id;
 
     @Column(nullable = false)
@@ -30,11 +30,14 @@ public class Category {
     @Column
     @Getter(lombok.AccessLevel.NONE)
     private CategoryType type;
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parent_id")
     private Category parent;
+
     @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Category> subcategories = new ArrayList<>();
+
     @Embedded
     private TrackingDate trackingDate;
 

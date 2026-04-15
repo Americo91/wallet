@@ -1,6 +1,7 @@
 package astoppello.wallet.dto;
 
 import astoppello.wallet.model.CategoryType;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import jakarta.annotation.Nullable;
 import jakarta.validation.Valid;
@@ -35,6 +36,7 @@ public class CategoryDto {
     private UUID parentId;
 
     @Null
+    @JsonIgnore
     private List<CategoryDto> subcategories;
 
     @JsonUnwrapped
