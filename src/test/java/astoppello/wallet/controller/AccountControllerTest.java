@@ -51,7 +51,7 @@ class AccountControllerTest {
                 .currency(Currency.EUR)
                 .balance(new BigDecimal("200.00"))
                 .accountType(AccountTypeEnum.LIQUIDITY)
-                .institution("institutionName")
+                .institution(UUID.randomUUID())
                 .trackingDate(TrackingDateDto.builder()
                         .createdAt(OffsetDateTime.now())
                         .updatedAt(OffsetDateTime.now())
@@ -72,7 +72,7 @@ class AccountControllerTest {
                 .andExpect(jsonPath("$[0].currency", is(accountDto.getCurrency().toString())))
                 .andExpect(jsonPath("$[0].balance", is(accountDto.getBalance().toString())))
                 .andExpect(jsonPath("$[0].accountType", is(accountDto.getAccountType().toString())))
-                .andExpect(jsonPath("$[0].institution", is(accountDto.getInstitution())))
+                .andExpect(jsonPath("$[0].institution", is(accountDto.getInstitution().toString())))
                 .andExpect(jsonPath("$[0].createdAt").isNotEmpty())
                 .andExpect(jsonPath("$[0].updatedAt").isNotEmpty());
         then(accountService).should().getAll();

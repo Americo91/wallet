@@ -2,6 +2,7 @@ package astoppello.wallet.domain;
 
 import astoppello.wallet.model.TransactionType;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Positive;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -33,6 +34,7 @@ public class Transaction {
     private TransactionType type;
 
     @Column(nullable = false)
+    @Positive
     private BigDecimal amount;
 
     @Column(nullable = false)

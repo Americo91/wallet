@@ -25,7 +25,7 @@ public class InstitutionDto {
     private String color;
 
     @Null
-    private Set<String> accounts;
+    private Set<UUID> accounts;
 
     @JsonUnwrapped
     @Valid

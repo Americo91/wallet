@@ -8,28 +8,28 @@ import org.mapstruct.Mapping;
 import org.mapstruct.Named;
 
 import java.util.Set;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Mapper(uses = {TrackingMapper.class, DateMapper.class})
 public interface TransactionMapper {
 
     @Mapping(target = "trackingDate", source = "trackingDate")
-    @Mapping(target = "account", source = "account.name")
-    @Mapping(target = "category", source = "category.name")
+    @Mapping(target = "account", source = "account.id")
+    @Mapping(target = "category", source = "category.id")
     @Mapping(target = "labels", source = "labels", qualifiedByName = "mapLabels")
     TransactionDto toDto(Transaction domain);
 
-    @Mapping(target = "id", ignore = true)
     @Mapping(target = "account", ignore = true)
     @Mapping(target = "category", ignore = true)
     @Mapping(target = "labels", ignore = true)
     Transaction toDomain(TransactionDto dto);
 
     @Named("mapLabels")
-    default Set<String> mapLabels(Set<Label> labels) {
+    default Set<UUID> mapLabels(Set<Label> labels) {
         if (labels == null) return null;
         return labels.stream()
-                .map(Label::getName)
+                .map(Label::getId)
                 .collect(Collectors.toSet());
     }
 }

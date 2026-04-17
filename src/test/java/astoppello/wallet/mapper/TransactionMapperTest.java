@@ -28,13 +28,15 @@ class TransactionMapperTest {
 
     @Test
     void toDto() {
+        Account accountName = Account.builder().id(UUID.randomUUID()).name("accountName").build();
+        Category categoryName = Category.builder().name("categoryName").build();
         Transaction transaction = Transaction.builder()
                 .id(UUID.randomUUID())
-                .account(Account.builder().name("accountName").build())
+                .account(accountName)
                 .type(TransactionType.INCOME)
                 .amount(new BigDecimal("20.00"))
                 .date(Timestamp.valueOf(LocalDateTime.of(2026, 3, 3, 0, 0)))
-                .category(Category.builder().name("categoryName").build())
+                .category(categoryName)
                 .description("description")
                 .merchant("merchant")
                 .trackingDate(TrackingMapperTest.trackingDate)
@@ -43,11 +45,11 @@ class TransactionMapperTest {
         TransactionDto dto = transactionMapper.toDto(transaction);
         assertThat(dto).isNotNull();
         assertThat(dto.getId()).isEqualTo(transaction.getId());
-        assertThat(dto.getAccount()).isEqualTo("accountName");
+        assertThat(dto.getAccount()).isEqualTo(accountName.getId());
         assertThat(dto.getType()).isEqualTo(TransactionType.INCOME);
         assertThat(dto.getAmount()).isEqualTo(new BigDecimal("20.00"));
         assertThat(dto.getDate().toString()).isEqualTo("2026-03-03");
-        assertThat(dto.getCategory()).isEqualTo("categoryName");
+        assertThat(dto.getCategory()).isEqualTo(categoryName.getId());
         assertThat(dto.getDescription()).isEqualTo("description");
         assertThat(dto.getMerchant()).isEqualTo("merchant");
         assertThat(dto.getTrackingDate().getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");

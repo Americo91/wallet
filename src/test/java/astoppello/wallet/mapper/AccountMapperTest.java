@@ -49,7 +49,7 @@ class AccountMapperTest {
 
         assertThat(dto.getId()).isEqualTo(account.getId());
         assertThat(dto.getName()).isEqualTo(account.getName());
-        assertThat(dto.getInstitution()).isEqualTo("Test Bank");
+        assertThat(dto.getInstitution()).isEqualTo(institution.getId());
         assertThat(dto.getAccountType()).isEqualTo(account.getAccountType());
         assertThat(dto.getBalance()).isEqualByComparingTo(account.getBalance());
         assertThat(dto.getCurrency()).isEqualTo(account.getCurrency());
@@ -84,7 +84,7 @@ class AccountMapperTest {
         AccountDto dto = AccountDto.builder()
                 .id(UUID.randomUUID())
                 .name("Savings")
-                .institution("Some Bank")
+                .institution(UUID.randomUUID())
                 .accountType(AccountTypeEnum.SAVINGS)
                 .balance(new BigDecimal("3000.00"))
                 .currency(Currency.USD)

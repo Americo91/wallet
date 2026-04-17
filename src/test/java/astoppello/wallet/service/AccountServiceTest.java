@@ -45,21 +45,23 @@ class AccountServiceTest {
 
     private static final String ACCOUNT_NAME = "Checking";
     private static final String INSTITUTION_NAME = "Bank";
+    private static UUID INSTITUTION_ID;
     private AccountDto dto;
 
     @BeforeEach
     void setUp() {
+        INSTITUTION_ID = UUID.randomUUID();
         dto =  AccountDto.builder()
                 .name(ACCOUNT_NAME)
                 .accountType(AccountTypeEnum.LIQUIDITY)
                 .balance(BigDecimal.ZERO)
                 .currency(Currency.EUR)
-                .institution(INSTITUTION_NAME)
+                .institution(INSTITUTION_ID)
                 .build();
     }
 
     private Account buildDomain(UUID id) {
-        Institution institution = Institution.builder().id(UUID.randomUUID()).name(INSTITUTION_NAME).build();
+        Institution institution = Institution.builder().id(INSTITUTION_ID).name(INSTITUTION_NAME).build();
         return Account.builder()
                 .id(id)
                 .name(ACCOUNT_NAME)
@@ -186,19 +188,20 @@ class AccountServiceTest {
     void update_institution() {
         UUID id = UUID.randomUUID();
         Account existing = buildDomain(id);
-        Institution newInstitution = Institution.builder().id(UUID.randomUUID()).name("New Bank").build();
-        AccountDto updateDto = AccountDto.builder().institution("New Bank").build();
-        AccountDto updatedDto = AccountDto.builder().id(id).institution("New Bank").build();
+        UUID institutionID = UUID.randomUUID();
+        Institution newInstitution = Institution.builder().id(UUID.randomUUID()).build();
+        AccountDto updateDto = AccountDto.builder().institution(institutionID).build();
+        AccountDto updatedDto = AccountDto.builder().id(id).institution(institutionID).build();
 
         when(repository.findById(id)).thenReturn(Optional.of(existing));
-        when(institutionRepository.findByName("New Bank")).thenReturn(Optional.of(newInstitution));
+        when(institutionRepository.findById(institutionID)).thenReturn(Optional.of(newInstitution));
         when(repository.save(existing)).thenReturn(existing);
         when(mapper.toDto(existing)).thenReturn(updatedDto);
 
         AccountDto result = service.update(id, updateDto);
 
-        assertThat(result.getInstitution()).isEqualTo("New Bank");
-        verify(institutionRepository).findByName("New Bank");
+        assertThat(result.getInstitution()).isEqualTo(institutionID);
+        verify(institutionRepository).findById(institutionID);
     }
 
     @Test

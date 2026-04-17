@@ -8,7 +8,7 @@ import org.mapstruct.Mapping;
 @Mapper(uses = {TrackingMapper.class})
 public interface AccountMapper {
 
-    @Mapping(target = "institution", source = "institution.name")
+    @Mapping(target = "institution", source = "institution.id")
     AccountDto toDto(Account domain);
 
     @Mapping(target = "institution", ignore = true)

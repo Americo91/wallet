@@ -28,7 +28,7 @@ public class TransactionDto {
     private UUID id;
 
     @Null
-    private String account;
+    private UUID account;
 
     @NotNull
     private TransactionType type;
@@ -43,7 +43,7 @@ public class TransactionDto {
     private LocalDate date;
 
     @Null
-    private String category;
+    private UUID category;
 
     @Nullable
     private String description;
@@ -52,7 +52,7 @@ public class TransactionDto {
     private String merchant;
 
     @Null
-    private Set<String> labels;
+    private Set<UUID> labels;
 
     @JsonUnwrapped
     @Valid

@@ -27,7 +27,7 @@ public class AccountDto {
     private String name;
 
     @Null
-    private String institution;
+    private UUID institution;
 
     @NotNull
     private AccountTypeEnum accountType;

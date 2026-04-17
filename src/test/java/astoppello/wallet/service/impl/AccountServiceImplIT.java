@@ -128,15 +128,15 @@ class AccountServiceImplIT {
 
     @Test
     void update_institution() {
-        institutionService.save(InstitutionDto.builder()
+        InstitutionDto save = institutionService.save(InstitutionDto.builder()
                 .name("Other Bank")
                 .build());
         AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
         AccountDto updated = service.update(saved.getId(),
-                AccountDto.builder().institution("Other Bank").build());
+                AccountDto.builder().institution(save.getId()).build());
 
-        assertThat(updated.getInstitution()).isEqualTo("Other Bank");
+        assertThat(updated.getInstitution()).isEqualTo(save.getId());
     }
 
     @Test

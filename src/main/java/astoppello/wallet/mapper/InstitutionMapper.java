@@ -8,6 +8,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.Named;
 
 import java.util.Set;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Mapper(uses = {TrackingMapper.class})
@@ -21,10 +22,10 @@ public interface InstitutionMapper {
     Institution toDomain(InstitutionDto dto);
 
     @Named("mapAccounts")
-    default Set<String> mapAccounts(Set<Account> accounts) {
+    default Set<UUID> mapAccounts(Set<Account> accounts) {
         if (accounts == null) return null;
         return accounts.stream()
-                .map(Account::getName)
+                .map(Account::getId)
                 .collect(Collectors.toSet());
     }
 }

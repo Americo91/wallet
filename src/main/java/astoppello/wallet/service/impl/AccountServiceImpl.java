@@ -47,8 +47,8 @@ public class AccountServiceImpl implements AccountService {
         if (dto.getAccountType() != null) {
             byId.setAccountType(dto.getAccountType());
         }
-        if (StringUtils.isNotBlank(dto.getInstitution())) {
-            institutionRepository.findByName(dto.getInstitution()).ifPresent(byId::setInstitution);
+        if (dto.getInstitution() != null) {
+            institutionRepository.findById(dto.getInstitution()).ifPresent(byId::setInstitution);
         }
         byId.getTrackingDate().touch();
         return mapper.toDto(repository.save(byId));
