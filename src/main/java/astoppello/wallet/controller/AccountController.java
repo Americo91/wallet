@@ -3,6 +3,7 @@ package astoppello.wallet.controller;
 import astoppello.wallet.dto.AccountDto;
 import astoppello.wallet.service.AccountService;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -36,7 +37,7 @@ public class AccountController {
     }
 
     @PostMapping(INSTITUTION_ACCOUNT_BASE_URL + "/")
-    public ResponseEntity<AccountDto> handlePost(@PathVariable("institutionId") UUID institutionId, @RequestBody @Valid AccountDto dto) {
+    public ResponseEntity<AccountDto> handlePost(@PathVariable("institutionId") @NotNull UUID institutionId, @RequestBody @Valid AccountDto dto) {
         return new ResponseEntity<>(accountService.save(institutionId, dto), HttpStatus.CREATED);
     }
 

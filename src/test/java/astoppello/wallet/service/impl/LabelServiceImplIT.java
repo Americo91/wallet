@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 
 import java.util.List;
@@ -16,8 +17,8 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
-@Import({LabelServiceImpl.class, LabelMapperImpl.class, TrackingMapperImpl.class, DateMapper.class})
-class LabelServiceImplTestIT {
+@ComponentScan(basePackages = {"astoppello.wallet.service.impl", "astoppello.wallet.mapper"})
+class LabelServiceImplIT {
 
     public static final String LABEL_NAME = "LabelName";
     @Autowired

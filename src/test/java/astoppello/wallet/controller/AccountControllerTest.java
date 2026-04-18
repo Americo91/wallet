@@ -118,7 +118,24 @@ class AccountControllerTest {
                         .content(s))
                 .andExpect(status().isCreated());
         then(accountService).should().save(any(), any());
+    }
 
+    @Test
+    void handlePost_nullInstitutionID() throws Exception {
+        given(accountService.save(any(), any())).willReturn(accountDto);
+        String s = objectMapper.writeValueAsString(AccountDto.builder()
+                .name(accountDto.getName())
+                .currency(Currency.EUR)
+                .balance(BigDecimal.ZERO)
+                .accountType(AccountTypeEnum.LIQUIDITY)
+                .build());
+
+        mockMvc.perform(post("/api/v1/institutions/" + null + "/accounts/")
+                        .accept(MediaType.APPLICATION_JSON)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(s))
+                .andExpect(status().isBadRequest());
+        then(accountService).shouldHaveNoInteractions();
     }
 
     @Test

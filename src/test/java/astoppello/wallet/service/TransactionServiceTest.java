@@ -207,7 +207,7 @@ class TransactionServiceTest {
         when(repository.save(transaction)).thenReturn(transaction);
         when(mapper.toDto(transaction)).thenReturn(updatedDto);
 
-        TransactionDto result = service.update(transactionId, null, null, updateDto);
+        TransactionDto result = service.update(transactionId, null, null, null, updateDto);
 
         assertThat(result.getId()).isEqualTo(transactionId);
         verify(repository).findById(transactionId);
@@ -229,7 +229,7 @@ class TransactionServiceTest {
         when(repository.save(transaction)).thenReturn(transaction);
         when(mapper.toDto(transaction)).thenReturn(updatedDto);
 
-        service.update(transactionId, newCategoryId, Set.of(labelId), TransactionDto.builder().build());
+        service.update(transactionId, null, newCategoryId, Set.of(labelId), TransactionDto.builder().build());
 
         verify(categoryRepository).findById(newCategoryId);
         verify(labelRepository).findAllById(Set.of(labelId));
@@ -241,7 +241,7 @@ class TransactionServiceTest {
     void update_notFound() {
         when(repository.findById(transactionId)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> service.update(transactionId, null, null, dto))
+        assertThatThrownBy(() -> service.update(transactionId, null, null, null, dto))
                 .isInstanceOf(NotFoundException.class);
         verifyNoInteractions(mapper);
     }

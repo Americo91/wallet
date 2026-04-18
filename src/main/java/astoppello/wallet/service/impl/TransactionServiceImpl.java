@@ -1,10 +1,6 @@
 package astoppello.wallet.service.impl;
 
-import astoppello.wallet.domain.Account;
-import astoppello.wallet.domain.Category;
-import astoppello.wallet.domain.Label;
-import astoppello.wallet.domain.Transaction;
-import astoppello.wallet.domain.TrackingDate;
+import astoppello.wallet.domain.*;
 import astoppello.wallet.dto.TransactionDto;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.TransactionMapper;
@@ -17,6 +13,8 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -54,11 +52,14 @@ public class TransactionServiceImpl implements TransactionService {
         domain.setCategory(category);
         domain.setLabels(resolveLabels(labelIds));
         domain.setTrackingDate(TrackingDate.now());
+        if (domain.getDate() == null) {
+            domain.setDate(Timestamp.valueOf(LocalDateTime.now()));
+        }
         return mapper.toDto(repository.save(domain));
     }
 
     @Override
-    public TransactionDto update(UUID id, UUID categoryId, Set<UUID> labelIds, TransactionDto dto) {
+    public TransactionDto update(UUID id, UUID accountId, UUID categoryId, Set<UUID> labelIds, TransactionDto dto) {
         Transaction transaction = getById(id);
 
         if (dto.getType() != null) {
@@ -80,6 +81,11 @@ public class TransactionServiceImpl implements TransactionService {
             Category category = categoryRepository.findById(categoryId)
                     .orElseThrow(() -> new NotFoundException(Category.class, categoryId));
             transaction.setCategory(category);
+        }
+        if (accountId != null) {
+            Account account = accountRepository.findById(accountId)
+                    .orElseThrow(() -> new NotFoundException(Account.class, accountId));
+            transaction.setAccount(account);
         }
         if (labelIds != null) {
             transaction.setLabels(resolveLabels(labelIds));
