@@ -11,6 +11,7 @@ import astoppello.wallet.repository.TransactionRepository;
 import astoppello.wallet.service.TransactionService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.stereotype.Service;
 
 import java.sql.Timestamp;
@@ -41,9 +42,10 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     @Override
-    public TransactionDto save(UUID accountId, UUID categoryId, Set<UUID> labelIds, TransactionDto dto) {
-        Account account = accountRepository.findById(accountId)
-                .orElseThrow(() -> new NotFoundException(Account.class, accountId));
+    public TransactionDto save(UUID accountId, TransactionDto dto) {
+        UUID categoryId = dto.getCategory();
+        Set<UUID> labelIds = dto.getLabels();
+        Account account = getAccount(accountId);
         Category category = categoryRepository.findById(categoryId)
                 .orElseThrow(() -> new NotFoundException(Category.class, categoryId));
 
@@ -59,8 +61,11 @@ public class TransactionServiceImpl implements TransactionService {
     }
 
     @Override
-    public TransactionDto update(UUID id, UUID accountId, UUID categoryId, Set<UUID> labelIds, TransactionDto dto) {
+    public TransactionDto update(UUID id, TransactionDto dto) {
         Transaction transaction = getById(id);
+        UUID categoryId = dto.getCategory();
+        UUID accountId = dto.getAccount();
+        Set<UUID> labelIds = dto.getLabels();
 
         if (dto.getType() != null) {
             transaction.setType(dto.getType());
@@ -83,11 +88,10 @@ public class TransactionServiceImpl implements TransactionService {
             transaction.setCategory(category);
         }
         if (accountId != null) {
-            Account account = accountRepository.findById(accountId)
-                    .orElseThrow(() -> new NotFoundException(Account.class, accountId));
+            Account account = getAccount(accountId);
             transaction.setAccount(account);
         }
-        if (labelIds != null) {
+        if (CollectionUtils.isNotEmpty(labelIds)) {
             transaction.setLabels(resolveLabels(labelIds));
         }
         transaction.getTrackingDate().touch();
@@ -99,6 +103,11 @@ public class TransactionServiceImpl implements TransactionService {
         repository.deleteById(id);
     }
 
+    @Override
+    public List<TransactionDto> getAllByAccount(UUID accountId) {
+        return repository.findByAccount(getAccount(accountId)).stream().map(mapper::toDto).toList();
+    }
+
     private @NonNull Transaction getById(UUID id) {
         return repository.findById(id).orElseThrow(() -> new NotFoundException(Transaction.class, id));
     }
@@ -108,5 +117,10 @@ public class TransactionServiceImpl implements TransactionService {
             return new HashSet<>();
         }
         return new HashSet<>(labelRepository.findAllById(labelIds));
+    }
+
+    private Account getAccount(UUID accountId) {
+        return accountRepository.findById(accountId)
+                .orElseThrow(() -> new NotFoundException(Account.class, accountId));
     }
 }

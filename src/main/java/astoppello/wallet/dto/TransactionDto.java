@@ -42,7 +42,7 @@ public class TransactionDto {
     @JsonFormat(pattern = "yyyy-MM-dd", shape = JsonFormat.Shape.STRING)
     private LocalDate date;
 
-    @Null
+    @NotNull
     private UUID category;
 
     @Nullable
@@ -51,7 +51,7 @@ public class TransactionDto {
     @Nullable
     private String merchant;
 
-    @Null
+    @Nullable
     private Set<UUID> labels;
 
     @JsonUnwrapped

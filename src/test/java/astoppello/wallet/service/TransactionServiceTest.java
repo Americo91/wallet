@@ -132,13 +132,15 @@ class TransactionServiceTest {
                 .build();
         TransactionDto savedDto = TransactionDto.builder().id(transactionId).build();
 
+        dto.setCategory(categoryId);
+
         when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
         when(categoryRepository.findById(categoryId)).thenReturn(Optional.of(category));
         when(mapper.toDomain(dto)).thenReturn(unsaved);
         when(repository.save(unsaved)).thenReturn(transaction);
         when(mapper.toDto(transaction)).thenReturn(savedDto);
 
-        TransactionDto result = service.save(accountId, categoryId, Set.of(), dto);
+        TransactionDto result = service.save(accountId, dto);
 
         assertThat(result.getId()).isEqualTo(transactionId);
         verify(accountRepository).findById(accountId);
@@ -152,7 +154,7 @@ class TransactionServiceTest {
     void save_accountNotFound() {
         when(accountRepository.findById(accountId)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> service.save(accountId, categoryId, Set.of(), dto))
+        assertThatThrownBy(() -> service.save(accountId, dto))
                 .isInstanceOf(NotFoundException.class);
         verifyNoInteractions(mapper, repository, categoryRepository);
     }
@@ -162,7 +164,8 @@ class TransactionServiceTest {
         when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
         when(categoryRepository.findById(categoryId)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> service.save(accountId, categoryId, Set.of(), dto))
+        dto.setCategory(categoryId);
+        assertThatThrownBy(() -> service.save(accountId, dto))
                 .isInstanceOf(NotFoundException.class);
         verifyNoInteractions(mapper, repository);
     }
@@ -179,6 +182,9 @@ class TransactionServiceTest {
                 .build();
         TransactionDto savedDto = TransactionDto.builder().id(transactionId).labels(Set.of(labelId)).build();
 
+        dto.setCategory(categoryId);
+        dto.setLabels(Set.of(labelId));
+
         when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
         when(categoryRepository.findById(categoryId)).thenReturn(Optional.of(category));
         when(labelRepository.findAllById(Set.of(labelId))).thenReturn(List.of(label));
@@ -186,7 +192,7 @@ class TransactionServiceTest {
         when(repository.save(unsaved)).thenReturn(transaction);
         when(mapper.toDto(transaction)).thenReturn(savedDto);
 
-        TransactionDto result = service.save(accountId, categoryId, Set.of(labelId), dto);
+        TransactionDto result = service.save(accountId, dto);
 
         assertThat(result.getLabels()).contains(labelId);
         verify(labelRepository).findAllById(Set.of(labelId));
@@ -207,7 +213,7 @@ class TransactionServiceTest {
         when(repository.save(transaction)).thenReturn(transaction);
         when(mapper.toDto(transaction)).thenReturn(updatedDto);
 
-        TransactionDto result = service.update(transactionId, null, null, null, updateDto);
+        TransactionDto result = service.update(transactionId, updateDto);
 
         assertThat(result.getId()).isEqualTo(transactionId);
         verify(repository).findById(transactionId);
@@ -229,7 +235,7 @@ class TransactionServiceTest {
         when(repository.save(transaction)).thenReturn(transaction);
         when(mapper.toDto(transaction)).thenReturn(updatedDto);
 
-        service.update(transactionId, null, newCategoryId, Set.of(labelId), TransactionDto.builder().build());
+        service.update(transactionId, TransactionDto.builder().category(newCategoryId).labels(Set.of(labelId)).build());
 
         verify(categoryRepository).findById(newCategoryId);
         verify(labelRepository).findAllById(Set.of(labelId));
@@ -241,7 +247,7 @@ class TransactionServiceTest {
     void update_notFound() {
         when(repository.findById(transactionId)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> service.update(transactionId, null, null, null, dto))
+        assertThatThrownBy(() -> service.update(transactionId, dto))
                 .isInstanceOf(NotFoundException.class);
         verifyNoInteractions(mapper);
     }
@@ -250,5 +256,16 @@ class TransactionServiceTest {
     void delete() {
         service.delete(transactionId);
         verify(repository).deleteById(transactionId);
+    }
+
+    @Test
+    void getAllByAccount() {
+        when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
+        when(repository.findByAccount(account)).thenReturn(List.of(transaction));
+
+        service.getAllByAccount(accountId);
+        verify(accountRepository).findById(accountId);
+        verify(repository).findByAccount(account);
+        verify(mapper).toDto(transaction);
     }
 }
