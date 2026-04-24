@@ -38,7 +38,6 @@ public class TransactionDto {
     @NotNull
     private BigDecimal amount;
 
-    @NotNull
     @JsonFormat(pattern = "yyyy-MM-dd", shape = JsonFormat.Shape.STRING)
     private LocalDate date;
 

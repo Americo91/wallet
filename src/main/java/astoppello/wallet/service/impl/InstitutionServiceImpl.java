@@ -11,6 +11,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.jspecify.annotations.NonNull;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -28,7 +29,8 @@ public class InstitutionServiceImpl implements InstitutionService {
     public InstitutionDto save(InstitutionDto dto) {
         Institution domain = mapper.toDomain(dto);
         domain.setTrackingDate(TrackingDate.now());
-        return mapper.toDto(repository.save(domain));
+        Institution saved = repository.save(domain);
+        return mapper.toDto(saved);
     }
 
     @Override
@@ -43,7 +45,8 @@ public class InstitutionServiceImpl implements InstitutionService {
         }
         byId.getTrackingDate().touch();
 
-        return mapper.toDto(repository.save(byId));
+        Institution saved = repository.save(byId);
+        return mapper.toDto(saved);
     }
 
     @Override
