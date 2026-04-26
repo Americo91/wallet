@@ -8,12 +8,14 @@ import astoppello.wallet.repository.AccountRepository;
 import astoppello.wallet.repository.CategoryRepository;
 import astoppello.wallet.repository.LabelRepository;
 import astoppello.wallet.repository.TransactionRepository;
+import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.service.TransactionService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -57,7 +59,9 @@ public class TransactionServiceImpl implements TransactionService {
         if (domain.getDate() == null) {
             domain.setDate(Timestamp.valueOf(LocalDateTime.now()));
         }
-        return mapper.toDto(repository.save(domain));
+        Transaction saved = repository.save(domain);
+        applyDelta(account, computeDelta(saved.getType(), saved.getAmount()));
+        return mapper.toDto(saved);
     }
 
     @Override
@@ -66,6 +70,11 @@ public class TransactionServiceImpl implements TransactionService {
         UUID categoryId = dto.getCategory();
         UUID accountId = dto.getAccount();
         Set<UUID> labelIds = dto.getLabels();
+
+        // Capture old state for balance reversal
+        Account oldAccount = transaction.getAccount();
+        TransactionType oldType = transaction.getType();
+        BigDecimal oldAmount = transaction.getAmount();
 
         if (dto.getType() != null) {
             transaction.setType(dto.getType());
@@ -95,17 +104,34 @@ public class TransactionServiceImpl implements TransactionService {
             transaction.setLabels(resolveLabels(labelIds));
         }
         transaction.getTrackingDate().touch();
-        return mapper.toDto(repository.save(transaction));
+        Transaction saved = repository.save(transaction);
+
+        // Reverse old balance, apply new
+        applyDelta(oldAccount, computeDelta(oldType, oldAmount).negate());
+        applyDelta(saved.getAccount(), computeDelta(saved.getType(), saved.getAmount()));
+
+        return mapper.toDto(saved);
     }
 
     @Override
     public void delete(UUID id) {
-        repository.deleteById(id);
+        Transaction transaction = getById(id);
+        applyDelta(transaction.getAccount(), computeDelta(transaction.getType(), transaction.getAmount()).negate());
+        repository.delete(transaction);
     }
 
     @Override
     public List<TransactionDto> getAllByAccount(UUID accountId) {
         return repository.findByAccount(getAccount(accountId)).stream().map(mapper::toDto).toList();
+    }
+
+    private void applyDelta(Account account, BigDecimal delta) {
+        account.setBalance(account.getBalance().add(delta));
+        accountRepository.save(account);
+    }
+
+    private BigDecimal computeDelta(TransactionType type, BigDecimal amount) {
+        return type == TransactionType.INCOME ? amount : amount.negate();
     }
 
     private @NonNull Transaction getById(UUID id) {

@@ -17,7 +17,6 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@EntityListeners(astoppello.wallet.event.TransactionEntityListener.class)
 @Table(name = "transactions")
 public class Transaction {
 

@@ -67,7 +67,7 @@ class TransactionServiceTest {
         accountId = UUID.randomUUID();
         categoryId = UUID.randomUUID();
 
-        account = Account.builder().id(accountId).name("Checking").build();
+        account = Account.builder().id(accountId).name("Checking").balance(BigDecimal.ZERO).build();
         category = Category.builder().id(categoryId).name("Food").build();
 
         transaction = Transaction.builder()
@@ -147,7 +147,8 @@ class TransactionServiceTest {
         verify(categoryRepository).findById(categoryId);
         verify(mapper).toDomain(dto);
         verify(repository).save(unsaved);
-        verify(mapper).toDto(transaction);
+        assertThat(account.getBalance()).isEqualByComparingTo(BigDecimal.TEN.negate());
+        verify(accountRepository).save(account);
     }
 
     @Test
@@ -218,6 +219,9 @@ class TransactionServiceTest {
         assertThat(result.getId()).isEqualTo(transactionId);
         verify(repository).findById(transactionId);
         verify(repository).save(transaction);
+        // Old EXPENSE(10) reversed (+10), new INCOME(1) applied (+1) = +11
+        assertThat(account.getBalance()).isEqualByComparingTo(new BigDecimal("11"));
+        verify(accountRepository, times(2)).save(account);
         verifyNoInteractions(categoryRepository, labelRepository);
     }
 
@@ -254,8 +258,14 @@ class TransactionServiceTest {
 
     @Test
     void delete() {
+        when(repository.findById(transactionId)).thenReturn(Optional.of(transaction));
+
         service.delete(transactionId);
-        verify(repository).deleteById(transactionId);
+
+        // EXPENSE(10) reversed: balance += 10
+        assertThat(account.getBalance()).isEqualByComparingTo(BigDecimal.TEN);
+        verify(accountRepository).save(account);
+        verify(repository).delete(transaction);
     }
 
     @Test
