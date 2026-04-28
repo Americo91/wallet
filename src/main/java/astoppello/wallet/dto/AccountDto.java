@@ -40,6 +40,10 @@ public class AccountDto {
     @NotNull
     private Currency currency;
 
+    private Boolean excludeFromStats;
+
+    private Boolean archive;
+
     @JsonUnwrapped
     @Valid
     private TrackingDateDto trackingDate;

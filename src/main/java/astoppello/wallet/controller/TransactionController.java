@@ -1,6 +1,7 @@
 package astoppello.wallet.controller;
 
 import astoppello.wallet.dto.TransactionDto;
+import astoppello.wallet.dto.TransferDto;
 import astoppello.wallet.service.TransactionService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
@@ -19,6 +20,7 @@ public class TransactionController {
     public static final String TRANSACTION_BASE_URL = "/api/v1/transactions";
     public static final String TRANSACTION_ID_PATH = "/api/v1/transactions/{transactionId}";
     public static final String ACCOUNT_TRANSACTION_BASE_URL = "/api/v1/accounts/{accountId}/transactions";
+    public static final String TRANSFER_URL = "/api/v1/accounts/{fromAccountId}/transfer/{toAccountId}";
 
     private final TransactionService transactionService;
 
@@ -56,5 +58,13 @@ public class TransactionController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void handleDelete(@PathVariable("transactionId") UUID id) {
         transactionService.delete(id);
+    }
+
+    @PostMapping(TRANSFER_URL)
+    public ResponseEntity<List<TransactionDto>> handleTransfer(
+            @PathVariable("fromAccountId") @NotNull UUID fromAccountId,
+            @PathVariable("toAccountId") @NotNull UUID toAccountId,
+            @RequestBody @Valid TransferDto dto) {
+        return new ResponseEntity<>(transactionService.transfer(fromAccountId, toAccountId, dto), HttpStatus.CREATED);
     }
 }

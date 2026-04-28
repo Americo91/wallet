@@ -46,7 +46,7 @@ public class Transaction {
 
     private String description;
 
-    private String merchant;
+    private String payee;
 
     @ManyToMany
     @JoinTable(name = "transaction_label", joinColumns = @JoinColumn(name = "transaction_id"), inverseJoinColumns = @JoinColumn(name = "label_id"))

@@ -6,6 +6,7 @@ import astoppello.wallet.domain.Label;
 import astoppello.wallet.domain.Transaction;
 import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.TransactionDto;
+import astoppello.wallet.dto.TransferDto;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.TransactionMapper;
 import astoppello.wallet.model.TransactionType;
@@ -206,7 +207,7 @@ class TransactionServiceTest {
                 .amount(BigDecimal.ONE)
                 .date(LocalDate.now())
                 .description("new desc")
-                .merchant("Shop")
+                .payee("Shop")
                 .build();
         TransactionDto updatedDto = TransactionDto.builder().id(transactionId).build();
 
@@ -277,5 +278,78 @@ class TransactionServiceTest {
         verify(accountRepository).findById(accountId);
         verify(repository).findByAccount(account);
         verify(mapper).toDto(transaction);
+    }
+
+    @Test
+    void transfer() {
+        UUID toAccountId = UUID.randomUUID();
+        Account toAccount = Account.builder().id(toAccountId).name("Savings").balance(BigDecimal.ZERO).build();
+        Category transferCategory = Category.builder().id(UUID.randomUUID()).name("Transfer").build();
+
+        TransferDto transferDto = TransferDto.builder()
+                .amount(BigDecimal.valueOf(100))
+                .date(LocalDate.now())
+                .description("Monthly savings")
+                .build();
+
+        TransactionDto expenseDto = TransactionDto.builder().id(UUID.randomUUID()).type(TransactionType.EXPENSE).build();
+        TransactionDto incomeDto = TransactionDto.builder().id(UUID.randomUUID()).type(TransactionType.INCOME).build();
+
+        when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
+        when(accountRepository.findById(toAccountId)).thenReturn(Optional.of(toAccount));
+        when(categoryRepository.findByName("Transfer")).thenReturn(List.of(transferCategory));
+        when(repository.save(any(Transaction.class))).thenAnswer(invocation -> invocation.getArgument(0));
+        when(mapper.toDto(any(Transaction.class))).thenReturn(expenseDto, incomeDto);
+
+        List<TransactionDto> result = service.transfer(accountId, toAccountId, transferDto);
+
+        assertThat(result).hasSize(2);
+        assertThat(result.get(0).getType()).isEqualTo(TransactionType.EXPENSE);
+        assertThat(result.get(1).getType()).isEqualTo(TransactionType.INCOME);
+        assertThat(account.getBalance()).isEqualByComparingTo(BigDecimal.valueOf(-100));
+        assertThat(toAccount.getBalance()).isEqualByComparingTo(BigDecimal.valueOf(100));
+        verify(repository, times(2)).save(any(Transaction.class));
+        verify(accountRepository).save(account);
+        verify(accountRepository).save(toAccount);
+    }
+
+    @Test
+    void transfer_fromAccountNotFound() {
+        UUID toAccountId = UUID.randomUUID();
+        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
+
+        when(accountRepository.findById(accountId)).thenReturn(Optional.empty());
+
+        assertThatThrownBy(() -> service.transfer(accountId, toAccountId, transferDto))
+                .isInstanceOf(NotFoundException.class);
+        verifyNoInteractions(repository, mapper);
+    }
+
+    @Test
+    void transfer_toAccountNotFound() {
+        UUID toAccountId = UUID.randomUUID();
+        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
+
+        when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
+        when(accountRepository.findById(toAccountId)).thenReturn(Optional.empty());
+
+        assertThatThrownBy(() -> service.transfer(accountId, toAccountId, transferDto))
+                .isInstanceOf(NotFoundException.class);
+        verifyNoInteractions(repository, mapper);
+    }
+
+    @Test
+    void transfer_categoryNotFound() {
+        UUID toAccountId = UUID.randomUUID();
+        Account toAccount = Account.builder().id(toAccountId).name("Savings").balance(BigDecimal.ZERO).build();
+        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
+
+        when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
+        when(accountRepository.findById(toAccountId)).thenReturn(Optional.of(toAccount));
+        when(categoryRepository.findByName("Transfer")).thenReturn(List.of());
+
+        assertThatThrownBy(() -> service.transfer(accountId, toAccountId, transferDto))
+                .isInstanceOf(NotFoundException.class);
+        verifyNoInteractions(repository, mapper);
     }
 }

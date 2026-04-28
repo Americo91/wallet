@@ -1,0 +1,992 @@
+{
+  "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+  "accountName": "Revolut JPY",
+  "currency": "JPY",
+  "exportedAt": "2026-04-27",
+  "totalRecords": 49,
+  "records": [
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "b08b044c-4e76-4a4a-95f7-4bb434a38151",
+      "recordDate": "2026-01-20T17:29:11Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -5437.86
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -29.5443303
+      },
+      "category": {
+        "name": "Missing"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "43603b56-4bac-4091-aa3e-3fa8d3f91927",
+      "recordDate": "2025-11-05T05:26:30Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -800
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -4.3464643
+      },
+      "category": {
+        "name": "Others"
+      },
+      "note": "Luggage locker",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "8144a986-5d25-404a-86a0-59e51e593f3c",
+      "recordDate": "2025-11-05T02:44:01Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -28340
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -153.9734969
+      },
+      "category": {
+        "name": "Long distance"
+      },
+      "note": "Treno Kyoto Tokyo",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "4bfec5c3-4cbe-4cd4-be4f-014004478d98",
+      "recordDate": "2025-11-04T12:44:01Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -7736
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -42.0303095
+      },
+      "category": {
+        "name": "Shopping"
+      },
+      "note": "Don Quijotte",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "487fa568-3b41-472a-a2bf-3206c9c63653",
+      "recordDate": "2025-11-03T07:21:34Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -6000
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -32.5984821
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "One Piece",
+      "payee": "Andrea",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "e5399a37-c9c7-4f68-a3fd-b94b9e7ff92c",
+      "recordDate": "2025-11-03T06:36:29Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -1870
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.1598602
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Portamonete",
+      "payee": "Nonna",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "7ad60f78-b7d2-4497-bff7-9342fc52dc5d",
+      "recordDate": "2025-11-01T04:20:14Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -2300
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -13.19
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "note": "Ristorante Nara",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "e98c271e-1275-4756-96df-67724d68b869",
+      "recordDate": "2025-10-31T11:24:13Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -14550
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -79.051319
+      },
+      "category": {
+        "name": "Shopping"
+      },
+      "note": "Pokémon peluche",
+      "payee": "Pokémon Center",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "6c3422e9-cb09-45d0-9c53-9230d74b138f",
+      "recordDate": "2025-10-30T09:14:15Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -600
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -3.44
+      },
+      "category": {
+        "name": "Bar, cafe"
+      },
+      "note": "Acqua",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "0170cf35-231b-4e83-a9ae-61e1e53cc4e1",
+      "recordDate": "2025-10-29T03:11:08Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -2290
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12.441754
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Puzzle kyoto",
+      "payee": "Megi",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "fb0cbce2-cb71-4e59-9d5e-cdddbcf8764a",
+      "recordDate": "2025-10-28T12:46:02Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -1346
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -7.72
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "note": "Kombini",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "ee0142c7-a209-4031-b734-e29a0246494b",
+      "recordDate": "2025-10-28T06:16:40Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -4000
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -22.93
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Disneyland biglietto principessa",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "8890e0eb-e784-43fe-8fea-fdbb44eb5c21",
+      "recordDate": "2025-10-28T04:50:24Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -106800
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -612.32
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Hotel Osaka",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "994577f0-9a72-494b-8064-f7ab27fcecb0",
+      "recordDate": "2025-10-28T02:55:53Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -5000
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -28.67
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Disneyland premium pass",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "73e55091-2a92-40dd-b07b-521c5a75503a",
+      "recordDate": "2025-10-27T23:32:49Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -1898
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.88
+      },
+      "category": {
+        "name": "Bar, cafe"
+      },
+      "note": "Kombini",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "89b4147a-3c9e-46da-ade7-522755505e26",
+      "recordDate": "2025-10-27T13:56:34Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -3872
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -22.2
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "note": "Cinese",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "85b34925-53e6-46ee-9888-1ba0ffa60354",
+      "recordDate": "2025-10-27T12:35:21Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -1500
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.1496205
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Maglietta One piece",
+      "payee": "Andrea",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "0bf003d3-183b-44b0-8a88-7104773d3023",
+      "recordDate": "2025-10-27T12:27:19Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -4873
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -26.4754005
+      },
+      "category": {
+        "name": "Clothes & shoes"
+      },
+      "note": "Uniqlo",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "18fb07a6-c379-4c0b-a766-58ff7f7e9c4c",
+      "recordDate": "2025-10-27T04:56:56Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -7000
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -40.13
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Sky tree",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "ee306db5-9faa-4a2b-ab0d-985a5123c9bc",
+      "recordDate": "2025-10-27T03:32:12Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -3100
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -17.77
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Chopsticks",
+      "payee": "Danilo Ilda",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "51759714-7ab7-412e-8dbd-489933498b19",
+      "recordDate": "2025-10-27T03:30:09Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -5100
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -29.24
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Chopsticks",
+      "payee": "Andrea",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "f0bf96fd-61cb-42ae-808c-369af7a77efa",
+      "recordDate": "2025-10-27T01:20:24Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -5000
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -28.67
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Chopsticks",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "defd3526-f8c7-4266-b5f3-f35b8f713588",
+      "recordDate": "2025-10-27T01:19:56Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -1309
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -7.5
+      },
+      "category": {
+        "name": "Bar, cafe"
+      },
+      "note": "Komboni",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "4aa53d92-02e1-480c-905c-a0b911ee18ab",
+      "recordDate": "2025-10-26T11:59:30Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -2530
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -13.7456933
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "One Piece",
+      "payee": "Andrea",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "7c6dfc0f-e1ef-4615-bbd0-779f908e20ea",
+      "recordDate": "2025-10-26T11:03:57Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -3600
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -20.64
+      },
+      "category": {
+        "name": "Bar, cafe"
+      },
+      "note": "Shibuya bar",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "bda66257-3519-40bf-b67f-1599718b22e1",
+      "recordDate": "2025-10-26T08:05:44Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -7799
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -44.71
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "note": "Sushi nastro",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "5bf9cd64-5eac-4480-a5db-4cc3a269da40",
+      "recordDate": "2025-10-26T03:53:29Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -753
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -4.0911095
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Panda",
+      "payee": "Dean",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "38bfcb01-9069-4636-96bc-f081516e3d9f",
+      "recordDate": "2025-10-26T00:55:42Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -1318
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -7.56
+      },
+      "category": {
+        "name": "Bar, cafe"
+      },
+      "note": "Combini",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "e5311386-febe-48d6-a2d4-aa2e7e2aa5c7",
+      "recordDate": "2025-10-25T13:57:52Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -28.94
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.17
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Don Quijotte",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "69eed362-a8c3-4d1f-9457-4921fe862d34",
+      "recordDate": "2025-10-25T13:19:22Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -5110
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -29.3
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "note": "Ginzo sushi",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "96ff1e1b-3505-4fee-a831-72be03373675",
+      "recordDate": "2025-10-25T09:31:52Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -2116
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12.13
+      },
+      "category": {
+        "name": "Bar, cafe"
+      },
+      "note": "Combini",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "e054632a-8d17-49e3-b262-fec4b43058ef",
+      "recordDate": "2025-10-25T07:36:21Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -3600
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -20.64
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Foto Harry Potter",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "a8f56380-4e6d-4c09-8156-d81077d10e5d",
+      "recordDate": "2025-10-25T05:34:20Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -4360
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -25
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "note": "Harry Potter caffe",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "88ef7849-5aea-4557-b234-ca4611f31eda",
+      "recordDate": "2025-10-25T01:46:53Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -6200
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -35.55
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "note": "Harry Potter breakfast",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "f497af3f-95a2-49be-b9a3-4564b3754b72",
+      "recordDate": "2025-10-24T14:20:34Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": 87208.8
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 473.8124169
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "3725abda-83bc-4ed9-9763-54ebc18a3660",
+      "recordDate": "2025-10-24T09:36:25Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -2920
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -16.74
+      },
+      "category": {
+        "name": "Active sport, fitness"
+      },
+      "note": "Freccette",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "6eaab6fc-834c-4c4d-83a2-e1f8f55f5db9",
+      "recordDate": "2025-10-24T07:13:45Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -1850
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.61
+      },
+      "category": {
+        "name": "Bar, cafe"
+      },
+      "note": "Street food",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "ad6faf22-73df-4803-86c1-0a4afa602fe2",
+      "recordDate": "2025-10-24T06:15:05Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -3876
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -22.22
+      },
+      "category": {
+        "name": "Bar, cafe"
+      },
+      "note": "Frutta gommosa",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "63ab0c40-b0fa-400a-b5e8-ab27ddc302f9",
+      "recordDate": "2025-10-24T04:00:57Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -5097
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -29.22
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "note": "Sushi",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "f63891ee-22e0-4d42-9eac-7cec5e7c8897",
+      "recordDate": "2025-10-23T04:34:18Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -1452
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.32
+      },
+      "category": {
+        "name": "Bar, cafe"
+      },
+      "note": "Spremuta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "10fcc53e-a101-45a9-9645-b59c93fe2710",
+      "recordDate": "2025-10-23T04:33:43Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -1400
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.03
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Tassa di soggiorno",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "c472412a-4957-4431-b0a2-5e890866f2d0",
+      "recordDate": "2025-10-19T16:51:13Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": 174500
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 1000
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "53639473-1534-4e2d-8231-e33b376f6dfd",
+      "recordDate": "2025-10-18T10:43:52Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -1462
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.3821816
+      },
+      "category": {
+        "name": "Groceries"
+      },
+      "note": "auchan",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "db3c4f0a-cc45-412f-9dc2-cede4b8ef570",
+      "recordDate": "2025-10-17T10:44:38Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -167904
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -962.6551449
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Hotel Tokyo",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "e7b40309-b7e1-48af-bfae-20a786f98824",
+      "recordDate": "2025-10-16T17:13:10Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": 175238
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 1000
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "48b33956-645a-4184-83eb-b6366352a6a4",
+      "recordDate": "2025-09-20T09:46:22Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -17480
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -100.2192439
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Harry Potter",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "f25bd122-be8d-4a51-8c95-09e973cbcf48",
+      "recordDate": "2025-09-20T09:45:22Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": 17298
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 100
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "b6cb34ac-815c-44e2-a0d8-df73f26f4a8f",
+      "recordDate": "2025-09-20T08:31:22Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": -11668
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -66.8969187
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Capsule hotel tokyo",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "4dae9323-ec72-4a54-a533-68c00af1be63",
+      "id": "2d354c49-8757-4d99-b9af-bc76feb34b15",
+      "recordDate": "2025-09-20T08:30:24Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "JPY",
+        "value": 19001
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 110
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    }
+  ]
+}

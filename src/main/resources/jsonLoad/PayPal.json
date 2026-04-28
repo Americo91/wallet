@@ -1,0 +1,4877 @@
+{
+  "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+  "accountName": "PayPal",
+  "exportedAt": "2026-04-27",
+  "totalRecords": 247,
+  "records": [
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "5d7f1687-36ca-42b3-b687-56760c58627e",
+      "recordDate": "2025-04-21T17:36:18Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -45
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -45
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "Pokemon",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "bb926008-7805-45bc-ad65-793b6c1c79f2",
+      "recordDate": "2025-04-15T08:27:04Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 45
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 45
+      },
+      "category": {
+        "name": "Refunds (tax, purchase)"
+      },
+      "note": "Ristorante Miramare",
+      "payer": "Nico",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f5bf708f-972c-4390-9d6d-b0157166aa6b",
+      "recordDate": "2024-12-01T08:39:37Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.06
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -4.06
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "Pokemon",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "bde66ac5-1ef5-4bb6-8f2d-fe8b68b9fbc2",
+      "recordDate": "2024-11-25T20:23:08Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.99
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "Pokemon",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "962e433d-8838-4c02-b0d9-5f96bfdd5909",
+      "recordDate": "2024-11-23T07:58:43Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -9.99
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "Pokemon",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "78f2cea5-5ffc-4db0-836b-dd354de5166f",
+      "recordDate": "2024-11-23T07:58:23Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -14.99
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "Pokemon",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "4b40e845-55a7-47ca-ba14-befb286466ce",
+      "recordDate": "2024-11-13T07:29:04Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -9.99
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "Pokemon",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "13a95afa-1037-47e4-b412-6940bd423094",
+      "recordDate": "2024-11-11T07:10:25Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -2.99
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "Pokemon",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "4eab7983-6137-5b0f-9b85-75ac12f00486",
+      "recordDate": "2024-11-02T11:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Radio rossonera",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9ecf3564-12ba-4b0d-99db-8972d6218b6a",
+      "recordDate": "2024-10-14T20:45:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12.79
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12.79
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "TCG",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0c5d69b6-cd43-57c2-b831-698ae18c5516",
+      "recordDate": "2024-10-02T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Radio rossonera",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "6789039a-eb12-55ca-a6de-4bac050a1101",
+      "recordDate": "2024-09-02T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Radio rossonera",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "017f5f8c-9702-4748-b2b4-4dbff9630759",
+      "recordDate": "2024-08-16T06:35:47Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -11.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -11.99
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "Squad buster",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7096a0ef-b311-57cc-be7c-f3976fca3ed6",
+      "recordDate": "2024-08-02T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Radio rossonera",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "91a6e6af-f94e-4971-bb52-a44c2ad83e62",
+      "recordDate": "2024-07-25T18:30:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -3.84
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -3.84
+      },
+      "category": {
+        "name": "Phone, cell phones"
+      },
+      "note": "esim",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a18cfe2a-9da6-454b-a83a-2672f2bf6e37",
+      "recordDate": "2024-07-24T14:52:27Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 80.59
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 80.59
+      },
+      "category": {
+        "name": "Splitwise"
+      },
+      "note": "Jiang Spese Nizza",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "8523ef0b-7ae5-4db1-a34f-4c0aa8225294",
+      "recordDate": "2024-06-14T08:23:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -7.52
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -7.52
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "Supercell",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "3d252a51-3880-56b9-9ea1-79ffe1af312a",
+      "recordDate": "2024-06-02T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Radio rossonera",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "aed4e30c-5cfe-5e57-9e3f-3f94ce28a4f5",
+      "recordDate": "2024-05-15T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -2.5
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "00cca653-43f0-5473-ac68-73755b76649c",
+      "recordDate": "2024-05-02T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "46d06dd3-2079-4928-b72f-e990a37c7d16",
+      "recordDate": "2024-04-29T08:50:56Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 12
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 12
+      },
+      "category": {
+        "name": "Refunds (tax, purchase)"
+      },
+      "note": "La bussola pinsa",
+      "payer": "Nico",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "e5c79045-82fd-44bb-b324-6072f7898728",
+      "recordDate": "2023-10-01T15:28:43Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.05
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -9.05
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a8428a33-6b45-50e8-bcc0-96e7a2f6d6c7",
+      "recordDate": "2023-09-15T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -2.5
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "71c2e41e-074a-40cd-b3d4-e918b2c603ba",
+      "recordDate": "2023-09-01T17:30:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -7.28
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -7.28
+      },
+      "category": {
+        "name": "Giochi"
+      },
+      "note": "One piece game",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d070f5b5-1c7f-5b18-a23a-b845e4385b64",
+      "recordDate": "2023-08-17T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -2.5
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "555ea7c3-e41e-4995-a48a-8bde8a20b174",
+      "recordDate": "2023-08-04T06:15:30Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo Sebastian",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "79ab7a26-02df-5d4c-a972-04cbdbe21665",
+      "recordDate": "2023-07-15T10:00:19Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "582b1396-63be-4f51-a6b5-7936a182920e",
+      "recordDate": "2023-06-24T08:59:07Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -28
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -28
+      },
+      "category": {
+        "name": "Public transport"
+      },
+      "note": "Fiumicino Roma Termini",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0fe3aa23-8de5-5d24-88d5-9821af98e3b7",
+      "recordDate": "2023-06-19T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "dd6430f3-c29b-45be-b7a2-d10229b3dacb",
+      "recordDate": "2023-06-12T20:47:36Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 20
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 20
+      },
+      "category": {
+        "name": "Refunds (tax, purchase)"
+      },
+      "note": "BlablaCar",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0a61e39f-84e6-4d83-ab54-76a682a083d0",
+      "recordDate": "2023-05-25T06:30:06Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo Ludovica",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "b7873d7f-d01d-5b9e-8dd6-2255e599bf10",
+      "recordDate": "2023-05-15T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d4510961-15bc-4998-8484-5fbee04f0216",
+      "recordDate": "2023-05-09T19:30:43Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.57
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -1.57
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Canzoni giotto",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "2fc966c4-08ad-40bd-a76a-a167684f0681",
+      "recordDate": "2023-05-07T14:45:31Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 76.4
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 76.4
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "note": "Rimborso Temakinho",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "c0bbe350-f5f6-4068-99c8-0e363410f6a1",
+      "recordDate": "2023-01-14T07:04:06Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -78
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -78
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Hotel giardinetto",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f5c5f94d-d49e-4cd4-a342-07ac1ad03544",
+      "recordDate": "2023-01-08T10:39:56Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 0.02
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 0.02
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9ede3601-4b40-4df4-a4c8-ff871ad295a1",
+      "recordDate": "2023-01-08T10:38:31Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 60
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 60
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "note": "Pizza",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d9cccbf2-9305-44e1-b363-22fd73d86503",
+      "recordDate": "2023-01-08T08:40:37Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 18
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 18
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "note": "Pasticciotti",
+      "payer": "Matteo Scardala",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "714bb320-db92-5e12-bb84-584f3517667f",
+      "recordDate": "2022-07-30T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a7770105-2d16-497c-8856-c80c132435e9",
+      "recordDate": "2022-07-29T19:23:31Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "category": {
+        "name": "Public transport"
+      },
+      "note": "Trenitalia",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9424dfe6-3f80-4eba-99e0-d883fd1616c8",
+      "recordDate": "2022-07-17T12:44:19Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.64
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.64
+      },
+      "category": {
+        "name": "Parking"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d5d46c6d-7fec-5cb0-b312-9116f8cb1796",
+      "recordDate": "2022-07-15T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "47f271ca-08df-4b97-8c1e-fabfea715dd7",
+      "recordDate": "2022-07-07T12:23:43Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Valentina",
+      "paymentType": "web_payment",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "504dd418-25cb-5b58-8fb0-47f8ebfcda3b",
+      "recordDate": "2022-06-30T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "26f39fcc-46a0-543e-b313-022b8c40cd2f",
+      "recordDate": "2022-06-15T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7e075f8a-6f9e-4c82-9ba1-88d23d9ce053",
+      "recordDate": "2022-06-02T05:21:23Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -19.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -19.99
+      },
+      "category": {
+        "name": "Electronics & accessories"
+      },
+      "note": "Logitech bolt",
+      "paymentType": "web_payment",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "148e4be4-076d-4257-a9b1-ac705cb9aa44",
+      "recordDate": "2022-06-01T11:10:32Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -38.9
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -38.9
+      },
+      "category": {
+        "name": "Long distance"
+      },
+      "note": "Treno Lecce-Roma",
+      "paymentType": "web_payment",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a903722d-1f28-5553-84e5-f2a7802fd222",
+      "recordDate": "2022-05-30T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f9981e1f-96b5-476f-af95-9f3d5c91d68a",
+      "recordDate": "2022-05-23T10:29:41Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo Ludovica",
+      "paymentType": "web_payment",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "1cfc5706-ba85-42a8-8079-77809bea8f0e",
+      "recordDate": "2022-05-22T18:15:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -21.36
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -21.36
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "payee": "Deliveroo",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "af0f63cc-04a1-5a35-8db1-8d38156eec31",
+      "recordDate": "2022-05-15T19:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a14a6e45-45ca-4c3d-98b2-1d79b2de88c5",
+      "recordDate": "2022-05-08T21:45:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15.9
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -15.9
+      },
+      "category": {
+        "name": "Phone, cell phones"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f03a9a98-3489-4361-9c7b-f01168a60776",
+      "recordDate": "2022-05-06T17:24:54Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14.54
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -14.54
+      },
+      "category": {
+        "name": "Restaurant, fast-food"
+      },
+      "note": "Deliveroo",
+      "paymentType": "web_payment",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "1690a8e0-e639-4a9c-86ff-e5af5c320c5a",
+      "recordDate": "2022-05-04T18:15:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 20
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 20
+      },
+      "category": {
+        "name": "Refunds (tax, purchase)"
+      },
+      "note": "Regalo matteo",
+      "payer": "Giotto",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "017629f7-a9df-4d11-a1a5-00a03553f24b",
+      "recordDate": "2022-04-30T17:30:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "payee": "Radio Rossonera",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "8486bf63-4627-4e24-9087-4dc2bb4f050e",
+      "recordDate": "2022-04-30T17:30:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 30
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 30
+      },
+      "category": {
+        "name": "Refunds (tax, purchase)"
+      },
+      "note": "Seba, Chiara, Nico",
+      "payer": "Regalo Matteo",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "3bfbbcbf-5586-4cb7-89c4-bca57f47fd4e",
+      "recordDate": "2022-04-29T17:30:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -80
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -80
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "payee": "Regalo Matteo",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "884913a3-8e8c-5e48-8c8e-af8bec7a22dd",
+      "recordDate": "2022-04-15T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.5
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d8b3c21c-f911-4738-b529-cd2cd6e47cf2",
+      "recordDate": "2022-03-31T11:35:33Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Radio rossonera",
+      "paymentType": "web_payment",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "c2632580-d4f3-41a0-b20c-d710ab9a4c69",
+      "recordDate": "2022-03-30T08:52:46Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -1.99
+      },
+      "category": {
+        "name": "Groceries"
+      },
+      "note": "Too good to go",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "6b3d27f6-4444-403e-84f4-4b9a9b657c2e",
+      "recordDate": "2022-03-09T10:45:16Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -7.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -7.5
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo tommasino",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "72e3eecc-e89b-4ecc-b725-868d7d3ea649",
+      "recordDate": "2022-03-08T07:14:09Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -1.99
+      },
+      "category": {
+        "name": "Groceries"
+      },
+      "note": "Too good to go",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "608d0072-2f8c-4db0-869d-02dc03a28da1",
+      "recordDate": "2022-02-06T14:37:08Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -1.99
+      },
+      "category": {
+        "name": "Groceries"
+      },
+      "note": "Too good to go",
+      "payee": "Pastore",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7305c736-7dd1-4149-a100-8b85cd55f117",
+      "recordDate": "2022-01-27T18:04:21Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo Nico",
+      "payee": "Nico",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "58076076-e9f8-57e7-8ab4-b24fa26f10cb",
+      "recordDate": "2022-01-15T11:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "8aa8712c-e08e-4776-87f2-17ebb3e42ff5",
+      "recordDate": "2022-01-10T21:51:01Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -32.08
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -32.08
+      },
+      "category": {
+        "name": ""
+      },
+      "note": "Uber Nizza",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a258e100-ec67-473f-8ab0-b119d24a420c",
+      "recordDate": "2022-01-04T10:52:47Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -63.9
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -63.9
+      },
+      "category": {
+        "name": "Long distance"
+      },
+      "note": "Treno Lecce-Roma",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "5278f293-5dfb-4b97-b637-125e9220eb4b",
+      "recordDate": "2021-12-20T12:54:04Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Braw star",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "00bdb76c-2f71-57de-87be-c9d4b72eae01",
+      "recordDate": "2021-12-20T11:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "payee": "Matteo La Porta",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "5fd7ab09-a734-4082-a5bf-45151e6a693b",
+      "recordDate": "2021-12-19T19:18:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -50
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -50
+      },
+      "category": {
+        "name": "Charity, gifts"
+      },
+      "note": "WWF",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "60ef2eff-76e8-4313-af26-b964a77571a3",
+      "recordDate": "2021-12-17T16:00:59Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.5
+      },
+      "category": {
+        "name": "Others"
+      },
+      "note": "Treno Genova Rapallo",
+      "payee": "Megi",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "bd3f9139-f0b7-4f66-88bc-b70491bcd890",
+      "recordDate": "2021-11-23T17:46:07Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -33
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -33
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo compleanno",
+      "payee": "Giotto",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0d2286c2-4b33-5b71-b122-5a5613dc6a2b",
+      "recordDate": "2021-11-15T11:00:18Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "note": "Netflix Spotify",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "aa43a6cb-716b-4243-a0c0-06fd8b6ffe3d",
+      "recordDate": "2021-11-11T20:26:43Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6.31
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -6.31
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Anello",
+      "payee": "Megi",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f7c3a5b6-be16-407c-867d-1996c7eff382",
+      "recordDate": "2021-10-26T18:26:22Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -9.99
+      },
+      "category": {
+        "name": "Education & development"
+      },
+      "note": "Udemy",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "65252098-f1d4-44c1-aa81-ee14b7462fec",
+      "recordDate": "2021-10-21T09:15:26Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 117.33
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 117.33
+      },
+      "category": {
+        "name": "Interests, dividends"
+      },
+      "payer": "Bitcoin",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "8cf37b57-afee-47f5-a4dc-a008632d5bfb",
+      "recordDate": "2021-10-18T12:33:45Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 300
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 300
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d5146b66-3d58-5c5a-95bd-914aa47790f6",
+      "recordDate": "2021-10-14T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "467defee-a9ae-485d-804c-55ae2847bbde",
+      "recordDate": "2021-10-09T15:58:16Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -20
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -20
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo Anastasia",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "e6f5a58b-f31d-5122-8582-b2652e9dc916",
+      "recordDate": "2021-09-15T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "876278b1-5244-4a5f-b6db-0de92ea34ada",
+      "recordDate": "2021-09-13T07:51:21Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.43
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -2.43
+      },
+      "category": {
+        "name": "Shopping"
+      },
+      "note": "Canzoni giotti",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "125e4a24-5745-44ba-8903-b8ad5230d8eb",
+      "recordDate": "2021-09-01T08:45:04Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -13
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -13
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo Samantha",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "b38de427-0050-4a6e-a165-c69c4a12e0c5",
+      "recordDate": "2021-08-25T19:45:50Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -36.79
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -36.79
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Humankind",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a4c299b7-b600-427d-a6c3-eee4d14d7e67",
+      "recordDate": "2021-08-19T21:29:02Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12
+      },
+      "category": {
+        "name": "Culture, sport events"
+      },
+      "note": "Castello Otranto",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d48c8d44-f143-5715-975a-fcaa61471a97",
+      "recordDate": "2021-08-14T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "b2f37907-f11c-47a1-9dfa-8945be408d04",
+      "recordDate": "2021-08-13T16:07:30Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -6.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Orc must die 3 key",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "3e3a27d0-bb92-4775-9012-46c3748ee94c",
+      "recordDate": "2021-08-09T19:02:49Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 140.22
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 140.22
+      },
+      "category": {
+        "name": "Interests, dividends"
+      },
+      "note": "Ethereum",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "bd69116b-666d-4dbe-8281-03f27c233d8f",
+      "recordDate": "2021-08-09T11:03:28Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Pokémon unite",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "515af396-9a5a-445e-ac19-bfc06eb60d5f",
+      "recordDate": "2021-08-05T08:31:20Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -30
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -30
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo seb",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d5d14d52-801d-4a6b-b0a4-c076cb4193d5",
+      "recordDate": "2021-08-01T07:41:27Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "category": {
+        "name": "Public transport"
+      },
+      "note": "Fiumicino Roma Termini",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "e51c28be-7d56-449f-9bcd-87fedf8f23c7",
+      "recordDate": "2021-07-18T15:47:29Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -26.88
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -26.88
+      },
+      "category": {
+        "name": "Clothes & shoes"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "97582461-7e43-5cf7-89a8-9799609c7aa4",
+      "recordDate": "2021-07-15T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "290daacd-0b13-430f-9514-8ab8b2d34736",
+      "recordDate": "2021-07-09T04:58:33Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -39.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -39.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Buddyfit",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9063b221-4770-476e-b9b2-04e726306ce4",
+      "recordDate": "2021-06-18T20:56:01Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -11.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -11.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Civilisation",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7b23f903-eeb3-5a77-9c60-3cf2d8cf6fce",
+      "recordDate": "2021-06-15T10:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "TV, Streaming"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "da49fb3d-828c-4edd-b7d9-6fa0521ac2cb",
+      "recordDate": "2021-06-08T09:52:22Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -36.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -36.99
+      },
+      "category": {
+        "name": "Clothes & shoes"
+      },
+      "note": "MiBand 6",
+      "payee": "Gshopper",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "6e5ee5e4-24d9-4a53-96ea-16e2c7bcdef2",
+      "recordDate": "2021-05-27T13:45:24Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -62.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -62.99
+      },
+      "category": {
+        "name": "Clothes & shoes"
+      },
+      "note": "Scarpe nike",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d67d9c1f-c3c7-46b2-9f89-fb95a7e064f8",
+      "recordDate": "2021-05-25T10:56:12Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Netflix Spotify",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "3ff414c0-8675-42d8-ab58-616c6f8c6ee4",
+      "recordDate": "2021-05-25T10:55:58Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -11
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -11
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo Ludovica",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "e7b4fc6e-5f33-4151-b7a4-7e8fbe6fc2cf",
+      "recordDate": "2021-05-24T13:59:28Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -3.59
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -3.59
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Port royale 4 dlc",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "3d3deef3-3dbf-47cc-8245-23ed7f22a22f",
+      "recordDate": "2021-05-01T06:24:05Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 100
+      },
+      "category": {
+        "name": "Rental, income"
+      },
+      "note": "Affitto garage",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a18e98a8-aebc-4a69-b3d6-900b3a79148b",
+      "recordDate": "2021-04-19T20:51:32Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -22
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -22
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Compleanno Matteo",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "c6ee8ca6-15ac-4f82-b4a5-f0f7d39f7027",
+      "recordDate": "2021-04-18T17:15:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Software"
+      },
+      "payee": "Netflix Spotify",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "01a4969d-e32d-4d46-b9b5-eb3bb96bb1b0",
+      "recordDate": "2021-04-17T14:10:49Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -83.9
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -83.9
+      },
+      "category": {
+        "name": "Clothes & shoes"
+      },
+      "note": "Magliette milan",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "922b9960-f591-4006-a69e-cf72fc925bbe",
+      "recordDate": "2021-04-02T18:58:06Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15.29
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -15.29
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Port royale 4",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9efe58f3-da99-4946-b175-cf79e03b2381",
+      "recordDate": "2021-03-24T11:56:17Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.71
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -9.71
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "dc1d783a-a6f1-4e1c-8a39-314906a73a3c",
+      "recordDate": "2021-03-22T12:16:39Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -42.97
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -42.97
+      },
+      "category": {
+        "name": "Active sport, fitness"
+      },
+      "note": "Decathlon",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "29ccac36-ea58-4dd7-b01d-74f8a0390b74",
+      "recordDate": "2021-03-19T08:03:59Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Phone, cell phones"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "cd27e01a-b5c9-4272-baba-44f35efb0022",
+      "recordDate": "2021-03-15T12:17:39Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 100
+      },
+      "category": {
+        "name": "Beni immobili"
+      },
+      "note": "Affitto garage",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "ee91865e-5d01-4dc8-9c81-f841bcc6e671",
+      "recordDate": "2021-03-02T10:59:19Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -20
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -20
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Netflix Spotify",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f9651d95-04ff-410b-9a0b-f1caa29108f1",
+      "recordDate": "2021-02-18T06:57:30Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12.99
+      },
+      "category": {
+        "name": "Education & development"
+      },
+      "note": "Udemy",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "5d52cfc0-ed19-47e0-8164-049fb0ecd1f2",
+      "recordDate": "2021-02-17T20:53:28Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 100
+      },
+      "category": {
+        "name": "Beni immobili"
+      },
+      "note": "Affitto garage",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "18e3e73f-b583-4895-adcf-6d4a29bdcbf8",
+      "recordDate": "2021-02-16T12:18:45Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -16.06
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -16.06
+      },
+      "category": {
+        "name": "Shopping"
+      },
+      "note": "Tartaruga",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "71e3f68f-e2d5-444d-b9d0-7dfff2ba3f5a",
+      "recordDate": "2021-01-31T19:38:27Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Netflix",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "201461df-de34-4bca-9959-3b02686522e4",
+      "recordDate": "2021-01-31T19:38:14Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Netflix Spotify",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "952fbf80-b10d-4f3d-b98b-33ad5cb212e4",
+      "recordDate": "2021-01-31T16:45:53Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 150
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 150
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "payer": "Garage Giotto",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "535383b4-b9bd-4e2c-b053-6f1dc899bdaa",
+      "recordDate": "2021-01-19T08:56:01Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Phone, cell phones"
+      },
+      "note": "Ho mobile",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "88ba542f-d14c-4edf-b257-6b491c04d0d7",
+      "recordDate": "2021-01-14T19:35:31Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Nico",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7639423a-1a82-496f-adc6-3f139342fafa",
+      "recordDate": "2021-01-12T22:57:44Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 150
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 150
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0e0d8462-80ec-47ff-b98b-6bde91ec699e",
+      "recordDate": "2020-11-02T17:40:14Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.24
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -4.24
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Netflix",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "998ffed1-355b-4269-a017-ae4b8ae68e32",
+      "recordDate": "2020-10-15T06:18:54Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -3.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -3.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a8c9c3a1-aae6-416c-a440-317503aa7fda",
+      "recordDate": "2020-10-13T07:56:14Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "65d17213-0c70-4552-9378-78758d904f73",
+      "recordDate": "2020-09-15T05:38:07Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -3.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -3.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7fbeb439-3a29-488d-a351-a0e0c8b09f38",
+      "recordDate": "2020-09-11T12:52:12Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9be78fcf-a510-413c-be3d-104a9653e42d",
+      "recordDate": "2020-09-08T08:02:34Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -13.48
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -13.48
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Steam",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "994a9b4d-e235-4739-81bb-71807d453ca8",
+      "recordDate": "2020-08-25T04:10:25Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -19.98
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -19.98
+      },
+      "category": {
+        "name": "Education & development"
+      },
+      "note": "Udemy",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "286ae0b9-cfb7-4adc-bce2-69003fe0d955",
+      "recordDate": "2020-08-21T05:05:48Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.99
+      },
+      "category": {
+        "name": "Parking"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f98175e0-283b-40ff-b66d-537b27719791",
+      "recordDate": "2020-08-15T07:27:46Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -3.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -3.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "22bb82af-3f3a-4917-9cca-295788fab56f",
+      "recordDate": "2020-08-10T08:15:17Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -11.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -11.99
+      },
+      "category": {
+        "name": "Education & development"
+      },
+      "payee": "Udemy",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "e7b9c5b1-9d0e-43a1-a94d-9a202fb7f09a",
+      "recordDate": "2020-08-10T08:15:10Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12.99
+      },
+      "category": {
+        "name": "Education & development"
+      },
+      "payee": "Udemy",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f7d9d987-af79-491f-a64e-cbc1015bdb02",
+      "recordDate": "2020-08-02T09:35:01Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -45.39
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -45.39
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9e761540-c499-46fd-92d7-1c8302afa0f8",
+      "recordDate": "2020-08-01T12:42:11Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -25
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -25
+      },
+      "category": {
+        "name": "Charity, gifts"
+      },
+      "note": "Nico e seb",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f03b4213-ed31-4573-8a69-ec89ef7a48c1",
+      "recordDate": "2020-07-15T04:44:13Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -3.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -3.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Microsoft pass",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "07c65256-0d94-46c7-9311-29eb039e9a6c",
+      "recordDate": "2020-07-07T11:30:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.3
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.3
+      },
+      "category": {
+        "name": "Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "e59f3539-8613-46db-839f-9c68b3df7c3d",
+      "recordDate": "2020-07-07T11:15:54Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -9.99
+      },
+      "category": {
+        "name": "Education & development"
+      },
+      "payee": "Udemy",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "befec244-76d1-4ca1-b360-ba09bb648ed7",
+      "recordDate": "2020-06-30T11:15:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 175
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 175
+      },
+      "category": {
+        "name": "Others"
+      },
+      "payer": "Regalo Valentina",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "cbfe56c9-af81-4c2f-ab91-32cb123966fc",
+      "recordDate": "2020-06-26T06:45:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.25
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -2.25
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "payee": "Regalo Silvia",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "b6e113ae-3632-4c6b-a29e-8117e68816fd",
+      "recordDate": "2020-06-17T14:30:46Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12.99
+      },
+      "category": {
+        "name": "Education & development"
+      },
+      "note": "Udemy",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "873de19f-7e3b-4128-bed1-0e21e15f1269",
+      "recordDate": "2020-06-17T06:38:49Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -18
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -18
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Netflix",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "5f883df3-5cc5-4b2e-a74a-5da041fbac65",
+      "recordDate": "2020-06-15T10:50:49Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -3.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -3.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "01b37fbf-d373-48e7-a8b9-0d6c529d3b2f",
+      "recordDate": "2020-06-02T21:00:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 37.53
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 37.53
+      },
+      "category": {
+        "name": "Gifts"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a3c353fa-24c8-4ca8-9990-9c558c30bc05",
+      "recordDate": "2020-04-10T17:06:12Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -17.51
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -17.51
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "ca3647e0-339b-45e0-8938-4f14b0935aa1",
+      "recordDate": "2020-03-23T21:54:52Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "dfe6915a-7a55-4ac2-acd5-6dd0eb957360",
+      "recordDate": "2020-01-12T13:30:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 30
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 30
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7c286a4e-6145-49f0-bd9b-06ce5287e659",
+      "recordDate": "2020-01-07T07:36:14Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -0.94
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -0.94
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "ea7aec01-fc68-4773-9e18-a6e81a05eeaa",
+      "recordDate": "2019-12-26T11:25:19Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -19.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -19.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Wallet",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a95aa3e5-37bc-41bc-beae-c3daefa62975",
+      "recordDate": "2019-12-26T11:24:32Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -39.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -39.99
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9913f15c-99e4-43e1-82ba-6425e553395c",
+      "recordDate": "2019-12-19T16:45:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 6.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 6.5
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "cd15dfe9-aae8-4161-ba3b-df7bcf9929d4",
+      "recordDate": "2019-12-13T16:45:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -6
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "5a17f64c-9165-43bd-9c02-e53a5ca49c81",
+      "recordDate": "2019-12-12T16:45:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12.5
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12.5
+      },
+      "category": {
+        "name": "Groceries"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "81219d9b-50fe-4ff5-a228-e1cf1e059bc9",
+      "recordDate": "2019-12-12T16:45:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14.02
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -14.02
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0e34e71a-553c-4cbd-b72d-a707f156edf4",
+      "recordDate": "2019-12-10T19:08:11Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15.27
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -15.27
+      },
+      "category": {
+        "name": "Groceries"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "44172c7d-bfd3-4b38-bdec-3ce45486515f",
+      "recordDate": "2019-12-09T13:30:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -15
+      },
+      "category": {
+        "name": "Others"
+      },
+      "payee": "Tomasz farewell",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a20fbfdf-5954-4a17-9bd6-d0339420c19d",
+      "recordDate": "2019-12-06T08:07:51Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -18
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -18
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Netflix",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "c7dd45bf-87e4-445c-b13b-f655335e2e12",
+      "recordDate": "2019-12-03T06:35:38Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "498792ca-8178-4b5f-b070-9a522dea284c",
+      "recordDate": "2019-11-30T17:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -11
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -11
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "payee": "regalo giotto",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "55430a1a-9033-4898-aab3-1098bd4f8537",
+      "recordDate": "2019-11-30T17:00:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -24
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -24
+      },
+      "category": {
+        "name": "Shopping"
+      },
+      "payee": "bottiglia",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "b82a640a-e606-45cf-8e7d-6091afbc4431",
+      "recordDate": "2019-11-30T17:00:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 20
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 20
+      },
+      "category": {
+        "name": "Software"
+      },
+      "payer": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "e7329dd9-f05e-48a4-9a5e-023dc9e5d3ab",
+      "recordDate": "2019-11-30T17:00:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 18.87
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 18.87
+      },
+      "category": {
+        "name": "Income"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "8d11ed4b-de94-49ec-9b99-7934aa57d2cc",
+      "recordDate": "2019-11-17T11:01:44Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 33.91
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 33.91
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "59da88a0-6223-4982-887d-a2cd051e0423",
+      "recordDate": "2019-11-17T08:34:50Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.96
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -9.96
+      },
+      "category": {
+        "name": "Shopping"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "fc21cf14-a0ad-42a8-8137-0212a802a5c3",
+      "recordDate": "2019-11-07T10:51:09Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -15
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Grande Seba",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "933b92b7-fc72-4a9b-888c-783a4cb49365",
+      "recordDate": "2019-11-06T06:24:49Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -23.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -23.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0abaf9fd-c28e-4ce5-a7fe-7600e70bcf29",
+      "recordDate": "2019-11-06T06:02:10Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "4babe397-52d1-49ae-bf28-aec3a54f8e21",
+      "recordDate": "2019-10-31T08:30:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 18
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 18
+      },
+      "category": {
+        "name": "Income"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "2fd6e8c1-03b3-4ee2-8e08-214e7617ba0d",
+      "recordDate": "2019-10-27T11:56:48Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -19
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -19
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7b2f12fd-aae4-4b0f-98b5-e88b19a530ec",
+      "recordDate": "2019-10-20T20:27:41Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "category": {
+        "name": "Public transport"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "ef32cd47-eda8-46c8-bfbd-65ecda04823e",
+      "recordDate": "2019-10-19T14:24:50Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "category": {
+        "name": "Public transport"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f731d958-d4ca-420e-8d0a-fccbf1b19caf",
+      "recordDate": "2019-10-18T14:23:45Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 39
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 39
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9dc3d16c-0089-4e8f-ba77-ef10b33b574a",
+      "recordDate": "2019-10-08T14:29:13Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "8afce802-6f67-4622-a9a0-73b8a97a1569",
+      "recordDate": "2019-10-01T21:45:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 3
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 3
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "b780622a-38f1-4687-8fff-09be103fcbee",
+      "recordDate": "2019-09-27T05:44:02Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 9
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 9
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "6c4940a9-9a4b-468b-a773-d628a7a10c21",
+      "recordDate": "2019-09-27T05:43:15Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.09
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -1.09
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "553b0bac-7b90-4c1e-a59e-13373cfc0b66",
+      "recordDate": "2019-09-24T21:45:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 15
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 15
+      },
+      "category": {
+        "name": "Software"
+      },
+      "payer": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0b907d6a-97b2-4117-8b11-b8442d818e71",
+      "recordDate": "2019-09-13T08:02:34Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.09
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -1.09
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "52b33a75-d56e-490a-a76f-24a7f200bd26",
+      "recordDate": "2019-09-13T08:02:22Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a8b1040c-0483-4df7-b5c3-a35845e46399",
+      "recordDate": "2019-09-08T14:57:27Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -32.4
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -32.4
+      },
+      "category": {
+        "name": "Parking"
+      },
+      "note": "Park and fly",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "462a8466-8cb8-4151-90e6-15ec62e4aaa0",
+      "recordDate": "2019-09-06T19:03:49Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 6
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 6
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7b4ef3be-48bd-49ea-8777-1889e39b2b83",
+      "recordDate": "2019-09-06T19:03:18Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -15
+      },
+      "category": {
+        "name": "Public transport"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "b3eb0a9c-ce8c-4e58-9d40-974ff05694f9",
+      "recordDate": "2019-09-04T21:04:22Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -15
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Ricarica telefonica",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "932fb4a7-52c1-42bf-a82b-b103caea6976",
+      "recordDate": "2019-09-03T22:01:08Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 3
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 3
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "813d4143-f1c8-4732-a726-75f3a7baf7ff",
+      "recordDate": "2019-09-02T10:27:25Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "8f4be463-a99f-425f-a5f5-281b6f63c1c7",
+      "recordDate": "2019-08-28T21:15:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -23.37
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -23.37
+      },
+      "category": {
+        "name": "Charity, gifts"
+      },
+      "payee": "Amazon Watch",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0fe52388-a52a-403a-a438-6a6d68cfa8a5",
+      "recordDate": "2019-08-24T17:45:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -31.31
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -31.31
+      },
+      "category": {
+        "name": ""
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "e12c8dcb-30a6-494a-8e8b-25333e5c9b06",
+      "recordDate": "2019-08-23T18:19:19Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 3
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 3
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "8effc09b-88bd-4b5f-bad0-476f4fe0b403",
+      "recordDate": "2019-08-22T10:00:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 3.44
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 3.44
+      },
+      "category": {
+        "name": "Income"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0b7d7bd5-b901-4ef3-ae4d-723c9c16c2d6",
+      "recordDate": "2019-08-15T07:04:04Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "40f2dcb0-3789-49ca-821e-176690861ab0",
+      "recordDate": "2019-08-06T07:26:50Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a8de106c-ce69-4a01-bcbe-56d8cf8b2132",
+      "recordDate": "2019-08-03T20:28:36Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 12
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 12
+      },
+      "category": {
+        "name": "Income"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "12a23eaf-378c-450f-afa8-6959abd3a2c4",
+      "recordDate": "2019-08-02T20:24:04Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "68d2a96a-c9eb-41f0-8c1f-10ae7d000978",
+      "recordDate": "2019-08-01T22:23:28Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0c504d0b-d96b-4b65-a902-d46aa868256b",
+      "recordDate": "2019-08-01T18:25:53Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Charity, gifts"
+      },
+      "note": "Reg sebastian",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0aff5f65-0780-4754-9f30-fbbf1c560f4f",
+      "recordDate": "2019-07-31T20:27:11Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -20
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -20
+      },
+      "category": {
+        "name": "Phone, cell phones"
+      },
+      "note": "Ricarica tim",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "2dc5880e-ea81-4c4e-8514-d3ae9b2db9fe",
+      "recordDate": "2019-07-29T09:30:37Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Others"
+      },
+      "note": "Chithkala flowes",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "69b6db5c-da0c-4ce5-8d83-2f1efecdd645",
+      "recordDate": "2019-07-25T16:25:49Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 3
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 3
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a19074ab-c043-4d32-899a-21871d4633be",
+      "recordDate": "2019-07-17T22:06:06Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 12
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 12
+      },
+      "category": {
+        "name": "Refunds (tax, purchase)"
+      },
+      "note": "Refund zalando",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "274930d0-ef7a-4cc2-a9f4-44d8d8964024",
+      "recordDate": "2019-07-17T22:05:51Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 3
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 3
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7a029b45-3226-4a5d-b8af-e42fbd999706",
+      "recordDate": "2019-07-14T16:45:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12.86
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -12.86
+      },
+      "category": {
+        "name": "Shopping"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "4884c0ea-01ef-4c47-bd6e-036a005b2f20",
+      "recordDate": "2019-07-10T17:19:30Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 9
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 9
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "dcdd27a8-cb0e-4b21-998d-e7a13587147e",
+      "recordDate": "2019-07-10T08:30:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Others"
+      },
+      "payee": "Farewell Francesco",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "ffedfc9c-2ca8-42f0-9c39-ad470928216e",
+      "recordDate": "2019-07-02T04:49:41Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f30020ac-f41c-4df5-87a7-1cabe907fc09",
+      "recordDate": "2019-06-26T17:33:08Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Others"
+      },
+      "note": "Compleanno Sara",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9f311f0c-973b-4e81-a794-4d2a5d239a5d",
+      "recordDate": "2019-06-22T19:18:51Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a97164f1-38d9-477e-b1f1-c705c9a27548",
+      "recordDate": "2019-06-22T14:04:14Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -28.9
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -28.9
+      },
+      "category": {
+        "name": "Clothes & shoes"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d024ad22-bf9f-414d-a8e5-ef7623721a5f",
+      "recordDate": "2019-06-22T10:21:56Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -36.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -36.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Busu",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "dfcd1cb2-1199-4d63-801f-9bbcbb19c306",
+      "recordDate": "2019-06-09T08:11:30Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -1
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Xbox pass",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7071ca2e-f379-46ae-8697-a9d240a93225",
+      "recordDate": "2019-06-07T05:00:50Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "b999a6b2-12a8-4f93-8183-0b7d0553b3d2",
+      "recordDate": "2019-06-04T10:24:11Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -18
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -18
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Netflix",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "1c655eea-9bb6-407d-b82a-4d0a20cb3385",
+      "recordDate": "2019-06-02T20:04:21Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -20
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -20
+      },
+      "category": {
+        "name": "Phone, cell phones"
+      },
+      "note": "Ricarica jacopo",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "ab772993-7dac-4bb7-9331-468ef52d830c",
+      "recordDate": "2019-06-02T18:01:34Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "5727b938-c5a7-4d42-ab8c-03298a3d710f",
+      "recordDate": "2019-05-23T05:40:52Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.18
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -2.18
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9aca61a0-cc1c-4d73-99e7-59ac4d2d4306",
+      "recordDate": "2019-05-20T21:00:00Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 2
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 2
+      },
+      "category": {
+        "name": "Income"
+      },
+      "note": "BlaBlaLines",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "cebc853f-dbf9-4107-89d9-ddc1cd4ac761",
+      "recordDate": "2019-05-12T04:17:08Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "ea12078e-733b-44ff-bb62-ce96dc81f4ed",
+      "recordDate": "2019-05-11T16:10:33Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "33c12d67-bdbd-4b49-a228-6ad98eb72478",
+      "recordDate": "2019-05-06T17:30:52Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a3197a6f-106a-4ceb-8220-925e33bdc357",
+      "recordDate": "2019-05-04T05:49:36Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Clash of clans",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7aa66840-a390-4010-ba43-3505cf023c63",
+      "recordDate": "2019-05-03T19:16:05Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -6
+      },
+      "category": {
+        "name": "Public transport"
+      },
+      "note": "Flixbus",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "bb32e866-df5a-404c-9fec-11b51178b34a",
+      "recordDate": "2019-05-03T18:51:40Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "d86866fd-b33c-4a38-8042-fb11fbf218eb",
+      "recordDate": "2019-04-29T18:02:53Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 500
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "08377789-37f8-41d4-89c5-01777c5a17fe",
+      "recordDate": "2019-03-17T11:14:23Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -17.02
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -17.02
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Total War 2",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0ca78845-e54f-4b0d-9ebf-32bec23c8d37",
+      "recordDate": "2019-02-22T07:04:50Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9ced38eb-ad54-488c-b40f-257114242dcb",
+      "recordDate": "2019-02-12T22:32:56Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -21.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -21.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "6590a1be-c4df-4c76-90c4-5aaea6acdce7",
+      "recordDate": "2019-02-12T22:32:54Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 50
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 50
+      },
+      "category": {
+        "name": "Income"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "544a6191-3c9e-45cc-8e34-5d5060cfb08e",
+      "recordDate": "2019-02-05T20:20:47Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.29
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -2.29
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "5dd8e8de-7f19-4afd-8695-5ec649acbf90",
+      "recordDate": "2019-02-03T22:33:34Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -25.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -25.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "fbb12ac2-d3e1-412b-8fc2-b49ca07c6784",
+      "recordDate": "2019-02-03T11:31:00Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "category": {
+        "name": "Public transport"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "06fb7243-0b6e-4e11-89fa-da221648a1be",
+      "recordDate": "2019-02-01T19:07:29Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -14
+      },
+      "category": {
+        "name": "Public transport"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7a72c2fa-d1f1-491a-aca3-722526e1a911",
+      "recordDate": "2019-01-31T06:31:14Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "5fcc2f00-3da2-4ea8-80c9-36340a233654",
+      "recordDate": "2019-01-31T06:28:06Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 50
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 50
+      },
+      "category": {
+        "name": "Others"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "ae443545-3300-4ffc-a2ad-eddc2f0b1440",
+      "recordDate": "2019-01-28T22:42:31Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -21.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -21.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "a27ed313-ea94-4f33-a0d0-a873076c13d8",
+      "recordDate": "2019-01-27T20:31:21Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.42
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -2.42
+      },
+      "category": {
+        "name": "Communication, PC"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "7691e00e-afaa-4a2c-a0e7-c73c8c770651",
+      "recordDate": "2019-01-25T06:41:09Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -5.49
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "73ded125-491f-437b-bc75-3d33ac7be08a",
+      "recordDate": "2019-01-21T06:31:46Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "f3ad4f74-78fb-4ad8-a288-20bcd3df3ff2",
+      "recordDate": "2019-01-11T17:56:55Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -21
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -21
+      },
+      "category": {
+        "name": "Gifts, joy"
+      },
+      "note": "Regalo Zac Nico",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9765ac1a-32df-4a51-bee3-8df6918a1bf6",
+      "recordDate": "2019-01-11T17:56:51Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 50
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 50
+      },
+      "category": {
+        "name": "Income"
+      },
+      "note": "Ricarica",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "8e284dfa-8cea-40e9-b424-c7382b82e0fd",
+      "recordDate": "2019-01-07T17:55:53Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "b0cf37e1-6775-494e-99da-6cf4f1bf8b05",
+      "recordDate": "2019-01-04T17:59:39Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -8
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "note": "Trenitalia",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "754feff2-1d9f-4e8b-8609-8b6c3d140db1",
+      "recordDate": "2018-12-30T11:02:20Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -39.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -39.99
+      },
+      "category": {
+        "name": "Transportation - Others"
+      },
+      "note": "Flixbus",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0baf8e13-167a-4166-97b6-072ca5ca5188",
+      "recordDate": "2018-12-26T07:53:56Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "b362019d-4caf-4d21-97d3-fa0d8a598883",
+      "recordDate": "2018-12-25T15:10:18Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 50
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 50
+      },
+      "category": {
+        "name": "Income"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "ad760a72-6e26-474a-8fad-1a77f47422a8",
+      "recordDate": "2018-12-25T14:44:40Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -21.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -21.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "ed6a5bba-e5e5-4cb1-9716-e8c029dd4c69",
+      "recordDate": "2018-12-25T14:44:09Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -14.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "9b699387-2eac-4791-97e8-896e52f1a755",
+      "recordDate": "2018-12-24T20:20:15Z",
+      "recordType": "income",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 50
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": 50
+      },
+      "category": {
+        "name": "Transfer"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "bb190ea3-0c5b-478f-b224-1860f2d1d918",
+      "recordDate": "2018-12-19T23:18:23Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "bee316b5-d8c8-459f-a8a3-d9a947abf8ca",
+      "recordDate": "2018-12-14T07:06:14Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.09
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -1.09
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "0c777584-37a2-48c9-820b-a480b3a9089b",
+      "recordDate": "2018-12-06T06:20:44Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "note": "Clash royale",
+      "paymentType": "cash",
+      "recordState": "cleared"
+    },
+    {
+      "accountId": "c21ae888-f5b7-4ed4-9be8-d1038dd3422d",
+      "id": "04056481-b2d4-437d-9135-a50e7d22c4fd",
+      "recordDate": "2018-12-03T20:01:54Z",
+      "recordType": "expense",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "baseAmount": {
+        "currencyCode": "EUR",
+        "value": -10.99
+      },
+      "category": {
+        "name": "Software"
+      },
+      "paymentType": "cash",
+      "recordState": "cleared"
+    }
+  ]
+}

@@ -38,7 +38,7 @@ class TransactionMapperTest {
                 .date(Timestamp.valueOf(LocalDateTime.of(2026, 3, 3, 0, 0)))
                 .category(categoryName)
                 .description("description")
-                .merchant("merchant")
+                .payee("merchant")
                 .trackingDate(TrackingMapperTest.trackingDate)
                 .build();
 
@@ -51,7 +51,7 @@ class TransactionMapperTest {
         assertThat(dto.getDate().toString()).isEqualTo("2026-03-03");
         assertThat(dto.getCategory()).isEqualTo(categoryName.getId());
         assertThat(dto.getDescription()).isEqualTo("description");
-        assertThat(dto.getMerchant()).isEqualTo("merchant");
+        assertThat(dto.getPayee()).isEqualTo("merchant");
         assertThat(dto.getTrackingDate().getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
         assertThat(dto.getTrackingDate().getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
     }
@@ -62,7 +62,7 @@ class TransactionMapperTest {
                 .type(TransactionType.INCOME)
                 .date(LocalDate.of(2026, 2, 1))
                 .description("description")
-                .merchant("merchant")
+                .payee("merchant")
                 .build();
 
         Transaction domain = transactionMapper.toDomain(dto);
@@ -70,7 +70,7 @@ class TransactionMapperTest {
         assertThat(domain.getType()).isEqualTo(TransactionType.INCOME);
         assertThat(domain.getDate()).isEqualTo(Timestamp.valueOf(dto.getDate().atStartOfDay()));
         assertThat(domain.getDescription()).isEqualTo(dto.getDescription());
-        assertThat(domain.getMerchant()).isEqualTo(dto.getMerchant());
+        assertThat(domain.getPayee()).isEqualTo(dto.getPayee());
         assertThat(domain.getAccount()).isNull();
         assertThat(domain.getCategory()).isNull();
         assertThat(domain.getLabels()).isNull();

@@ -2,6 +2,7 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.domain.*;
 import astoppello.wallet.dto.TransactionDto;
+import astoppello.wallet.dto.TransferDto;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.TransactionMapper;
 import astoppello.wallet.repository.AccountRepository;
@@ -88,8 +89,8 @@ public class TransactionServiceImpl implements TransactionService {
         if (dto.getDescription() != null) {
             transaction.setDescription(dto.getDescription());
         }
-        if (dto.getMerchant() != null) {
-            transaction.setMerchant(dto.getMerchant());
+        if (dto.getPayee() != null) {
+            transaction.setPayee(dto.getPayee());
         }
         if (categoryId != null) {
             Category category = categoryRepository.findById(categoryId)
@@ -123,6 +124,52 @@ public class TransactionServiceImpl implements TransactionService {
     @Override
     public List<TransactionDto> getAllByAccount(UUID accountId) {
         return repository.findByAccount(getAccount(accountId)).stream().map(mapper::toDto).toList();
+    }
+
+    @Override
+    public List<TransactionDto> transfer(UUID fromAccountId, UUID toAccountId, TransferDto dto) {
+        Account fromAccount = getAccount(fromAccountId);
+        Account toAccount = getAccount(toAccountId);
+        Category transferCategory = categoryRepository.findByName("Transfer")
+                .stream().findFirst()
+                .orElseThrow(() -> new NotFoundException(Category.class, "Transfer"));
+
+        Set<Label> labels = resolveLabels(dto.getLabels());
+        Timestamp date = dto.getDate() != null
+                ? Timestamp.valueOf(dto.getDate().atStartOfDay())
+                : Timestamp.valueOf(LocalDateTime.now());
+
+        Transaction expense = Transaction.builder()
+                .account(fromAccount)
+                .type(TransactionType.EXPENSE)
+                .amount(dto.getAmount())
+                .date(date)
+                .category(transferCategory)
+                .description(dto.getDescription())
+                .payee(dto.getPayee())
+                .labels(labels)
+                .trackingDate(TrackingDate.now())
+                .build();
+
+        Transaction income = Transaction.builder()
+                .account(toAccount)
+                .type(TransactionType.INCOME)
+                .amount(dto.getAmount())
+                .date(date)
+                .category(transferCategory)
+                .description(dto.getDescription())
+                .payee(dto.getPayee())
+                .labels(labels)
+                .trackingDate(TrackingDate.now())
+                .build();
+
+        Transaction savedExpense = repository.save(expense);
+        Transaction savedIncome = repository.save(income);
+
+        applyDelta(fromAccount, computeDelta(TransactionType.EXPENSE, dto.getAmount()));
+        applyDelta(toAccount, computeDelta(TransactionType.INCOME, dto.getAmount()));
+
+        return List.of(mapper.toDto(savedExpense), mapper.toDto(savedIncome));
     }
 
     private void applyDelta(Account account, BigDecimal delta) {

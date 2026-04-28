@@ -43,6 +43,12 @@ public class Account {
     @Enumerated(EnumType.STRING)
     private Currency currency;
 
+    @Column(nullable = false)
+    private boolean excludeFromStats = false;
+
+    @Column(nullable = false)
+    private boolean archive = false;
+
     @Embedded
     private TrackingDate trackingDate;
 }

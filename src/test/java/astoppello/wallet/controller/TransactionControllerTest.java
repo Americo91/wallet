@@ -2,6 +2,7 @@ package astoppello.wallet.controller;
 
 import astoppello.wallet.dto.TrackingDateDto;
 import astoppello.wallet.dto.TransactionDto;
+import astoppello.wallet.dto.TransferDto;
 import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.service.TransactionService;
 import org.junit.jupiter.api.BeforeEach;
@@ -54,7 +55,7 @@ class TransactionControllerTest {
                 .date(LocalDate.now())
                 .category(UUID.randomUUID())
                 .description("anyText")
-                .merchant("any")
+                .payee("any")
                 .labels(Set.of(UUID.randomUUID()))
                 .trackingDate(TrackingDateDto.builder()
                         .createdAt(OffsetDateTime.now())
@@ -77,7 +78,7 @@ class TransactionControllerTest {
                 .andExpect(jsonPath("$[0].date", is(transactionDto.getDate().toString())))
                 .andExpect(jsonPath("$[0].category", is(transactionDto.getCategory().toString())))
                 .andExpect(jsonPath("$[0].description", is(transactionDto.getDescription())))
-                .andExpect(jsonPath("$[0].merchant", is(transactionDto.getMerchant())))
+                .andExpect(jsonPath("$[0].payee", is(transactionDto.getPayee())))
                 .andExpect(jsonPath("$[0].labels").isNotEmpty())
                 .andExpect(jsonPath("$[0].createdAt").isNotEmpty())
                 .andExpect(jsonPath("$[0].updatedAt").isNotEmpty());
@@ -168,5 +169,35 @@ class TransactionControllerTest {
         mockMvc.perform(delete(TransactionController.TRANSACTION_BASE_URL + "/" + transactionDto.getId()))
                 .andExpect(status().isNoContent());
         then(service).should().delete(any());
+    }
+
+    @Test
+    void handleTransfer() throws Exception {
+        UUID fromAccountId = UUID.randomUUID();
+        UUID toAccountId = UUID.randomUUID();
+        TransactionDto expenseDto = TransactionDto.builder()
+                .id(UUID.randomUUID()).type(TransactionType.EXPENSE).amount(BigDecimal.TEN).build();
+        TransactionDto incomeDto = TransactionDto.builder()
+                .id(UUID.randomUUID()).type(TransactionType.INCOME).amount(BigDecimal.TEN).build();
+
+        given(service.transfer(any(), any(), any())).willReturn(List.of(expenseDto, incomeDto));
+
+        String body = mapper.writeValueAsString(TransferDto.builder()
+                .amount(BigDecimal.TEN)
+                .date(LocalDate.now())
+                .build());
+
+        String url = TransactionController.TRANSFER_URL
+                .replace("{fromAccountId}", fromAccountId.toString())
+                .replace("{toAccountId}", toAccountId.toString());
+
+        mockMvc.perform(post(url)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(body))
+                .andExpect(status().isCreated())
+                .andExpect(jsonPath("$[0].type", is("EXPENSE")))
+                .andExpect(jsonPath("$[1].type", is("INCOME")));
+        then(service).should().transfer(any(), any(), any());
     }
 }

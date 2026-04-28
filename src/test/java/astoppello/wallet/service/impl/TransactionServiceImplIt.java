@@ -53,7 +53,7 @@ public class TransactionServiceImplIt {
         transactionDto = TransactionDto.builder()
                 .type(TransactionType.EXPENSE)
                 .description("any")
-                .merchant("any")
+                .payee("any")
                 .amount(BigDecimal.TEN)
                 .category(categoryDto.getId())
                 .labels(Set.of(labelDto.getId()))
@@ -74,7 +74,7 @@ public class TransactionServiceImplIt {
         assertThat(saved.getTrackingDate().getUpdatedAt()).isNotNull();
         assertThat(saved.getType()).isEqualTo(TransactionType.EXPENSE);
         assertThat(saved.getDescription()).isEqualTo("any");
-        assertThat(saved.getMerchant()).isEqualTo("any");
+        assertThat(saved.getPayee()).isEqualTo("any");
         assertThat(saved.getAmount()).isEqualTo(BigDecimal.TEN);
         assertThat(saved.getDate()).isNotNull();
     }
@@ -164,6 +164,78 @@ public class TransactionServiceImplIt {
     @Test
     void getAllByAccount_notFound() {
         assertThatThrownBy(() -> service.getAllByAccount(UUID.randomUUID())).isInstanceOf(NotFoundException.class);
+    }
+
+    @Test
+    void transfer() {
+        AccountDto toAccount = accountService.save(institutionDto.getId(),
+                AccountDto.builder().name("savings").balance(BigDecimal.ZERO).currency(Currency.EUR).build());
+        CategoryDto transferCategory = categoryService.save(
+                CategoryDto.builder().name("Transfer").type(CategoryType.TRANSFER).build());
+
+        TransferDto transferDto = TransferDto.builder()
+                .amount(BigDecimal.valueOf(50))
+                .description("Monthly savings")
+                .payee("self")
+                .labels(Set.of(labelDto.getId()))
+                .build();
+
+        List<TransactionDto> result = service.transfer(accountDto.getId(), toAccount.getId(), transferDto);
+
+        assertThat(result).hasSize(2);
+
+        TransactionDto expense = result.get(0);
+        assertThat(expense.getId()).isNotNull();
+        assertThat(expense.getAccount()).isEqualTo(accountDto.getId());
+        assertThat(expense.getType()).isEqualTo(TransactionType.EXPENSE);
+        assertThat(expense.getAmount()).isEqualByComparingTo(BigDecimal.valueOf(50));
+        assertThat(expense.getCategory()).isEqualTo(transferCategory.getId());
+        assertThat(expense.getDescription()).isEqualTo("Monthly savings");
+        assertThat(expense.getPayee()).isEqualTo("self");
+        assertThat(expense.getLabels()).contains(labelDto.getId());
+        assertThat(expense.getDate()).isNotNull();
+        assertThat(expense.getTrackingDate()).isNotNull();
+
+        TransactionDto income = result.get(1);
+        assertThat(income.getId()).isNotNull();
+        assertThat(income.getAccount()).isEqualTo(toAccount.getId());
+        assertThat(income.getType()).isEqualTo(TransactionType.INCOME);
+        assertThat(income.getAmount()).isEqualByComparingTo(BigDecimal.valueOf(50));
+        assertThat(income.getCategory()).isEqualTo(transferCategory.getId());
+
+        // Verify balances updated
+        AccountDto updatedFrom = accountService.getByID(accountDto.getId());
+        AccountDto updatedTo = accountService.getByID(toAccount.getId());
+        assertThat(updatedFrom.getBalance()).isEqualByComparingTo(BigDecimal.valueOf(-50));
+        assertThat(updatedTo.getBalance()).isEqualByComparingTo(BigDecimal.valueOf(50));
+    }
+
+    @Test
+    void transfer_fromAccountNotFound() {
+        AccountDto toAccount = accountService.save(institutionDto.getId(),
+                AccountDto.builder().name("savings").balance(BigDecimal.ZERO).currency(Currency.EUR).build());
+        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
+
+        assertThatThrownBy(() -> service.transfer(UUID.randomUUID(), toAccount.getId(), transferDto))
+                .isInstanceOf(NotFoundException.class);
+    }
+
+    @Test
+    void transfer_toAccountNotFound() {
+        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
+
+        assertThatThrownBy(() -> service.transfer(accountDto.getId(), UUID.randomUUID(), transferDto))
+                .isInstanceOf(NotFoundException.class);
+    }
+
+    @Test
+    void transfer_categoryNotFound() {
+        AccountDto toAccount = accountService.save(institutionDto.getId(),
+                AccountDto.builder().name("savings").balance(BigDecimal.ZERO).currency(Currency.EUR).build());
+        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
+
+        assertThatThrownBy(() -> service.transfer(accountDto.getId(), toAccount.getId(), transferDto))
+                .isInstanceOf(NotFoundException.class);
     }
 
 }

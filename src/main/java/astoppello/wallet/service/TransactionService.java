@@ -1,8 +1,8 @@
 package astoppello.wallet.service;
 
 import astoppello.wallet.dto.TransactionDto;
+import astoppello.wallet.dto.TransferDto;
 import jakarta.validation.constraints.NotNull;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.validation.annotation.Validated;
 
 import java.util.List;
@@ -22,4 +22,6 @@ public interface TransactionService {
     void delete(UUID id);
 
     List<TransactionDto> getAllByAccount(@NotNull UUID accountId);
+
+    List<TransactionDto> transfer(@NotNull UUID fromAccountId, @NotNull UUID toAccountId, TransferDto dto);
 }
