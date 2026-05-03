@@ -25,6 +25,6 @@ class CategoryRepositoryTest {
     @Test
     void findByNameAndType() {
         categoryRepository.save(Category.builder().type(CategoryType.INCOME).name(NAME).build());
-        assertThat(categoryRepository.findByNameAndType(NAME, CategoryType.INCOME)).isNotEmpty();
+        assertThat(categoryRepository.findByNameAndType(NAME, CategoryType.INCOME)).isPresent();
     }
 }
