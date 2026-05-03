@@ -1,8 +1,10 @@
 package astoppello.wallet.service;
 
 import astoppello.wallet.dto.CategoryDto;
+import astoppello.wallet.model.CategoryType;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public interface CategoryService {
@@ -18,4 +20,6 @@ public interface CategoryService {
     CategoryDto update(UUID id, CategoryDto dto);
 
     void delete(UUID id);
+
+    Optional<CategoryDto> getByNameAndType(String name, CategoryType type);
 }

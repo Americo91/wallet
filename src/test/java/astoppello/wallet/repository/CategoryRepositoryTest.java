@@ -7,19 +7,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
 class CategoryRepositoryTest {
 
     @Autowired
     private CategoryRepository categoryRepository;
+    private String NAME = "categoryName";
 
     @Test
     void findByName() {
-        String name = "categoryName";
-        categoryRepository.save(Category.builder().type(CategoryType.INCOME).name(name).build());
+        categoryRepository.save(Category.builder().type(CategoryType.INCOME).name(NAME).build());
 
-        assertThat(categoryRepository.findByName(name)).isNotEmpty();
+        assertThat(categoryRepository.findByName(NAME)).isNotEmpty();
+    }
+
+    @Test
+    void findByNameAndType() {
+        categoryRepository.save(Category.builder().type(CategoryType.INCOME).name(NAME).build());
+        assertThat(categoryRepository.findByNameAndType(NAME, CategoryType.INCOME)).isNotEmpty();
     }
 }

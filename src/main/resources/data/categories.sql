@@ -6,7 +6,7 @@
 
 -- Housing (EXPENSE)
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000001', 'Housing', 'EXPENSE', NULL, now(), now());
-INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000101', 'Rent & Mortgage',       NULL, '00000000-0000-0000-0000-000000000001', now(), now());
+INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000101', 'Rent',       NULL, '00000000-0000-0000-0000-000000000001', now(), now());
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000102', 'Electricity',           NULL, '00000000-0000-0000-0000-000000000001', now(), now());
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000103', 'Gas & Heating',         NULL, '00000000-0000-0000-0000-000000000001', now(), now());
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000104', 'Water',                 NULL, '00000000-0000-0000-0000-000000000001', now(), now());
@@ -14,6 +14,7 @@ INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUE
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000106', 'Maintenance & Repairs', NULL, '00000000-0000-0000-0000-000000000001', now(), now());
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000107', 'Home Insurance',        NULL, '00000000-0000-0000-0000-000000000001', now(), now());
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000108', 'Furnishings',           NULL, '00000000-0000-0000-0000-000000000001', now(), now());
+INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000109', 'Mortgage',           NULL, '00000000-0000-0000-0000-000000000001', now(), now());
 
 -- Food & Dining (EXPENSE)
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000002', 'Food & Dining', 'EXPENSE', NULL, now(), now());
@@ -47,6 +48,8 @@ INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUE
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000503', 'Hobbies',            NULL, '00000000-0000-0000-0000-000000000005', now(), now());
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000504', 'Books & Magazines',  NULL, '00000000-0000-0000-0000-000000000005', now(), now());
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000505', 'Gaming',             NULL, '00000000-0000-0000-0000-000000000005', now(), now());
+INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000506', 'Splitwise',             NULL, '00000000-0000-0000-0000-000000000005', now(), now());
+INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000507', 'Fitness',             NULL, '00000000-0000-0000-0000-000000000005', now(), now());
 
 -- Shopping (EXPENSE)
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000006', 'Shopping', 'EXPENSE', NULL, now(), now());
@@ -90,11 +93,13 @@ INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUE
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000b03', 'Investments',   NULL, '00000000-0000-0000-0000-000000000011', now(), now());
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000b04', 'Rental Income', NULL, '00000000-0000-0000-0000-000000000011', now(), now());
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000b05', 'Gifts',         NULL, '00000000-0000-0000-0000-000000000011', now(), now());
+INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000b06', 'Refunds',         NULL, '00000000-0000-0000-0000-000000000011', now(), now());
 
 -- Transfer (TRANSFER)
-INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000099', 'Transfer', 'TRANSFER', NULL, now(), now());
+INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000098', 'Transfer', 'INCOME', NULL, now(), now());
+INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000099', 'Transfer', 'EXPENSE', NULL, now(), now());
 
 -- Communication, PC & Software (EXPENSE)
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000012', 'Communication, PC & Software', 'EXPENSE', NULL, now(), now());
-INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000c01', 'Postal Service',NULL, '00000000-0000-0000-0000-000000000012', now(), now());
+INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000c01', 'Postal Services',NULL, '00000000-0000-0000-0000-000000000012', now(), now());
 INSERT INTO categories (id, name, type, parent_id, created_at, updated_at) VALUES ('00000000-0000-0000-0000-000000000c02', 'Software',      NULL, '00000000-0000-0000-0000-000000000012', now(), now());

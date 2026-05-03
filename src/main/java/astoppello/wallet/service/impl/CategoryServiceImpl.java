@@ -5,13 +5,16 @@ import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.CategoryDto;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.CategoryMapper;
+import astoppello.wallet.model.CategoryType;
 import astoppello.wallet.repository.CategoryRepository;
 import astoppello.wallet.service.CategoryService;
 import io.micrometer.common.util.StringUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @Service
@@ -66,5 +69,10 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public void delete(UUID id) {
         repository.deleteById(id);
+    }
+
+    @Override
+    public Optional<CategoryDto> getByNameAndType(String name, CategoryType type) {
+        return repository.findByNameAndType(name, type).map(mapper::toDto);
     }
 }

@@ -105,6 +105,20 @@ class CategoryServiceTest {
     }
 
     @Test
+    void getByNameAndType() {
+        Category category = buildCategory(UUID.randomUUID());
+        when(repository.findByNameAndType(CATEGORY_NAME, category.getType())).thenReturn(Optional.of(category));
+        when(mapper.toDto(category)).thenReturn(dto);
+
+        Optional<CategoryDto> categoryDto = service.getByNameAndType(CATEGORY_NAME, CategoryType.EXPENSE);
+        assertThat(categoryDto).isPresent();
+        assertThat(categoryDto.get().getName()).isEqualTo(CATEGORY_NAME);
+        assertThat(categoryDto.get().getType()).isEqualTo(CategoryType.EXPENSE);
+        verify(repository).findByNameAndType(CATEGORY_NAME, CategoryType.EXPENSE);
+        verify(mapper).toDto(category);
+    }
+
+    @Test
     void save() {
         UUID id = UUID.randomUUID();
         Category category = buildCategory(null);

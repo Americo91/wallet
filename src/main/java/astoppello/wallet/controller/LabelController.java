@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @RequiredArgsConstructor
@@ -32,7 +33,7 @@ public class LabelController {
     }
 
     @GetMapping
-    public ResponseEntity<List<LabelDto>> getByName(@RequestParam("name") String name) {
+    public ResponseEntity<LabelDto> getByName(@RequestParam("name") String name) {
         return new ResponseEntity<>(labelService.getByName(name), HttpStatus.OK);
     }
 

@@ -9,6 +9,7 @@ import org.mapstruct.Mapping;
 public interface CategoryMapper {
 
     @Mapping(target = "parentId", source = "parent.id")
+//    @Mapping(target = "subcategories", ignore = true)
     CategoryDto toDto(Category domain);
 
     @Mapping(target = "parent", ignore = true)

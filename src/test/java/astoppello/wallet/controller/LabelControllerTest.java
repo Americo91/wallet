@@ -16,6 +16,7 @@ import tools.jackson.databind.ObjectMapper;
 
 import java.time.OffsetDateTime;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 import static org.hamcrest.Matchers.is;
@@ -80,13 +81,13 @@ class LabelControllerTest {
 
     @Test
     void getByName() throws Exception {
-        given(labelService.getByName(any())).willReturn(List.of(labelDto));
+        given(labelService.getByName(any())).willReturn(labelDto);
 
         mockMvc.perform(get(LabelController.LABEL_BASE_PATH + "?name=" + labelDto.getName()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
-                .andExpect(jsonPath("$[0].id", is(labelDto.getId().toString())))
-                .andExpect(jsonPath("$[0].name", is(labelDto.getName())));
+                .andExpect(jsonPath("$.id", is(labelDto.getId().toString())))
+                .andExpect(jsonPath("$.name", is(labelDto.getName())));
         then(labelService).should().getByName(any());
     }
 

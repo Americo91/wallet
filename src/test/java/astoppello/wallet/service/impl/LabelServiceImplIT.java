@@ -57,7 +57,7 @@ class LabelServiceImplIT {
 
     @Test
     void getByName() {
-        assertThat(service.getByName(LABEL_NAME)).hasSize(1);
+        assertThat(service.getByName(LABEL_NAME)).isNotNull();
     }
 
     @Test

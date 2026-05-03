@@ -13,6 +13,7 @@ import org.jspecify.annotations.NonNull;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @RequiredArgsConstructor
@@ -39,8 +40,8 @@ public class LabelServiceImpl implements LabelService {
     }
 
     @Override
-    public List<LabelDto> getByName(String name) {
-        return repository.findByName(name).stream().map(mapper::toDto).toList();
+    public LabelDto getByName(String name) {
+        return repository.findByName(name).map(mapper::toDto).orElseThrow(() -> new NotFoundException(Label.class, name));
     }
 
     @Override

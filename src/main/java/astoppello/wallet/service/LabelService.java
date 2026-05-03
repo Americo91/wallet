@@ -3,6 +3,7 @@ package astoppello.wallet.service;
 import astoppello.wallet.dto.LabelDto;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public interface LabelService {
@@ -11,7 +12,7 @@ public interface LabelService {
 
     LabelDto getByID(UUID id);
 
-    List<LabelDto> getByName(String name);
+    LabelDto getByName(String name);
 
     LabelDto save(LabelDto dto);
 

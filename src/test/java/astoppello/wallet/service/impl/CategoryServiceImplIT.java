@@ -16,6 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -129,6 +130,23 @@ public class CategoryServiceImplIT {
     void getByName_notFound() {
         assertThat(service.getByName("missing")).hasSize(0);
     }
+
+    @Test
+    void getByNameAndType() {
+        String games = "games";
+        service.save(buildDto(games));
+
+        Optional<CategoryDto> dto = service.getByNameAndType(games, CategoryType.EXPENSE);
+        assertThat(dto).isPresent();
+        assertThat(dto.get().getName()).isEqualTo(games);
+        assertThat(dto.get().getType()).isEqualTo(CategoryType.EXPENSE);
+    }
+
+    @Test
+    void getByNameAndType_notFound() {
+        assertThat(service.getByNameAndType("missing", CategoryType.EXPENSE)).isNotPresent();
+    }
+
 
     @Test
     void update() {
