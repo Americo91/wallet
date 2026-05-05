@@ -47,6 +47,8 @@ public class FileService {
         Map<CategoryTuple, UUID> categoryCache = new HashMap<>();
         Map<String, UUID> labelCache = new HashMap<>();
 
+        List<TransactionDto> convertedTransaction = new ArrayList<>();
+
         for (WalletExportDto.RecordDto record : export.records()) {
             Optional<UUID> categoryDtoOptional = resolveCategory(record, missingCategories, categoryCache);
             if (categoryDtoOptional.isEmpty()) {
@@ -72,13 +74,13 @@ public class FileService {
                     .labels(CollectionUtils.isEmpty(labels) ? null : labels)
                     .build();
 
-            transactionService.save(accountId, dto);
+            convertedTransaction.add(dto);
+//            transactionService.save(accountId, dto);
         }
-        log.info("Loaded {} transactions successfully", export.records().size());
+        log.info("Loaded {} transactions successfully", convertedTransaction.size());
 
         log.error("Not converted categories: {}", mapper.writeValueAsString(missingCategories));
         log.error("Not converted labels: {}", mapper.writeValueAsString(missingLabels));
-
     }
 
     private Set<UUID> resolveLabels(WalletExportDto.RecordDto record, Set<String> recordsNotConverted, Map<String, UUID> labelCache) {

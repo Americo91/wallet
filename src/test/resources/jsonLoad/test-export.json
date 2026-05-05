@@ -1,1 +1,58 @@
-{}
+{
+  "accountId": "acc-1",
+  "accountName": "TestAccount",
+  "exportedAt": "2026-04-27",
+  "totalRecords": 3,
+  "records": [
+    {
+      "accountId": "acc-1",
+      "amount": { "currencyCode": "EUR", "value": -10.50 },
+      "baseAmount": { "currencyCode": "EUR", "value": -10.50 },
+      "category": { "color": null, "envelopeId": 1001, "id": "cat-1", "name": "Restaurant" },
+      "createdAt": "2026-04-24T10:43:51Z",
+      "id": "rec-1",
+      "labels": [
+        { "archived": false, "color": "#ff6f00", "id": "lbl-1", "name": "Work" }
+      ],
+      "note": "Lunch",
+      "payee": "Pizza Place",
+      "paymentType": "cash",
+      "recordDate": "2026-04-24T10:43:35Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-04-24T11:19:09Z"
+    },
+    {
+      "accountId": "acc-1",
+      "amount": { "currencyCode": "EUR", "value": 180.00 },
+      "baseAmount": { "currencyCode": "EUR", "value": 180.00 },
+      "category": { "color": null, "envelopeId": 2001, "id": "cat-2", "name": "Salary" },
+      "createdAt": "2026-04-26T14:31:34Z",
+      "id": "rec-2",
+      "labels": null,
+      "note": null,
+      "payee": null,
+      "paymentType": "cash",
+      "recordDate": "2026-04-26T14:31:30Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-04-26T14:43:19Z"
+    },
+    {
+      "accountId": "acc-1",
+      "amount": { "currencyCode": "EUR", "value": -25.00 },
+      "baseAmount": { "currencyCode": "EUR", "value": -25.00 },
+      "category": { "color": null, "envelopeId": 1002, "id": "cat-3", "name": "UnknownCategory" },
+      "createdAt": "2026-04-25T08:00:00Z",
+      "id": "rec-3",
+      "labels": null,
+      "note": "Should be skipped",
+      "payee": "Unknown",
+      "paymentType": "card",
+      "recordDate": "2026-04-25T08:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-04-25T08:00:00Z"
+    }
+  ]
+}

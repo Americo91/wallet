@@ -185,7 +185,7 @@ class FileServiceTest {
     }
 
     private WalletExportDto.RecordDto exportRecordDto(BigDecimal amount, String category, List<String> labels, String type, String note, String payee) {
-        return new WalletExportDto.RecordDto(amount, category, note, payee, type, "2026-04-04", "2026-04-24T10:43:51Z", "2026-04-24T10:43:51Z", labels);
+        return new WalletExportDto.RecordDto(amount, category, note, payee, type, "2026-04-04", "2026-04-24T10:43:51Z", "2026-04-24T10:43:51Z", labels, "1");
     }
 
     private WalletExportJson.LabelJson label(String name) {

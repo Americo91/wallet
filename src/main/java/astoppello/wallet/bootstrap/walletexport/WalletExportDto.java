@@ -19,7 +19,8 @@ public record WalletExportDto(
             String date,
             String createdAt,
             String updatedAt,
-            List<String> labels
+            List<String> labels,
+            String id
     ) {
     }
 }
