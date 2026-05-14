@@ -8,8 +8,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # Build
 ./mvnw clean package
 
-# Run the application
+# Run the application (requires PostgreSQL running via docker-compose)
 ./mvnw spring-boot:run
+
+# Start PostgreSQL
+docker-compose up -d
 
 # Run all tests
 ./mvnw test
@@ -23,15 +26,38 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture
 
-Spring Boot 4.0.5 REST API backed by PostgreSQL. Base package: `astoppello.wallet`.
+Spring Boot 4.0.5 REST API for personal finance management. Java 21, PostgreSQL 18, Maven. Base package: `astoppello.wallet`.
 
-**Key dependencies:**
-- **Spring Data JPA** — persistence layer via JPA repositories
-- **Spring Data REST** — auto-exposes JPA repositories as hypermedia REST endpoints (HAL)
-- **Spring Web MVC** — for custom controllers alongside auto-exposed REST repositories
-- **Lombok** — reduces boilerplate (annotations processed at compile time; excluded from the final artifact)
-- **PostgreSQL** — runtime database driver
+**Key dependencies:** Spring Data JPA, Spring Data REST (HAL), Spring Web MVC, MapStruct (DTO mapping), Lombok, Apache Commons Lang3/Collections4.
 
-**Database:** PostgreSQL connection must be configured in `src/main/resources/application.properties` (datasource URL, username, password) before the application or integration tests can start — the `application.properties` is currently empty aside from the app name.
+**Database:** PostgreSQL on `localhost:5432/wallet` (postgres/postgres). Docker Compose provided. Schema is auto-created (`ddl-auto=create`) and seeded from `src/main/resources/data/*.sql` (categories, labels, sample transactions). Tests use H2 in-memory DB.
 
-The project is at an early scaffolding stage; domain entities, repositories, and controllers are yet to be added under `src/main/java/astoppello/wallet/`.
+### Domain Model
+
+All entities use UUID primary keys and embed `TrackingDate` (createdAt/updatedAt audit fields).
+
+- **Institution** — financial institution; has many Accounts
+- **Account** — bank/investment account with balance (BigDecimal), currency (EUR/USD/JPY), type (LIQUIDITY/SAVINGS/INVESTMENTS); has many Transactions
+- **Transaction** — expense or income entry; belongs to Account and Category; has many Labels. Balance is auto-adjusted on create/update/delete
+- **Category** — hierarchical (self-referential parent/child); typed as EXPENSE, INCOME, or TRANSFER
+- **Label** — tags for transactions (many-to-many)
+
+### Layered Structure
+
+Controllers (`/controller`, REST at `/api/v1/`) -> Services (`/service/impl`) -> Repositories (`/repository`). DTOs in `/dto`, MapStruct mappers in `/mapper`.
+
+**Transfer mechanism:** `TransactionService.transfer()` creates paired EXPENSE + INCOME transactions across two accounts.
+
+### Data Import (Bootstrap)
+
+`RecordLoader` (CommandLineRunner) loads transaction history on startup:
+1. Creates Institution + Account(s)
+2. `FileService.loadTransactions()` reads JSON from `src/main/resources/jsonLoad/*.json`
+3. `WalletExportMapper` normalizes legacy category names (180+ mappings) and filters labels
+4. Transactions are persisted via `TransactionService`
+
+The JSON files follow the `WalletExportJson` format (see `bootstrap/walletexport/` DTOs).
+
+### Error Handling
+
+`MvcExceptionHandler` handles `NotFoundException`, `ConstraintViolationException`, and validation errors globally, returning 400 with structured error responses.

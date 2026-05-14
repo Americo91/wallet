@@ -1,0 +1,64 @@
+{
+  "accountName" : "Natixis",
+  "exportedAt" : "2026-05-14",
+  "totalRecords" : 2,
+  "records" : [ {
+    "accountId" : "b38ec9cf-0063-4a73-997b-085a5549c4a3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 4020.29
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 4020.29
+    },
+    "category" : {
+      "color" : "#A75DE7",
+      "envelopeId" : 9002,
+      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
+      "name" : "Fin. investments"
+    },
+    "createdAt" : "2025-06-10T17:39:25Z",
+    "id" : "daf7214c-3596-4874-acde-86eecacbb3c5",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-06-10T17:30:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "b38ec9cf-0063-4a73-997b-085a5549c4a3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2025-05-14T18:37:40Z",
+    "id" : "1076270d-1701-4972-9905-ef873a6c5273",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-05-14T18:37:35Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:06Z"
+  } ]
+}

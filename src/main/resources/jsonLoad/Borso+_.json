@@ -1,0 +1,355 @@
+{
+  "accountName" : "Borso+",
+  "exportedAt" : "2026-05-14",
+  "totalRecords" : 11,
+  "records" : [ {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10011,
+      "id" : "94e96661-9e6d-4f93-8638-e37d403d1ebf",
+      "name" : "Income"
+    },
+    "createdAt" : null,
+    "id" : "6ec69aca-48a0-5ecc-949a-c36cf14a4e26",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : "Borso+",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-01-11T11:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -19.67
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -19.67
+    },
+    "category" : {
+      "color" : "#00BFA5",
+      "envelopeId" : 8000,
+      "id" : "b95bb8da-7a60-4b83-8e59-e4cd3bd366bf",
+      "name" : "Taxes"
+    },
+    "createdAt" : "2026-01-13T09:09:21Z",
+    "id" : "b739b79d-97fa-4f39-9eed-b30388f7414e",
+    "labels" : [ ],
+    "note" : "Prelevements fiscaux",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-01-02T09:08:39Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:12Z"
+  }, {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -26.43
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -26.43
+    },
+    "category" : {
+      "color" : "#00BFA5",
+      "envelopeId" : 8000,
+      "id" : "b95bb8da-7a60-4b83-8e59-e4cd3bd366bf",
+      "name" : "Taxes"
+    },
+    "createdAt" : "2026-01-13T09:08:38Z",
+    "id" : "479a789d-54cb-4ae5-aae9-f59504726a65",
+    "labels" : [ ],
+    "note" : "Prelevament sociaux",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-01-02T09:08:06Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 153.65
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 153.65
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10001,
+      "id" : "e026ce2a-6be2-4ecf-9de1-5bc15a8cdb0b",
+      "name" : "Interests, dividends"
+    },
+    "createdAt" : "2026-01-13T09:08:02Z",
+    "id" : "dda5e600-d746-42f5-824c-cfda25a40064",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-01-02T09:07:46Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10011,
+      "id" : "94e96661-9e6d-4f93-8638-e37d403d1ebf",
+      "name" : "Income"
+    },
+    "createdAt" : null,
+    "id" : "2e6b7d39-fe77-5e7d-809d-036c7961c14a",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : "Borso+",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-12-11T11:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10011,
+      "id" : "94e96661-9e6d-4f93-8638-e37d403d1ebf",
+      "name" : "Income"
+    },
+    "createdAt" : null,
+    "id" : "94d87e54-b081-520a-9fed-9fc144fe1548",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : "Borso+",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-11-11T11:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10011,
+      "id" : "94e96661-9e6d-4f93-8638-e37d403d1ebf",
+      "name" : "Income"
+    },
+    "createdAt" : "2025-10-12T09:37:43Z",
+    "id" : "26bcaa09-2c23-51e2-92bc-f38a9e82e733",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : "Borso+",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-11T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10011,
+      "id" : "94e96661-9e6d-4f93-8638-e37d403d1ebf",
+      "name" : "Income"
+    },
+    "createdAt" : null,
+    "id" : "c964c359-01b6-5eda-9e4b-442209999f46",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : "Borso+",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-09-11T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10011,
+      "id" : "94e96661-9e6d-4f93-8638-e37d403d1ebf",
+      "name" : "Income"
+    },
+    "createdAt" : null,
+    "id" : "fe41bbbd-36a3-5bc8-a603-9ed476a96671",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : "Borso+",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-08-11T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2025-07-12T08:58:24Z",
+    "id" : "d66b96d7-1704-4c32-8a6d-8b7e924d6eb2",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-07-12T08:58:18Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 15001.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 15001.0
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2025-06-10T17:34:34Z",
+    "id" : "69cea539-9fcd-409b-a089-a0e9c3b2c10a",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-06-10T17:30:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:09Z"
+  } ]
+}

@@ -151,7 +151,7 @@ class FileServiceTest {
     // --- helpers ---
 
     private WalletExportJson exportJson(WalletExportJson.RecordJson... records) {
-        return new WalletExportJson("acc-1", "Revolut", "2026-04-27", records.length, List.of(records));
+        return new WalletExportJson ("Revolut", "2026-04-27", records.length, List.of(records));
     }
 
     private WalletExportJson.RecordJson expenseRecordJson(BigDecimal amount, String category,

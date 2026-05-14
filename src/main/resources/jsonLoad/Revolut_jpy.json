@@ -1,0 +1,1660 @@
+{
+  "accountName" : "Revolut jpy",
+  "exportedAt" : "2026-05-14",
+  "totalRecords" : 49,
+  "records" : [ {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -5437.86
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -29.5443303
+    },
+    "category" : {
+      "color" : "#9E9E9E",
+      "envelopeId" : 11001,
+      "id" : "2009a0e2-1feb-4ec1-baab-f6323eedf2b3",
+      "name" : "Missing"
+    },
+    "createdAt" : "2026-01-20T17:29:23Z",
+    "id" : "b08b044c-4e76-4a4a-95f7-4bb434a38151",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-01-20T17:29:11Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:12Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -800.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -4.3464643
+    },
+    "category" : {
+      "color" : "#9E9E9E",
+      "envelopeId" : 11000,
+      "id" : "e107b28b-b20a-4bfe-b448-bdfc8714fbbc",
+      "name" : "Others"
+    },
+    "createdAt" : "2025-11-05T05:27:29Z",
+    "id" : "43603b56-4bac-4091-aa3e-3fa8d3f91927",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    }, {
+      "archived" : false,
+      "color" : "#2E7D32",
+      "id" : "960a751c-f24f-48fd-9907-a92cc3926404",
+      "name" : "Dividere"
+    } ],
+    "note" : "Luggage locker",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-11-05T05:26:30Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -28340.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -153.9734969
+    },
+    "category" : {
+      "color" : "#78909C",
+      "envelopeId" : 4002,
+      "id" : "4177e8d7-b08e-4377-a392-d408f74b88d1",
+      "name" : "Long distance"
+    },
+    "createdAt" : "2025-11-05T02:44:46Z",
+    "id" : "8144a986-5d25-404a-86a0-59e51e593f3c",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    }, {
+      "archived" : false,
+      "color" : "#2E7D32",
+      "id" : "960a751c-f24f-48fd-9907-a92cc3926404",
+      "name" : "Dividere"
+    } ],
+    "note" : "Treno Kyoto Tokyo",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-11-05T02:44:01Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -7736.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -42.0303095
+    },
+    "category" : {
+      "color" : "#4FC3F7",
+      "envelopeId" : 2010,
+      "id" : "14ae071f-b0ba-4418-8218-534ab85f9488",
+      "name" : "Shopping"
+    },
+    "createdAt" : "2025-11-04T12:44:14Z",
+    "id" : "4bfec5c3-4cbe-4cd4-be4f-014004478d98",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Don Quijotte",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-11-04T12:44:01Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -6000.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -32.5984821
+    },
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : 2007,
+      "id" : "b0199039-ecb4-44f5-ab05-358a04b4ddc8",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-11-03T07:22:26Z",
+    "id" : "487fa568-3b41-472a-a2bf-3206c9c63653",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "One Piece",
+    "payee" : "Andrea ",
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-11-03T07:21:34Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -1870.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -10.1598602
+    },
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : 2007,
+      "id" : "b0199039-ecb4-44f5-ab05-358a04b4ddc8",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-11-03T06:36:59Z",
+    "id" : "e5399a37-c9c7-4f68-a3fd-b94b9e7ff92c",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Portamonete",
+    "payee" : "Nonna",
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-11-03T06:36:29Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -2300.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -13.19
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1001,
+      "id" : "14968f43-8d04-45e6-80a7-719a1c2187ab",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2025-11-01T04:20:46Z",
+    "id" : "7ad60f78-b7d2-4497-bff7-9342fc52dc5d",
+    "labels" : [ ],
+    "note" : "Ristorante Nara",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-11-01T04:20:14Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -14550.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -79.051319
+    },
+    "category" : {
+      "color" : "#4FC3F7",
+      "envelopeId" : 2010,
+      "id" : "14ae071f-b0ba-4418-8218-534ab85f9488",
+      "name" : "Shopping"
+    },
+    "createdAt" : "2025-10-31T11:25:05Z",
+    "id" : "e98c271e-1275-4756-96df-67724d68b869",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Pokémon peluche",
+    "payee" : "Pokémon Center",
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-31T11:24:13Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -600.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -3.44
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1002,
+      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-10-30T09:14:44Z",
+    "id" : "6c3422e9-cb09-45d0-9c53-9230d74b138f",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Acqua",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : {
+      "address" : null,
+      "id" : null,
+      "latitude" : 34.66567889149873,
+      "longitude" : 135.43231844902039,
+      "name" : "Universal Studios Japan\nユニバーサル・\nスタジオ・ジャパン",
+      "placeTypes" : [ ]
+    },
+    "recordDate" : "2025-10-30T09:14:15Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:09Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -2290.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -12.441754
+    },
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : 2007,
+      "id" : "b0199039-ecb4-44f5-ab05-358a04b4ddc8",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-10-29T03:11:29Z",
+    "id" : "0170cf35-231b-4e83-a9ae-61e1e53cc4e1",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Puzzle kyoto",
+    "payee" : "Megi",
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-29T03:11:08Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:06Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -1346.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -7.72
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1001,
+      "id" : "14968f43-8d04-45e6-80a7-719a1c2187ab",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2025-10-28T12:46:51Z",
+    "id" : "fb0cbce2-cb71-4e59-9d5e-cdddbcf8764a",
+    "labels" : [ ],
+    "note" : "Kombini",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-28T12:46:02Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -4000.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -22.93
+    },
+    "category" : {
+      "color" : "#cccccc",
+      "envelopeId" : 6009,
+      "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
+      "name" : ""
+    },
+    "createdAt" : "2025-10-28T06:17:44Z",
+    "id" : "ee0142c7-a209-4031-b734-e29a0246494b",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Disneyland biglietto principessa",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-28T06:16:40Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -106800.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -612.32
+    },
+    "category" : {
+      "color" : "#cccccc",
+      "envelopeId" : 6009,
+      "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
+      "name" : ""
+    },
+    "createdAt" : "2025-10-28T04:50:55Z",
+    "id" : "8890e0eb-e784-43fe-8fea-fdbb44eb5c21",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Hotel Osaka",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-28T04:50:24Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -5000.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -28.67
+    },
+    "category" : {
+      "color" : "#cccccc",
+      "envelopeId" : 6009,
+      "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
+      "name" : ""
+    },
+    "createdAt" : "2025-10-28T02:56:17Z",
+    "id" : "994577f0-9a72-494b-8064-f7ab27fcecb0",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Disneyland premium pass",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-28T02:55:53Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -1898.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -10.88
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1002,
+      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-10-27T23:33:08Z",
+    "id" : "73e55091-2a92-40dd-b07b-521c5a75503a",
+    "labels" : [ ],
+    "note" : "Kombini",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-27T23:32:49Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -3872.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -22.2
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1001,
+      "id" : "14968f43-8d04-45e6-80a7-719a1c2187ab",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2025-10-28T02:56:51Z",
+    "id" : "89b4147a-3c9e-46da-ade7-522755505e26",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Cinese",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-27T13:56:34Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -1500.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -8.1496205
+    },
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : 2007,
+      "id" : "b0199039-ecb4-44f5-ab05-358a04b4ddc8",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-10-27T12:35:37Z",
+    "id" : "85b34925-53e6-46ee-9888-1ba0ffa60354",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Maglietta One piece",
+    "payee" : "Andrea",
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-27T12:35:21Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -4873.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -26.4754005
+    },
+    "category" : {
+      "color" : "#34BFF6",
+      "envelopeId" : 2000,
+      "id" : "ac313a35-dcde-44a3-b920-c6573dcdbd0c",
+      "name" : "Clothes & shoes"
+    },
+    "createdAt" : "2025-10-27T12:28:25Z",
+    "id" : "0bf003d3-183b-44b0-8a88-7104773d3023",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Uniqlo",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : {
+      "address" : null,
+      "id" : null,
+      "latitude" : 35.69891685321983,
+      "longitude" : 139.77479808032513,
+      "name" : "Yodobashi Akiba\nヨドバシカメラ マルチ\nメディアAkiba\nNegozio di\nforniture elettriche",
+      "placeTypes" : [ ]
+    },
+    "recordDate" : "2025-10-27T12:27:19Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:06Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -7000.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -40.13
+    },
+    "category" : {
+      "color" : "#cccccc",
+      "envelopeId" : 6009,
+      "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
+      "name" : ""
+    },
+    "createdAt" : "2025-10-27T04:57:16Z",
+    "id" : "18fb07a6-c379-4c0b-a766-58ff7f7e9c4c",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Sky tree",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-27T04:56:56Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -3100.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -17.77
+    },
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : 2007,
+      "id" : "b0199039-ecb4-44f5-ab05-358a04b4ddc8",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-10-27T03:32:51Z",
+    "id" : "ee306db5-9faa-4a2b-ab0d-985a5123c9bc",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Chopsticks",
+    "payee" : "Danilo Ilda",
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : {
+      "address" : null,
+      "id" : null,
+      "latitude" : 35.711952902907186,
+      "longitude" : 139.79833781719208,
+      "name" : "Asakusa\n浅草",
+      "placeTypes" : [ ]
+    },
+    "recordDate" : "2025-10-27T03:32:12Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -5100.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -29.24
+    },
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : 2007,
+      "id" : "b0199039-ecb4-44f5-ab05-358a04b4ddc8",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-10-27T03:32:03Z",
+    "id" : "51759714-7ab7-412e-8dbd-489933498b19",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Chopsticks",
+    "payee" : "Andrea",
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : {
+      "address" : null,
+      "id" : null,
+      "latitude" : 35.711952902907186,
+      "longitude" : 139.79833781719208,
+      "name" : "Asakusa\n浅草",
+      "placeTypes" : [ ]
+    },
+    "recordDate" : "2025-10-27T03:30:09Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:09Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -5000.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -28.67
+    },
+    "category" : {
+      "color" : "#cccccc",
+      "envelopeId" : 6009,
+      "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
+      "name" : ""
+    },
+    "createdAt" : "2025-10-27T01:20:41Z",
+    "id" : "f0bf96fd-61cb-42ae-808c-369af7a77efa",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Chopsticks",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-27T01:20:24Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -1309.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -7.5
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1002,
+      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-10-27T01:20:18Z",
+    "id" : "defd3526-f8c7-4266-b5f3-f35b8f713588",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Komboni",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-27T01:19:56Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -2530.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -13.7456933
+    },
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : 2007,
+      "id" : "b0199039-ecb4-44f5-ab05-358a04b4ddc8",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-10-26T11:59:45Z",
+    "id" : "4aa53d92-02e1-480c-905c-a0b911ee18ab",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "One Piece",
+    "payee" : "Andrea",
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-26T11:59:30Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -3600.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -20.64
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1002,
+      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-10-26T11:04:43Z",
+    "id" : "7c6dfc0f-e1ef-4615-bbd0-779f908e20ea",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Shibuya bar",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-26T11:03:57Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -7799.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -44.71
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1001,
+      "id" : "14968f43-8d04-45e6-80a7-719a1c2187ab",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2025-10-26T08:06:36Z",
+    "id" : "bda66257-3519-40bf-b67f-1599718b22e1",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Sushi nastro",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-26T08:05:44Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:12Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -753.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -4.0911095
+    },
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : 2007,
+      "id" : "b0199039-ecb4-44f5-ab05-358a04b4ddc8",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-10-26T03:54:12Z",
+    "id" : "5bf9cd64-5eac-4480-a5db-4cc3a269da40",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Panda",
+    "payee" : "Dean",
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-26T03:53:29Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:09Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -1318.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -7.56
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1002,
+      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-10-26T00:55:34Z",
+    "id" : "38bfcb01-9069-4636-96bc-f081516e3d9f",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Combini",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-26T00:55:42Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -28.94
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -0.17
+    },
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : 2007,
+      "id" : "b0199039-ecb4-44f5-ab05-358a04b4ddc8",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-10-25T13:58:16Z",
+    "id" : "e5311386-febe-48d6-a2d4-aa2e7e2aa5c7",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Don Quijotte",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-25T13:57:52Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -5110.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -29.3
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1001,
+      "id" : "14968f43-8d04-45e6-80a7-719a1c2187ab",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2025-10-25T13:19:40Z",
+    "id" : "69eed362-a8c3-4d1f-9457-4921fe862d34",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Ginzo sushi",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-25T13:19:22Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:09Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -2116.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -12.13
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1002,
+      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-10-25T09:32:21Z",
+    "id" : "96ff1e1b-3505-4fee-a831-72be03373675",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Combini",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-25T09:31:52Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -3600.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -20.64
+    },
+    "category" : {
+      "color" : "#64DD17",
+      "envelopeId" : 6008,
+      "id" : "f19c783b-bf1c-4772-9992-f712e5d0dfd0",
+      "name" : "TV, Streaming"
+    },
+    "createdAt" : "2025-10-25T07:36:43Z",
+    "id" : "e054632a-8d17-49e3-b262-fec4b43058ef",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Foto Harry Potter",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-25T07:36:21Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -4360.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -25.0
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1001,
+      "id" : "14968f43-8d04-45e6-80a7-719a1c2187ab",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2025-10-25T05:34:32Z",
+    "id" : "a8f56380-4e6d-4c09-8156-d81077d10e5d",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Harry Potter caffe",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-25T05:34:20Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:12Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -6200.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -35.55
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1001,
+      "id" : "14968f43-8d04-45e6-80a7-719a1c2187ab",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2025-10-25T01:47:24Z",
+    "id" : "88ef7849-5aea-4557-b234-ca4611f31eda",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Harry Potter breakfast",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-25T01:46:53Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : 87208.8
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 473.8124169
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2025-10-25T01:49:26Z",
+    "id" : "f497af3f-95a2-49be-b9a3-4564b3754b72",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-24T14:20:34Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -2920.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -16.74
+    },
+    "category" : {
+      "color" : "#64DD17",
+      "envelopeId" : 6002,
+      "id" : "c4e5024d-c19e-429e-9d92-054358481cac",
+      "name" : "Active sport, fitness"
+    },
+    "createdAt" : "2025-10-24T09:36:59Z",
+    "id" : "3725abda-83bc-4ed9-9763-54ebc18a3660",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Freccette",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-24T09:36:25Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -1850.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -10.61
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1002,
+      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-10-24T14:13:32Z",
+    "id" : "6eaab6fc-834c-4c4d-83a2-e1f8f55f5db9",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Street food",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-24T07:13:45Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -3876.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -22.22
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1002,
+      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-10-24T14:12:56Z",
+    "id" : "ad6faf22-73df-4803-86c1-0a4afa602fe2",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Frutta gommosa",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-24T06:15:05Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:12Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -5097.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -29.22
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1001,
+      "id" : "14968f43-8d04-45e6-80a7-719a1c2187ab",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2025-10-24T04:01:10Z",
+    "id" : "63ab0c40-b0fa-400a-b5e8-ab27ddc302f9",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Sushi",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-24T04:00:57Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:09Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -1452.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -8.32
+    },
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : 1002,
+      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-10-23T04:34:42Z",
+    "id" : "f63891ee-22e0-4d42-9eac-7cec5e7c8897",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Spremuta",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-23T04:34:18Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -1400.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -8.03
+    },
+    "category" : {
+      "color" : "#cccccc",
+      "envelopeId" : 6009,
+      "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
+      "name" : ""
+    },
+    "createdAt" : "2025-10-23T04:34:10Z",
+    "id" : "10fcc53e-a101-45a9-9645-b59c93fe2710",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Tassa di soggiorno",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-23T04:33:43Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:06Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : 174500.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 1000.0
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2025-10-19T16:53:15Z",
+    "id" : "c472412a-4957-4431-b0a2-5e890866f2d0",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-19T16:51:13Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:12Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -1462.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -8.3821816
+    },
+    "category" : {
+      "color" : null,
+      "envelopeId" : 1000,
+      "id" : "3fab4052-ecc5-4410-a73a-1716dd331f73",
+      "name" : "Groceries"
+    },
+    "createdAt" : "2025-10-19T10:44:13Z",
+    "id" : "53639473-1534-4e2d-8231-e33b376f6dfd",
+    "labels" : [ ],
+    "note" : "auchan",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-18T10:43:52Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:09Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -167904.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -962.6551449
+    },
+    "category" : {
+      "color" : "#cccccc",
+      "envelopeId" : 6009,
+      "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
+      "name" : ""
+    },
+    "createdAt" : "2025-10-19T10:45:22Z",
+    "id" : "db3c4f0a-cc45-412f-9dc2-cede4b8ef570",
+    "labels" : [ ],
+    "note" : "Hotel Tokyo",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-17T10:44:38Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : 175238.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 1000.0
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2025-10-16T17:13:35Z",
+    "id" : "e7b40309-b7e1-48af-bfae-20a786f98824",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-10-16T17:13:10Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -17480.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -100.2192439
+    },
+    "category" : {
+      "color" : "#cccccc",
+      "envelopeId" : 6009,
+      "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
+      "name" : ""
+    },
+    "createdAt" : "2025-09-20T09:47:21Z",
+    "id" : "48b33956-645a-4184-83eb-b6366352a6a4",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Harry Potter",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-09-20T09:46:22Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : 17298.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 100.0
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2025-09-20T09:45:42Z",
+    "id" : "f25bd122-be8d-4a51-8c95-09e973cbcf48",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-09-20T09:45:22Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : -11668.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -66.8969187
+    },
+    "category" : {
+      "color" : "#cccccc",
+      "envelopeId" : 6009,
+      "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
+      "name" : ""
+    },
+    "createdAt" : "2025-09-20T08:31:53Z",
+    "id" : "b6cb34ac-815c-44e2-a0d8-df73f26f4a8f",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#F44336",
+      "id" : "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
+      "name" : "Japan"
+    } ],
+    "note" : "Capsule hotel tokyo",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-09-20T08:31:22Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:12Z"
+  }, {
+    "accountId" : "4dae9323-ec72-4a54-a533-68c00af1be63",
+    "amount" : {
+      "currencyCode" : "JPY",
+      "value" : 19001.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 110.0
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2025-09-20T08:30:43Z",
+    "id" : "2d354c49-8757-4d99-b9af-bc76feb34b15",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-09-20T08:30:24Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  } ]
+}

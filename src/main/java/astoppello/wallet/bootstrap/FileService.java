@@ -75,12 +75,11 @@ public class FileService {
                     .build();
 
             convertedTransaction.add(dto);
-//            transactionService.save(accountId, dto);
         }
+        convertedTransaction.forEach(record -> transactionService.save(accountId, record));
         log.info("Loaded {} transactions successfully", convertedTransaction.size());
-
-        log.error("Not converted categories: {}", mapper.writeValueAsString(missingCategories));
-        log.error("Not converted labels: {}", mapper.writeValueAsString(missingLabels));
+        log.info("Not converted categories: {}", mapper.writeValueAsString(missingCategories));
+        log.info("Not converted labels: {}", mapper.writeValueAsString(missingLabels));
     }
 
     private Set<UUID> resolveLabels(WalletExportDto.RecordDto record, Set<String> recordsNotConverted, Map<String, UUID> labelCache) {
@@ -88,6 +87,8 @@ public class FileService {
         Set<UUID> resolvedLabels = new HashSet<>();
 
         for (String label : record.labels()) {
+            if ("To avoid".equals(label)) label = "Review";
+
             if (labelCache.containsKey(label)) {
                 resolvedLabels.add(labelCache.get(label));
                 continue;
@@ -116,6 +117,7 @@ public class FileService {
         Optional<CategoryDto> categoryDtoOptional = categoryService.getByNameAndType(record.category(), categoryType);
         if (categoryDtoOptional.isEmpty()) {
             recordsNotConverted.add(record.category());
+            log.warn("Category {} not found for recordId {}", record.category(), record.id());
             return Optional.empty();
         }
         UUID id = categoryDtoOptional.get().getId();

@@ -1,0 +1,64 @@
+{
+  "accountName" : "LDDS",
+  "exportedAt" : "2026-05-14",
+  "totalRecords" : 2,
+  "records" : [ {
+    "accountId" : "83d418fb-e555-48dd-a6df-1e65d075ff48",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 146.27
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 146.27
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10001,
+      "id" : "e026ce2a-6be2-4ecf-9de1-5bc15a8cdb0b",
+      "name" : "Interests, dividends"
+    },
+    "createdAt" : "2026-01-13T09:06:33Z",
+    "id" : "c5714408-91df-4561-a7b3-78a1420ae15d",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-01-02T09:06:03Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "83d418fb-e555-48dd-a6df-1e65d075ff48",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 12000.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 12000.0
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2025-05-10T18:46:11Z",
+    "id" : "4ff0fabb-17ef-431b-a0f0-f38e866b90b1",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-05-10T18:46:07Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:09Z"
+  } ]
+}

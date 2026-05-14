@@ -1,0 +1,190 @@
+{
+  "accountName" : "Livret A",
+  "exportedAt" : "2026-05-14",
+  "totalRecords" : 6,
+  "records" : [ {
+    "accountId" : "cc51bf2b-8faa-4eff-b8b3-095c280b8ed9",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 510.2
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 510.2
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10001,
+      "id" : "e026ce2a-6be2-4ecf-9de1-5bc15a8cdb0b",
+      "name" : "Interests, dividends"
+    },
+    "createdAt" : "2026-01-13T09:07:04Z",
+    "id" : "276506f5-f3ce-4d01-ad6b-5647e1061f1c",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-01-02T09:06:47Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "cc51bf2b-8faa-4eff-b8b3-095c280b8ed9",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 697.43
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 697.43
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10001,
+      "id" : "e026ce2a-6be2-4ecf-9de1-5bc15a8cdb0b",
+      "name" : "Interests, dividends"
+    },
+    "createdAt" : "2025-01-02T09:55:04Z",
+    "id" : "2d103803-50ba-469a-b5fb-a48340af70cd",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-01-02T09:54:45Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:07Z"
+  }, {
+    "accountId" : "cc51bf2b-8faa-4eff-b8b3-095c280b8ed9",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -630.02
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : -630.02
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2024-05-26T08:24:00Z",
+    "id" : "bf0c8d25-e296-4c36-b120-fe94dd7019b1",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2024-05-26T08:15:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-04-04T08:57:12Z"
+  }, {
+    "accountId" : "cc51bf2b-8faa-4eff-b8b3-095c280b8ed9",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 630.02
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 630.02
+    },
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : 10001,
+      "id" : "e026ce2a-6be2-4ecf-9de1-5bc15a8cdb0b",
+      "name" : "Interests, dividends"
+    },
+    "createdAt" : "2023-12-31T07:57:27Z",
+    "id" : "88015dd2-2df9-4acd-9954-0c65bf4a6a0e",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "transfer",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2023-12-31T07:57:59Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:10Z"
+  }, {
+    "accountId" : "cc51bf2b-8faa-4eff-b8b3-095c280b8ed9",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 450.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 450.0
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2023-02-02T08:03:35Z",
+    "id" : "d79a0413-5411-4904-9e6b-7a6cfa7ea7ad",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2023-01-30T08:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:13Z"
+  }, {
+    "accountId" : "cc51bf2b-8faa-4eff-b8b3-095c280b8ed9",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 22500.0
+    },
+    "baseAmount" : {
+      "currencyCode" : "EUR",
+      "value" : 22500.0
+    },
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : 20001,
+      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2023-01-28T07:14:15Z",
+    "id" : "66b6abec-687b-466c-a3ef-b06c2c7affcd",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2023-01-28T07:14:09Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-04-04T08:57:09Z"
+  } ]
+}

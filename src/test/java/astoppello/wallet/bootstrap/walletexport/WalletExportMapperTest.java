@@ -5,7 +5,11 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import tools.jackson.databind.ObjectMapper;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UncheckedIOException;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -24,7 +28,7 @@ class WalletExportMapperTest {
                 "acc-1",
                 new WalletExportJson.AmountJson("EUR", new BigDecimal("-10.50")),
                 new WalletExportJson.AmountJson("EUR", new BigDecimal("-10.50")),
-                new WalletExportJson.CategoryJson("#FF0000", 1001, "cat-1", "Restaurant"),
+                new WalletExportJson.CategoryJson("#FF0000", 1001, "cat-1", "Restaurants"),
                 "2026-04-24T10:43:51Z",
                 "rec-1",
                 List.of(
@@ -43,13 +47,13 @@ class WalletExportMapperTest {
         WalletExportDto.RecordDto dto = mapper.toDto(record);
 
         assertThat(dto.value()).isEqualTo(new BigDecimal("-10.50"));
-        assertThat(dto.category()).isEqualTo("Restaurant");
+        assertThat(dto.category()).isEqualTo("Restaurants");
         assertThat(dto.type()).isEqualTo("expense");
         assertThat(dto.note()).isEqualTo("Lunch");
         assertThat(dto.payee()).isEqualTo("Pizza Place");
         assertThat(dto.createdAt()).isEqualTo("2026-04-24T10:43:51Z");
         assertThat(dto.updatedAt()).isEqualTo("2026-04-24T11:19:09Z");
-        assertThat(dto.labels()).containsExactly("Guilty Free", "Lavoro");
+        assertThat(dto.labels()).containsExactly("Guilty Free");
     }
 
     @Test
@@ -100,8 +104,7 @@ class WalletExportMapperTest {
                 "2026-04-20T08:05:22Z"
         );
 
-        WalletExportJson json = new WalletExportJson(
-                "acc-1", "Revolut", "2026-04-27", 1, List.of(record)
+        WalletExportJson json = new WalletExportJson("Revolut", "2026-04-27", 1, List.of(record)
         );
 
         WalletExportDto dto = mapper.toDto(json);
@@ -112,5 +115,26 @@ class WalletExportMapperTest {
         assertThat(dto.records()).hasSize(1);
         assertThat(dto.records().getFirst().category()).isEqualTo("Parking");
         assertThat(dto.records().getFirst().type()).isEqualTo("expense");
+    }
+
+    @Test
+    void toDto_fromFile() {
+        WalletExportJson walletExportJson = loadFromFile("/jsonLoad/Revolut.json");
+        assertThat(walletExportJson).isNotNull();
+        WalletExportDto dto = mapper.toDto(walletExportJson);
+        assertThat(dto).isNotNull();
+        assertThat(dto.records()).isNotNull();
+    }
+
+    private WalletExportJson loadFromFile(String filePath) {
+        try (InputStream is = getClass().getResourceAsStream(filePath)) {
+            if (is == null) {
+                throw new IllegalArgumentException("Resource not found: " + filePath);
+            }
+            ObjectMapper objectMapper = new ObjectMapper();
+            return objectMapper.readValue(is, WalletExportJson.class);
+        } catch (IOException e) {
+            throw new UncheckedIOException("Failed to load file: " + filePath, e);
+        }
     }
 }
