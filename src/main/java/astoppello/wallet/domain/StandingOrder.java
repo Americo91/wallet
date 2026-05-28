@@ -61,7 +61,7 @@ public class StandingOrder {
             inverseJoinColumns = @JoinColumn(name = "label_id"))
     private Set<Label> labels = new HashSet<>();
 
-    private String note;
+    private String description;
 
     private String payee;
 

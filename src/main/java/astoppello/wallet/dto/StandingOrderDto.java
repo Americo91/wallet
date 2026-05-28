@@ -60,7 +60,7 @@ public class StandingOrderDto {
     private Set<UUID> labels;
 
     @Nullable
-    private String note;
+    private String description;
 
     @Nullable
     private String payee;

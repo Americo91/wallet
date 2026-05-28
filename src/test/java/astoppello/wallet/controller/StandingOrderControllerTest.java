@@ -58,7 +58,7 @@ class StandingOrderControllerTest {
                 .frequency(Frequency.MONTHLY)
                 .nextOccurrence(LocalDate.now().plusDays(5))
                 .category(UUID.randomUUID())
-                .note("Spotify subscription")
+                .description("Spotify subscription")
                 .enabled(true)
                 .trackingDate(TrackingDateDto.builder()
                         .createdAt(OffsetDateTime.now())

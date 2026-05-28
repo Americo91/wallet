@@ -37,6 +37,7 @@ public class StandingOrderNotificationJob {
     @Value("${wallet.notification.recipient:}")
     private String recipient;
 
+
     @Scheduled(cron = "0 0 8 * * *")
     public void checkUpcomingStandingOrders() {
         if (!notificationEnabled || recipient.isBlank()) {

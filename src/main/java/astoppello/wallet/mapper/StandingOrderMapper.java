@@ -2,6 +2,7 @@ package astoppello.wallet.mapper;
 
 import astoppello.wallet.domain.Label;
 import astoppello.wallet.domain.StandingOrder;
+import astoppello.wallet.domain.Transaction;
 import astoppello.wallet.dto.StandingOrderDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -32,4 +33,9 @@ public interface StandingOrderMapper {
                 .map(Label::getId)
                 .collect(Collectors.toSet());
     }
+
+    @Mapping(target = "trackingDate", ignore = true)
+    @Mapping(target = "id", ignore = true)
+    @Mapping(target = "date", source = "nextOccurrence")
+    Transaction toTransaction(StandingOrder standingOrder);
 }

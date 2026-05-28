@@ -90,8 +90,8 @@ public class StandingOrderServiceImpl implements StandingOrderService {
         if (CollectionUtils.isNotEmpty(dto.getLabels())) {
             domain.setLabels(resolveLabels(dto.getLabels()));
         }
-        if (dto.getNote() != null) {
-            domain.setNote(dto.getNote());
+        if (dto.getDescription() != null) {
+            domain.setDescription(dto.getDescription());
         }
         if (dto.getPayee() != null) {
             domain.setPayee(dto.getPayee());
