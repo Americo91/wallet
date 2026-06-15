@@ -1,8 +1,65 @@
 {
   "accountName" : "Natixis",
-  "exportedAt" : "2026-05-14",
-  "totalRecords" : 2,
+  "exportedAt" : "2026-06-15",
+  "totalRecords" : 4,
   "records" : [ {
+    "accountId" : "b38ec9cf-0063-4a73-997b-085a5549c4a3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 8556.47
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FFCD01",
+      "envelopeId" : null,
+      "id" : "5c5c2714-0064-8000-8000-000000000000",
+      "name" : "Dues, grants"
+    },
+    "createdAt" : "2026-05-20T21:08:23.137Z",
+    "id" : "3bca3b80-f921-48ba-baf5-34290c911c6b",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-20T21:08:24.518Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:34.069Z"
+  }, {
+    "accountId" : "b38ec9cf-0063-4a73-997b-085a5549c4a3",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2026-05-20T21:06:52.37Z",
+    "id" : "215f52e2-7ec1-47f4-85b1-f6d576dfac26",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-20T21:06:30Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:32.719Z"
+  },{
     "accountId" : "b38ec9cf-0063-4a73-997b-085a5549c4a3",
     "amount" : {
       "currencyCode" : "EUR",

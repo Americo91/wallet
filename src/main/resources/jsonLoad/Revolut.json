@@ -1,8 +1,520 @@
 {
   "accountName" : "Revolut",
-  "exportedAt" : "2026-05-14",
-  "totalRecords" : 1899,
+  "exportedAt" : "2026-06-15",
+  "totalRecords" : 1916,
   "records" : [ {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -3.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#64DD17",
+      "envelopeId" : null,
+      "id" : "5c5c1778-003c-8000-8000-000000000000",
+      "name" : "TV, Streaming"
+    },
+    "createdAt" : "2026-06-15T06:17:40.516Z",
+    "id" : "8d3471e7-347a-5a8f-bfb2-ff33e019c791",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#ff6f00",
+      "id" : "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+      "name" : "Guilty Free"
+    } ],
+    "note" : "Spotify",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-06-15T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-15T11:41:17.223Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -9.99
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#1565C0",
+      "envelopeId" : null,
+      "id" : "ea535e42-6bda-4267-bb2d-ab826ac2639a",
+      "name" : "Giochi"
+    },
+    "createdAt" : null,
+    "id" : "99abf2e7-8f97-56de-9a74-83713b5183aa",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#ff6f00",
+      "id" : "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+      "name" : "Guilty Free"
+    }, {
+      "archived" : false,
+      "color" : "#26C6DA",
+      "id" : "5c64219f-1f11-4f15-91ea-85b524c18a64",
+      "name" : "Games"
+    } ],
+    "note" : "Pokemon",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-06-13T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-14T12:53:15.699Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -4.9
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#78909C",
+      "envelopeId" : null,
+      "id" : "5c5c0fa0-0028-8000-8000-000000000000",
+      "name" : "Public transport"
+    },
+    "createdAt" : "2026-06-12T21:05:30.767Z",
+    "id" : "78505fed-c33b-480e-987d-27b9b54f9d49",
+    "labels" : [ ],
+    "note" : "Bici",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-06-12T21:05:08.996Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-12T22:26:17.167Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -10.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : null,
+      "id" : "5c5c03e9-000a-8000-8000-000000000000",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2026-06-12T10:13:43.706Z",
+    "id" : "f8991098-775f-415e-8213-865013d0ec92",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#0D47A1",
+      "id" : "7c250714-7e0d-47a3-b1de-6de91933621e",
+      "name" : "Lavoro"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-06-12T10:13:36.125Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-12T11:06:18.398Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -21.6
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#85E029",
+      "envelopeId" : null,
+      "id" : "5c5c1776-003c-8000-8000-000000000000",
+      "name" : "Education & development"
+    },
+    "createdAt" : null,
+    "id" : "949c692d-d4e1-5bc6-8857-ba7f7f8177b9",
+    "labels" : [ ],
+    "note" : "Claude",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-06-04T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.104Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 200.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2026-06-03T09:15:59.069Z",
+    "id" : "acc4fef1-a647-4362-9d3c-2d1fc9a2a42f",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-06-03T09:15:54.219Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:36.459Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -10.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#85E029",
+      "envelopeId" : null,
+      "id" : "5c5c1775-003c-8000-8000-000000000000",
+      "name" : "Hobbies"
+    },
+    "createdAt" : "2026-05-29T16:40:55.552Z",
+    "id" : "7cd93c80-0c8a-470f-b889-ea0ece7b4204",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#ff6f00",
+      "id" : "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+      "name" : "Guilty Free"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-29T16:40:21Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T20:58:22.815Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -10.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : null,
+      "id" : "5c5c03e9-000a-8000-8000-000000000000",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2026-06-11T20:44:24.392Z",
+    "id" : "0fdd41ce-0595-4451-b7b3-d760ad4e0a84",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#0D47A1",
+      "id" : "7c250714-7e0d-47a3-b1de-6de91933621e",
+      "name" : "Lavoro"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-28T20:43:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T20:58:22.815Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -12.99
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#34BFF6",
+      "envelopeId" : null,
+      "id" : "5c5c07d0-0014-8000-8000-000000000000",
+      "name" : "Clothes & shoes"
+    },
+    "createdAt" : "2026-06-11T20:42:32.033Z",
+    "id" : "6db7c742-950e-48cc-875f-f33f977d8157",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#ff6f00",
+      "id" : "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+      "name" : "Guilty Free"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-27T20:41:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T20:58:22.815Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -1.94
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : null,
+      "id" : "5c5c07d7-0014-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2026-05-24T13:08:03.962Z",
+    "id" : "be9c0e20-9ed7-4a1a-aeab-c5d325b75fdd",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#ff6f00",
+      "id" : "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+      "name" : "Guilty Free"
+    } ],
+    "note" : "Canzone Giotto",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-24T13:07:51Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T20:58:22.815Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -2.99
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#64DD17",
+      "envelopeId" : null,
+      "id" : "5c5c1778-003c-8000-8000-000000000000",
+      "name" : "TV, Streaming"
+    },
+    "createdAt" : "2026-05-25T16:02:57.148Z",
+    "id" : "9b153582-7964-5e70-874e-25c5132b36e8",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#ff6f00",
+      "id" : "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+      "name" : "Guilty Free"
+    } ],
+    "note" : "Radio rossonera",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-24T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.351Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -9.5
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : null,
+      "id" : "5c5c07d7-0014-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2026-05-24T09:56:56.195Z",
+    "id" : "d525e52f-04e3-4b61-a456-f014bfaa9f06",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#093373",
+      "id" : "5c1d3f52-2221-4510-b890-24fd09d15205",
+      "name" : "Fixed Cost"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-24T09:56:44Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T20:58:22.815Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -4.91
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#8A9BB1",
+      "envelopeId" : null,
+      "id" : "5c5c0fa4-0028-8000-8000-000000000000",
+      "name" : "Transportation"
+    },
+    "createdAt" : "2026-05-23T14:25:10.334Z",
+    "id" : "e5bd93ad-a81b-4673-896f-50d4d23602b8",
+    "labels" : [ ],
+    "note" : "Bici",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-23T14:24:38Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T20:58:22.815Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -10.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : null,
+      "id" : "5c5c03e9-000a-8000-8000-000000000000",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2026-05-20T11:48:50.789Z",
+    "id" : "ec6480ce-ae80-4cf7-a243-d9e74fcb54db",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#0D47A1",
+      "id" : "7c250714-7e0d-47a3-b1de-6de91933621e",
+      "name" : "Lavoro"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-20T11:48:43.368Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:37.248Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -10.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : null,
+      "id" : "5c5c03e9-000a-8000-8000-000000000000",
+      "name" : "Restaurants"
+    },
+    "createdAt" : "2026-05-18T16:33:28.572Z",
+    "id" : "9b0fa6a9-5fe6-4dc9-bd9f-72ffc91c8c6d",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#0D47A1",
+      "id" : "7c250714-7e0d-47a3-b1de-6de91933621e",
+      "name" : "Lavoro"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-18T16:33:19.835Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.351Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -5.4
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#536DFE",
+      "envelopeId" : null,
+      "id" : "5c5c1b5a-0046-8000-8000-000000000000",
+      "name" : "Internet"
+    },
+    "createdAt" : "2026-05-20T20:32:32.335Z",
+    "id" : "1499c35a-1181-4898-8151-570156b0df8e",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#093373",
+      "id" : "5c1d3f52-2221-4510-b890-24fd09d15205",
+      "name" : "Fixed Cost"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-16T20:32:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:33.769Z"
+  }, {
+    "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -3.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#64DD17",
+      "envelopeId" : null,
+      "id" : "5c5c1778-003c-8000-8000-000000000000",
+      "name" : "TV, Streaming"
+    },
+    "createdAt" : "2026-05-15T06:17:44.37Z",
+    "id" : "3405d6ad-e6f2-5427-9734-e4691ad08af6",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#ff6f00",
+      "id" : "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+      "name" : "Guilty Free"
+    } ],
+    "note" : "Spotify",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-15T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:33.717Z"
+  },{
     "accountId" : "b724a93a-e942-4148-b000-2667a97b3f79",
     "amount" : {
       "currencyCode" : "EUR",
@@ -1717,7 +2229,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2026-02-05T17:36:00Z",
     "id" : "d9c8402e-5e67-4468-bee7-d309f163c1ba",
@@ -3646,7 +4158,7 @@
       "color" : "#78909C",
       "envelopeId" : 4001,
       "id" : "ae7a44f8-f294-481e-91ae-1f1b3c9d4f86",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2025-11-07T14:22:08Z",
     "id" : "0e310873-4cee-4848-93af-c50b9737574b",
@@ -3845,7 +4357,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2025-10-30T01:07:41Z",
     "id" : "18f1eef8-735c-4a2d-bd57-9b0db340fca5",
@@ -3942,7 +4454,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2025-10-24T22:47:12Z",
     "id" : "37c0eda1-7eae-452c-9ea6-3e8374fd7ad9",
@@ -4954,7 +5466,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2025-09-16T04:05:33Z",
     "id" : "2a676fab-db1f-425e-9fec-3866ec4faca0",
@@ -6745,7 +7257,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2025-07-05T14:19:06Z",
     "id" : "79abf49e-e48a-4ad2-a654-57ef46de8d5c",
@@ -7612,7 +8124,7 @@
       "color" : "#78909C",
       "envelopeId" : 4001,
       "id" : "ae7a44f8-f294-481e-91ae-1f1b3c9d4f86",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2025-06-09T00:45:53Z",
     "id" : "632e6939-b37f-4cff-891e-4a0510be0ee7",
@@ -14685,7 +15197,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2024-09-27T10:36:18Z",
     "id" : "580ca66a-3968-4027-883d-b4e88b112478",
@@ -24002,7 +24514,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2023-06-10T09:01:58Z",
     "id" : "1d025e76-5626-40e5-b3a4-b9bb69ccaa50",
@@ -24453,7 +24965,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2023-05-20T15:02:16Z",
     "id" : "f64189c0-fe59-4dda-9238-d4a547b12d5f",
@@ -26473,7 +26985,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2022-11-13T14:27:53Z",
     "id" : "a1bf836e-0804-4b47-b5c0-7bb116ea1e1a",
@@ -26966,7 +27478,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2022-10-31T14:53:36Z",
     "id" : "f1e03347-4139-4a69-9fcd-eb4a8598d8e1",
@@ -29583,7 +30095,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10006,
       "id" : "982af6b1-627a-47a7-b362-03da2db50385",
-      "name" : ""
+       "name" : "Refunds (tax, purchase)"
     },
     "createdAt" : "2022-06-10T04:24:31Z",
     "id" : "4a5d125a-bf34-4528-9f5d-28e228cf34d3",
@@ -30968,7 +31480,7 @@
       "color" : "#cccccc",
       "envelopeId" : 8003,
       "id" : "29afbb67-0ca7-4598-9ec1-756d5a1d3018",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2022-02-28T07:14:37Z",
     "id" : "95d4698a-a00b-436b-8223-9b341c60d65b",
@@ -31524,7 +32036,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10005,
       "id" : "fc38e768-f06e-402f-b2b9-f30ea9b09c7c",
-      "name" : ""
+       "name" : "Refunds (tax, purchase)"
     },
     "createdAt" : "2021-11-18T21:08:30Z",
     "id" : "e974cbd1-ab34-4bea-bbb6-c17786bb9809",
@@ -31872,7 +32384,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2021-10-31T09:09:39Z",
     "id" : "3d29caab-e485-4b2f-a394-3e8900c0d83f",
@@ -32689,7 +33201,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10005,
       "id" : "fc38e768-f06e-402f-b2b9-f30ea9b09c7c",
-      "name" : ""
+       "name" : "Refunds (tax, purchase)"
     },
     "createdAt" : "2021-10-09T06:50:06Z",
     "id" : "df9f40fb-abe4-4c53-9c68-5c6947d04d9e",
@@ -32926,7 +33438,7 @@
       "color" : "#cccccc",
       "envelopeId" : 8003,
       "id" : "29afbb67-0ca7-4598-9ec1-756d5a1d3018",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2021-09-19T10:46:18Z",
     "id" : "96a7a744-51ff-4f8c-ba8e-05c105ada9ce",
@@ -33995,7 +34507,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2021-07-17T08:35:10Z",
     "id" : "4b5f6dd3-0b8b-4f15-9ac6-b14d286a51f0",
@@ -34813,7 +35325,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2021-06-10T08:31:21Z",
     "id" : "7f05d45f-d298-46dd-b2c4-bab15f44f0ff",
@@ -37057,7 +37569,7 @@
       "color" : "#cccccc",
       "envelopeId" : 8003,
       "id" : "29afbb67-0ca7-4598-9ec1-756d5a1d3018",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2020-12-28T14:21:54Z",
     "id" : "c8e9aea9-2bb2-423d-acdc-0e80ddab1588",
@@ -40336,7 +40848,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2020-08-10T09:27:02Z",
     "id" : "2e3a5a50-100c-466c-96bc-84accb20a653",
@@ -43155,7 +43667,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2020-03-02T20:13:57Z",
     "id" : "95714f27-9e97-4807-8cce-2548fb17fc61",
@@ -44703,7 +45215,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10006,
       "id" : "982af6b1-627a-47a7-b362-03da2db50385",
-      "name" : ""
+       "name" : "Refunds (tax, purchase)"
     },
     "createdAt" : "2020-01-08T17:48:30Z",
     "id" : "d7096f8d-9fc1-4cce-af08-517222721f6a",
@@ -45638,7 +46150,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-12-24T17:43:38Z",
     "id" : "217397cd-1e16-401a-a572-1b8d908d644c",
@@ -46735,7 +47247,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-11-30T17:12:56Z",
     "id" : "cfe09a88-0a4e-4b90-947b-1c5f75edcac2",
@@ -47119,7 +47631,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-11-14T13:40:04Z",
     "id" : "17cf5085-ec91-4ac9-a2bf-f860908fc870",
@@ -47740,7 +48252,7 @@
       "color" : "#cccccc",
       "envelopeId" : 8003,
       "id" : "29afbb67-0ca7-4598-9ec1-756d5a1d3018",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-11-02T08:35:53Z",
     "id" : "6a2918af-ef89-4328-ac16-c02ffa7c4bea",
@@ -48544,7 +49056,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-10-06T19:32:20Z",
     "id" : "5d7208fd-ab33-430f-a005-45bce5974a30",
@@ -49180,7 +49692,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-09-22T08:29:31Z",
     "id" : "74a16ce2-d041-435a-8e7d-acab7478b4bd",
@@ -49687,7 +50199,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-09-12T16:55:07Z",
     "id" : "bf9da489-755e-45b1-8f2e-53b4e8a10b88",
@@ -50179,7 +50691,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-09-08T21:19:38Z",
     "id" : "2e531104-81f6-41aa-a0ec-500a0ed99f58",
@@ -50382,7 +50894,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-09-05T14:48:28Z",
     "id" : "f8a8f3c1-f563-48bb-b4f6-97e18f187556",
@@ -50411,7 +50923,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-09-05T14:48:16Z",
     "id" : "a546786b-d0a3-4cab-a153-1b2733e3011d",
@@ -51959,7 +52471,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-07-16T17:33:54Z",
     "id" : "fa26e308-9a15-4316-9019-d41dccc84823",
@@ -52140,7 +52652,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-07-14T12:05:47Z",
     "id" : "39d65678-c076-4097-8e3c-e9125e5dc3e0",
@@ -52169,7 +52681,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-07-14T11:58:03Z",
     "id" : "564da86c-f7a1-49ba-a5ac-af6ceea3d331",
@@ -53334,7 +53846,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-05-21T20:25:49Z",
     "id" : "98841306-8e3c-4da0-90e9-cd38de4a60b3",
@@ -53363,7 +53875,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-05-21T20:28:41Z",
     "id" : "6a079e6f-10a0-413b-b723-1cea519480ae",
@@ -53645,7 +54157,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-05-13T19:45:34Z",
     "id" : "5838e8c2-aa3c-43cc-9b84-9a0fb065c7ee",
@@ -54623,7 +55135,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-04-08T20:04:56Z",
     "id" : "0df1e787-4a94-4a92-8916-34cd070e24ce",
@@ -55783,7 +56295,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-03-11T03:52:08Z",
     "id" : "5a871e69-4fa5-4987-8063-8563576a8fc9",

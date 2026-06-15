@@ -1,8 +1,39 @@
 {
   "accountName" : "Scalable Capital",
-  "exportedAt" : "2026-05-14",
-  "totalRecords" : 57,
+  "exportedAt" : "2026-06-15",
+  "totalRecords" : 58,
   "records" : [ {
+    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 500.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#A75DE7",
+      "envelopeId" : null,
+      "id" : "5c5c232a-005a-8000-8000-000000000000",
+      "name" : "Fin. investments"
+    },
+    "createdAt" : null,
+    "id" : "0c799448-8b52-55c6-9382-6551742845d7",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : "Pac scalable capital",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "transfer",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-06-07T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:33.604Z"
+  },{
     "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
     "amount" : {
       "currencyCode" : "EUR",

@@ -1052,7 +1052,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2023-01-15T07:05:51Z",
     "id" : "c0bbe350-f5f6-4068-99c8-0e363410f6a1",
@@ -1951,7 +1951,7 @@
       "color" : "#78909C",
       "envelopeId" : 4001,
       "id" : "ae7a44f8-f294-481e-91ae-1f1b3c9d4f86",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2022-01-10T21:51:13Z",
     "id" : "8aa8712c-e08e-4776-87f2-17ebb3e42ff5",
@@ -5438,7 +5438,7 @@
       "color" : "#78909C",
       "envelopeId" : 4001,
       "id" : "ae7a44f8-f294-481e-91ae-1f1b3c9d4f86",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-08-25T17:50:14Z",
     "id" : "0fe52388-a52a-403a-a438-6a6d68cfa8a5",

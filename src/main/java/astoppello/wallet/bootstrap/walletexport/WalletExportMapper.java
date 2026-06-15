@@ -53,6 +53,7 @@ public abstract class WalletExportMapper {
         categoryMap.put(new CategoryTypeRecord("Maintenance, repairs", CategoryType.EXPENSE), "Maintenance & Repairs");
 //        categoryMap.put(new CategoryTypeRecord("Services", CategoryType.EXPENSE), "Housing");
         categoryMap.put(new CategoryTypeRecord("Energy, utilities", CategoryType.EXPENSE), "Utilities");
+        categoryMap.put(new CategoryTypeRecord("Energy & utilities", CategoryType.EXPENSE), "Utilities");
         categoryMap.put(new CategoryTypeRecord("Mortgage", CategoryType.EXPENSE), "Mortgage");
         categoryMap.put(new CategoryTypeRecord("Rent", CategoryType.EXPENSE), "Rent");
 
@@ -64,6 +65,7 @@ public abstract class WalletExportMapper {
         categoryMap.put(new CategoryTypeRecord("Long distance", CategoryType.EXPENSE), "Flights");
         categoryMap.put(new CategoryTypeRecord("Taxi", CategoryType.EXPENSE), "Taxi & Ride-sharing");
         categoryMap.put(new CategoryTypeRecord("Public transport", CategoryType.EXPENSE), "Public Transit");
+        categoryMap.put(new CategoryTypeRecord("Insurance (Vehicle)", CategoryType.EXPENSE), "Travel Insurance");
 
 
         //Vehicle
@@ -82,9 +84,9 @@ public abstract class WalletExportMapper {
         categoryMap.put(new CategoryTypeRecord("Life & Entertainment", CategoryType.EXPENSE), "Entertainment");
         categoryMap.put(new CategoryTypeRecord("Lottery, gambling", CategoryType.EXPENSE), "Entertainment");
         categoryMap.put(new CategoryTypeRecord("Charity, gifts", CategoryType.EXPENSE), "Charity");
-        categoryMap.put(new CategoryTypeRecord("Holiday, trips, hotels", CategoryType.EXPENSE), "Hotels & Accommodation");
-        categoryMap.put(new CategoryTypeRecord("", CategoryType.EXPENSE), "Hotels & Accommodation");
+        categoryMap.put(new CategoryTypeRecord("Holidays, trips, hotels", CategoryType.EXPENSE), "Hotels & Accommodation");
         categoryMap.put(new CategoryTypeRecord("TV, Streaming", CategoryType.EXPENSE), "Streaming Services");
+        categoryMap.put(new CategoryTypeRecord("Tv, Streaming", CategoryType.EXPENSE), "Streaming Services");
         categoryMap.put(new CategoryTypeRecord("Books", CategoryType.EXPENSE), "Books");
         categoryMap.put(new CategoryTypeRecord("Education & development", CategoryType.EXPENSE), "Education");
         categoryMap.put(new CategoryTypeRecord("Hobbies", CategoryType.EXPENSE), "Hobbies");
