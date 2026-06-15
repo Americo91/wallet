@@ -890,7 +890,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10005,
       "id" : "fc38e768-f06e-402f-b2b9-f30ea9b09c7c",
-      "name" : ""
+       "name" : "Gifts"
     },
     "createdAt" : "2025-04-20T15:38:27Z",
     "id" : "08dda881-38a2-4379-9d5d-6c35fb8aa163",
@@ -1094,7 +1094,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10005,
       "id" : "fc38e768-f06e-402f-b2b9-f30ea9b09c7c",
-      "name" : ""
+       "name" : "Gifts"
     },
     "createdAt" : "2025-04-19T08:34:48Z",
     "id" : "984c9bdd-4b6a-49cc-8eed-c974d9135df9",

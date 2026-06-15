@@ -1,8 +1,34 @@
 {
   "accountName" : "Cash",
-  "exportedAt" : "2026-05-14",
-  "totalRecords" : 817,
+  "exportedAt" : "2026-06-15",
+  "totalRecords" : 818,
   "records" : [ {
+    "accountId" : "7e81209d-b4c4-4b88-ba1a-5e8f870b33cc",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -10.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : null,
+      "id" : "5c5c03ea-000a-8000-8000-000000000000",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2026-05-23T17:28:37.9Z",
+    "id" : "c7ffedde-25ca-4f6e-90d4-acfe6e107971",
+    "labels" : [ ],
+    "note" : "Gelato",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-23T17:28:09.048Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.413Z"
+  }, {
     "accountId" : "7e81209d-b4c4-4b88-ba1a-5e8f870b33cc",
     "amount" : {
       "currencyCode" : "EUR",
@@ -2130,7 +2156,7 @@
       "color" : "#78909C",
       "envelopeId" : 4001,
       "id" : "ae7a44f8-f294-481e-91ae-1f1b3c9d4f86",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2025-02-09T21:07:02Z",
     "id" : "7f19a230-d14c-47ad-af7a-e5e64deab620",
@@ -2193,7 +2219,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10005,
       "id" : "fc38e768-f06e-402f-b2b9-f30ea9b09c7c",
-      "name" : ""
+       "name" : "Refunds (tax, purchase)"
     },
     "createdAt" : "2025-02-07T19:12:59Z",
     "id" : "3f0e3b89-d139-41e8-a971-f1f7ea693c20",
@@ -2923,7 +2949,7 @@
       "color" : "#78909C",
       "envelopeId" : 4001,
       "id" : "ae7a44f8-f294-481e-91ae-1f1b3c9d4f86",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2024-06-13T22:23:25Z",
     "id" : "c97e3263-bf90-47ec-8599-f7bb41fd98c7",
@@ -4080,7 +4106,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2023-11-26T06:22:16Z",
     "id" : "76ba2973-fab8-4672-8e89-e477ce926bb5",
@@ -5266,7 +5292,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2023-08-12T15:43:21Z",
     "id" : "a90f2e1a-ef27-464c-a5be-b035d2898844",
@@ -7587,7 +7613,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2022-11-02T13:01:07Z",
     "id" : "233312cd-3fc6-4b60-87de-27f4d1b49b48",
@@ -8341,7 +8367,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2022-09-07T15:18:04Z",
     "id" : "2827fc91-a27e-4273-896b-a8c2be73d41b",
@@ -8428,7 +8454,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2022-09-04T10:45:15Z",
     "id" : "173f71b9-c957-4e21-bc97-f4014b179ff9",
@@ -10327,7 +10353,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2022-01-23T15:46:11Z",
     "id" : "87858643-7a42-4f6b-8bcd-4f6ed7a3ce4d",
@@ -10472,7 +10498,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2022-01-09T21:39:15Z",
     "id" : "a68f5cac-a900-4fbb-919b-98aed54598da",
@@ -10646,7 +10672,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10005,
       "id" : "fc38e768-f06e-402f-b2b9-f30ea9b09c7c",
-      "name" : ""
+       "name" : "Refunds (tax, purchase)"
     },
     "createdAt" : "2021-12-31T17:12:41Z",
     "id" : "5e30621e-672e-4554-aa01-e6049b88c485",
@@ -13268,7 +13294,7 @@
       "color" : "#78909C",
       "envelopeId" : 4001,
       "id" : "ae7a44f8-f294-481e-91ae-1f1b3c9d4f86",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2021-05-23T07:07:18Z",
     "id" : "bb819a3d-8d66-41be-bb37-e826559b7644",
@@ -13384,7 +13410,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2021-04-01T09:02:27Z",
     "id" : "3df7cf2b-d049-492c-8dba-7030aba03623",
@@ -15791,7 +15817,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2020-07-30T07:27:13Z",
     "id" : "92199734-e494-446f-96b9-5eb80512072f",
@@ -17422,7 +17448,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2020-01-03T14:33:33Z",
     "id" : "a57afbbe-41d5-44c6-81a7-ac1e523fdb97",
@@ -17509,7 +17535,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2020-01-02T12:49:29Z",
     "id" : "555efffd-643d-457a-a299-9221fa5dcf8c",
@@ -18683,7 +18709,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-09-22T08:30:25Z",
     "id" : "70315de5-3dd9-4c79-a14b-93d32f01563f",
@@ -18878,7 +18904,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-09-15T11:53:41Z",
     "id" : "65e0c3ed-1da2-4e8f-b584-066323488879",
@@ -19080,7 +19106,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-09-08T21:14:23Z",
     "id" : "d00c0381-1d78-4a4a-a65a-3123a0ca45ab",
@@ -20775,7 +20801,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+       "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2019-05-11T21:20:59Z",
     "id" : "121f1187-5b5d-4c5a-8126-8acb41204298",

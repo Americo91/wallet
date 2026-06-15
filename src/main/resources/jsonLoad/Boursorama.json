@@ -1,8 +1,200 @@
 {
   "accountName" : "Boursorama",
-  "exportedAt" : "2026-05-14",
-  "totalRecords" : 880,
+  "exportedAt" : "2026-06-15",
+  "totalRecords" : 887,
   "records" : [ {
+    "accountId" : "fde23f7c-a99a-461c-98e2-5c45a1093447",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -14.98
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#2258FF",
+      "envelopeId" : null,
+      "id" : "5c5c1b59-0046-8000-8000-000000000000",
+      "name" : "Phone, cell phones"
+    },
+    "createdAt" : "2026-06-15T06:17:48.239Z",
+    "id" : "ebf98099-e3ee-587d-8215-c237b8c6174e",
+    "labels" : [ ],
+    "note" : "RedBySFR",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-06-15T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-15T11:41:17.223Z"
+  }, {
+    "accountId" : "fde23f7c-a99a-461c-98e2-5c45a1093447",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -550.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#A75DE7",
+      "envelopeId" : null,
+      "id" : "5c5c232a-005a-8000-8000-000000000000",
+      "name" : "Fin. investments"
+    },
+    "createdAt" : null,
+    "id" : "0163d8a0-8778-517f-bc07-9a2a3dd98ee9",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : "Pac scalable capital",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-06-07T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:32.688Z"
+  }, {
+    "accountId" : "fde23f7c-a99a-461c-98e2-5c45a1093447",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -200.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2026-06-03T09:15:59.038Z",
+    "id" : "f46c0dd4-cb51-47bb-a278-fd064249400d",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-06-03T09:15:54.219Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:37.208Z"
+  }, {
+    "accountId" : "fde23f7c-a99a-461c-98e2-5c45a1093447",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 3560.74
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FFCD01",
+      "envelopeId" : null,
+      "id" : "5c5c2710-0064-8000-8000-000000000000",
+      "name" : "Wage, invoices"
+    },
+    "createdAt" : "2026-06-11T20:47:34.427Z",
+    "id" : "6a3d14b3-0e50-43c1-b9d8-1db3772b294f",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-28T20:47:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T20:58:22.815Z"
+  }, {
+    "accountId" : "fde23f7c-a99a-461c-98e2-5c45a1093447",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -25.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#4fC3F7",
+      "envelopeId" : null,
+      "id" : "5c5c07d7-0014-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2026-05-21T16:49:52.977Z",
+    "id" : "d585e7fa-1c10-408b-a500-eaef365f5dae",
+    "labels" : [ ],
+    "note" : "Fiori  megi",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-21T16:49:23.588Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.712Z"
+  }, {
+    "accountId" : "fde23f7c-a99a-461c-98e2-5c45a1093447",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2026-05-20T21:06:52.37Z",
+    "id" : "49770a18-836a-4ea4-ad81-fd36f1fba0e4",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-20T21:06:30Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:34.384Z"
+  }, {
+    "accountId" : "fde23f7c-a99a-461c-98e2-5c45a1093447",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -14.98
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#2258FF",
+      "envelopeId" : null,
+      "id" : "5c5c1b59-0046-8000-8000-000000000000",
+      "name" : "Phone, cell phones"
+    },
+    "createdAt" : null,
+    "id" : "ae8b37ea-b96c-594a-b649-593779fccbe3",
+    "labels" : [ ],
+    "note" : "RedBySFR",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : "cash",
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2026-05-15T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.486Z"
+  },{
     "accountId" : "fde23f7c-a99a-461c-98e2-5c45a1093447",
     "amount" : {
       "currencyCode" : "EUR",
@@ -903,7 +1095,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+      "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2026-02-14T12:48:39Z",
     "id" : "0446c563-0cff-4062-a07c-e09856f8b420",
@@ -1222,7 +1414,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+      "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2026-02-17T21:20:25Z",
     "id" : "106a4949-abcc-4106-9f7e-9da0eb1a0279",
@@ -3160,7 +3352,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+      "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2025-10-19T16:45:53Z",
     "id" : "ec284166-1802-4184-ad7c-dff269f5bb5d",
@@ -3644,7 +3836,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+      "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2025-09-20T08:52:38Z",
     "id" : "db7b3517-125f-49f5-91c6-402ac1fd5c45",
@@ -23801,7 +23993,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+      "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2022-01-30T16:35:58Z",
     "id" : "3e19db88-0808-4262-8f20-237449d5f0dc",
@@ -24705,7 +24897,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+      "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2021-10-13T08:08:42Z",
     "id" : "407cbdd7-778d-4a1c-a9a1-c2fb1a866f0e",
@@ -25227,7 +25419,7 @@
       "color" : "#cccccc",
       "envelopeId" : 6009,
       "id" : "5e1bee6a-b55f-443c-95dc-d233d7dc6af8",
-      "name" : ""
+      "name" : "Holidays, trips, hotels"
     },
     "createdAt" : "2021-09-29T22:24:28Z",
     "id" : "8c226979-9614-4e86-b493-8f1067b2120a",
@@ -25488,7 +25680,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10005,
       "id" : "fc38e768-f06e-402f-b2b9-f30ea9b09c7c",
-      "name" : ""
+      "name" : "Refunds (tax, purchase)"
     },
     "createdAt" : "2021-08-03T18:08:00Z",
     "id" : "16440195-7e33-4a4c-b850-66b1f1d9e6ee",
@@ -25517,7 +25709,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10005,
       "id" : "fc38e768-f06e-402f-b2b9-f30ea9b09c7c",
-      "name" : ""
+      "name" : "Refunds (tax, purchase)"
     },
     "createdAt" : "2021-08-03T18:07:25Z",
     "id" : "7f400bd1-64a0-42db-b1bf-15ec4e203c04",
@@ -25836,7 +26028,7 @@
       "color" : "#cccccc",
       "envelopeId" : 10005,
       "id" : "fc38e768-f06e-402f-b2b9-f30ea9b09c7c",
-      "name" : ""
+      "name" : "Refunds (tax, purchase)"
     },
     "createdAt" : "2021-07-25T06:58:03Z",
     "id" : "5ec8c637-85b8-4761-bbe5-4fb0d07d83fc",
