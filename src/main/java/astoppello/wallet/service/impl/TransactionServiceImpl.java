@@ -19,10 +19,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @RequiredArgsConstructor
 @Service
@@ -34,9 +31,11 @@ public class TransactionServiceImpl implements TransactionService {
     private final CategoryRepository categoryRepository;
     private final LabelRepository labelRepository;
 
+
+
     @Override
     public List<TransactionDto> getAll() {
-        return repository.findAll().stream().map(mapper::toDto).toList();
+        return repository.findAll().stream().map(mapper::toDto).sorted(Comparator.comparing(TransactionDto::getDate, Comparator.nullsLast(Comparator.reverseOrder()))).toList();
     }
 
     @Override
@@ -123,7 +122,7 @@ public class TransactionServiceImpl implements TransactionService {
 
     @Override
     public List<TransactionDto> getAllByAccount(UUID accountId) {
-        return repository.findByAccount(getAccount(accountId)).stream().map(mapper::toDto).toList();
+        return repository.findByAccount(getAccount(accountId)).stream().map(mapper::toDto).sorted(Comparator.comparing(TransactionDto::getDate, Comparator.nullsLast(Comparator.reverseOrder()))).toList();
     }
 
     @Override

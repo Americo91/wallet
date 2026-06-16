@@ -82,7 +82,7 @@ public class RecordLoader implements CommandLineRunner {
         AccountDto cash = accountService.save(institutionDto.getId(), AccountDto.builder().name("Cash").accountType(AccountTypeEnum.LIQUIDITY).balance(BigDecimal.ZERO).currency(Currency.EUR).build());
         fileService.loadTransactions(cash.getId(), "/jsonLoad/Cash.json");
 
-        AccountDto cashMatrimonio = accountService.save(institutionDto.getId(), AccountDto.builder().name("Cash Matrimonio").accountType(AccountTypeEnum.LIQUIDITY).balance(BigDecimal.ZERO).currency(Currency.EUR).build());
+        AccountDto cashMatrimonio = accountService.save(institutionDto.getId(), AccountDto.builder().name("Cash Matrimonio").accountType(AccountTypeEnum.LIQUIDITY).balance(new BigDecimal("-643.00")).currency(Currency.EUR).build());
         fileService.loadTransactions(cashMatrimonio.getId(), "/jsonLoad/Cash_Matrimonio.json");
 
         AccountDto cashLek = accountService.save(institutionDto.getId(), AccountDto.builder().name("Cash Lek").accountType(AccountTypeEnum.LIQUIDITY).balance(BigDecimal.ZERO).currency(Currency.ALL).build());

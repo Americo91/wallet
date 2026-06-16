@@ -30,10 +30,12 @@ public abstract class WalletExportMapper {
 
         // Shopping
         categoryMap.put(new CategoryTypeRecord("Drug-store, chemist", CategoryType.EXPENSE), "Pharmacy");
+        categoryMap.put(new CategoryTypeRecord("Drugstore", CategoryType.EXPENSE), "Pharmacy");
         categoryMap.put(new CategoryTypeRecord("Shopping", CategoryType.EXPENSE), "Shopping");
         categoryMap.put(new CategoryTypeRecord("Lesiure time", CategoryType.EXPENSE), "Hobbies");
         categoryMap.put(new CategoryTypeRecord("Stationery, tools", CategoryType.EXPENSE), "Household Supplies");
         categoryMap.put(new CategoryTypeRecord("Cancelleria & Utensili", CategoryType.EXPENSE), "Household Supplies");
+        categoryMap.put(new CategoryTypeRecord("Stationery & tools", CategoryType.EXPENSE), "Household Supplies");
         categoryMap.put(new CategoryTypeRecord("Gifts", CategoryType.EXPENSE), "Gifts");
         categoryMap.put(new CategoryTypeRecord("Electronics & accessories", CategoryType.EXPENSE), "Electronics");
         categoryMap.put(new CategoryTypeRecord("Pets, animals", CategoryType.EXPENSE), "Pets");
@@ -42,6 +44,7 @@ public abstract class WalletExportMapper {
         categoryMap.put(new CategoryTypeRecord("Mobili", CategoryType.EXPENSE), "Furnishings");
 //        categoryMap.put(new CategoryTypeRecord("Kids", CategoryType.EXPENSE), "Kids");
         categoryMap.put(new CategoryTypeRecord("Health and beauty", CategoryType.EXPENSE), "Personal Care & Beauty");
+        categoryMap.put(new CategoryTypeRecord("Health & beauty", CategoryType.EXPENSE), "Personal Care & Beauty");
         categoryMap.put(new CategoryTypeRecord("Jewels, accessories", CategoryType.EXPENSE), "Clothing");
         categoryMap.put(new CategoryTypeRecord("Gioielli & Accessori", CategoryType.EXPENSE), "Clothing");
         categoryMap.put(new CategoryTypeRecord("Clothes & shoes", CategoryType.EXPENSE), "Clothing");
@@ -49,6 +52,7 @@ public abstract class WalletExportMapper {
 
         // Housing
         categoryMap.put(new CategoryTypeRecord("Property insurance", CategoryType.EXPENSE), "Home Insurance");
+        categoryMap.put(new CategoryTypeRecord("Insurance (Housing)", CategoryType.EXPENSE), "Home Insurance");
         categoryMap.put(new CategoryTypeRecord("Housing", CategoryType.EXPENSE), "Housing");
         categoryMap.put(new CategoryTypeRecord("Maintenance, repairs", CategoryType.EXPENSE), "Maintenance & Repairs");
 //        categoryMap.put(new CategoryTypeRecord("Services", CategoryType.EXPENSE), "Housing");
@@ -86,11 +90,12 @@ public abstract class WalletExportMapper {
         categoryMap.put(new CategoryTypeRecord("Charity, gifts", CategoryType.EXPENSE), "Charity");
         categoryMap.put(new CategoryTypeRecord("Holidays, trips, hotels", CategoryType.EXPENSE), "Hotels & Accommodation");
         categoryMap.put(new CategoryTypeRecord("TV, Streaming", CategoryType.EXPENSE), "Streaming Services");
-        categoryMap.put(new CategoryTypeRecord("Tv, Streaming", CategoryType.EXPENSE), "Streaming Services");
+        categoryMap.put(new CategoryTypeRecord("Tv, streaming", CategoryType.EXPENSE), "Streaming Services");
         categoryMap.put(new CategoryTypeRecord("Books", CategoryType.EXPENSE), "Books");
         categoryMap.put(new CategoryTypeRecord("Education & development", CategoryType.EXPENSE), "Education");
         categoryMap.put(new CategoryTypeRecord("Hobbies", CategoryType.EXPENSE), "Hobbies");
         categoryMap.put(new CategoryTypeRecord("Tempo libero", CategoryType.EXPENSE), "Hobbies");
+        categoryMap.put(new CategoryTypeRecord("Free time", CategoryType.EXPENSE), "Hobbies");
         categoryMap.put(new CategoryTypeRecord("Life events", CategoryType.EXPENSE), "Life Events");
         categoryMap.put(new CategoryTypeRecord("Eventi", CategoryType.EXPENSE), "Life Events");
         categoryMap.put(new CategoryTypeRecord("Culture, sport events", CategoryType.EXPENSE), "Movies & Events");
@@ -143,6 +148,7 @@ public abstract class WalletExportMapper {
         categoryMap.put(new CategoryTypeRecord("Gifts", CategoryType.INCOME), "Gifts");
 //        categoryMap.put(new CategoryTypeRecord("Child Support", CategoryType.INCOME), "Income");
         categoryMap.put(new CategoryTypeRecord("Refunds (tax, purchase)", CategoryType.INCOME), "Refunds");
+        categoryMap.put(new CategoryTypeRecord("Refunds", CategoryType.INCOME), "Refunds");
         categoryMap.put(new CategoryTypeRecord("Lottery, gambling", CategoryType.INCOME), "Income");
 //        categoryMap.put(new CategoryTypeRecord("Checks, coupons", CategoryType.INCOME), "Income");
 //        categoryMap.put(new CategoryTypeRecord("Lending, renting", CategoryType.INCOME), "Income");
@@ -240,5 +246,16 @@ public abstract class WalletExportMapper {
 
 
     private record CategoryTypeRecord(String name, CategoryType type) {
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (!(o instanceof CategoryTypeRecord that)) return false;
+            return type == that.type && name.equalsIgnoreCase(that.name);
+        }
+
+        @Override
+        public int hashCode() {
+            return java.util.Objects.hash(name != null ? name.toLowerCase() : null, type);
+        }
     }
 }

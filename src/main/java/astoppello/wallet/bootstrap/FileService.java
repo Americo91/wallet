@@ -77,7 +77,7 @@ public class FileService {
             convertedTransaction.add(dto);
         }
         convertedTransaction.forEach(record -> transactionService.save(accountId, record));
-        log.info("Loaded {} transactions successfully", convertedTransaction.size());
+        log.info("Loaded {} transactions successfully for {}", convertedTransaction.size(), export.accountName());
         log.info("Not converted categories: {}", mapper.writeValueAsString(missingCategories));
         log.info("Not converted labels: {}", mapper.writeValueAsString(missingLabels));
     }
