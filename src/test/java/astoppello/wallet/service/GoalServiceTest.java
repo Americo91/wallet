@@ -154,4 +154,30 @@ class GoalServiceTest {
         service.delete(id);
         verify(repository).deleteById(id);
     }
+
+    @Test
+    void addSavedAmount() {
+        UUID id = domain.getId();
+        dto.setId(id);
+
+        when(repository.findById(id)).thenReturn(Optional.of(domain));
+        when(repository.save(domain)).thenReturn(domain);
+        when(mapper.toDto(domain)).thenReturn(dto);
+
+        service.addSavedAmount(id, BigDecimal.TEN);
+
+        verify(repository).findById(id);
+        verify(repository).save(domain);
+        verify(mapper).toDto(domain);
+    }
+
+    @Test
+    void markAsReached() {
+        when(repository.findById(domain.getId())).thenReturn(Optional.of(domain));
+
+        service.markAsReached(domain.getId());
+
+        verify(repository).findById(domain.getId());
+        verify(repository).save(domain);
+    }
 }

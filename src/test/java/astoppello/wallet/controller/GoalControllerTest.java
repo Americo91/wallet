@@ -21,6 +21,7 @@ import java.util.UUID;
 
 import static org.hamcrest.Matchers.is;
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.BDDMockito.then;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -133,5 +134,22 @@ class GoalControllerTest {
         mockMvc.perform(delete(GoalController.GOAL_BASE_PATH + "/" + UUID.randomUUID()))
                 .andExpect(status().isNoContent());
         then(goalService).should().delete(any());
+    }
+
+    @Test
+    void addSavedAmount() throws Exception {
+        mockMvc.perform(post(GoalController.GOAL_BASE_PATH + "/" + UUID.randomUUID() + "/addSavedAmount")
+                .accept(MediaType.APPLICATION_JSON)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsBytes(BigDecimal.TEN)))
+                .andExpect(status().isOk());
+        then(goalService).should().addSavedAmount(any(), eq(BigDecimal.TEN));
+    }
+
+    @Test
+    void markAsReached() throws Exception {
+        mockMvc.perform(post(GoalController.GOAL_BASE_PATH + "/" + UUID.randomUUID() + "/markAsSolved"))
+                .andExpect(status().isNoContent());
+        then(goalService).should().markAsReached(any());
     }
 }

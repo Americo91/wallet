@@ -12,6 +12,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.jspecify.annotations.NonNull;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
@@ -64,5 +65,22 @@ public class GoalServiceImpl implements GoalService {
     @Override
     public void delete(UUID id) {
         repository.deleteById(id);
+    }
+
+    @Override
+    public GoalDto addSavedAmount(UUID id, BigDecimal savedAmount) {
+        Goal byId = getById(id);
+        byId.setSavedAmount(byId.getSavedAmount().add(savedAmount));
+        byId.getTrackingDate().touch();
+        Goal save = repository.save(byId);
+        return mapper.toDto(save);
+    }
+
+    @Override
+    public void markAsReached(UUID id) {
+        Goal byID = getById(id);
+        byID.setReached(true);
+        byID.getTrackingDate().touch();
+        repository.save(byID);
     }
 }

@@ -36,6 +36,7 @@ public class Account {
     @Enumerated(EnumType.STRING)
     private AccountTypeEnum accountType;
 
+    @Builder.Default
     @Column(nullable = false)
     private BigDecimal balance = BigDecimal.ZERO;
 

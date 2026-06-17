@@ -27,7 +27,13 @@ public class GoalDto {
     private String name;
 
     @NotNull
-    private BigDecimal amount;
+    @Builder.Default
+    private BigDecimal amount = BigDecimal.ZERO;
+
+    @Builder.Default
+    private BigDecimal savedAmount = BigDecimal.ZERO;
+
+    private boolean reached;
 
     @JsonUnwrapped
     @Valid

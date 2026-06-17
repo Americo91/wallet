@@ -34,8 +34,9 @@ public class Transaction {
     private TransactionType type;
 
     @Column(nullable = false)
+    @Builder.Default
     @Positive
-    private BigDecimal amount;
+    private BigDecimal amount = BigDecimal.ZERO;
 
     @Column(nullable = false)
     private Timestamp date;

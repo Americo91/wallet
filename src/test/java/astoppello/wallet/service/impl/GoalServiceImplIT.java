@@ -2,11 +2,13 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.dto.GoalDto;
 import astoppello.wallet.service.GoalService;
+import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -83,4 +85,22 @@ class GoalServiceImplIT {
         service.delete(saved.getId());
         assertThat(service.getAll()).hasSize(0);
     }
+
+    @Test
+    void addSavedAmount() {
+        GoalDto goalDto1 = service.addSavedAmount(saved.getId(), BigDecimal.TEN);
+        assertThat(goalDto1).isNotNull();
+        assertThat(goalDto1.getSavedAmount()).isEqualTo(saved.getSavedAmount().add(BigDecimal.TEN));
+        assertThat(goalDto1.getTrackingDate().getUpdatedAt()).isAfter(saved.getTrackingDate().getUpdatedAt());
+    }
+
+    @Test
+    void markAsReached() {
+        service.markAsReached(saved.getId());
+
+        GoalDto byID = service.getByID(saved.getId());
+        assertThat(byID).isNotNull();
+        assertThat(byID.isReached()).isTrue();
+    }
+
 }

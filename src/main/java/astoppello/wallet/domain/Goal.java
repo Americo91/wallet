@@ -1,6 +1,7 @@
 package astoppello.wallet.domain;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -24,6 +25,13 @@ public class Goal {
 
     @Column(nullable = false)
     private BigDecimal amount;
+
+    @Builder.Default
+    @Column(nullable = false)
+    private BigDecimal savedAmount = BigDecimal.ZERO;
+
+    @Column
+    private boolean reached;
 
     @Embedded
     private TrackingDate trackingDate;

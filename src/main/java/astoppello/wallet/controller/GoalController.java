@@ -3,11 +3,13 @@ package astoppello.wallet.controller;
 import astoppello.wallet.dto.GoalDto;
 import astoppello.wallet.service.GoalService;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
@@ -50,5 +52,16 @@ public class GoalController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void handleDelete(@PathVariable("goalId") UUID id) {
         goalService.delete(id);
+    }
+
+    @PostMapping(GOAL_ID_PATH + "/addSavedAmount")
+    public ResponseEntity<GoalDto> addSavedAmount(@PathVariable("goalId") UUID id, @RequestBody @Valid @NotNull BigDecimal savedAmount) {
+        return new ResponseEntity<>(goalService.addSavedAmount(id, savedAmount), HttpStatus.OK);
+    }
+
+    @PostMapping(GOAL_ID_PATH + "/markAsSolved")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void markAsReached(@PathVariable("goalId") UUID id) {
+        goalService.markAsReached(id);
     }
 }
