@@ -19,12 +19,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 @ContextConfiguration(classes = {TrackingMapperImpl.class, DateMapper.class})
 class TrackingMapperTest {
 
-    private static final Timestamp CREATED_AT = Timestamp.valueOf(LocalDateTime.of(2026, 1, 10, 9, 0, 0));
-    private static final Timestamp UPDATED_AT = Timestamp.valueOf(LocalDateTime.of(2026, 3, 15, 12, 0, 0));
+    public static final Timestamp CREATED_AT = Timestamp.valueOf(LocalDateTime.of(2026, 1, 10, 9, 0, 0));
+    public static final Timestamp UPDATED_AT = Timestamp.valueOf(LocalDateTime.of(2026, 3, 15, 12, 0, 0));
     public static final TrackingDate trackingDate = TrackingDate.builder()
             .createdAt(CREATED_AT)
             .updatedAt(UPDATED_AT)
             .build();
+    public static final OffsetDateTime CREATED_AT_OFFSET = OffsetDateTime.of(2026, 1, 10, 9, 0, 0, 0, ZoneOffset.UTC);
+    public static final OffsetDateTime UPDATED_AT_OFFSET = OffsetDateTime.of(2026, 3, 15, 12, 0, 0, 0, ZoneOffset.UTC);
     @Autowired
     private TrackingMapper trackingMapper;
 
@@ -39,8 +41,8 @@ class TrackingMapperTest {
     @Test
     void toDomain() {
         TrackingDateDto dto = TrackingDateDto.builder()
-                .createdAt(OffsetDateTime.of(2026, 1, 10, 9, 0, 0, 0, ZoneOffset.UTC))
-                .updatedAt(OffsetDateTime.of(2026, 3, 15, 12, 0, 0, 0, ZoneOffset.UTC))
+                .createdAt(CREATED_AT_OFFSET)
+                .updatedAt(UPDATED_AT_OFFSET)
                 .build();
 
         TrackingDate domain = trackingMapper.toDomain(dto);
