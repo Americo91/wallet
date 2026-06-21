@@ -30,7 +30,7 @@ public class Budget {
     @Column(nullable = false)
     private Frequency period;
 
-    @Column(nullable = false, columnDefinition = "budget_limit")
+    @Column(nullable = false)
     private BigDecimal budgetLimit;
 
     @ManyToMany
