@@ -1,0 +1,1456 @@
+openapi: 3.1.0
+info:
+  title: Wallet API
+  description: Personal finance management REST API for tracking accounts, transactions, budgets, and goals
+  version: 1.0.0
+  contact:
+    name: Wallet
+    url: https://github.com/Americo91/wallet
+servers:
+  - url: http://localhost:8080
+    description: Local development server
+tags:
+  - name: Institutions
+    description: Manage financial institutions
+  - name: Accounts
+    description: Manage bank and investment accounts
+  - name: Transactions
+    description: Record and manage income/expense transactions
+  - name: Categories
+    description: Manage transaction categories (hierarchical)
+  - name: Labels
+    description: Manage transaction labels/tags
+  - name: Budgets
+    description: Create and track spending budgets
+  - name: Goals
+    description: Set and track savings goals
+  - name: Standing Orders
+    description: Manage recurring transactions
+paths:
+  # ── Institutions ──────────────────────────────────────────────
+  /api/v1/institutions/:
+    get:
+      tags: [Institutions]
+      operationId: listInstitutions
+      summary: List all institutions
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/InstitutionDto"
+    post:
+      tags: [Institutions]
+      operationId: createInstitution
+      summary: Create a new institution
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/InstitutionDto"
+      responses:
+        "201":
+          description: Institution created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InstitutionDto"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/institutions:
+    get:
+      tags: [Institutions]
+      operationId: getInstitutionByName
+      summary: Find institution by name
+      parameters:
+        - name: name
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Institution found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InstitutionDto"
+        "400":
+          description: Institution not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/institutions/{institutionId}:
+    get:
+      tags: [Institutions]
+      operationId: getInstitutionById
+      summary: Get institution by ID
+      parameters:
+        - $ref: "#/components/parameters/InstitutionId"
+      responses:
+        "200":
+          description: Institution found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InstitutionDto"
+        "400":
+          description: Institution not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    put:
+      tags: [Institutions]
+      operationId: updateInstitution
+      summary: Update an institution
+      parameters:
+        - $ref: "#/components/parameters/InstitutionId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/InstitutionDto"
+      responses:
+        "204":
+          description: Institution updated
+        "400":
+          description: Validation error or institution not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    delete:
+      tags: [Institutions]
+      operationId: deleteInstitution
+      summary: Delete an institution
+      parameters:
+        - $ref: "#/components/parameters/InstitutionId"
+      responses:
+        "204":
+          description: Institution deleted
+        "400":
+          description: Institution not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+
+  # ── Accounts ──────────────────────────────────────────────────
+  /api/v1/accounts/:
+    get:
+      tags: [Accounts]
+      operationId: listAccounts
+      summary: List all accounts
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/AccountDto"
+  /api/v1/accounts:
+    get:
+      tags: [Accounts]
+      operationId: getAccountByName
+      summary: Find account by name
+      parameters:
+        - name: name
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Account found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AccountDto"
+        "400":
+          description: Account not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/accounts/{accountId}:
+    get:
+      tags: [Accounts]
+      operationId: getAccountById
+      summary: Get account by ID
+      parameters:
+        - $ref: "#/components/parameters/AccountId"
+      responses:
+        "200":
+          description: Account found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AccountDto"
+        "400":
+          description: Account not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    put:
+      tags: [Accounts]
+      operationId: updateAccount
+      summary: Update an account
+      parameters:
+        - $ref: "#/components/parameters/AccountId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AccountDto"
+      responses:
+        "204":
+          description: Account updated
+        "400":
+          description: Validation error or account not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    delete:
+      tags: [Accounts]
+      operationId: deleteAccount
+      summary: Delete an account
+      parameters:
+        - $ref: "#/components/parameters/AccountId"
+      responses:
+        "204":
+          description: Account deleted
+        "400":
+          description: Account not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/institutions/{institutionId}/accounts/:
+    post:
+      tags: [Accounts]
+      operationId: createAccount
+      summary: Create a new account under an institution
+      parameters:
+        - $ref: "#/components/parameters/InstitutionId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AccountDto"
+      responses:
+        "201":
+          description: Account created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AccountDto"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+
+  # ── Transactions ──────────────────────────────────────────────
+  /api/v1/transactions/:
+    get:
+      tags: [Transactions]
+      operationId: listTransactions
+      summary: List all transactions
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TransactionDto"
+  /api/v1/transactions/{transactionId}:
+    get:
+      tags: [Transactions]
+      operationId: getTransactionById
+      summary: Get transaction by ID
+      parameters:
+        - $ref: "#/components/parameters/TransactionId"
+      responses:
+        "200":
+          description: Transaction found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TransactionDto"
+        "400":
+          description: Transaction not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    put:
+      tags: [Transactions]
+      operationId: updateTransaction
+      summary: Update a transaction
+      parameters:
+        - $ref: "#/components/parameters/TransactionId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TransactionDto"
+      responses:
+        "204":
+          description: Transaction updated
+        "400":
+          description: Validation error or transaction not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    delete:
+      tags: [Transactions]
+      operationId: deleteTransaction
+      summary: Delete a transaction
+      parameters:
+        - $ref: "#/components/parameters/TransactionId"
+      responses:
+        "204":
+          description: Transaction deleted
+        "400":
+          description: Transaction not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/accounts/{accountId}/transactions/:
+    post:
+      tags: [Transactions]
+      operationId: createTransaction
+      summary: Create a new transaction for an account
+      parameters:
+        - $ref: "#/components/parameters/AccountId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TransactionDto"
+      responses:
+        "201":
+          description: Transaction created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TransactionDto"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/accounts/{accountId}/transactions:
+    get:
+      tags: [Transactions]
+      operationId: listTransactionsByAccount
+      summary: List all transactions for an account
+      parameters:
+        - $ref: "#/components/parameters/AccountId"
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TransactionDto"
+        "400":
+          description: Account not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/accounts/{fromAccountId}/transfer/{toAccountId}:
+    post:
+      tags: [Transactions]
+      operationId: transferBetweenAccounts
+      summary: Transfer funds between two accounts
+      description: Creates paired EXPENSE and INCOME transactions across the source and destination accounts.
+      parameters:
+        - name: fromAccountId
+          in: path
+          required: true
+          description: Source account UUID
+          schema:
+            type: string
+            format: uuid
+        - name: toAccountId
+          in: path
+          required: true
+          description: Destination account UUID
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TransferDto"
+      responses:
+        "201":
+          description: Transfer completed (returns the two created transactions)
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/TransactionDto"
+        "400":
+          description: Validation error or account not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+
+  # ── Categories ────────────────────────────────────────────────
+  /api/v1/categories/:
+    get:
+      tags: [Categories]
+      operationId: listCategories
+      summary: List all categories
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/CategoryDto"
+    post:
+      tags: [Categories]
+      operationId: createCategory
+      summary: Create a new category
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CategoryDto"
+      responses:
+        "201":
+          description: Category created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CategoryDto"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/categories:
+    get:
+      tags: [Categories]
+      operationId: getCategoriesByName
+      summary: Find categories by name
+      parameters:
+        - name: name
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Matching categories
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/CategoryDto"
+  /api/v1/categories/{categoryId}:
+    get:
+      tags: [Categories]
+      operationId: getCategoryById
+      summary: Get category by ID
+      parameters:
+        - $ref: "#/components/parameters/CategoryId"
+      responses:
+        "200":
+          description: Category found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CategoryDto"
+        "400":
+          description: Category not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    put:
+      tags: [Categories]
+      operationId: updateCategory
+      summary: Update a category
+      parameters:
+        - $ref: "#/components/parameters/CategoryId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CategoryDto"
+      responses:
+        "204":
+          description: Category updated
+        "400":
+          description: Validation error or category not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    delete:
+      tags: [Categories]
+      operationId: deleteCategory
+      summary: Delete a category
+      parameters:
+        - $ref: "#/components/parameters/CategoryId"
+      responses:
+        "204":
+          description: Category deleted
+        "400":
+          description: Category not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+
+  # ── Labels ────────────────────────────────────────────────────
+  /api/v1/labels/:
+    get:
+      tags: [Labels]
+      operationId: listLabels
+      summary: List all labels
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/LabelDto"
+    post:
+      tags: [Labels]
+      operationId: createLabel
+      summary: Create a new label
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LabelDto"
+      responses:
+        "201":
+          description: Label created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LabelDto"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/labels:
+    get:
+      tags: [Labels]
+      operationId: getLabelByName
+      summary: Find label by name
+      parameters:
+        - name: name
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Label found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LabelDto"
+        "400":
+          description: Label not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/labels/{labelId}:
+    get:
+      tags: [Labels]
+      operationId: getLabelById
+      summary: Get label by ID
+      parameters:
+        - $ref: "#/components/parameters/LabelId"
+      responses:
+        "200":
+          description: Label found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LabelDto"
+        "400":
+          description: Label not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    put:
+      tags: [Labels]
+      operationId: updateLabel
+      summary: Update a label
+      parameters:
+        - $ref: "#/components/parameters/LabelId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/LabelDto"
+      responses:
+        "204":
+          description: Label updated
+        "400":
+          description: Validation error or label not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    delete:
+      tags: [Labels]
+      operationId: deleteLabel
+      summary: Delete a label
+      parameters:
+        - $ref: "#/components/parameters/LabelId"
+      responses:
+        "204":
+          description: Label deleted
+        "400":
+          description: Label not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+
+  # ── Budgets ───────────────────────────────────────────────────
+  /api/v1/budgets/:
+    get:
+      tags: [Budgets]
+      operationId: listBudgets
+      summary: List all budgets
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/BudgetDto"
+    post:
+      tags: [Budgets]
+      operationId: createBudget
+      summary: Create a new budget
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BudgetDto"
+      responses:
+        "201":
+          description: Budget created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BudgetDto"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/budgets/{budgetId}:
+    get:
+      tags: [Budgets]
+      operationId: getBudgetById
+      summary: Get budget by ID
+      parameters:
+        - $ref: "#/components/parameters/BudgetId"
+      responses:
+        "200":
+          description: Budget found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BudgetDto"
+        "400":
+          description: Budget not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    put:
+      tags: [Budgets]
+      operationId: updateBudget
+      summary: Update a budget
+      parameters:
+        - $ref: "#/components/parameters/BudgetId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BudgetDto"
+      responses:
+        "204":
+          description: Budget updated
+        "400":
+          description: Validation error or budget not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    delete:
+      tags: [Budgets]
+      operationId: deleteBudget
+      summary: Delete a budget
+      parameters:
+        - $ref: "#/components/parameters/BudgetId"
+      responses:
+        "204":
+          description: Budget deleted
+        "400":
+          description: Budget not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+
+  # ── Goals ─────────────────────────────────────────────────────
+  /api/v1/goals/:
+    get:
+      tags: [Goals]
+      operationId: listGoals
+      summary: List all goals
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/GoalDto"
+    post:
+      tags: [Goals]
+      operationId: createGoal
+      summary: Create a new goal
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GoalDto"
+      responses:
+        "201":
+          description: Goal created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GoalDto"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/goals:
+    get:
+      tags: [Goals]
+      operationId: getGoalByName
+      summary: Find goal by name
+      parameters:
+        - name: name
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Goal found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GoalDto"
+        "400":
+          description: Goal not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/goals/{goalId}:
+    get:
+      tags: [Goals]
+      operationId: getGoalById
+      summary: Get goal by ID
+      parameters:
+        - $ref: "#/components/parameters/GoalId"
+      responses:
+        "200":
+          description: Goal found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GoalDto"
+        "400":
+          description: Goal not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    put:
+      tags: [Goals]
+      operationId: updateGoal
+      summary: Update a goal
+      parameters:
+        - $ref: "#/components/parameters/GoalId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/GoalDto"
+      responses:
+        "204":
+          description: Goal updated
+        "400":
+          description: Validation error or goal not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    delete:
+      tags: [Goals]
+      operationId: deleteGoal
+      summary: Delete a goal
+      parameters:
+        - $ref: "#/components/parameters/GoalId"
+      responses:
+        "204":
+          description: Goal deleted
+        "400":
+          description: Goal not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/goals/{goalId}/addSavedAmount:
+    post:
+      tags: [Goals]
+      operationId: addSavedAmount
+      summary: Add to a goal's saved amount
+      parameters:
+        - $ref: "#/components/parameters/GoalId"
+      requestBody:
+        required: true
+        description: Amount to add to saved total
+        content:
+          application/json:
+            schema:
+              type: number
+      responses:
+        "200":
+          description: Updated goal
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GoalDto"
+        "400":
+          description: Goal not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/goals/{goalId}/markAsSolved:
+    post:
+      tags: [Goals]
+      operationId: markGoalAsReached
+      summary: Mark a goal as reached
+      parameters:
+        - $ref: "#/components/parameters/GoalId"
+      responses:
+        "204":
+          description: Goal marked as reached
+        "400":
+          description: Goal not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+
+  # ── Standing Orders ───────────────────────────────────────────
+  /api/v1/standing-orders/:
+    get:
+      tags: [Standing Orders]
+      operationId: listStandingOrders
+      summary: List all standing orders
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/StandingOrderDto"
+  /api/v1/standing-orders/upcoming:
+    get:
+      tags: [Standing Orders]
+      operationId: getUpcomingStandingOrders
+      summary: Get upcoming standing orders
+      parameters:
+        - name: days
+          in: query
+          required: false
+          description: Number of days to look ahead
+          schema:
+            type: integer
+            format: int32
+            default: 3
+      responses:
+        "200":
+          description: Upcoming standing orders
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/StandingOrderDto"
+  /api/v1/standing-orders/{standingOrderId}:
+    get:
+      tags: [Standing Orders]
+      operationId: getStandingOrderById
+      summary: Get standing order by ID
+      parameters:
+        - $ref: "#/components/parameters/StandingOrderId"
+      responses:
+        "200":
+          description: Standing order found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StandingOrderDto"
+        "400":
+          description: Standing order not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    put:
+      tags: [Standing Orders]
+      operationId: updateStandingOrder
+      summary: Update a standing order
+      parameters:
+        - $ref: "#/components/parameters/StandingOrderId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/StandingOrderDto"
+      responses:
+        "204":
+          description: Standing order updated
+        "400":
+          description: Validation error or standing order not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+    delete:
+      tags: [Standing Orders]
+      operationId: deleteStandingOrder
+      summary: Delete a standing order
+      parameters:
+        - $ref: "#/components/parameters/StandingOrderId"
+      responses:
+        "204":
+          description: Standing order deleted
+        "400":
+          description: Standing order not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+  /api/v1/accounts/{accountId}/standing-orders/:
+    post:
+      tags: [Standing Orders]
+      operationId: createStandingOrder
+      summary: Create a new standing order for an account
+      parameters:
+        - $ref: "#/components/parameters/AccountId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/StandingOrderDto"
+      responses:
+        "201":
+          description: Standing order created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StandingOrderDto"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorDto"
+
+components:
+  parameters:
+    InstitutionId:
+      name: institutionId
+      in: path
+      required: true
+      description: Institution UUID
+      schema:
+        type: string
+        format: uuid
+    AccountId:
+      name: accountId
+      in: path
+      required: true
+      description: Account UUID
+      schema:
+        type: string
+        format: uuid
+    TransactionId:
+      name: transactionId
+      in: path
+      required: true
+      description: Transaction UUID
+      schema:
+        type: string
+        format: uuid
+    CategoryId:
+      name: categoryId
+      in: path
+      required: true
+      description: Category UUID
+      schema:
+        type: string
+        format: uuid
+    LabelId:
+      name: labelId
+      in: path
+      required: true
+      description: Label UUID
+      schema:
+        type: string
+        format: uuid
+    BudgetId:
+      name: budgetId
+      in: path
+      required: true
+      description: Budget UUID
+      schema:
+        type: string
+        format: uuid
+    GoalId:
+      name: goalId
+      in: path
+      required: true
+      description: Goal UUID
+      schema:
+        type: string
+        format: uuid
+    StandingOrderId:
+      name: standingOrderId
+      in: path
+      required: true
+      description: Standing order UUID
+      schema:
+        type: string
+        format: uuid
+
+  schemas:
+    ErrorDto:
+      type: object
+      properties:
+        message:
+          type: string
+      required:
+        - message
+
+    InstitutionDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        name:
+          type: string
+        color:
+          type: [string, "null"]
+        accounts:
+          type: array
+          items:
+            type: string
+            format: uuid
+          uniqueItems: true
+          readOnly: true
+        createdAt:
+          type: string
+          format: date-time
+          readOnly: true
+        updatedAt:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+        - name
+
+    AccountDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        name:
+          type: string
+        institution:
+          type: string
+          format: uuid
+          readOnly: true
+        accountType:
+          type: string
+          enum: [LIQUIDITY, SAVINGS, INVESTMENTS]
+        balance:
+          type: number
+          minimum: 0
+        currency:
+          type: string
+          enum: [EUR, USD, JPY, ALL]
+        excludeFromStats:
+          type: boolean
+        archive:
+          type: boolean
+        createdAt:
+          type: string
+          format: date-time
+          readOnly: true
+        updatedAt:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+        - name
+        - accountType
+        - balance
+        - currency
+
+    TransactionDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        account:
+          type: string
+          format: uuid
+          readOnly: true
+        type:
+          type: string
+          enum: [EXPENSE, INCOME]
+        amount:
+          type: number
+        date:
+          type: string
+          format: date
+        category:
+          type: string
+          format: uuid
+        description:
+          type: [string, "null"]
+        payee:
+          type: [string, "null"]
+        labels:
+          type: [array, "null"]
+          items:
+            type: string
+            format: uuid
+          uniqueItems: true
+        createdAt:
+          type: string
+          format: date-time
+          readOnly: true
+        updatedAt:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+        - type
+        - amount
+        - category
+
+    TransferDto:
+      type: object
+      properties:
+        amount:
+          type: number
+        date:
+          type: string
+          format: date
+        description:
+          type: [string, "null"]
+        payee:
+          type: [string, "null"]
+        labels:
+          type: [array, "null"]
+          items:
+            type: string
+            format: uuid
+          uniqueItems: true
+      required:
+        - amount
+
+    CategoryDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        name:
+          type: string
+        type:
+          type: [string, "null"]
+          enum: [EXPENSE, INCOME, TRANSFER]
+        parentId:
+          type: [string, "null"]
+          format: uuid
+        createdAt:
+          type: string
+          format: date-time
+          readOnly: true
+        updatedAt:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+        - name
+
+    LabelDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        name:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+          readOnly: true
+        updatedAt:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+        - name
+
+    BudgetDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        name:
+          type: string
+        period:
+          type: string
+          enum: [DAILY, WEEKLY, MONTHLY, YEARLY, UNA_TANTUM]
+        budgetLimit:
+          type: number
+        categoryIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+          uniqueItems: true
+        accountIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+          uniqueItems: true
+        labelIds:
+          type: array
+          items:
+            type: string
+            format: uuid
+          uniqueItems: true
+        closed:
+          type: boolean
+        overLimit:
+          type: array
+          items:
+            $ref: "#/components/schemas/Overlimit"
+          uniqueItems: true
+          readOnly: true
+        createdAt:
+          type: string
+          format: date-time
+          readOnly: true
+        updatedAt:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+        - name
+        - period
+        - budgetLimit
+        - categoryIds
+        - accountIds
+        - labelIds
+
+    Overlimit:
+      type: object
+      properties:
+        limit:
+          type: number
+        periodAmount:
+          type: number
+        periodStart:
+          type: string
+          format: date
+        periodEnd:
+          type: string
+          format: date
+
+    GoalDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        name:
+          type: string
+        amount:
+          type: number
+        savedAmount:
+          type: number
+        reached:
+          type: boolean
+        createdAt:
+          type: string
+          format: date-time
+          readOnly: true
+        updatedAt:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+        - name
+        - amount
+
+    StandingOrderDto:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          readOnly: true
+        name:
+          type: string
+        amount:
+          type: number
+        currency:
+          type: string
+          enum: [EUR, USD, JPY, ALL]
+        frequency:
+          type: string
+          enum: [DAILY, WEEKLY, MONTHLY, YEARLY, UNA_TANTUM]
+        type:
+          type: string
+          enum: [EXPENSE, INCOME]
+        nextOccurrence:
+          type: string
+          format: date
+        account:
+          type: string
+          format: uuid
+          readOnly: true
+        category:
+          type: string
+          format: uuid
+        labels:
+          type: [array, "null"]
+          items:
+            type: string
+            format: uuid
+          uniqueItems: true
+        description:
+          type: [string, "null"]
+        payee:
+          type: [string, "null"]
+        enabled:
+          type: boolean
+        createdAt:
+          type: string
+          format: date-time
+          readOnly: true
+        updatedAt:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+        - name
+        - amount
+        - currency
+        - frequency
+        - type
+        - nextOccurrence
+        - category
