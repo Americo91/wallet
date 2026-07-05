@@ -77,7 +77,7 @@ public class TransactionServiceImpl implements TransactionService {
         BigDecimal oldAmount = transaction.getAmount();
 
         if (dto.getType() != null) {
-            transaction.setType(dto.getType());
+            transaction.setType(TransactionType.valueOf(dto.getType().name()));
         }
         if (dto.getAmount() != null) {
             transaction.setAmount(dto.getAmount());

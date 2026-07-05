@@ -1,8 +1,6 @@
 package astoppello.wallet.controller;
 
 import astoppello.wallet.dto.CategoryDto;
-import astoppello.wallet.dto.TrackingDateDto;
-import astoppello.wallet.model.CategoryType;
 import astoppello.wallet.service.CategoryService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -30,6 +28,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(CategoryController.class)
 class CategoryControllerTest {
 
+    private static final String BASE_PATH = "/api/v1/categories";
+
     @MockitoBean
     CategoryService categoryService;
 
@@ -43,27 +43,23 @@ class CategoryControllerTest {
 
     @BeforeEach
     void setup() {
-        categoryDto = CategoryDto.builder()
+        categoryDto = new CategoryDto("Food")
                 .id(UUID.randomUUID())
-                .name("Food")
-                .type(CategoryType.EXPENSE)
-                .trackingDate(TrackingDateDto.builder()
-                        .createdAt(OffsetDateTime.now())
-                        .updatedAt(OffsetDateTime.now())
-                        .build())
-                .build();
+                .type(CategoryDto.TypeEnum.EXPENSE)
+                .createdAt(OffsetDateTime.now())
+                .updatedAt(OffsetDateTime.now());
     }
 
     @Test
     void getAll() throws Exception {
         given(categoryService.getAll()).willReturn(List.of(categoryDto));
 
-        mockMvc.perform(get(CategoryController.CATEGORY_BASE_PATH + "/").accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(BASE_PATH).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(jsonPath("$[0].id", is(categoryDto.getId().toString())))
                 .andExpect(jsonPath("$[0].name", is(categoryDto.getName())))
-                .andExpect(jsonPath("$[0].type", is(categoryDto.getType().toString())))
+                .andExpect(jsonPath("$[0].type", is(categoryDto.getType().getValue())))
                 .andExpect(jsonPath("$[0].createdAt").isNotEmpty())
                 .andExpect(jsonPath("$[0].updatedAt").isNotEmpty());
         then(categoryService).should().getAll();
@@ -73,7 +69,7 @@ class CategoryControllerTest {
     void getById() throws Exception {
         given(categoryService.getByID(any())).willReturn(categoryDto);
 
-        mockMvc.perform(get(CategoryController.CATEGORY_BASE_PATH + "/" + categoryDto.getId()).accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(BASE_PATH + "/" + categoryDto.getId()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(jsonPath("$.id", is(categoryDto.getId().toString())))
@@ -85,7 +81,7 @@ class CategoryControllerTest {
     void getByName() throws Exception {
         given(categoryService.getByName(any())).willReturn(List.of(categoryDto));
 
-        mockMvc.perform(get(CategoryController.CATEGORY_BASE_PATH + "?name=" + categoryDto.getName()).accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(BASE_PATH + "?name=" + categoryDto.getName()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(jsonPath("$[0].id", is(categoryDto.getId().toString())))
@@ -97,12 +93,10 @@ class CategoryControllerTest {
     void handlePost() throws Exception {
         given(categoryService.save(any())).willReturn(categoryDto);
 
-        String body = objectMapper.writeValueAsString(CategoryDto.builder()
-                .name(categoryDto.getName())
-                .type(CategoryType.EXPENSE)
-                .build());
+        String body = objectMapper.writeValueAsString(new CategoryDto("Food")
+                .type(CategoryDto.TypeEnum.EXPENSE));
 
-        mockMvc.perform(post(CategoryController.CATEGORY_BASE_PATH + "/")
+        mockMvc.perform(post(BASE_PATH)
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(body))
@@ -114,12 +108,10 @@ class CategoryControllerTest {
     void handlePut() throws Exception {
         given(categoryService.update(any(), any())).willReturn(categoryDto);
 
-        String body = objectMapper.writeValueAsString(CategoryDto.builder()
-                .name(categoryDto.getName())
-                .type(CategoryType.EXPENSE)
-                .build());
+        String body = objectMapper.writeValueAsString(new CategoryDto("Food")
+                .type(CategoryDto.TypeEnum.EXPENSE));
 
-        mockMvc.perform(put(CategoryController.CATEGORY_BASE_PATH + "/" + UUID.randomUUID())
+        mockMvc.perform(put(BASE_PATH + "/" + UUID.randomUUID())
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(body))
@@ -129,7 +121,7 @@ class CategoryControllerTest {
 
     @Test
     void handleDelete() throws Exception {
-        mockMvc.perform(delete(CategoryController.CATEGORY_BASE_PATH + "/" + UUID.randomUUID()))
+        mockMvc.perform(delete(BASE_PATH + "/" + UUID.randomUUID()))
                 .andExpect(status().isNoContent());
         then(categoryService).should().delete(any());
     }

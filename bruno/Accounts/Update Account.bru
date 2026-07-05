@@ -1,0 +1,26 @@
+meta {
+  name: Update Account
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/api/v1/accounts/:accountId
+  body: json
+  auth: none
+}
+
+params:path {
+  accountId: {{accountId}}
+}
+
+body:json {
+  {
+    "name": "Main Checking Updated",
+    "accountType": "LIQUIDITY",
+    "balance": 3000.00,
+    "currency": "EUR",
+    "excludeFromStats": false,
+    "archive": false
+  }
+}

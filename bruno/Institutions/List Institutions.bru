@@ -1,0 +1,21 @@
+meta {
+  name: List Institutions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/v1/institutions
+  body: none
+  auth: none
+}
+
+params:query {
+  ~name: Intesa Sanpaolo
+}
+
+script:post-response {
+  let data = res.body;
+  let institutionId = data[0].id;
+  bru.setEnvVar("institutionId", institutionId)
+}

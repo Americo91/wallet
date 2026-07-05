@@ -37,10 +37,8 @@ class CategoryServiceTest {
 
     @BeforeEach
     void setUp() {
-        dto = CategoryDto.builder()
-                .name(CATEGORY_NAME)
-                .type(CategoryType.EXPENSE)
-                .build();
+        dto = new CategoryDto(CATEGORY_NAME)
+                .type(CategoryDto.TypeEnum.EXPENSE);
     }
 
     private Category buildCategory(UUID id) {
@@ -64,7 +62,7 @@ class CategoryServiceTest {
         assertThat(result).isNotNull();
         assertThat(result.getId()).isEqualTo(id);
         assertThat(result.getName()).isEqualTo(CATEGORY_NAME);
-        assertThat(result.getType()).isEqualTo(CategoryType.EXPENSE);
+        assertThat(result.getType()).isEqualTo(CategoryDto.TypeEnum.EXPENSE);
 
         verify(repository).findById(id);
         verify(mapper).toDto(category);
@@ -113,7 +111,7 @@ class CategoryServiceTest {
         Optional<CategoryDto> categoryDto = service.getByNameAndType(CATEGORY_NAME, CategoryType.EXPENSE);
         assertThat(categoryDto).isPresent();
         assertThat(categoryDto.get().getName()).isEqualTo(CATEGORY_NAME);
-        assertThat(categoryDto.get().getType()).isEqualTo(CategoryType.EXPENSE);
+        assertThat(categoryDto.get().getType()).isEqualTo(CategoryDto.TypeEnum.EXPENSE);
         verify(repository).findByNameAndType(CATEGORY_NAME, CategoryType.EXPENSE);
         verify(mapper).toDto(category);
     }
@@ -148,7 +146,7 @@ class CategoryServiceTest {
 
         CategoryDto result = service.update(id, dto);
         assertThat(result.getName()).isEqualTo(CATEGORY_NAME);
-        assertThat(result.getType()).isEqualTo(CategoryType.EXPENSE);
+        assertThat(result.getType()).isEqualTo(CategoryDto.TypeEnum.EXPENSE);
         verify(repository).findById(id);
         verify(repository).save(category);
         verify(mapper).toDto(category);

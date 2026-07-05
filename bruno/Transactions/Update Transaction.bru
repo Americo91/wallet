@@ -1,0 +1,27 @@
+meta {
+  name: Update Transaction
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/api/v1/transactions/:transactionId
+  body: json
+  auth: none
+}
+
+params:path {
+  transactionId: {{transactionId}}
+}
+
+body:json {
+  {
+    "type": "EXPENSE",
+    "amount": 55.00,
+    "date": "2025-06-15",
+    "category": "{{categoryGroceries}}",
+    "description": "Weekly groceries updated",
+    "payee": "Supermarket",
+    "labels": ["{{labelId}}"]
+  }
+}

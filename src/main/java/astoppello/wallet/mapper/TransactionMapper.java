@@ -11,18 +11,20 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-@Mapper(uses = {TrackingMapper.class, DateMapper.class})
+@Mapper(uses = {DateMapper.class})
 public interface TransactionMapper {
 
-    @Mapping(target = "trackingDate", source = "trackingDate")
     @Mapping(target = "account", source = "account.id")
     @Mapping(target = "category", source = "category.id")
     @Mapping(target = "labels", source = "labels", qualifiedByName = "mapLabels")
+    @Mapping(target = "createdAt", source = "trackingDate.createdAt")
+    @Mapping(target = "updatedAt", source = "trackingDate.updatedAt")
     TransactionDto toDto(Transaction domain);
 
     @Mapping(target = "account", ignore = true)
     @Mapping(target = "category", ignore = true)
     @Mapping(target = "labels", ignore = true)
+    @Mapping(target = "trackingDate", ignore = true)
     Transaction toDomain(TransactionDto dto);
 
     @Named("mapLabels")

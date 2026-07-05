@@ -4,7 +4,6 @@ import astoppello.wallet.domain.StandingOrder;
 import astoppello.wallet.domain.Transaction;
 import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.mapper.StandingOrderMapper;
-import astoppello.wallet.mapper.TransactionMapper;
 import astoppello.wallet.repository.StandingOrderRepository;
 import astoppello.wallet.repository.TransactionRepository;
 import astoppello.wallet.repository.AccountRepository;
@@ -30,7 +29,7 @@ public class StandingOrderExecutor {
     private final AccountRepository accountRepository;
     private final StandingOrderMapper standingOrderMapper;
 
-    @Scheduled(cron = "0 0 1 * * *")
+    @Scheduled(cron = "0 0 8 * * *")
     @Transactional
     public void executeStandingOrders() {
         LocalDate today = LocalDate.now();

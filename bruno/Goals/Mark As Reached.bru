@@ -1,0 +1,15 @@
+meta {
+  name: Mark As Reached
+  type: http
+  seq: 7
+}
+
+put {
+  url: {{baseUrl}}/api/v1/goals/:goalId/markAsSolved
+  body: none
+  auth: none
+}
+
+params:path {
+  goalId: {{goalId}}
+}

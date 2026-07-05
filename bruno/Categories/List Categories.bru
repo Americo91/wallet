@@ -1,0 +1,20 @@
+meta {
+  name: List Categories
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/v1/categories?name=Groceries
+  body: none
+  auth: none
+}
+
+params:query {
+  name: Groceries
+}
+
+script:post-response {
+  var categoryGroceries = res.body[0].id
+  bru.setEnvVar("categoryGroceries", categoryGroceries)
+}

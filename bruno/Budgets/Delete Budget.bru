@@ -1,0 +1,15 @@
+meta {
+  name: Delete Budget
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{baseUrl}}/api/v1/budgets/:budgetId
+  body: none
+  auth: none
+}
+
+params:path {
+  budgetId: f6a7b8c9-d0e1-2345-abcd-456789012345
+}

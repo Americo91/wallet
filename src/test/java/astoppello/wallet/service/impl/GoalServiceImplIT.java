@@ -2,13 +2,11 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.dto.GoalDto;
 import astoppello.wallet.service.GoalService;
-import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -30,16 +28,13 @@ class GoalServiceImplIT {
 
     @BeforeEach
     void setUp() {
-        goalDto = GoalDto.builder()
-                .name(GOAL_NAME)
-                .amount(GOAL_AMOUNT)
-                .build();
+        goalDto = new GoalDto(GOAL_NAME, GOAL_AMOUNT);
         saved = service.save(goalDto);
     }
 
     @Test
     void getAll() {
-        service.save(GoalDto.builder().name("Vacation").amount(new BigDecimal("5000.00")).build());
+        service.save(new GoalDto().name("Vacation").amount(new BigDecimal("5000.00")));
 
         List<GoalDto> all = service.getAll();
         assertThat(all).hasSize(2);
@@ -53,9 +48,8 @@ class GoalServiceImplIT {
         assertThat(byID.getName()).isEqualTo(GOAL_NAME);
         assertThat(byID.getAmount()).isEqualByComparingTo(GOAL_AMOUNT);
         assertThat(byID.getId()).isNotNull();
-        assertThat(byID.getTrackingDate()).isNotNull();
-        assertThat(byID.getTrackingDate().getCreatedAt()).isNotNull();
-        assertThat(byID.getTrackingDate().getUpdatedAt()).isNotNull();
+        assertThat(byID.getCreatedAt()).isNotNull();
+        assertThat(byID.getUpdatedAt()).isNotNull();
     }
 
     @Test
@@ -73,11 +67,11 @@ class GoalServiceImplIT {
     void update() {
         String name = "New Car";
         BigDecimal newAmount = new BigDecimal("25000.00");
-        GoalDto updated = service.update(saved.getId(), GoalDto.builder().name(name).amount(newAmount).build());
+        GoalDto updated = service.update(saved.getId(), new GoalDto(name, newAmount));
         assertThat(updated).isNotNull();
         assertThat(updated.getName()).isEqualTo(name);
         assertThat(updated.getAmount()).isEqualByComparingTo(newAmount);
-        assertThat(updated.getTrackingDate().getUpdatedAt()).isNotEqualTo(saved.getTrackingDate().getUpdatedAt());
+        assertThat(updated.getUpdatedAt()).isNotEqualTo(saved.getUpdatedAt());
     }
 
     @Test
@@ -91,7 +85,7 @@ class GoalServiceImplIT {
         GoalDto goalDto1 = service.addSavedAmount(saved.getId(), BigDecimal.TEN);
         assertThat(goalDto1).isNotNull();
         assertThat(goalDto1.getSavedAmount()).isEqualTo(saved.getSavedAmount().add(BigDecimal.TEN));
-        assertThat(goalDto1.getTrackingDate().getUpdatedAt()).isAfter(saved.getTrackingDate().getUpdatedAt());
+        assertThat(goalDto1.getUpdatedAt()).isAfter(saved.getUpdatedAt());
     }
 
     @Test
@@ -100,7 +94,7 @@ class GoalServiceImplIT {
 
         GoalDto byID = service.getByID(saved.getId());
         assertThat(byID).isNotNull();
-        assertThat(byID.isReached()).isTrue();
+        assertThat(byID.getReached()).isTrue();
     }
 
 }

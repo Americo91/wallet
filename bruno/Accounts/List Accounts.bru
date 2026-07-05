@@ -1,0 +1,19 @@
+meta {
+  name: List Accounts
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/v1/accounts
+  body: none
+  auth: none
+}
+
+params:query {
+  ~name: Revolut
+}
+
+vars:pre-request {
+  baseUrl: http://localhost:8080
+}

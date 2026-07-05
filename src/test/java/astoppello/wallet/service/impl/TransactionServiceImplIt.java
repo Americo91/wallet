@@ -2,9 +2,6 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.dto.*;
 import astoppello.wallet.exception.NotFoundException;
-import astoppello.wallet.model.AccountTypeEnum;
-import astoppello.wallet.model.CategoryType;
-import astoppello.wallet.model.Currency;
 import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.service.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -41,23 +38,22 @@ public class TransactionServiceImplIt {
     private CategoryDto categoryDto;
     private LabelDto labelDto;
     private TransactionDto transactionDto;
+    private TransferDto transferDto;
 
     @BeforeEach
     void setUp() {
-        institutionDto = institutionService.save(InstitutionDto.builder()
-                .name("Bank")
-                .build());
-        accountDto = accountService.save(institutionDto.getId(), AccountDto.builder().name("account").balance(BigDecimal.ZERO).currency(Currency.EUR).build());
-        categoryDto = categoryService.save(CategoryDto.builder().type(CategoryType.EXPENSE).name("Expenses").build());
-        labelDto = labelService.save(LabelDto.builder().name("label").build());
-        transactionDto = TransactionDto.builder()
-                .type(TransactionType.EXPENSE)
+        institutionDto = institutionService.save(new InstitutionDto("Bank"));
+        accountDto = accountService.save(institutionDto.getId(), new AccountDto("account", AccountDto.AccountTypeEnum.LIQUIDITY, BigDecimal.TEN, AccountDto.CurrencyEnum.EUR));
+        categoryDto = categoryService.save(new CategoryDto("Expenses").type(CategoryDto.TypeEnum.EXPENSE));
+        labelDto = labelService.save(new LabelDto("label"));
+        transactionDto = new TransactionDto()
+                .type(TransactionDto.TypeEnum.EXPENSE)
                 .description("any")
                 .payee("any")
                 .amount(BigDecimal.TEN)
                 .category(categoryDto.getId())
-                .labels(Set.of(labelDto.getId()))
-                .build();
+                .labels(Set.of(labelDto.getId()));
+        transferDto = new TransferDto(BigDecimal.TEN);
     }
 
 
@@ -69,10 +65,9 @@ public class TransactionServiceImplIt {
         assertThat(saved.getAccount()).isEqualTo(accountDto.getId());
         assertThat(saved.getCategory()).isEqualTo(categoryDto.getId());
         assertThat(saved.getLabels()).isNotNull().contains(labelDto.getId());
-        assertThat(saved.getTrackingDate()).isNotNull();
-        assertThat(saved.getTrackingDate().getCreatedAt()).isNotNull();
-        assertThat(saved.getTrackingDate().getUpdatedAt()).isNotNull();
-        assertThat(saved.getType()).isEqualTo(TransactionType.EXPENSE);
+        assertThat(saved.getCreatedAt()).isNotNull();
+        assertThat(saved.getUpdatedAt()).isNotNull();
+        assertThat(saved.getType()).isEqualTo(TransactionDto.TypeEnum.EXPENSE);
         assertThat(saved.getDescription()).isEqualTo("any");
         assertThat(saved.getPayee()).isEqualTo("any");
         assertThat(saved.getAmount()).isEqualTo(BigDecimal.TEN);
@@ -123,19 +118,18 @@ public class TransactionServiceImplIt {
     @Test
     void update_amount() {
         TransactionDto saved = service.save(accountDto.getId(), transactionDto);
-        TransactionDto newDto = TransactionDto.builder().amount(new BigDecimal("100.00")).build();
+        TransactionDto newDto = new TransactionDto().amount(new BigDecimal("100.00"));
 
         TransactionDto update = service.update(saved.getId(), newDto);
         assertThat(update.getAmount()).isEqualTo(newDto.getAmount());
-        assertThat(update.getTrackingDate()).isNotNull();
-        assertThat(update.getTrackingDate().getUpdatedAt()).isAfter(update.getTrackingDate().getCreatedAt());
+        assertThat(update.getUpdatedAt()).isAfter(update.getCreatedAt());
     }
 
     @Test
     void update_accountAndCategory() {
         TransactionDto saved = service.save(accountDto.getId(), transactionDto);
-        CategoryDto newCategory = categoryService.save(CategoryDto.builder().name("newCategory").type(CategoryType.EXPENSE).build());
-        AccountDto newAccount = accountService.save(institutionDto.getId(), AccountDto.builder().currency(Currency.EUR).accountType(AccountTypeEnum.LIQUIDITY).name("name").build());
+        CategoryDto newCategory = categoryService.save(new CategoryDto().name("newCategory").type(CategoryDto.TypeEnum.EXPENSE));
+        AccountDto newAccount = accountService.save(institutionDto.getId(), new AccountDto().currency(AccountDto.CurrencyEnum.EUR).balance(BigDecimal.ZERO).accountType(AccountDto.AccountTypeEnum.LIQUIDITY).name("name"));
 
         transactionDto.setAccount(newAccount.getId());
         transactionDto.setCategory(newCategory.getId());
@@ -168,17 +162,14 @@ public class TransactionServiceImplIt {
 
     @Test
     void transfer() {
-        AccountDto toAccount = accountService.save(institutionDto.getId(),
-                AccountDto.builder().name("savings").balance(BigDecimal.ZERO).currency(Currency.EUR).build());
-        CategoryDto transferCategory = categoryService.save(
-                CategoryDto.builder().name("Transfer").type(CategoryType.TRANSFER).build());
+        AccountDto toAccount = accountService.save(institutionDto.getId(), new AccountDto("savings", AccountDto.AccountTypeEnum.LIQUIDITY, BigDecimal.ZERO, AccountDto.CurrencyEnum.EUR ));
+        CategoryDto transferCategory = categoryService.save(new CategoryDto("Transfer"));
 
-        TransferDto transferDto = TransferDto.builder()
+        TransferDto transferDto = new TransferDto()
                 .amount(BigDecimal.valueOf(50))
                 .description("Monthly savings")
                 .payee("self")
-                .labels(Set.of(labelDto.getId()))
-                .build();
+                .labels(Set.of(labelDto.getId()));
 
         List<TransactionDto> result = service.transfer(accountDto.getId(), toAccount.getId(), transferDto);
 
@@ -187,34 +178,33 @@ public class TransactionServiceImplIt {
         TransactionDto expense = result.get(0);
         assertThat(expense.getId()).isNotNull();
         assertThat(expense.getAccount()).isEqualTo(accountDto.getId());
-        assertThat(expense.getType()).isEqualTo(TransactionType.EXPENSE);
+        assertThat(expense.getType()).isEqualTo(TransactionDto.TypeEnum.EXPENSE);
         assertThat(expense.getAmount()).isEqualByComparingTo(BigDecimal.valueOf(50));
         assertThat(expense.getCategory()).isEqualTo(transferCategory.getId());
         assertThat(expense.getDescription()).isEqualTo("Monthly savings");
         assertThat(expense.getPayee()).isEqualTo("self");
         assertThat(expense.getLabels()).contains(labelDto.getId());
         assertThat(expense.getDate()).isNotNull();
-        assertThat(expense.getTrackingDate()).isNotNull();
+        assertThat(expense.getCreatedAt()).isNotNull();
+        assertThat(expense.getUpdatedAt()).isNotNull();
 
         TransactionDto income = result.get(1);
         assertThat(income.getId()).isNotNull();
         assertThat(income.getAccount()).isEqualTo(toAccount.getId());
-        assertThat(income.getType()).isEqualTo(TransactionType.INCOME);
+        assertThat(income.getType()).isEqualTo(TransactionDto.TypeEnum.INCOME);
         assertThat(income.getAmount()).isEqualByComparingTo(BigDecimal.valueOf(50));
         assertThat(income.getCategory()).isEqualTo(transferCategory.getId());
 
         // Verify balances updated
         AccountDto updatedFrom = accountService.getByID(accountDto.getId());
         AccountDto updatedTo = accountService.getByID(toAccount.getId());
-        assertThat(updatedFrom.getBalance()).isEqualByComparingTo(BigDecimal.valueOf(-50));
+        assertThat(updatedFrom.getBalance()).isEqualByComparingTo(BigDecimal.valueOf(-40));
         assertThat(updatedTo.getBalance()).isEqualByComparingTo(BigDecimal.valueOf(50));
     }
 
     @Test
     void transfer_fromAccountNotFound() {
-        AccountDto toAccount = accountService.save(institutionDto.getId(),
-                AccountDto.builder().name("savings").balance(BigDecimal.ZERO).currency(Currency.EUR).build());
-        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
+        AccountDto toAccount = accountService.save(institutionDto.getId(), new AccountDto("savings", AccountDto.AccountTypeEnum.LIQUIDITY, BigDecimal.ZERO, AccountDto.CurrencyEnum.EUR ));
 
         assertThatThrownBy(() -> service.transfer(UUID.randomUUID(), toAccount.getId(), transferDto))
                 .isInstanceOf(NotFoundException.class);
@@ -222,7 +212,6 @@ public class TransactionServiceImplIt {
 
     @Test
     void transfer_toAccountNotFound() {
-        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
 
         assertThatThrownBy(() -> service.transfer(accountDto.getId(), UUID.randomUUID(), transferDto))
                 .isInstanceOf(NotFoundException.class);
@@ -230,9 +219,7 @@ public class TransactionServiceImplIt {
 
     @Test
     void transfer_categoryNotFound() {
-        AccountDto toAccount = accountService.save(institutionDto.getId(),
-                AccountDto.builder().name("savings").balance(BigDecimal.ZERO).currency(Currency.EUR).build());
-        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
+        AccountDto toAccount = accountService.save(institutionDto.getId(), new AccountDto("savings", AccountDto.AccountTypeEnum.LIQUIDITY, BigDecimal.ZERO, AccountDto.CurrencyEnum.EUR ));
 
         assertThatThrownBy(() -> service.transfer(accountDto.getId(), toAccount.getId(), transferDto))
                 .isInstanceOf(NotFoundException.class);

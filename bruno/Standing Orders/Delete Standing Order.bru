@@ -1,0 +1,15 @@
+meta {
+  name: Delete Standing Order
+  type: http
+  seq: 6
+}
+
+delete {
+  url: {{baseUrl}}/api/v1/standing-orders/:standingOrderId
+  body: none
+  auth: none
+}
+
+params:path {
+  standingOrderId: b8c9d0e1-f2a3-4567-cdef-678901234567
+}

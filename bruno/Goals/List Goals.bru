@@ -1,0 +1,15 @@
+meta {
+  name: List Goals
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/v1/goals
+  body: none
+  auth: none
+}
+
+params:query {
+  ~name: Emergency Fund
+}

@@ -1,58 +1,52 @@
 package astoppello.wallet.controller;
 
+import astoppello.wallet.api.InstitutionsApi;
 import astoppello.wallet.dto.InstitutionDto;
 import astoppello.wallet.service.InstitutionService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.UUID;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping(value = InstitutionController.INSTITUTIONS_BASE_URL)
-public class InstitutionController {
-    public static final String INSTITUTIONS_BASE_URL = "/api/v1/institutions";
-    public static final String INSTITUTION_ID_PATH = "/{institutionId}";
+public class InstitutionController implements InstitutionsApi {
 
     private final InstitutionService institutionService;
 
-    @GetMapping(INSTITUTION_ID_PATH)
-    public ResponseEntity<InstitutionDto> getById(@PathVariable("institutionId") UUID institutionId) {
+    @Override
+    public ResponseEntity<InstitutionDto> createInstitution(InstitutionDto institutionDto) {
+        InstitutionDto save = institutionService.save(institutionDto);
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("location", "/api/v1/institutions/" + save.getId().toString());
+        return new ResponseEntity<>(save, httpHeaders, HttpStatus.CREATED);
+    }
+
+    @Override
+    public ResponseEntity<Void> deleteInstitution(UUID institutionId) {
+        institutionService.delete(institutionId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    @Override
+    public ResponseEntity<InstitutionDto> getInstitutionById(UUID institutionId) {
         return new ResponseEntity<>(institutionService.getByID(institutionId), HttpStatus.OK);
     }
 
-    @GetMapping("/")
-    public ResponseEntity<List<InstitutionDto>> getAll() {
-        return new ResponseEntity<>(institutionService.getAll(), HttpStatus.OK);
+    @Override
+    public ResponseEntity<List<InstitutionDto>> listInstitutions(String name) {
+        List<InstitutionDto> institutionDtos = StringUtils.isBlank(name) ? institutionService.getAll() : List.of(institutionService.getByName(name));
+        return new ResponseEntity<>(institutionDtos, HttpStatus.OK);
     }
 
-    @GetMapping()
-    public ResponseEntity<InstitutionDto> getByName(@RequestParam("name") String name) {
-        return new ResponseEntity<>(institutionService.getByName(name), HttpStatus.OK);
-    }
-
-    @PostMapping("/")
-    public ResponseEntity<InstitutionDto> handlePost(@RequestBody @Valid InstitutionDto institutionDto) {
-        InstitutionDto save = institutionService.save(institutionDto);
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.add("location", INSTITUTION_ID_PATH + "/" + save.getId().toString());
-        return new ResponseEntity<>(save, HttpStatus.CREATED);
-    }
-
-    @PutMapping(INSTITUTION_ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handlePut(@PathVariable("institutionId") UUID institutionId, @RequestBody @Valid InstitutionDto dto) {
-        institutionService.update(institutionId, dto);
-    }
-
-    @DeleteMapping(INSTITUTION_ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handleDelete(@PathVariable("institutionId") UUID institutionId) {
-        institutionService.delete(institutionId);
+    @Override
+    public ResponseEntity<Void> updateInstitution(UUID institutionId, InstitutionDto institutionDto) {
+        institutionService.update(institutionId, institutionDto);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

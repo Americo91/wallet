@@ -72,6 +72,9 @@ public class GoalServiceImpl implements GoalService {
         Goal byId = getById(id);
         byId.setSavedAmount(byId.getSavedAmount().add(savedAmount));
         byId.getTrackingDate().touch();
+        if(byId.getSavedAmount().compareTo(byId.getAmount()) >= 0) {
+            byId.setReached(true);
+        }
         Goal save = repository.save(byId);
         return mapper.toDto(save);
     }

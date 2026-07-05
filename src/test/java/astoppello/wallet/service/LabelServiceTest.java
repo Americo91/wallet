@@ -40,7 +40,7 @@ class LabelServiceTest {
 
     @BeforeEach
     void setUp() {
-        dto = LabelDto.builder().name(LABEL_NAME).build();
+        dto = new LabelDto(LABEL_NAME);
         domain = Label.builder().id(UUID.randomUUID()).name(LABEL_NAME).trackingDate(TrackingDate.now()).build();
     }
 
@@ -105,7 +105,7 @@ class LabelServiceTest {
         UUID id = UUID.randomUUID();
         Label unsaved = Label.builder().name(LABEL_NAME).build();
         Label saved = Label.builder().id(id).name(LABEL_NAME).trackingDate(TrackingDate.now()).build();
-        LabelDto savedDto = LabelDto.builder().id(id).name(LABEL_NAME).build();
+        LabelDto savedDto = new LabelDto(LABEL_NAME).id(id);
 
         when(mapper.toDomain(dto)).thenReturn(unsaved);
         when(repository.save(unsaved)).thenReturn(saved);
@@ -123,7 +123,7 @@ class LabelServiceTest {
     void update() {
         UUID id = UUID.randomUUID();
         Label existing = Label.builder().id(id).name("oldName").trackingDate(TrackingDate.now()).build();
-        LabelDto updatedDto = LabelDto.builder().id(id).name(LABEL_NAME).build();
+        LabelDto updatedDto = new LabelDto(LABEL_NAME).id(id);
 
         when(repository.findById(id)).thenReturn(Optional.of(existing));
         when(repository.save(existing)).thenReturn(existing);

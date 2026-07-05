@@ -1,0 +1,24 @@
+meta {
+  name: Transfer Between Accounts
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{baseUrl}}/api/v1/accounts/:fromAccountId/transfer/:toAccountId
+  body: json
+  auth: none
+}
+
+params:path {
+  fromAccountId: b2c3d4e5-f6a7-8901-bcde-f12345678901
+  toAccountId: c3d4e5f6-a7b8-9012-cdef-123456789012
+}
+
+body:json {
+  {
+    "amount": 500.00,
+    "date": "2025-06-15",
+    "description": "Monthly savings transfer"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Update Label
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/v1/labels/:labelId
+  body: json
+  auth: none
+}
+
+params:path {
+  labelId: {{labelId}}
+}
+
+body:json {
+  {
+    "name": "monthly-recurring"
+  }
+}

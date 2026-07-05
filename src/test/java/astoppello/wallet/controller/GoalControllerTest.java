@@ -1,7 +1,6 @@
 package astoppello.wallet.controller;
 
 import astoppello.wallet.dto.GoalDto;
-import astoppello.wallet.dto.TrackingDateDto;
 import astoppello.wallet.service.GoalService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -31,6 +30,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(GoalController.class)
 class GoalControllerTest {
 
+    private static final String BASE_PATH = "/api/v1/goals";
+
     @MockitoBean
     GoalService goalService;
 
@@ -44,22 +45,17 @@ class GoalControllerTest {
 
     @BeforeEach
     void setup() {
-        goalDto = GoalDto.builder()
+        goalDto = new GoalDto("Emergency Fund", new BigDecimal("10000.00"))
                 .id(UUID.randomUUID())
-                .name("Emergency Fund")
-                .amount(new BigDecimal("10000.00"))
-                .trackingDate(TrackingDateDto.builder()
-                        .createdAt(OffsetDateTime.now())
-                        .updatedAt(OffsetDateTime.now())
-                        .build())
-                .build();
+                .createdAt(OffsetDateTime.now())
+                .updatedAt(OffsetDateTime.now());
     }
 
     @Test
     void getAll() throws Exception {
         given(goalService.getAll()).willReturn(List.of(goalDto));
 
-        mockMvc.perform(get(GoalController.GOAL_BASE_PATH + "/").accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(BASE_PATH).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(jsonPath("$[0].id", is(goalDto.getId().toString())))
@@ -74,7 +70,7 @@ class GoalControllerTest {
     void getById() throws Exception {
         given(goalService.getByID(any())).willReturn(goalDto);
 
-        mockMvc.perform(get(GoalController.GOAL_BASE_PATH + "/" + goalDto.getId()).accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(BASE_PATH + "/" + goalDto.getId()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(jsonPath("$.id", is(goalDto.getId().toString())))
@@ -87,11 +83,11 @@ class GoalControllerTest {
     void getByName() throws Exception {
         given(goalService.getByName(any())).willReturn(goalDto);
 
-        mockMvc.perform(get(GoalController.GOAL_BASE_PATH + "?name=" + goalDto.getName()).accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(BASE_PATH + "?name=" + goalDto.getName()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
-                .andExpect(jsonPath("$.id", is(goalDto.getId().toString())))
-                .andExpect(jsonPath("$.name", is(goalDto.getName())));
+                .andExpect(jsonPath("$[0].id", is(goalDto.getId().toString())))
+                .andExpect(jsonPath("$[0].name", is(goalDto.getName())));
         then(goalService).should().getByName(any());
     }
 
@@ -99,12 +95,9 @@ class GoalControllerTest {
     void handlePost() throws Exception {
         given(goalService.save(any())).willReturn(goalDto);
 
-        String body = objectMapper.writeValueAsString(GoalDto.builder()
-                .name(goalDto.getName())
-                .amount(goalDto.getAmount())
-                .build());
+        String body = objectMapper.writeValueAsString(new GoalDto("Emergency Fund", goalDto.getAmount()));
 
-        mockMvc.perform(post(GoalController.GOAL_BASE_PATH + "/")
+        mockMvc.perform(post(BASE_PATH)
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(body))
@@ -116,12 +109,9 @@ class GoalControllerTest {
     void handleUpdate() throws Exception {
         given(goalService.update(any(), any())).willReturn(goalDto);
 
-        String body = objectMapper.writeValueAsString(GoalDto.builder()
-                .name(goalDto.getName())
-                .amount(goalDto.getAmount())
-                .build());
+        String body = objectMapper.writeValueAsString(new GoalDto("Emergency Fund", goalDto.getAmount()));
 
-        mockMvc.perform(put(GoalController.GOAL_BASE_PATH + "/" + UUID.randomUUID())
+        mockMvc.perform(put(BASE_PATH + "/" + UUID.randomUUID())
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(body))
@@ -131,24 +121,24 @@ class GoalControllerTest {
 
     @Test
     void handleDelete() throws Exception {
-        mockMvc.perform(delete(GoalController.GOAL_BASE_PATH + "/" + UUID.randomUUID()))
+        mockMvc.perform(delete(BASE_PATH + "/" + UUID.randomUUID()))
                 .andExpect(status().isNoContent());
         then(goalService).should().delete(any());
     }
 
     @Test
     void addSavedAmount() throws Exception {
-        mockMvc.perform(post(GoalController.GOAL_BASE_PATH + "/" + UUID.randomUUID() + "/addSavedAmount")
+        mockMvc.perform(post(BASE_PATH + "/" + UUID.randomUUID() + "/addSavedAmount")
                 .accept(MediaType.APPLICATION_JSON)
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsBytes(BigDecimal.TEN)))
+                .content(objectMapper.writeValueAsBytes(10.0)))
                 .andExpect(status().isOk());
-        then(goalService).should().addSavedAmount(any(), eq(BigDecimal.TEN));
+        then(goalService).should().addSavedAmount(any(), eq(java.math.BigDecimal.valueOf(10.0)));
     }
 
     @Test
     void markAsReached() throws Exception {
-        mockMvc.perform(post(GoalController.GOAL_BASE_PATH + "/" + UUID.randomUUID() + "/markAsSolved"))
+        mockMvc.perform(put(BASE_PATH + "/" + UUID.randomUUID() + "/markAsSolved"))
                 .andExpect(status().isNoContent());
         then(goalService).should().markAsReached(any());
     }

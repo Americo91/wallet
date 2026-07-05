@@ -14,7 +14,7 @@ import java.util.UUID;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {GoalMapperImpl.class, DateMapper.class, TrackingMapperImpl.class})
+@ContextConfiguration(classes = {GoalMapperImpl.class, DateMapper.class})
 class GoalMapperTest {
 
     @Autowired
@@ -26,7 +26,7 @@ class GoalMapperTest {
                 .id(UUID.randomUUID())
                 .name("Emergency Fund")
                 .amount(new BigDecimal("10000.00"))
-                .trackingDate(TrackingMapperTest.trackingDate)
+                .trackingDate(TestTrackingData.trackingDate)
                 .build();
 
         GoalDto dto = mapper.toDto(goal);
@@ -34,8 +34,8 @@ class GoalMapperTest {
         assertThat(dto.getId()).isEqualTo(goal.getId());
         assertThat(dto.getName()).isEqualTo("Emergency Fund");
         assertThat(dto.getAmount()).isEqualByComparingTo(new BigDecimal("10000.00"));
-        assertThat(dto.getTrackingDate().getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
-        assertThat(dto.getTrackingDate().getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
+        assertThat(dto.getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
+        assertThat(dto.getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
     }
 
     @Test
@@ -50,16 +50,13 @@ class GoalMapperTest {
 
         assertThat(dto.getName()).isEqualTo("Vacation");
         assertThat(dto.getAmount()).isEqualByComparingTo(new BigDecimal("5000.00"));
-        assertThat(dto.getTrackingDate()).isNull();
+        assertThat(dto.getCreatedAt()).isNull();
     }
 
     @Test
     void toDomain() {
-        GoalDto dto = GoalDto.builder()
-                .id(UUID.randomUUID())
-                .name("New Car")
-                .amount(new BigDecimal("25000.00"))
-                .build();
+        GoalDto dto = new GoalDto("New Car", new BigDecimal("25000.00"))
+                .id(UUID.randomUUID());
 
         Goal domain = mapper.toDomain(dto);
 

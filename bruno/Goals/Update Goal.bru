@@ -1,0 +1,24 @@
+meta {
+  name: Update Goal
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/v1/goals/:goalId
+  body: json
+  auth: none
+}
+
+params:path {
+  goalId: {{goalId}}
+}
+
+body:json {
+  {
+    "name": "Emergency Fund",
+    "amount": 15000.00,
+    "savedAmount": 3500.00,
+    "reached": false
+  }
+}

@@ -1,55 +1,52 @@
 package astoppello.wallet.controller;
 
+import astoppello.wallet.api.AccountsApi;
 import astoppello.wallet.dto.AccountDto;
 import astoppello.wallet.service.AccountService;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.UUID;
 
 @RequiredArgsConstructor
 @RestController
-public class AccountController {
-    public static final String ACCOUNT_BASE_URL = "/api/v1/accounts";
-    public static final String ACCOUNT_ID_PATH = "/api/v1/accounts/{accountId}";
-    public static final String INSTITUTION_ACCOUNT_BASE_URL = "/api/v1/institutions/{institutionId}/accounts";
+public class AccountController implements AccountsApi {
 
     private final AccountService accountService;
 
-    @GetMapping(ACCOUNT_BASE_URL + "/")
-    public ResponseEntity<List<AccountDto>> getAll() {
-        return new ResponseEntity<>(accountService.getAll(), HttpStatus.OK);
+    @Override
+    public ResponseEntity<AccountDto> createAccount(UUID institutionId, AccountDto accountDto) {
+        AccountDto save = accountService.save(institutionId, accountDto);
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("location", String.format("/api/v1/accounts/%s", save.getId()));
+        return new ResponseEntity<>(save, httpHeaders, HttpStatus.CREATED);
     }
 
-    @GetMapping(ACCOUNT_ID_PATH)
-    public ResponseEntity<AccountDto> getById(@PathVariable("accountId") UUID id) {
-        return new ResponseEntity<>(accountService.getByID(id), HttpStatus.OK);
+    @Override
+    public ResponseEntity<Void> deleteAccount(UUID accountId) {
+        accountService.delete(accountId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @GetMapping(ACCOUNT_BASE_URL)
-    public ResponseEntity<AccountDto> getByName(@RequestParam("name") String name){
-        return new ResponseEntity<>(accountService.getByName(name), HttpStatus.OK);
+    @Override
+    public ResponseEntity<AccountDto> getAccountById(UUID accountId) {
+        return new ResponseEntity<>(accountService.getByID(accountId), HttpStatus.OK);
     }
 
-    @PostMapping(INSTITUTION_ACCOUNT_BASE_URL + "/")
-    public ResponseEntity<AccountDto> handlePost(@PathVariable("institutionId") @NotNull UUID institutionId, @RequestBody @Valid AccountDto dto) {
-        return new ResponseEntity<>(accountService.save(institutionId, dto), HttpStatus.CREATED);
+    @Override
+    public ResponseEntity<List<AccountDto>> listAccounts(String name) {
+        List<AccountDto> accountDtos = StringUtils.isBlank(name) ? accountService.getAll() : List.of(accountService.getByName(name));
+        return new ResponseEntity<>(accountDtos, HttpStatus.OK);
     }
 
-    @PutMapping(ACCOUNT_ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handlePut(@PathVariable("accountId") UUID id, @RequestBody @Valid AccountDto dto) {
-        accountService.update(id, dto);
-    }
-
-    @DeleteMapping(ACCOUNT_ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handleDelete(@PathVariable("accountId") UUID id) {
-        accountService.delete(id);
+    @Override
+    public ResponseEntity<Void> updateAccount(UUID accountId, AccountDto accountDto) {
+        accountService.update(accountId, accountDto);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

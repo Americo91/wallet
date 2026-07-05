@@ -5,10 +5,11 @@ import astoppello.wallet.dto.LabelDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
-@Mapper(uses = {TrackingMapper.class})
+@Mapper(uses = {DateMapper.class})
 public interface LabelMapper {
 
-    @Mapping(target = "trackingDate", source = "trackingDate")
+    @Mapping(target = "createdAt", source = "trackingDate.createdAt")
+    @Mapping(target = "updatedAt", source = "trackingDate.updatedAt")
     LabelDto toDto(Label domain);
 
     @Mapping(target = "trackingDate", ignore = true)

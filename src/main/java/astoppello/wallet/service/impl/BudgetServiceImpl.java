@@ -2,6 +2,7 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.domain.*;
 import astoppello.wallet.dto.BudgetDto;
+import astoppello.wallet.model.Frequency;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.BudgetMapper;
 import astoppello.wallet.repository.AccountRepository;
@@ -61,7 +62,7 @@ public class BudgetServiceImpl implements astoppello.wallet.service.BudgetServic
             existing.setName(dto.getName());
         }
         if (dto.getPeriod() != null) {
-            existing.setPeriod(dto.getPeriod());
+            existing.setPeriod(Frequency.valueOf(dto.getPeriod().name()));
         }
         if (dto.getBudgetLimit() != null) {
             existing.setBudgetLimit(dto.getBudgetLimit());
@@ -75,7 +76,9 @@ public class BudgetServiceImpl implements astoppello.wallet.service.BudgetServic
         if (dto.getLabelIds() != null) {
             existing.setLabels(resolveLabels(dto.getLabelIds()));
         }
-        existing.setClosed(dto.isClosed());
+        if (dto.getClosed() != null) {
+            existing.setClosed(dto.getClosed());
+        }
         existing.getTrackingDate().touch();
         return mapper.toDto(repository.save(existing));
     }

@@ -1,0 +1,32 @@
+meta {
+  name: Create Transaction
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/api/v1/accounts/:accountId/transactions
+  body: json
+  auth: none
+}
+
+params:path {
+  accountId: {{accountId}}
+}
+
+body:json {
+  {
+    "type": "EXPENSE",
+    "amount": 420.50,
+    "date": "2025-06-15",
+    "category": "{{categoryGroceries}}",
+    "description": "Weekly groceries",
+    "payee": "Supermarket",
+    "labels": ["{{labelId}}"]
+  }
+}
+
+script:post-response {
+  var transactionId = res.body.id
+  bru.setEnvVar("transactionId", transactionId)
+}

@@ -1,7 +1,6 @@
 package astoppello.wallet.mapper;
 
 import astoppello.wallet.domain.Label;
-import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.LabelDto;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -9,14 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
 import java.util.UUID;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {LabelMapperImpl.class, DateMapper.class, TrackingMapperImpl.class})
+@ContextConfiguration(classes = {LabelMapperImpl.class, DateMapper.class})
 class LabelMapperTest {
 
     @Autowired
@@ -27,15 +24,15 @@ class LabelMapperTest {
         Label label = Label.builder()
                 .id(UUID.randomUUID())
                 .name("Recurring")
-                .trackingDate(TrackingMapperTest.trackingDate)
+                .trackingDate(TestTrackingData.trackingDate)
                 .build();
 
         LabelDto dto = mapper.toDto(label);
 
         assertThat(dto.getId()).isEqualTo(label.getId());
         assertThat(dto.getName()).isEqualTo("Recurring");
-        assertThat(dto.getTrackingDate().getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
-        assertThat(dto.getTrackingDate().getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
+        assertThat(dto.getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
+        assertThat(dto.getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
     }
 
     @Test
@@ -48,15 +45,13 @@ class LabelMapperTest {
         LabelDto dto = mapper.toDto(label);
 
         assertThat(dto.getName()).isEqualTo("Business");
-        assertThat(dto.getTrackingDate()).isNull();
+        assertThat(dto.getCreatedAt()).isNull();
     }
 
     @Test
     void toDomain() {
-        LabelDto dto = LabelDto.builder()
-                .id(UUID.randomUUID())
-                .name("Tax Deductible")
-                .build();
+        LabelDto dto = new LabelDto("Tax Deductible")
+                .id(UUID.randomUUID());
 
         Label domain = mapper.toDomain(dto);
 

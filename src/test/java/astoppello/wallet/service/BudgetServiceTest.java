@@ -52,14 +52,8 @@ class BudgetServiceTest {
         UUID accountId = UUID.randomUUID();
         UUID labelId = UUID.randomUUID();
 
-        dto = BudgetDto.builder()
-                .name(BUDGET_NAME)
-                .period(Frequency.MONTHLY)
-                .budgetLimit(new BigDecimal("500.00"))
-                .categoryIds(Set.of(categoryId))
-                .accountIds(Set.of(accountId))
-                .labelIds(Set.of(labelId))
-                .build();
+        dto = new BudgetDto(BUDGET_NAME, BudgetDto.PeriodEnum.MONTHLY, new BigDecimal("500.00"),
+                Set.of(categoryId), Set.of(accountId), Set.of(labelId));
 
         domain = Budget.builder()
                 .id(UUID.randomUUID())
@@ -114,7 +108,7 @@ class BudgetServiceTest {
         UUID id = UUID.randomUUID();
         Budget unsaved = Budget.builder().name(BUDGET_NAME).period(Frequency.MONTHLY).budgetLimit(new BigDecimal("500.00")).build();
         Budget saved = Budget.builder().id(id).name(BUDGET_NAME).period(Frequency.MONTHLY).budgetLimit(new BigDecimal("500.00")).trackingDate(TrackingDate.now()).build();
-        BudgetDto savedDto = BudgetDto.builder().id(id).name(BUDGET_NAME).period(Frequency.MONTHLY).budgetLimit(new BigDecimal("500.00")).build();
+        BudgetDto savedDto = new BudgetDto().id(id).name(BUDGET_NAME).period(BudgetDto.PeriodEnum.MONTHLY).budgetLimit(new BigDecimal("500.00"));
 
         when(mapper.toDomain(dto)).thenReturn(unsaved);
         when(categoryRepository.findAllById(dto.getCategoryIds())).thenReturn(List.of());
@@ -134,7 +128,7 @@ class BudgetServiceTest {
     @Test
     void update() {
         UUID id = domain.getId();
-        BudgetDto updatedDto = BudgetDto.builder().id(id).name(BUDGET_NAME).period(Frequency.MONTHLY).budgetLimit(new BigDecimal("500.00")).build();
+        BudgetDto updatedDto = new BudgetDto().id(id).name(BUDGET_NAME).period(BudgetDto.PeriodEnum.MONTHLY).budgetLimit(new BigDecimal("500.00"));
 
         when(repository.findById(id)).thenReturn(Optional.of(domain));
         when(categoryRepository.findAllById(dto.getCategoryIds())).thenReturn(new ArrayList<>(domain.getCategories()));

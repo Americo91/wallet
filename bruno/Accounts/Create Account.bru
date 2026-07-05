@@ -1,0 +1,30 @@
+meta {
+  name: Create Account
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/api/v1/institutions/:institutionId/accounts
+  body: json
+  auth: none
+}
+
+params:path {
+  institutionId: {{institutionId}}
+}
+
+body:json {
+  {
+    "name": "Main Checking",
+    "accountType": "LIQUIDITY",
+    "balance": 2500.75,
+    "currency": "EUR",
+    "excludeFromStats": false,
+    "archive": false
+  }
+}
+
+script:post-response {
+  bru.setEnvVar("accountId", res.body.id)
+}

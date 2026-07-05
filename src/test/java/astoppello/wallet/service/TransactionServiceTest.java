@@ -61,6 +61,7 @@ class TransactionServiceTest {
     private Category category;
     private Transaction transaction;
     private TransactionDto dto;
+    private TransferDto transferDto = new TransferDto(BigDecimal.TEN);
 
     @BeforeEach
     void setUp() {
@@ -82,11 +83,10 @@ class TransactionServiceTest {
                 .trackingDate(TrackingDate.now())
                 .build();
 
-        dto = TransactionDto.builder()
-                .type(TransactionType.EXPENSE)
+        dto = new TransactionDto()
+                .type(TransactionDto.TypeEnum.EXPENSE)
                 .amount(BigDecimal.TEN)
-                .date(LocalDate.now())
-                .build();
+                .date(LocalDate.now());
     }
 
     @Test
@@ -103,7 +103,7 @@ class TransactionServiceTest {
 
     @Test
     void getByID() {
-        TransactionDto expectedDto = TransactionDto.builder().id(transactionId).build();
+        TransactionDto expectedDto = new TransactionDto().id(transactionId);
         when(repository.findById(transactionId)).thenReturn(Optional.of(transaction));
         when(mapper.toDto(transaction)).thenReturn(expectedDto);
 
@@ -131,7 +131,7 @@ class TransactionServiceTest {
                 .date(Timestamp.valueOf(LocalDateTime.now()))
                 .labels(new HashSet<>())
                 .build();
-        TransactionDto savedDto = TransactionDto.builder().id(transactionId).build();
+        TransactionDto savedDto = new TransactionDto().id(transactionId);
 
         dto.setCategory(categoryId);
 
@@ -182,7 +182,7 @@ class TransactionServiceTest {
                 .date(Timestamp.valueOf(LocalDateTime.now()))
                 .labels(new HashSet<>())
                 .build();
-        TransactionDto savedDto = TransactionDto.builder().id(transactionId).labels(Set.of(labelId)).build();
+        TransactionDto savedDto = new TransactionDto().id(transactionId).labels(Set.of(labelId));
 
         dto.setCategory(categoryId);
         dto.setLabels(Set.of(labelId));
@@ -202,14 +202,13 @@ class TransactionServiceTest {
 
     @Test
     void update() {
-        TransactionDto updateDto = TransactionDto.builder()
-                .type(TransactionType.INCOME)
+        TransactionDto updateDto = new TransactionDto()
+                .type(TransactionDto.TypeEnum.INCOME)
                 .amount(BigDecimal.ONE)
                 .date(LocalDate.now())
                 .description("new desc")
-                .payee("Shop")
-                .build();
-        TransactionDto updatedDto = TransactionDto.builder().id(transactionId).build();
+                .payee("Shop");
+        TransactionDto updatedDto = new TransactionDto().id(transactionId);
 
         when(repository.findById(transactionId)).thenReturn(Optional.of(transaction));
         when(repository.save(transaction)).thenReturn(transaction);
@@ -232,7 +231,7 @@ class TransactionServiceTest {
         UUID labelId = UUID.randomUUID();
         Category newCategory = Category.builder().id(newCategoryId).name("Travel").build();
         Label label = Label.builder().id(labelId).name("trip").build();
-        TransactionDto updatedDto = TransactionDto.builder().id(transactionId).build();
+        TransactionDto updatedDto = new TransactionDto().id(transactionId);
 
         when(repository.findById(transactionId)).thenReturn(Optional.of(transaction));
         when(categoryRepository.findById(newCategoryId)).thenReturn(Optional.of(newCategory));
@@ -240,7 +239,7 @@ class TransactionServiceTest {
         when(repository.save(transaction)).thenReturn(transaction);
         when(mapper.toDto(transaction)).thenReturn(updatedDto);
 
-        service.update(transactionId, TransactionDto.builder().category(newCategoryId).labels(Set.of(labelId)).build());
+        service.update(transactionId, new TransactionDto().category(newCategoryId).labels(Set.of(labelId)));
 
         verify(categoryRepository).findById(newCategoryId);
         verify(labelRepository).findAllById(Set.of(labelId));
@@ -286,14 +285,12 @@ class TransactionServiceTest {
         Account toAccount = Account.builder().id(toAccountId).name("Savings").balance(BigDecimal.ZERO).build();
         Category transferCategory = Category.builder().id(UUID.randomUUID()).name("Transfer").build();
 
-        TransferDto transferDto = TransferDto.builder()
-                .amount(BigDecimal.valueOf(100))
+        TransferDto transferDto = new TransferDto(new BigDecimal("100.00"))
                 .date(LocalDate.now())
-                .description("Monthly savings")
-                .build();
+                .description("Monthly savings");
 
-        TransactionDto expenseDto = TransactionDto.builder().id(UUID.randomUUID()).type(TransactionType.EXPENSE).build();
-        TransactionDto incomeDto = TransactionDto.builder().id(UUID.randomUUID()).type(TransactionType.INCOME).build();
+        TransactionDto expenseDto = new TransactionDto().id(UUID.randomUUID()).type(TransactionDto.TypeEnum.EXPENSE);
+        TransactionDto incomeDto = new TransactionDto().id(UUID.randomUUID()).type(TransactionDto.TypeEnum.INCOME);
 
         when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
         when(accountRepository.findById(toAccountId)).thenReturn(Optional.of(toAccount));
@@ -304,8 +301,8 @@ class TransactionServiceTest {
         List<TransactionDto> result = service.transfer(accountId, toAccountId, transferDto);
 
         assertThat(result).hasSize(2);
-        assertThat(result.get(0).getType()).isEqualTo(TransactionType.EXPENSE);
-        assertThat(result.get(1).getType()).isEqualTo(TransactionType.INCOME);
+        assertThat(result.get(0).getType()).isEqualTo(TransactionDto.TypeEnum.EXPENSE);
+        assertThat(result.get(1).getType()).isEqualTo(TransactionDto.TypeEnum.INCOME);
         assertThat(account.getBalance()).isEqualByComparingTo(BigDecimal.valueOf(-100));
         assertThat(toAccount.getBalance()).isEqualByComparingTo(BigDecimal.valueOf(100));
         verify(repository, times(2)).save(any(Transaction.class));
@@ -316,7 +313,6 @@ class TransactionServiceTest {
     @Test
     void transfer_fromAccountNotFound() {
         UUID toAccountId = UUID.randomUUID();
-        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
 
         when(accountRepository.findById(accountId)).thenReturn(Optional.empty());
 
@@ -328,7 +324,6 @@ class TransactionServiceTest {
     @Test
     void transfer_toAccountNotFound() {
         UUID toAccountId = UUID.randomUUID();
-        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
 
         when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
         when(accountRepository.findById(toAccountId)).thenReturn(Optional.empty());
@@ -342,7 +337,6 @@ class TransactionServiceTest {
     void transfer_categoryNotFound() {
         UUID toAccountId = UUID.randomUUID();
         Account toAccount = Account.builder().id(toAccountId).name("Savings").balance(BigDecimal.ZERO).build();
-        TransferDto transferDto = TransferDto.builder().amount(BigDecimal.TEN).build();
 
         when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
         when(accountRepository.findById(toAccountId)).thenReturn(Optional.of(toAccount));

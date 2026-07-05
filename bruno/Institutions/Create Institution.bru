@@ -1,0 +1,24 @@
+meta {
+  name: Create Institution
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/v1/institutions
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Intesa Sanpaoloa",
+    "color": "#1A73E8"
+  }
+}
+
+script:post-response {
+  let data = res.body;
+  let institutionId = data.id;
+  bru.setEnvVar("institutionId", institutionId)
+}

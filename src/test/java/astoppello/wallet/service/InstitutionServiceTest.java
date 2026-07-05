@@ -38,10 +38,10 @@ class InstitutionServiceTest {
 
     @Test
     void save() {
-        InstitutionDto dto = InstitutionDto.builder().name(BANK).build();
+        InstitutionDto dto = new InstitutionDto(BANK);
         Institution domain = Institution.builder().name(BANK).build();
         Institution saved = Institution.builder().id(UUID.randomUUID()).name(BANK).build();
-        InstitutionDto savedDto = InstitutionDto.builder().id(saved.getId()).name(BANK).build();
+        InstitutionDto savedDto = new InstitutionDto(BANK).id(saved.getId());
 
         when(mapper.toDomain(dto)).thenReturn(domain);
         when(repository.save(domain)).thenReturn(saved);
@@ -59,7 +59,7 @@ class InstitutionServiceTest {
     @Test
     void getAll() {
         Institution inst = Institution.builder().id(UUID.randomUUID()).name(BANK).build();
-        InstitutionDto dto = InstitutionDto.builder().id(inst.getId()).name(BANK).build();
+        InstitutionDto dto = new InstitutionDto(BANK).id(inst.getId());
 
         when(repository.findAll()).thenReturn(List.of(inst));
         when(mapper.toDto(inst)).thenReturn(dto);
@@ -76,7 +76,7 @@ class InstitutionServiceTest {
     void getByID() {
         UUID id = UUID.randomUUID();
         Institution inst = Institution.builder().id(id).name(BANK).build();
-        InstitutionDto dto = InstitutionDto.builder().id(id).name(BANK).build();
+        InstitutionDto dto = new InstitutionDto(BANK).id(id);
 
         when(repository.findById(id)).thenReturn(Optional.of(inst));
         when(mapper.toDto(inst)).thenReturn(dto);
@@ -101,7 +101,7 @@ class InstitutionServiceTest {
     @Test
     void getByName() {
         Institution inst = Institution.builder().id(UUID.randomUUID()).name(BANK).build();
-        InstitutionDto dto = InstitutionDto.builder().id(inst.getId()).name(BANK).build();
+        InstitutionDto dto = new InstitutionDto(BANK).id(inst.getId());
 
         when(repository.findByName(BANK)).thenReturn(Optional.of(inst));
         when(mapper.toDto(inst)).thenReturn(dto);
@@ -129,8 +129,8 @@ class InstitutionServiceTest {
         existing.setTrackingDate(new astoppello.wallet.domain.TrackingDate());
         existing.getTrackingDate().setUpdatedAt(java.sql.Timestamp.valueOf(java.time.LocalDateTime.now()));
 
-        InstitutionDto updateDto = InstitutionDto.builder().name("New").color("blue").build();
-        InstitutionDto updatedDto = InstitutionDto.builder().id(id).name("New").color("blue").build();
+        InstitutionDto updateDto = new InstitutionDto("New").color("blue");
+        InstitutionDto updatedDto = new InstitutionDto("New").id(id).color("blue");
 
         when(repository.findById(id)).thenReturn(Optional.of(existing));
         when(repository.save(existing)).thenReturn(existing);

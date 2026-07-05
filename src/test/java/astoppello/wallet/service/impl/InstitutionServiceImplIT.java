@@ -1,22 +1,13 @@
 package astoppello.wallet.service.impl;
 
-import astoppello.wallet.domain.Institution;
-import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.InstitutionDto;
 import astoppello.wallet.exception.NotFoundException;
-import astoppello.wallet.mapper.DateMapper;
-import astoppello.wallet.mapper.InstitutionMapperImpl;
-import astoppello.wallet.mapper.TrackingMapperImpl;
-import astoppello.wallet.repository.InstitutionRepository;
 import astoppello.wallet.service.InstitutionService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
 
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
@@ -31,7 +22,7 @@ class InstitutionServiceImplIT {
     private InstitutionService service;
 
     private InstitutionDto buildDto(String name) {
-        return InstitutionDto.builder().name(name).color("blue").build();
+        return new InstitutionDto(name).color("blue");
     }
 
     @Test
@@ -41,9 +32,8 @@ class InstitutionServiceImplIT {
         assertThat(saved.getId()).isNotNull();
         assertThat(saved.getName()).isEqualTo("Bank");
         assertThat(saved.getColor()).isEqualTo("blue");
-        assertThat(saved.getTrackingDate()).isNotNull();
-        assertThat(saved.getTrackingDate().getCreatedAt()).isNotNull();
-        assertThat(saved.getTrackingDate().getUpdatedAt()).isNotNull();
+        assertThat(saved.getCreatedAt()).isNotNull();
+        assertThat(saved.getUpdatedAt()).isNotNull();
         assertThat(service.getAll()).hasSize(1);
     }
 
@@ -94,7 +84,7 @@ class InstitutionServiceImplIT {
         InstitutionDto saved = service.save(buildDto("Bank"));
 
         InstitutionDto updated = service.update(saved.getId(),
-                InstitutionDto.builder().name("New Name").color("red").build());
+                new InstitutionDto("New Name").color("red"));
 
         assertThat(updated.getName()).isEqualTo("New Name");
         assertThat(updated.getColor()).isEqualTo("red");

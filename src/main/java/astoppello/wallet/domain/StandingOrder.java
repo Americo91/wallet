@@ -65,6 +65,7 @@ public class StandingOrder {
 
     private String payee;
 
+    @Builder.Default
     @Column(nullable = false)
     private boolean enabled = true;
 

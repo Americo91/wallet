@@ -42,7 +42,7 @@ class GoalServiceTest {
 
     @BeforeEach
     void setUp() {
-        dto = GoalDto.builder().name(GOAL_NAME).amount(GOAL_AMOUNT).build();
+        dto = new GoalDto(GOAL_NAME, GOAL_AMOUNT);
         domain = Goal.builder().id(UUID.randomUUID()).name(GOAL_NAME).amount(GOAL_AMOUNT).trackingDate(TrackingDate.now()).build();
     }
 
@@ -107,7 +107,7 @@ class GoalServiceTest {
         UUID id = UUID.randomUUID();
         Goal unsaved = Goal.builder().name(GOAL_NAME).amount(GOAL_AMOUNT).build();
         Goal saved = Goal.builder().id(id).name(GOAL_NAME).amount(GOAL_AMOUNT).trackingDate(TrackingDate.now()).build();
-        GoalDto savedDto = GoalDto.builder().id(id).name(GOAL_NAME).amount(GOAL_AMOUNT).build();
+        GoalDto savedDto = new GoalDto(GOAL_NAME, GOAL_AMOUNT).id(id);
 
         when(mapper.toDomain(dto)).thenReturn(unsaved);
         when(repository.save(unsaved)).thenReturn(saved);
@@ -126,7 +126,7 @@ class GoalServiceTest {
     void update() {
         UUID id = UUID.randomUUID();
         Goal existing = Goal.builder().id(id).name("Old Goal").amount(new BigDecimal("5000.00")).trackingDate(TrackingDate.now()).build();
-        GoalDto updatedDto = GoalDto.builder().id(id).name(GOAL_NAME).amount(GOAL_AMOUNT).build();
+        GoalDto updatedDto = new GoalDto(GOAL_NAME, GOAL_AMOUNT).id(id);
 
         when(repository.findById(id)).thenReturn(Optional.of(existing));
         when(repository.save(existing)).thenReturn(existing);

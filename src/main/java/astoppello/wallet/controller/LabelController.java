@@ -1,56 +1,52 @@
 package astoppello.wallet.controller;
 
+import astoppello.wallet.api.LabelsApi;
 import astoppello.wallet.dto.LabelDto;
 import astoppello.wallet.service.LabelService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping(LabelController.LABEL_BASE_PATH)
-public class LabelController {
+public class LabelController implements LabelsApi {
 
-    public static final String LABEL_BASE_PATH = "/api/v1/labels";
-    public static final String LABEL_ID_PATH = "/{labelId}";
     private final LabelService labelService;
 
-    @GetMapping("/")
-    public ResponseEntity<List<LabelDto>> getAll() {
-        return new ResponseEntity<>(labelService.getAll(), HttpStatus.OK);
+    @Override
+    public ResponseEntity<LabelDto> createLabel(LabelDto labelDto) {
+        LabelDto save = labelService.save(labelDto);
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("location", String.format("/api/v1/labels/%s", save.getId()));
+        return new ResponseEntity<>(save, httpHeaders, HttpStatus.CREATED);
     }
 
-    @GetMapping(LABEL_ID_PATH)
-    public ResponseEntity<LabelDto> getById(@PathVariable("labelId") UUID id) {
-        return new ResponseEntity<>(labelService.getByID(id), HttpStatus.OK);
+    @Override
+    public ResponseEntity<Void> deleteLabel(UUID labelId) {
+        labelService.delete(labelId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @GetMapping
-    public ResponseEntity<LabelDto> getByName(@RequestParam("name") String name) {
-        return new ResponseEntity<>(labelService.getByName(name), HttpStatus.OK);
+    @Override
+    public ResponseEntity<LabelDto> getLabelById(UUID labelId) {
+        return new ResponseEntity<>(labelService.getByID(labelId), HttpStatus.OK);
     }
 
-    @PostMapping("/")
-    public ResponseEntity<LabelDto> handlePost(@RequestBody @Valid LabelDto dto) {
-        return new ResponseEntity<>(labelService.save(dto), HttpStatus.CREATED);
+    @Override
+    public ResponseEntity<List<LabelDto>> listLabels(String name) {
+        List<LabelDto> labelDtos = StringUtils.isBlank(name) ? labelService.getAll() : List.of(labelService.getByName(name));
+        return new ResponseEntity<>(labelDtos, HttpStatus.OK);
     }
 
-    @PutMapping(LABEL_ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handleUpdate(@PathVariable("labelId") UUID id, @RequestBody @Valid LabelDto dto) {
-        labelService.update(id, dto);
-    }
-
-    @DeleteMapping(LABEL_ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handleDelete(@PathVariable("labelId") UUID id) {
-        labelService.delete(id);
+    @Override
+    public ResponseEntity<Void> updateLabel(UUID labelId, LabelDto labelDto) {
+        labelService.update(labelId, labelDto);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

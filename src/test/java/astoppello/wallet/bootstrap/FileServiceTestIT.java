@@ -1,12 +1,11 @@
 package astoppello.wallet.bootstrap;
 
 import astoppello.wallet.dto.AccountDto;
+import astoppello.wallet.dto.AccountDto.AccountTypeEnum;
+import astoppello.wallet.dto.AccountDto.CurrencyEnum;
 import astoppello.wallet.dto.InstitutionDto;
-import astoppello.wallet.model.AccountTypeEnum;
-import astoppello.wallet.model.Currency;
 import astoppello.wallet.service.AccountService;
 import astoppello.wallet.service.InstitutionService;
-import org.hibernate.integrator.spi.IntegratorService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
@@ -32,8 +31,8 @@ public class FileServiceTestIT {
 
     @Test
     void loadRevolut() {
-        InstitutionDto institutionDto = institutionService.save(InstitutionDto.builder().name("Revolut").color("white").build());
-        AccountDto revolut = accountService.save(institutionDto.getId(), AccountDto.builder().name("Revolut").accountType(AccountTypeEnum.LIQUIDITY).balance(BigDecimal.ZERO).currency(Currency.EUR).build());
+        InstitutionDto institutionDto = institutionService.save(new InstitutionDto("Revolut").color("white"));
+        AccountDto revolut = accountService.save(institutionDto.getId(), new AccountDto("Revolut", AccountTypeEnum.LIQUIDITY, BigDecimal.ZERO, CurrencyEnum.EUR));
         fileService.loadTransactions(revolut.getId(), "/jsonLoad/Revolut.json");
     }
 }

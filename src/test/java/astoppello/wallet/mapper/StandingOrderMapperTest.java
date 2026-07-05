@@ -22,7 +22,7 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {StandingOrderMapperImpl.class, DateMapper.class, TrackingMapperImpl.class})
+@ContextConfiguration(classes = {StandingOrderMapperImpl.class, DateMapper.class})
 class StandingOrderMapperTest {
 
     private static Category category;
@@ -51,7 +51,7 @@ class StandingOrderMapperTest {
                 .payee("Matteo")
                 .enabled(true)
                 .labels(Set.of(label))
-                .trackingDate(TrackingMapperTest.trackingDate)
+                .trackingDate(TestTrackingData.trackingDate)
                 .build();
     }
 
@@ -63,33 +63,32 @@ class StandingOrderMapperTest {
         assertThat(dto.getId()).isEqualTo(standingOrder.getId());
         assertThat(dto.getName()).isEqualTo("Spotify");
         assertThat(dto.getAmount()).isEqualByComparingTo(BigDecimal.valueOf(3));
-        assertThat(dto.getCurrency()).isEqualTo(Currency.EUR);
-        assertThat(dto.getFrequency()).isEqualTo(Frequency.MONTHLY);
-        assertThat(dto.getType()).isEqualTo(TransactionType.EXPENSE);
+        assertThat(dto.getCurrency().name()).isEqualTo(Currency.EUR.name());
+        assertThat(dto.getFrequency().name()).isEqualTo(Frequency.MONTHLY.name());
+        assertThat(dto.getType().name()).isEqualTo(TransactionType.EXPENSE.name());
         assertThat(dto.getNextOccurrence().toString()).isEqualTo("2026-06-15");
         assertThat(dto.getAccount()).isEqualTo(account.getId());
         assertThat(dto.getCategory()).isEqualTo(category.getId());
         assertThat(dto.getDescription()).isEqualTo("Spotify subscription");
         assertThat(dto.getPayee()).isEqualTo("Matteo");
-        assertThat(dto.isEnabled()).isTrue();
+        assertThat(dto.getEnabled()).isTrue();
         assertThat(dto.getLabels()).containsExactly(label.getId());
-        assertThat(dto.getTrackingDate().getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
-        assertThat(dto.getTrackingDate().getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
+        assertThat(dto.getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
+        assertThat(dto.getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
     }
 
     @Test
     void toDomain() {
-        StandingOrderDto dto = StandingOrderDto.builder()
+        StandingOrderDto dto = new StandingOrderDto()
                 .name("Spotify")
                 .amount(BigDecimal.valueOf(3))
-                .currency(Currency.EUR)
-                .frequency(Frequency.MONTHLY)
-                .type(TransactionType.EXPENSE)
+                .currency(StandingOrderDto.CurrencyEnum.EUR)
+                .frequency(StandingOrderDto.FrequencyEnum.MONTHLY)
+                .type(StandingOrderDto.TypeEnum.EXPENSE)
                 .nextOccurrence(LocalDate.of(2026, 6, 15))
                 .description("Spotify subscription")
                 .payee("Matteo")
-                .enabled(true)
-                .build();
+                .enabled(true);
 
         StandingOrder domain = standingOrderMapper.toDomain(dto);
 

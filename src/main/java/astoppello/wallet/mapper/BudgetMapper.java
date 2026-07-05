@@ -14,18 +14,20 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-@Mapper(uses = {TrackingMapper.class, DateMapper.class})
+@Mapper(uses = {DateMapper.class})
 public interface BudgetMapper {
 
     @Mapping(target = "categoryIds", source = "categories", qualifiedByName = "mapCategories")
     @Mapping(target = "accountIds", source = "accounts", qualifiedByName = "mapAccounts")
     @Mapping(target = "labelIds", source = "labels", qualifiedByName = "mapLabels")
+    @Mapping(target = "createdAt", source = "trackingDate.createdAt")
+    @Mapping(target = "updatedAt", source = "trackingDate.updatedAt")
     BudgetDto toDto(Budget domain);
 
     @Mapping(target = "categories", ignore = true)
     @Mapping(target = "accounts", ignore = true)
     @Mapping(target = "labels", ignore = true)
-    @Mapping(target = "trackingDate", source = "trackingDate")
+    @Mapping(target = "trackingDate", ignore = true)
     Budget toDomain(BudgetDto dto);
 
     @Named("mapCategories")

@@ -1,16 +1,12 @@
 package astoppello.wallet.service.impl;
 
 import astoppello.wallet.dto.LabelDto;
-import astoppello.wallet.mapper.DateMapper;
-import astoppello.wallet.mapper.LabelMapperImpl;
-import astoppello.wallet.mapper.TrackingMapperImpl;
 import astoppello.wallet.service.LabelService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
 
 import java.util.List;
 
@@ -29,15 +25,13 @@ class LabelServiceImplIT {
 
     @BeforeEach
     void setUp() {
-        labelDto = LabelDto.builder()
-                .name(LABEL_NAME)
-                .build();
+        labelDto = new LabelDto(LABEL_NAME);
         saved = service.save(labelDto);
     }
 
     @Test
     void getAll() {
-        service.save(LabelDto.builder().name("anyName").build());
+        service.save(new LabelDto("anyName"));
 
         List<LabelDto> all = service.getAll();
         assertThat(all).hasSize(2);
@@ -50,9 +44,8 @@ class LabelServiceImplIT {
         assertThat(byID).isNotNull();
         assertThat(byID.getName()).isEqualTo(LABEL_NAME);
         assertThat(byID.getId()).isNotNull();
-        assertThat(byID.getTrackingDate()).isNotNull();
-        assertThat(byID.getTrackingDate().getCreatedAt()).isNotNull();
-        assertThat(byID.getTrackingDate().getUpdatedAt()).isNotNull();
+        assertThat(byID.getCreatedAt()).isNotNull();
+        assertThat(byID.getUpdatedAt()).isNotNull();
     }
 
     @Test
@@ -69,11 +62,10 @@ class LabelServiceImplIT {
     @Test
     void update() {
         String name = "newName";
-        LabelDto newName = service.update(saved.getId(), LabelDto.builder().name(name).build());
+        LabelDto newName = service.update(saved.getId(), new LabelDto(name));
         assertThat(newName).isNotNull();
         assertThat(newName.getName()).isEqualTo(name);
-        assertThat(newName.getTrackingDate().getUpdatedAt()).isNotEqualTo(saved.getTrackingDate().getUpdatedAt());
-        assertThat(newName.getTrackingDate().getUpdatedAt()).isNotEqualTo(saved.getTrackingDate().getUpdatedAt());
+        assertThat(newName.getUpdatedAt()).isNotEqualTo(saved.getUpdatedAt());
     }
 
     @Test
