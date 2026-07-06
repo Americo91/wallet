@@ -209,23 +209,32 @@ class TransactionServiceTest {
                 .description("new desc")
                 .payee("Shop")
                 .category(categoryId);
+        Transaction mapped = Transaction.builder()
+                .type(TransactionType.INCOME)
+                .amount(BigDecimal.ONE)
+                .date(Timestamp.valueOf(LocalDate.now().atStartOfDay()))
+                .description("new desc")
+                .payee("Shop")
+                .build();
         TransactionDto updatedDto = new TransactionDto().id(transactionId);
 
         when(repository.findById(transactionId)).thenReturn(Optional.of(transaction));
         when(categoryRepository.findById(categoryId)).thenReturn(Optional.of(category));
-        when(repository.save(transaction)).thenReturn(transaction);
-        when(mapper.toDto(transaction)).thenReturn(updatedDto);
+        when(mapper.toDomain(updateDto)).thenReturn(mapped);
+        when(repository.save(mapped)).thenReturn(mapped);
+        when(mapper.toDto(mapped)).thenReturn(updatedDto);
 
         TransactionDto result = service.update(transactionId, updateDto);
 
         assertThat(result.getId()).isEqualTo(transactionId);
-        assertThat(transaction.getType()).isEqualTo(TransactionType.INCOME);
-        assertThat(transaction.getAmount()).isEqualByComparingTo(BigDecimal.ONE);
-        assertThat(transaction.getDescription()).isEqualTo("new desc");
-        assertThat(transaction.getPayee()).isEqualTo("Shop");
+        // the new entity keeps the existing id, account and createdAt
+        assertThat(mapped.getId()).isEqualTo(transactionId);
+        assertThat(mapped.getAccount()).isEqualTo(account);
+        assertThat(mapped.getCategory()).isEqualTo(category);
+        assertThat(mapped.getTrackingDate().getCreatedAt()).isEqualTo(transaction.getTrackingDate().getCreatedAt());
         verify(repository).findById(transactionId);
         verify(categoryRepository).findById(categoryId);
-        verify(repository).save(transaction);
+        verify(repository).save(mapped);
         // Old EXPENSE(10) reversed (+10), new INCOME(1) applied (+1) = +11
         assertThat(account.getBalance()).isEqualByComparingTo(new BigDecimal("11"));
         verify(accountRepository, times(2)).save(account);
@@ -244,19 +253,25 @@ class TransactionServiceTest {
                 .amount(BigDecimal.TEN)
                 .category(newCategoryId)
                 .labels(Set.of(labelId));
+        Transaction mapped = Transaction.builder()
+                .type(TransactionType.EXPENSE)
+                .amount(BigDecimal.TEN)
+                .date(Timestamp.valueOf(LocalDateTime.now()))
+                .build();
 
         when(repository.findById(transactionId)).thenReturn(Optional.of(transaction));
         when(categoryRepository.findById(newCategoryId)).thenReturn(Optional.of(newCategory));
         when(labelRepository.findAllById(Set.of(labelId))).thenReturn(List.of(label));
-        when(repository.save(transaction)).thenReturn(transaction);
-        when(mapper.toDto(transaction)).thenReturn(updatedDto);
+        when(mapper.toDomain(updateDto)).thenReturn(mapped);
+        when(repository.save(mapped)).thenReturn(mapped);
+        when(mapper.toDto(mapped)).thenReturn(updatedDto);
 
         service.update(transactionId, updateDto);
 
         verify(categoryRepository).findById(newCategoryId);
         verify(labelRepository).findAllById(Set.of(labelId));
-        assertThat(transaction.getCategory()).isEqualTo(newCategory);
-        assertThat(transaction.getLabels()).contains(label);
+        assertThat(mapped.getCategory()).isEqualTo(newCategory);
+        assertThat(mapped.getLabels()).contains(label);
     }
 
     @Test

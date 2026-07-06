@@ -125,25 +125,29 @@ class InstitutionServiceTest {
     @Test
     void update_nameAndColor() {
         UUID id = UUID.randomUUID();
-        Institution existing = Institution.builder().id(id).name("Old").color("red").build();
-        existing.setTrackingDate(new astoppello.wallet.domain.TrackingDate());
-        existing.getTrackingDate().setUpdatedAt(java.sql.Timestamp.valueOf(java.time.LocalDateTime.now()));
+        Institution existing = Institution.builder().id(id).name("Old").color("red")
+                .trackingDate(astoppello.wallet.domain.TrackingDate.now()).build();
 
         InstitutionDto updateDto = new InstitutionDto("New").color("blue");
+        Institution mapped = Institution.builder().name("New").color("blue").build();
         InstitutionDto updatedDto = new InstitutionDto("New").id(id).color("blue");
 
         when(repository.findById(id)).thenReturn(Optional.of(existing));
-        when(repository.save(existing)).thenReturn(existing);
-        when(mapper.toDto(existing)).thenReturn(updatedDto);
+        when(mapper.toDomain(updateDto)).thenReturn(mapped);
+        when(repository.save(mapped)).thenReturn(mapped);
+        when(mapper.toDto(mapped)).thenReturn(updatedDto);
 
         InstitutionDto result = service.update(id, updateDto);
 
         assertThat(result.getName()).isEqualTo("New");
         assertThat(result.getColor()).isEqualTo("blue");
+        // the new entity keeps the existing id and createdAt
+        assertThat(mapped.getId()).isEqualTo(id);
+        assertThat(mapped.getTrackingDate().getCreatedAt()).isEqualTo(existing.getTrackingDate().getCreatedAt());
 
         verify(repository).findById(id);
-        verify(repository).save(existing);
-        verify(mapper).toDto(existing);
+        verify(repository).save(mapped);
+        verify(mapper).toDto(mapped);
     }
 
     @Test

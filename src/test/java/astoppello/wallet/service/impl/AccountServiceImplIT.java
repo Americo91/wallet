@@ -108,29 +108,24 @@ class AccountServiceImplIT {
         AccountDto updated = service.update(saved.getId(),
                 new AccountDto("Updated", AccountDto.AccountTypeEnum.SAVINGS, BigDecimal.TEN, AccountDto.CurrencyEnum.USD));
 
+        assertThat(updated.getId()).isEqualTo(saved.getId());
         assertThat(updated.getName()).isEqualTo("Updated");
         assertThat(updated.getAccountType()).isEqualTo(AccountDto.AccountTypeEnum.SAVINGS);
         assertThat(updated.getBalance()).isEqualByComparingTo(BigDecimal.TEN);
         assertThat(updated.getCurrency()).isEqualTo(AccountDto.CurrencyEnum.USD);
+        assertThat(updated.getCreatedAt()).isEqualTo(saved.getCreatedAt());
     }
 
     @Test
-    void update_institution() {
-        InstitutionDto save = institutionService.save(new InstitutionDto("Other Bank"));
+    void update_keepsExistingInstitution() {
+        InstitutionDto other = institutionService.save(new InstitutionDto("Other Bank"));
         AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
+        // institution is read-only on update: the existing one is kept
         AccountDto updated = service.update(saved.getId(),
-                buildDto("Checking").institution(save.getId()));
+                buildDto("Checking").institution(other.getId()));
 
-        assertThat(updated.getInstitution()).isEqualTo(save.getId());
-    }
-
-    @Test
-    void update_institutionNotFound() {
-        AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
-
-        assertThatThrownBy(() -> service.update(saved.getId(), buildDto("Checking").institution(UUID.randomUUID())))
-                .isInstanceOf(NotFoundException.class);
+        assertThat(updated.getInstitution()).isEqualTo(institutionDto.getId());
     }
 
     @Test

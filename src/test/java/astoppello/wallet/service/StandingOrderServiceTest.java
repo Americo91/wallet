@@ -200,24 +200,33 @@ class StandingOrderServiceTest {
                 StandingOrderDto.CurrencyEnum.EUR, StandingOrderDto.FrequencyEnum.MONTHLY,
                 StandingOrderDto.TypeEnum.EXPENSE, LocalDate.now().plusDays(10), categoryId)
                 .enabled(true);
+        StandingOrder mapped = StandingOrder.builder()
+                .name("Spotify Premium")
+                .amount(new BigDecimal("9.99"))
+                .currency(Currency.EUR)
+                .frequency(Frequency.MONTHLY)
+                .type(TransactionType.EXPENSE)
+                .nextOccurrence(Timestamp.valueOf(LocalDate.now().plusDays(10).atStartOfDay()))
+                .build();
         StandingOrderDto updatedDto = new StandingOrderDto().id(standingOrderId);
 
         when(repository.findById(standingOrderId)).thenReturn(Optional.of(standingOrder));
         when(categoryRepository.findById(categoryId)).thenReturn(Optional.of(category));
-        when(repository.save(standingOrder)).thenReturn(standingOrder);
-        when(mapper.toDto(standingOrder)).thenReturn(updatedDto);
+        when(mapper.toDomain(updateDto)).thenReturn(mapped);
+        when(repository.save(mapped)).thenReturn(mapped);
+        when(mapper.toDto(mapped)).thenReturn(updatedDto);
 
         StandingOrderDto result = service.update(standingOrderId, updateDto);
 
         assertThat(result.getId()).isEqualTo(standingOrderId);
-        assertThat(standingOrder.getName()).isEqualTo("Spotify Premium");
-        assertThat(standingOrder.getAmount()).isEqualByComparingTo(BigDecimal.valueOf(9.99));
-        assertThat(standingOrder.getNextOccurrence())
-                .isEqualTo(Timestamp.valueOf(LocalDate.now().plusDays(10).atStartOfDay()));
-        assertThat(standingOrder.getCategory()).isEqualTo(category);
+        // the new entity keeps the existing id, account and createdAt
+        assertThat(mapped.getId()).isEqualTo(standingOrderId);
+        assertThat(mapped.getAccount()).isEqualTo(account);
+        assertThat(mapped.getCategory()).isEqualTo(category);
+        assertThat(mapped.getTrackingDate().getCreatedAt()).isEqualTo(standingOrder.getTrackingDate().getCreatedAt());
         verify(repository).findById(standingOrderId);
         verify(categoryRepository).findById(categoryId);
-        verify(repository).save(standingOrder);
+        verify(repository).save(mapped);
     }
 
     @Test

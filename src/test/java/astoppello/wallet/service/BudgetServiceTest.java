@@ -128,20 +128,26 @@ class BudgetServiceTest {
     @Test
     void update() {
         UUID id = domain.getId();
+        Budget mapped = Budget.builder().name(BUDGET_NAME).period(Frequency.MONTHLY).budgetLimit(new BigDecimal("500.00")).build();
         BudgetDto updatedDto = new BudgetDto().id(id).name(BUDGET_NAME).period(BudgetDto.PeriodEnum.MONTHLY).budgetLimit(new BigDecimal("500.00"));
 
         when(repository.findById(id)).thenReturn(Optional.of(domain));
+        when(mapper.toDomain(dto)).thenReturn(mapped);
         when(categoryRepository.findAllById(dto.getCategoryIds())).thenReturn(new ArrayList<>(domain.getCategories()));
         when(accountRepository.findAllById(dto.getAccountIds())).thenReturn(new ArrayList<>(domain.getAccounts()));
         when(labelRepository.findAllById(dto.getLabelIds())).thenReturn(new ArrayList<>(domain.getLabels()));
-        when(repository.save(domain)).thenReturn(domain);
-        when(mapper.toDto(domain)).thenReturn(updatedDto);
+        when(repository.save(mapped)).thenReturn(mapped);
+        when(mapper.toDto(mapped)).thenReturn(updatedDto);
 
         BudgetDto result = service.update(id, dto);
         assertThat(result.getName()).isEqualTo(BUDGET_NAME);
+        // the new entity keeps the existing id and createdAt
+        assertThat(mapped.getId()).isEqualTo(id);
+        assertThat(mapped.getTrackingDate().getCreatedAt()).isEqualTo(domain.getTrackingDate().getCreatedAt());
+        assertThat(mapped.getCategories()).isEqualTo(domain.getCategories());
         verify(repository).findById(id);
-        verify(repository).save(domain);
-        verify(mapper).toDto(domain);
+        verify(repository).save(mapped);
+        verify(mapper).toDto(mapped);
     }
 
     @Test

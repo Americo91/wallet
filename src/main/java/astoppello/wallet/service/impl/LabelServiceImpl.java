@@ -53,9 +53,13 @@ public class LabelServiceImpl implements LabelService {
     @Override
     public LabelDto update(UUID id, LabelDto dto) {
         Label byId = getById(id);
-        byId.setName(dto.getName());
-        byId.getTrackingDate().touch();
-        return mapper.toDto(repository.save(byId));
+
+        Label domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setTransactions(byId.getTransactions());
+        domain.setTrackingDate(byId.getTrackingDate());
+        domain.getTrackingDate().touch();
+        return mapper.toDto(repository.save(domain));
     }
 
     @Override

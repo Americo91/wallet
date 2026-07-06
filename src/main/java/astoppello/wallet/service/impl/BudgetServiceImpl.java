@@ -2,7 +2,6 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.domain.*;
 import astoppello.wallet.dto.BudgetDto;
-import astoppello.wallet.model.Frequency;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.BudgetMapper;
 import astoppello.wallet.repository.AccountRepository;
@@ -57,15 +56,16 @@ public class BudgetServiceImpl implements astoppello.wallet.service.BudgetServic
     @Transactional
     public BudgetDto update(UUID id, BudgetDto dto) {
         Budget existing = getById(id);
-        existing.setName(dto.getName());
-        existing.setPeriod(Frequency.valueOf(dto.getPeriod().name()));
-        existing.setBudgetLimit(dto.getBudgetLimit());
-        existing.setCategories(resolveCategories(dto.getCategoryIds()));
-        existing.setAccounts(resolveAccounts(dto.getAccountIds()));
-        existing.setLabels(resolveLabels(dto.getLabelIds()));
-        existing.setClosed(Boolean.TRUE.equals(dto.getClosed()));
-        existing.getTrackingDate().touch();
-        return mapper.toDto(repository.save(existing));
+
+        Budget domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setCategories(resolveCategories(dto.getCategoryIds()));
+        domain.setAccounts(resolveAccounts(dto.getAccountIds()));
+        domain.setLabels(resolveLabels(dto.getLabelIds()));
+        domain.setOverLimit(existing.getOverLimit());
+        domain.setTrackingDate(existing.getTrackingDate());
+        domain.getTrackingDate().touch();
+        return mapper.toDto(repository.save(domain));
     }
 
     @Override

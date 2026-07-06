@@ -57,19 +57,19 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public CategoryDto update(UUID id, CategoryDto dto) {
         Category byId = getById(id);
-        byId.setName(dto.getName());
-        dto.setId(id);
+
+        Category domain = mapper.toDomain(dto);
+        domain.setId(id);
         if (dto.getParentId() != null) {
             Category parent = getById(dto.getParentId());
-            byId.setParent(parent);
-            byId.setType(null);
-            parent.addSubcategory(byId);
-        } else {
-            byId.setParent(null);
-            byId.setType(dto.getType() != null ? CategoryType.valueOf(dto.getType().name()) : null);
+            domain.setParent(parent);
+            domain.setType(null);
+            parent.addSubcategory(domain);
         }
-        byId.getTrackingDate().touch();
-        return mapper.toDto(repository.save(byId));
+        domain.setSubcategories(byId.getSubcategories());
+        domain.setTrackingDate(byId.getTrackingDate());
+        domain.getTrackingDate().touch();
+        return mapper.toDto(repository.save(domain));
     }
 
     @Override

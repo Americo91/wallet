@@ -8,7 +8,6 @@ import astoppello.wallet.dto.LabelDto;
 import astoppello.wallet.dto.TransactionDto;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.model.CategoryType;
-import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.service.CategoryService;
 import astoppello.wallet.service.LabelService;
 import astoppello.wallet.service.TransactionService;

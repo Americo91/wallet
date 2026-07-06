@@ -36,11 +36,13 @@ public class InstitutionServiceImpl implements InstitutionService {
     public InstitutionDto update(UUID id, InstitutionDto dto) {
         Institution byId = getById(id);
 
-        byId.setName(dto.getName());
-        byId.setColor(dto.getColor());
-        byId.getTrackingDate().touch();
+        Institution domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setAccounts(byId.getAccounts());
+        domain.setTrackingDate(byId.getTrackingDate());
+        domain.getTrackingDate().touch();
 
-        Institution saved = repository.save(byId);
+        Institution saved = repository.save(domain);
         return mapper.toDto(saved);
     }
 

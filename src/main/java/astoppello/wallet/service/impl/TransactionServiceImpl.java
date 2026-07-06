@@ -65,33 +65,29 @@ public class TransactionServiceImpl implements TransactionService {
 
     @Override
     public TransactionDto update(UUID id, TransactionDto dto) {
-        Transaction transaction = getById(id);
-        UUID categoryId = dto.getCategory();
-        Category category = categoryRepository.findById(categoryId)
-                .orElseThrow(() -> new NotFoundException(Category.class, categoryId));
+        Transaction byId = getById(id);
+        Category category = categoryRepository.findById(dto.getCategory())
+                .orElseThrow(() -> new NotFoundException(Category.class, dto.getCategory()));
 
         // Capture old state for balance reversal
-        Account oldAccount = transaction.getAccount();
-        TransactionType oldType = transaction.getType();
-        BigDecimal oldAmount = transaction.getAmount();
+        Account account = byId.getAccount();
+        TransactionType oldType = byId.getType();
+        BigDecimal oldAmount = byId.getAmount();
 
-        transaction.setType(TransactionType.valueOf(dto.getType().name()));
-        transaction.setAmount(dto.getAmount());
-        transaction.setDate(dto.getDate() != null
-                ? Timestamp.valueOf(dto.getDate().atStartOfDay())
-                : Timestamp.valueOf(LocalDateTime.now()));
-        transaction.setDescription(dto.getDescription());
-        transaction.setPayee(dto.getPayee());
-        transaction.setCategory(category);
-        if (dto.getAccount() != null) {
-            transaction.setAccount(getAccount(dto.getAccount()));
+        Transaction domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setAccount(account);
+        domain.setCategory(category);
+        domain.setLabels(resolveLabels(dto.getLabels()));
+        if (domain.getDate() == null) {
+            domain.setDate(Timestamp.valueOf(LocalDateTime.now()));
         }
-        transaction.setLabels(resolveLabels(dto.getLabels()));
-        transaction.getTrackingDate().touch();
-        Transaction saved = repository.save(transaction);
+        domain.setTrackingDate(byId.getTrackingDate());
+        domain.getTrackingDate().touch();
+        Transaction saved = repository.save(domain);
 
         // Reverse old balance, apply new
-        applyDelta(oldAccount, computeDelta(oldType, oldAmount).negate());
+        applyDelta(account, computeDelta(oldType, oldAmount).negate());
         applyDelta(saved.getAccount(), computeDelta(saved.getType(), saved.getAmount()));
 
         return mapper.toDto(saved);

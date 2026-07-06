@@ -2,9 +2,6 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.domain.*;
 import astoppello.wallet.dto.StandingOrderDto;
-import astoppello.wallet.model.Currency;
-import astoppello.wallet.model.Frequency;
-import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.StandingOrderMapper;
 import astoppello.wallet.repository.AccountRepository;
@@ -16,7 +13,6 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -60,24 +56,16 @@ public class StandingOrderServiceImpl implements StandingOrderService {
 
     @Override
     public StandingOrderDto update(UUID id, StandingOrderDto dto) {
-        StandingOrder domain = getById(id);
+        StandingOrder byId = getById(id);
         Category category = categoryRepository.findById(dto.getCategory())
                 .orElseThrow(() -> new NotFoundException(Category.class, dto.getCategory()));
 
-        domain.setName(dto.getName());
-        domain.setAmount(dto.getAmount());
-        domain.setCurrency(Currency.valueOf(dto.getCurrency().name()));
-        domain.setFrequency(Frequency.valueOf(dto.getFrequency().name()));
-        domain.setType(TransactionType.valueOf(dto.getType().name()));
-        domain.setNextOccurrence(Timestamp.valueOf(dto.getNextOccurrence().atStartOfDay()));
+        StandingOrder domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setAccount(byId.getAccount());
         domain.setCategory(category);
-        if (dto.getAccount() != null) {
-            domain.setAccount(getAccount(dto.getAccount()));
-        }
         domain.setLabels(resolveLabels(dto.getLabels()));
-        domain.setDescription(dto.getDescription());
-        domain.setPayee(dto.getPayee());
-        domain.setEnabled(dto.getEnabled() == null || dto.getEnabled());
+        domain.setTrackingDate(byId.getTrackingDate());
         domain.getTrackingDate().touch();
         return mapper.toDto(repository.save(domain));
     }

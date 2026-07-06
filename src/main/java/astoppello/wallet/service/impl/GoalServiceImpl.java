@@ -51,12 +51,12 @@ public class GoalServiceImpl implements GoalService {
     @Override
     public GoalDto update(UUID id, GoalDto dto) {
         Goal byId = getById(id);
-        byId.setName(dto.getName());
-        byId.setAmount(dto.getAmount());
-        byId.setSavedAmount(dto.getSavedAmount());
-        byId.setReached(Boolean.TRUE.equals(dto.getReached()));
-        byId.getTrackingDate().touch();
-        return mapper.toDto(repository.save(byId));
+
+        Goal domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setTrackingDate(byId.getTrackingDate());
+        domain.getTrackingDate().touch();
+        return mapper.toDto(repository.save(domain));
     }
 
     @Override
