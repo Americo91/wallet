@@ -1,9 +1,7 @@
 package astoppello.wallet.controller;
 
-import astoppello.wallet.dto.TrackingDateDto;
 import astoppello.wallet.dto.TransactionDto;
 import astoppello.wallet.dto.TransferDto;
-import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.service.TransactionService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -34,6 +32,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(TransactionController.class)
 class TransactionControllerTest {
 
+    private static final String TRANSACTION_BASE_URL = "/api/v1/transactions";
+
     @MockitoBean
     TransactionService service;
     @Autowired
@@ -47,33 +47,30 @@ class TransactionControllerTest {
     @BeforeEach
     void setUp() {
         accountId = UUID.randomUUID();
-        transactionDto = TransactionDto.builder()
+        transactionDto = new TransactionDto()
                 .id(UUID.randomUUID())
                 .account(accountId)
-                .type(TransactionType.EXPENSE)
+                .type(TransactionDto.TypeEnum.EXPENSE)
                 .amount(BigDecimal.TEN)
                 .date(LocalDate.now())
                 .category(UUID.randomUUID())
                 .description("anyText")
                 .payee("any")
                 .labels(Set.of(UUID.randomUUID()))
-                .trackingDate(TrackingDateDto.builder()
-                        .createdAt(OffsetDateTime.now())
-                        .updatedAt(OffsetDateTime.now())
-                        .build())
-                .build();
+                .createdAt(OffsetDateTime.now())
+                .updatedAt(OffsetDateTime.now());
     }
 
     @Test
     void getAll() throws Exception {
         given(service.getAll()).willReturn(List.of(transactionDto));
 
-        mockMvc.perform(get(TransactionController.TRANSACTION_BASE_URL + "/").accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(TRANSACTION_BASE_URL).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(jsonPath("$[0].id", is(transactionDto.getId().toString())))
-                .andExpect(jsonPath("$[0].type", is(transactionDto.getType().toString())))
-                .andExpect(jsonPath("$[0].amount", is(transactionDto.getAmount().toString())))
+                .andExpect(jsonPath("$[0].type", is(transactionDto.getType().getValue())))
+                .andExpect(jsonPath("$[0].amount", is(transactionDto.getAmount().intValue())))
                 .andExpect(jsonPath("$[0].account", is(transactionDto.getAccount().toString())))
                 .andExpect(jsonPath("$[0].date", is(transactionDto.getDate().toString())))
                 .andExpect(jsonPath("$[0].category", is(transactionDto.getCategory().toString())))
@@ -89,11 +86,11 @@ class TransactionControllerTest {
     void getById() throws Exception {
         given(service.getByID(any())).willReturn(transactionDto);
 
-        mockMvc.perform(get(TransactionController.TRANSACTION_BASE_URL + "/" + transactionDto.getId()).accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(TRANSACTION_BASE_URL + "/" + transactionDto.getId()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(jsonPath("$.id", is(transactionDto.getId().toString())))
-                .andExpect(jsonPath("$.type", is(transactionDto.getType().toString())));
+                .andExpect(jsonPath("$.type", is(transactionDto.getType().getValue())));
         then(service).should().getByID(any());
     }
 
@@ -101,7 +98,7 @@ class TransactionControllerTest {
     void getAllByAccount() throws Exception {
         given(service.getAllByAccount(any())).willReturn(List.of(transactionDto));
 
-        mockMvc.perform(get(TransactionController.ACCOUNT_TRANSACTION_BASE_URL.replace("{accountId}", accountId.toString()))
+        mockMvc.perform(get("/api/v1/accounts/" + accountId + "/transactions")
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
@@ -114,14 +111,13 @@ class TransactionControllerTest {
     void handlePost() throws Exception {
         given(service.save(any(), any())).willReturn(transactionDto);
 
-        String body = mapper.writeValueAsString(TransactionDto.builder()
-                .type(TransactionType.EXPENSE)
+        String body = mapper.writeValueAsString(new TransactionDto()
+                .type(TransactionDto.TypeEnum.EXPENSE)
                 .amount(BigDecimal.TEN)
                 .category(UUID.randomUUID())
-                .date(LocalDate.now())
-                .build());
+                .date(LocalDate.now()));
 
-        mockMvc.perform(post(TransactionController.ACCOUNT_TRANSACTION_BASE_URL.replace("{accountId}", accountId.toString()) + "/")
+        mockMvc.perform(post("/api/v1/accounts/" + accountId + "/transactions")
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(body))
@@ -131,13 +127,12 @@ class TransactionControllerTest {
 
     @Test
     void handlePost_nullAccountId() throws Exception {
-        String body = mapper.writeValueAsString(TransactionDto.builder()
-                .type(TransactionType.EXPENSE)
+        String body = mapper.writeValueAsString(new TransactionDto()
+                .type(TransactionDto.TypeEnum.EXPENSE)
                 .amount(BigDecimal.TEN)
-                .date(LocalDate.now())
-                .build());
+                .date(LocalDate.now()));
 
-        mockMvc.perform(post(TransactionController.ACCOUNT_TRANSACTION_BASE_URL.replace("{accountId}", "null") + "/")
+        mockMvc.perform(post("/api/v1/accounts/null/transactions")
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(body))
@@ -149,14 +144,13 @@ class TransactionControllerTest {
     void handlePut() throws Exception {
         given(service.update(any(), any())).willReturn(transactionDto);
 
-        String body = mapper.writeValueAsString(TransactionDto.builder()
-                .type(TransactionType.EXPENSE)
+        String body = mapper.writeValueAsString(new TransactionDto()
+                .type(TransactionDto.TypeEnum.EXPENSE)
                 .amount(BigDecimal.TEN)
                 .category(UUID.randomUUID())
-                .date(LocalDate.now())
-                .build());
+                .date(LocalDate.now()));
 
-        mockMvc.perform(put(TransactionController.TRANSACTION_BASE_URL + "/" + transactionDto.getId())
+        mockMvc.perform(put(TRANSACTION_BASE_URL + "/" + transactionDto.getId())
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(body))
@@ -166,7 +160,7 @@ class TransactionControllerTest {
 
     @Test
     void handleDelete() throws Exception {
-        mockMvc.perform(delete(TransactionController.TRANSACTION_BASE_URL + "/" + transactionDto.getId()))
+        mockMvc.perform(delete(TRANSACTION_BASE_URL + "/" + transactionDto.getId()))
                 .andExpect(status().isNoContent());
         then(service).should().delete(any());
     }
@@ -175,21 +169,17 @@ class TransactionControllerTest {
     void handleTransfer() throws Exception {
         UUID fromAccountId = UUID.randomUUID();
         UUID toAccountId = UUID.randomUUID();
-        TransactionDto expenseDto = TransactionDto.builder()
-                .id(UUID.randomUUID()).type(TransactionType.EXPENSE).amount(BigDecimal.TEN).build();
-        TransactionDto incomeDto = TransactionDto.builder()
-                .id(UUID.randomUUID()).type(TransactionType.INCOME).amount(BigDecimal.TEN).build();
+        TransactionDto expenseDto = new TransactionDto()
+                .id(UUID.randomUUID()).type(TransactionDto.TypeEnum.EXPENSE).amount(BigDecimal.TEN);
+        TransactionDto incomeDto = new TransactionDto()
+                .id(UUID.randomUUID()).type(TransactionDto.TypeEnum.INCOME).amount(BigDecimal.TEN);
 
         given(service.transfer(any(), any(), any())).willReturn(List.of(expenseDto, incomeDto));
 
-        String body = mapper.writeValueAsString(TransferDto.builder()
-                .amount(BigDecimal.TEN)
-                .date(LocalDate.now())
-                .build());
+        String body = mapper.writeValueAsString(new TransferDto(BigDecimal.TEN)
+                .date(LocalDate.now()));
 
-        String url = TransactionController.TRANSFER_URL
-                .replace("{fromAccountId}", fromAccountId.toString())
-                .replace("{toAccountId}", toAccountId.toString());
+        String url = "/api/v1/accounts/" + fromAccountId + "/transfer/" + toAccountId;
 
         mockMvc.perform(post(url)
                         .accept(MediaType.APPLICATION_JSON)

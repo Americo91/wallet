@@ -64,15 +64,14 @@ public class FileService {
                 }
             }
 
-            TransactionDto dto = TransactionDto.builder()
-                    .type(TransactionType.valueOf(record.type().toUpperCase()))
+            TransactionDto dto = new TransactionDto()
+                    .type(TransactionDto.TypeEnum.valueOf(record.type().toUpperCase()))
                     .amount(record.value().abs())
                     .date(LocalDate.parse(record.date().substring(0, 10)))
                     .category(categoryDtoOptional.get())
                     .description(record.note())
                     .payee(record.payee())
-                    .labels(CollectionUtils.isEmpty(labels) ? null : labels)
-                    .build();
+                    .labels(CollectionUtils.isEmpty(labels) ? null : labels);
 
             convertedTransaction.add(dto);
         }

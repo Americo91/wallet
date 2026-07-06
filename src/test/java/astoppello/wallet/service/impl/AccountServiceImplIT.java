@@ -3,12 +3,6 @@ package astoppello.wallet.service.impl;
 import astoppello.wallet.dto.AccountDto;
 import astoppello.wallet.dto.InstitutionDto;
 import astoppello.wallet.exception.NotFoundException;
-import astoppello.wallet.mapper.AccountMapperImpl;
-import astoppello.wallet.mapper.DateMapper;
-import astoppello.wallet.mapper.InstitutionMapperImpl;
-import astoppello.wallet.mapper.TrackingMapperImpl;
-import astoppello.wallet.model.AccountTypeEnum;
-import astoppello.wallet.model.Currency;
 import astoppello.wallet.service.AccountService;
 import astoppello.wallet.service.InstitutionService;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,7 +10,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -39,18 +32,11 @@ class AccountServiceImplIT {
 
     @BeforeEach
     void setUp() {
-        institutionDto = institutionService.save(InstitutionDto.builder()
-                .name("Bank")
-                .build());
+        institutionDto = institutionService.save(new InstitutionDto("Bank"));
     }
 
     private AccountDto buildDto(String name) {
-        return AccountDto.builder()
-                .name(name)
-                .accountType(AccountTypeEnum.LIQUIDITY)
-                .balance(BigDecimal.ZERO)
-                .currency(Currency.EUR)
-                .build();
+        return new AccountDto(name, AccountDto.AccountTypeEnum.LIQUIDITY, BigDecimal.ZERO, AccountDto.CurrencyEnum.EUR);
     }
 
     @Test
@@ -59,12 +45,11 @@ class AccountServiceImplIT {
 
         assertThat(saved.getId()).isNotNull();
         assertThat(saved.getName()).isEqualTo("Checking");
-        assertThat(saved.getAccountType()).isEqualTo(AccountTypeEnum.LIQUIDITY);
-        assertThat(saved.getCurrency()).isEqualTo(Currency.EUR);
+        assertThat(saved.getAccountType()).isEqualTo(AccountDto.AccountTypeEnum.LIQUIDITY);
+        assertThat(saved.getCurrency()).isEqualTo(AccountDto.CurrencyEnum.EUR);
         assertThat(saved.getBalance()).isEqualTo(BigDecimal.ZERO);
-        assertThat(saved.getTrackingDate()).isNotNull();
-        assertThat(saved.getTrackingDate().getCreatedAt()).isNotNull();
-        assertThat(saved.getTrackingDate().getUpdatedAt()).isNotNull();
+        assertThat(saved.getCreatedAt()).isNotNull();
+        assertThat(saved.getUpdatedAt()).isNotNull();
         assertThat(service.getAll()).hasSize(1);
     }
 
@@ -121,21 +106,19 @@ class AccountServiceImplIT {
         AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
         AccountDto updated = service.update(saved.getId(),
-                AccountDto.builder().name("Updated").accountType(AccountTypeEnum.SAVINGS).build());
+                new AccountDto().name("Updated").accountType(AccountDto.AccountTypeEnum.SAVINGS));
 
         assertThat(updated.getName()).isEqualTo("Updated");
-        assertThat(updated.getAccountType()).isEqualTo(AccountTypeEnum.SAVINGS);
+        assertThat(updated.getAccountType()).isEqualTo(AccountDto.AccountTypeEnum.SAVINGS);
     }
 
     @Test
     void update_institution() {
-        InstitutionDto save = institutionService.save(InstitutionDto.builder()
-                .name("Other Bank")
-                .build());
+        InstitutionDto save = institutionService.save(new InstitutionDto("Other Bank"));
         AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
         AccountDto updated = service.update(saved.getId(),
-                AccountDto.builder().institution(save.getId()).build());
+                new AccountDto().institution(save.getId()));
 
         assertThat(updated.getInstitution()).isEqualTo(save.getId());
     }

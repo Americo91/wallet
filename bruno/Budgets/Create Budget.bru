@@ -1,0 +1,27 @@
+meta {
+  name: Create Budget
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/v1/budgets
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Monthly Groceries",
+    "period": "MONTHLY",
+    "budgetLimit": 400.00,
+    "categoryIds": ["{{categoryGroceries}}"],
+    "accountIds": ["{{accountId}}"],
+    "labelIds": ["e5f6a7b8-c9d0-1234-efab-345678901234"],
+    "closed": false
+  }
+}
+
+script:post-response {
+  bru.setEnvVar("budgetId", res.body.id)
+}

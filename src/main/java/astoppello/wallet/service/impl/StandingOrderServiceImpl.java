@@ -2,6 +2,9 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.domain.*;
 import astoppello.wallet.dto.StandingOrderDto;
+import astoppello.wallet.model.Currency;
+import astoppello.wallet.model.Frequency;
+import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.StandingOrderMapper;
 import astoppello.wallet.repository.AccountRepository;
@@ -15,6 +18,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -67,13 +71,13 @@ public class StandingOrderServiceImpl implements StandingOrderService {
             domain.setAmount(dto.getAmount());
         }
         if (dto.getCurrency() != null) {
-            domain.setCurrency(dto.getCurrency());
+            domain.setCurrency(Currency.valueOf(dto.getCurrency().name()));
         }
         if (dto.getFrequency() != null) {
-            domain.setFrequency(dto.getFrequency());
+            domain.setFrequency(Frequency.valueOf(dto.getFrequency().name()));
         }
         if (dto.getType() != null) {
-            domain.setType(dto.getType());
+            domain.setType(TransactionType.valueOf(dto.getType().name()));
         }
         if (dto.getNextOccurrence() != null) {
             domain.setNextOccurrence(Timestamp.valueOf(dto.getNextOccurrence().atStartOfDay()));
@@ -96,7 +100,9 @@ public class StandingOrderServiceImpl implements StandingOrderService {
         if (dto.getPayee() != null) {
             domain.setPayee(dto.getPayee());
         }
-        domain.setEnabled(dto.isEnabled());
+        if (dto.getEnabled() != null) {
+            domain.setEnabled(dto.getEnabled());
+        }
         domain.getTrackingDate().touch();
         return mapper.toDto(repository.save(domain));
     }

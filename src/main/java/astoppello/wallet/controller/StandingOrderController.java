@@ -1,62 +1,55 @@
 package astoppello.wallet.controller;
 
+import astoppello.wallet.api.StandingOrdersApi;
 import astoppello.wallet.dto.StandingOrderDto;
 import astoppello.wallet.service.StandingOrderService;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.UUID;
 
 @RequiredArgsConstructor
 @RestController
-public class StandingOrderController {
-
-    public static final String BASE_URL = "/api/v1/standing-orders";
-    public static final String ID_PATH = "/api/v1/standing-orders/{standingOrderId}";
-    public static final String ACCOUNT_BASE_URL = "/api/v1/accounts/{accountId}/standing-orders";
-    public static final String UPCOMING_URL = "/api/v1/standing-orders/upcoming";
+public class StandingOrderController implements StandingOrdersApi {
 
     private final StandingOrderService standingOrderService;
 
-    @GetMapping(BASE_URL + "/")
-    public ResponseEntity<List<StandingOrderDto>> getAll() {
-        return new ResponseEntity<>(standingOrderService.getAll(), HttpStatus.OK);
+    @Override
+    public ResponseEntity<StandingOrderDto> createStandingOrder(UUID accountId, StandingOrderDto standingOrderDto) {
+        StandingOrderDto save = standingOrderService.save(accountId, standingOrderDto);
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("location", String.format("/api/v1/standing-orders/%s", save.getId()));
+        return new ResponseEntity<>(save, httpHeaders, HttpStatus.CREATED);
     }
 
-    @GetMapping(ID_PATH)
-    public ResponseEntity<StandingOrderDto> getById(@PathVariable("standingOrderId") UUID id) {
-        return new ResponseEntity<>(standingOrderService.getByID(id), HttpStatus.OK);
+    @Override
+    public ResponseEntity<Void> deleteStandingOrder(UUID standingOrderId) {
+        standingOrderService.delete(standingOrderId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @GetMapping(UPCOMING_URL)
-    public ResponseEntity<List<StandingOrderDto>> getUpcoming(
-            @RequestParam(value = "days", defaultValue = "3") int days) {
+    @Override
+    public ResponseEntity<StandingOrderDto> getStandingOrderById(UUID standingOrderId) {
+        return new ResponseEntity<>(standingOrderService.getByID(standingOrderId), HttpStatus.OK);
+    }
+
+    @Override
+    public ResponseEntity<List<StandingOrderDto>> getUpcomingStandingOrders(Integer days) {
         return new ResponseEntity<>(standingOrderService.getUpcoming(days), HttpStatus.OK);
     }
 
-    @PostMapping(ACCOUNT_BASE_URL + "/")
-    public ResponseEntity<StandingOrderDto> handlePost(
-            @PathVariable("accountId") @NotNull UUID accountId,
-            @RequestBody @Valid StandingOrderDto dto) {
-        return new ResponseEntity<>(standingOrderService.save(accountId, dto), HttpStatus.CREATED);
+    @Override
+    public ResponseEntity<List<StandingOrderDto>> listStandingOrders() {
+        return new ResponseEntity<>(standingOrderService.getAll(), HttpStatus.OK);
     }
 
-    @PutMapping(ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handlePut(
-            @PathVariable("standingOrderId") UUID id,
-            @RequestBody @Valid StandingOrderDto dto) {
-        standingOrderService.update(id, dto);
-    }
-
-    @DeleteMapping(ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handleDelete(@PathVariable("standingOrderId") UUID id) {
-        standingOrderService.delete(id);
+    @Override
+    public ResponseEntity<Void> updateStandingOrder(UUID standingOrderId, StandingOrderDto standingOrderDto) {
+        standingOrderService.update(standingOrderId, standingOrderDto);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

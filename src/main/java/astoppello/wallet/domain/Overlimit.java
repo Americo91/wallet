@@ -1,5 +1,6 @@
 package astoppello.wallet.domain;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.*;
 
@@ -14,6 +15,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @EqualsAndHashCode
 public class Overlimit {
+    @Column(name = "budget_limit")
     private BigDecimal limit;
     private BigDecimal periodAmount;
     private LocalDate periodStart;

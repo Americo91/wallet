@@ -83,16 +83,10 @@ class StandingOrderServiceTest {
                 .trackingDate(TrackingDate.now())
                 .build();
 
-        dto = StandingOrderDto.builder()
-                .name("Spotify")
-                .amount(BigDecimal.valueOf(3))
-                .currency(Currency.EUR)
-                .frequency(Frequency.MONTHLY)
-                .type(TransactionType.EXPENSE)
-                .nextOccurrence(LocalDate.now().plusDays(5))
-                .category(categoryId)
-                .enabled(true)
-                .build();
+        dto = new StandingOrderDto("Spotify", new BigDecimal("3"),
+                StandingOrderDto.CurrencyEnum.EUR, StandingOrderDto.FrequencyEnum.MONTHLY,
+                StandingOrderDto.TypeEnum.EXPENSE, LocalDate.now().plusDays(5), categoryId)
+                .enabled(true);
     }
 
     @Test
@@ -109,7 +103,7 @@ class StandingOrderServiceTest {
 
     @Test
     void getByID() {
-        StandingOrderDto expectedDto = StandingOrderDto.builder().id(standingOrderId).build();
+        StandingOrderDto expectedDto = new StandingOrderDto().id(standingOrderId);
         when(repository.findById(standingOrderId)).thenReturn(Optional.of(standingOrder));
         when(mapper.toDto(standingOrder)).thenReturn(expectedDto);
 
@@ -138,7 +132,7 @@ class StandingOrderServiceTest {
                 .type(TransactionType.EXPENSE)
                 .labels(new HashSet<>())
                 .build();
-        StandingOrderDto savedDto = StandingOrderDto.builder().id(standingOrderId).build();
+        StandingOrderDto savedDto = new StandingOrderDto().id(standingOrderId);
 
         when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
         when(categoryRepository.findById(categoryId)).thenReturn(Optional.of(category));
@@ -183,7 +177,7 @@ class StandingOrderServiceTest {
                 .amount(BigDecimal.valueOf(3))
                 .labels(new HashSet<>())
                 .build();
-        StandingOrderDto savedDto = StandingOrderDto.builder().id(standingOrderId).labels(Set.of(labelId)).build();
+        StandingOrderDto savedDto = new StandingOrderDto().id(standingOrderId).labels(Set.of(labelId));
 
         dto.setLabels(Set.of(labelId));
 
@@ -202,13 +196,12 @@ class StandingOrderServiceTest {
 
     @Test
     void update() {
-        StandingOrderDto updateDto = StandingOrderDto.builder()
+        StandingOrderDto updateDto = new StandingOrderDto()
                 .name("Spotify Premium")
-                .amount(BigDecimal.valueOf(9.99))
-                .frequency(Frequency.MONTHLY)
-                .enabled(true)
-                .build();
-        StandingOrderDto updatedDto = StandingOrderDto.builder().id(standingOrderId).build();
+                .amount(new BigDecimal("9.99"))
+                .frequency(StandingOrderDto.FrequencyEnum.MONTHLY)
+                .enabled(true);
+        StandingOrderDto updatedDto = new StandingOrderDto().id(standingOrderId);
 
         when(repository.findById(standingOrderId)).thenReturn(Optional.of(standingOrder));
         when(repository.save(standingOrder)).thenReturn(standingOrder);

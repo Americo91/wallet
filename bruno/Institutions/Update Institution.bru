@@ -1,0 +1,22 @@
+meta {
+  name: Update Institution
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/v1/institutions/:institutionId
+  body: json
+  auth: none
+}
+
+params:path {
+  institutionId: {{institutionId}}
+}
+
+body:json {
+  {
+    "name": "Intesa Sanpaolo Updated",
+    "color": "#4285F4"
+  }
+}

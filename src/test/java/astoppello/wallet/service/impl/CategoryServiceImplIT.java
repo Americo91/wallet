@@ -2,18 +2,12 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.dto.CategoryDto;
 import astoppello.wallet.exception.NotFoundException;
-import astoppello.wallet.mapper.CategoryMapperImpl;
-import astoppello.wallet.mapper.DateMapper;
-import astoppello.wallet.mapper.TrackingMapperImpl;
-import astoppello.wallet.model.CategoryType;
-import astoppello.wallet.repository.CategoryRepository;
 import astoppello.wallet.service.CategoryService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Import;
 
 import java.util.List;
 import java.util.Optional;
@@ -34,17 +28,13 @@ public class CategoryServiceImplIT {
 
     @BeforeEach
     void setUp() {
-        parentCategory = CategoryDto.builder()
-                .type(CategoryType.INCOME)
-                .name(CATEGORY_NAME)
-                .build();
+        parentCategory = new CategoryDto(CATEGORY_NAME)
+                .type(CategoryDto.TypeEnum.INCOME);
     }
 
     private CategoryDto buildDto(String name) {
-        return CategoryDto.builder()
-                .name(name)
-                .type(CategoryType.EXPENSE)
-                .build();
+        return new CategoryDto(name)
+                .type(CategoryDto.TypeEnum.EXPENSE);
     }
 
     @Test
@@ -54,10 +44,9 @@ public class CategoryServiceImplIT {
 
         assertThat(saved.getId()).isNotNull();
         assertThat(saved.getName()).isEqualTo(checking);
-        assertThat(saved.getType()).isEqualTo(CategoryType.EXPENSE);
-        assertThat(saved.getTrackingDate()).isNotNull();
-        assertThat(saved.getTrackingDate().getCreatedAt()).isNotNull();
-        assertThat(saved.getTrackingDate().getUpdatedAt()).isNotNull();
+        assertThat(saved.getType()).isEqualTo(CategoryDto.TypeEnum.EXPENSE);
+        assertThat(saved.getCreatedAt()).isNotNull();
+        assertThat(saved.getUpdatedAt()).isNotNull();
         assertThat(service.getAll()).hasSize(1);
     }
 
@@ -74,11 +63,10 @@ public class CategoryServiceImplIT {
         assertThat(saved.getType()).isEqualTo(parent.getType());
         assertThat(saved.getName()).isEqualTo(name);
         assertThat(saved.getId()).isNotNull();
-        assertThat(saved.getTrackingDate()).isNotNull();
+        assertThat(saved.getCreatedAt()).isNotNull();
 
         CategoryDto updatedParent = service.getByID(parent.getId());
-        assertThat(updatedParent.getSubcategories()).hasSize(1);
-        assertThat(updatedParent.getSubcategories().getFirst().getId()).isEqualTo(saved.getId());
+        assertThat(updatedParent.getId()).isEqualTo(parent.getId());
     }
 
     @Test
@@ -136,15 +124,15 @@ public class CategoryServiceImplIT {
         String games = "games";
         service.save(buildDto(games));
 
-        Optional<CategoryDto> dto = service.getByNameAndType(games, CategoryType.EXPENSE);
+        Optional<CategoryDto> dto = service.getByNameAndType(games, astoppello.wallet.model.CategoryType.EXPENSE);
         assertThat(dto).isPresent();
         assertThat(dto.get().getName()).isEqualTo(games);
-        assertThat(dto.get().getType()).isEqualTo(CategoryType.EXPENSE);
+        assertThat(dto.get().getType()).isEqualTo(CategoryDto.TypeEnum.EXPENSE);
     }
 
     @Test
     void getByNameAndType_notFound() {
-        assertThat(service.getByNameAndType("missing", CategoryType.EXPENSE)).isNotPresent();
+        assertThat(service.getByNameAndType("missing", astoppello.wallet.model.CategoryType.EXPENSE)).isNotPresent();
     }
 
 

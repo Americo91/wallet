@@ -1,7 +1,6 @@
 package astoppello.wallet.mapper;
 
 import astoppello.wallet.domain.Institution;
-import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.InstitutionDto;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -9,14 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
 import java.util.UUID;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {InstitutionMapperImpl.class, TrackingMapperImpl.class, DateMapper.class})
+@ContextConfiguration(classes = {InstitutionMapperImpl.class, DateMapper.class})
 class InstitutionMapperTest {
 
     @Autowired
@@ -28,7 +25,7 @@ class InstitutionMapperTest {
                 .id(UUID.randomUUID())
                 .name("Test")
                 .color("red")
-                .trackingDate(TrackingMapperTest.trackingDate)
+                .trackingDate(TestTrackingData.trackingDate)
                 .build();
 
         InstitutionDto dto = mapper.toDto(institution);
@@ -36,8 +33,8 @@ class InstitutionMapperTest {
         assertThat(dto.getId()).isEqualTo(institution.getId());
         assertThat(dto.getName()).isEqualTo(institution.getName());
         assertThat(dto.getColor()).isEqualTo(institution.getColor());
-        assertThat(dto.getTrackingDate().getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
-        assertThat(dto.getTrackingDate().getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
+        assertThat(dto.getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
+        assertThat(dto.getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
     }
 
     @Test
@@ -56,11 +53,9 @@ class InstitutionMapperTest {
 
     @Test
     void toDomain() {
-        InstitutionDto dto = InstitutionDto.builder()
+        InstitutionDto dto = new InstitutionDto("Test")
                 .id(UUID.randomUUID())
-                .name("Test")
-                .color("red")
-                .build();
+                .color("red");
 
         Institution domain = mapper.toDomain(dto);
 

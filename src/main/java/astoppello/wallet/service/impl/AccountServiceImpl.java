@@ -5,6 +5,7 @@ import astoppello.wallet.domain.Institution;
 import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.AccountDto;
 import astoppello.wallet.exception.NotFoundException;
+import astoppello.wallet.model.AccountTypeEnum;
 import astoppello.wallet.mapper.AccountMapper;
 import astoppello.wallet.repository.AccountRepository;
 import astoppello.wallet.repository.InstitutionRepository;
@@ -45,7 +46,7 @@ public class AccountServiceImpl implements AccountService {
             byId.setName(dto.getName());
         }
         if (dto.getAccountType() != null) {
-            byId.setAccountType(dto.getAccountType());
+            byId.setAccountType(AccountTypeEnum.valueOf(dto.getAccountType().name()));
         }
         if (dto.getInstitution() != null) {
             institutionRepository.findById(dto.getInstitution()).ifPresent(byId::setInstitution);

@@ -1,0 +1,19 @@
+meta {
+  name: Add Saved Amount
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{baseUrl}}/api/v1/goals/:goalId/addSavedAmount
+  body: json
+  auth: none
+}
+
+params:path {
+  goalId: {{goalId}}
+}
+
+body:json {
+  250.00
+}

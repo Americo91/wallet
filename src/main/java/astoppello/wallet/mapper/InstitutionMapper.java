@@ -11,10 +11,12 @@ import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
-@Mapper(uses = {TrackingMapper.class})
+@Mapper(uses = {DateMapper.class})
 public interface InstitutionMapper {
 
     @Mapping(target = "accounts", source = "accounts", qualifiedByName = "mapAccounts")
+    @Mapping(target = "createdAt", source = "trackingDate.createdAt")
+    @Mapping(target = "updatedAt", source = "trackingDate.updatedAt")
     InstitutionDto toDto(Institution domain);
 
     @Mapping(target = "trackingDate", ignore = true)

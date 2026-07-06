@@ -2,7 +2,6 @@ package astoppello.wallet.mapper;
 
 import astoppello.wallet.domain.*;
 import astoppello.wallet.dto.BudgetDto;
-import astoppello.wallet.dto.TrackingDateDto;
 import astoppello.wallet.model.Frequency;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -20,7 +19,7 @@ import java.util.stream.Collectors;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {BudgetMapperImpl.class, DateMapper.class, TrackingMapperImpl.class})
+@ContextConfiguration(classes = {BudgetMapperImpl.class, DateMapper.class})
 class BudgetMapperTest {
 
     @Autowired
@@ -43,7 +42,7 @@ class BudgetMapperTest {
                 .accounts(Set.of(Account.builder().id(UUID.randomUUID()).build()))
                 .labels(Set.of(Label.builder().id(UUID.randomUUID()).build()))
                 .overLimit(Set.of(overlimit))
-                .trackingDate(TrackingMapperTest.trackingDate)
+                .trackingDate(TestTrackingData.trackingDate)
                 .build();
 
 
@@ -51,45 +50,50 @@ class BudgetMapperTest {
         assertThat(dto).isNotNull();
         assertThat(dto.getId()).isEqualTo(budget.getId());
         assertThat(dto.getName()).isEqualTo(budget.getName());
-        assertThat(dto.getPeriod()).isEqualTo(budget.getPeriod());
+        assertThat(dto.getPeriod().name()).isEqualTo(budget.getPeriod().name());
         assertThat(dto.getBudgetLimit()).isEqualTo(budget.getBudgetLimit());
         assertThat(dto.getCategoryIds()).isEqualTo(budget.getCategories().stream().map(Category::getId).collect(Collectors.toSet()));
         assertThat(dto.getAccountIds()).isEqualTo(budget.getAccounts().stream().map(Account::getId).collect(Collectors.toSet()));
         assertThat(dto.getLabelIds()).isEqualTo(budget.getLabels().stream().map(Label::getId).collect(Collectors.toSet()));
-        assertThat(dto.isClosed()).isEqualTo(budget.isClosed());
-        assertThat(dto.getOverLimit()).isEqualTo(budget.getOverLimit());
-        assertThat(dto.getTrackingDate().getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
-        assertThat(dto.getTrackingDate().getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
+        assertThat(dto.getClosed()).isEqualTo(budget.isClosed());
+        assertThat(dto.getOverLimit()).hasSize(1);
+        astoppello.wallet.dto.Overlimit dtoOverlimit = dto.getOverLimit().iterator().next();
+        assertThat(dtoOverlimit.getLimit()).isEqualByComparingTo(overlimit.getLimit());
+        assertThat(dtoOverlimit.getPeriodAmount()).isEqualByComparingTo(overlimit.getPeriodAmount());
+        assertThat(dtoOverlimit.getPeriodStart()).isEqualTo(overlimit.getPeriodStart());
+        assertThat(dtoOverlimit.getPeriodEnd()).isEqualTo(overlimit.getPeriodEnd());
+        assertThat(dto.getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
+        assertThat(dto.getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
     }
 
     @Test
     void toDomain() {
-        BudgetDto dto = BudgetDto.builder()
+        astoppello.wallet.dto.Overlimit dtoOverlimit = new astoppello.wallet.dto.Overlimit()
+                .limit(BigDecimal.TEN)
+                .periodAmount(new BigDecimal("11.00"))
+                .periodStart(LocalDate.of(2026, 1, 1))
+                .periodEnd(LocalDate.of(2026, 1, 31));
+
+        BudgetDto dto = new BudgetDto("budget name", BudgetDto.PeriodEnum.MONTHLY, BigDecimal.TEN,
+                Set.of(UUID.randomUUID()), Set.of(UUID.randomUUID()), Set.of(UUID.randomUUID()))
                 .id(UUID.randomUUID())
-                .name("budget name")
-                .period(Frequency.MONTHLY)
-                .budgetLimit(BigDecimal.TEN)
-                .categoryIds(Set.of(UUID.randomUUID()))
-                .accountIds(Set.of(UUID.randomUUID()))
-                .labelIds(Set.of(UUID.randomUUID()))
                 .closed(false)
-                .overLimit(Set.of(overlimit))
-                .trackingDate(TrackingDateDto.builder().updatedAt(TrackingMapperTest.UPDATED_AT_OFFSET).createdAt(TrackingMapperTest.CREATED_AT_OFFSET).build())
-                .build();
+                .overLimit(Set.of(dtoOverlimit));
 
         Budget budget = budgetMapper.toDomain(dto);
         assertThat(budget).isNotNull();
         assertThat(budget.getId()).isEqualTo(dto.getId());
         assertThat(budget.getName()).isEqualTo(dto.getName());
-        assertThat(budget.getPeriod()).isEqualTo(dto.getPeriod());
+        assertThat(budget.getPeriod().name()).isEqualTo(dto.getPeriod().name());
         assertThat(budget.getBudgetLimit()).isEqualTo(dto.getBudgetLimit());
-        assertThat(budget.isClosed()).isEqualTo(dto.isClosed());
+        assertThat(budget.isClosed()).isEqualTo(dto.getClosed());
         assertThat(budget.getCategories()).isEmpty();
         assertThat(budget.getAccounts()).isEmpty();
         assertThat(budget.getLabels()).isEmpty();
-        assertThat(budget.getOverLimit()).isEqualTo(dto.getOverLimit());
-        assertThat(budget.getTrackingDate()).isNotNull();
-        assertThat(budget.getTrackingDate().getUpdatedAt()).isEqualTo(TrackingMapperTest.UPDATED_AT);
-        assertThat(budget.getTrackingDate().getCreatedAt()).isEqualTo(TrackingMapperTest.CREATED_AT);
+        assertThat(budget.getOverLimit()).hasSize(1);
+        Overlimit domainOverlimit = budget.getOverLimit().iterator().next();
+        assertThat(domainOverlimit.getLimit()).isEqualByComparingTo(BigDecimal.TEN);
+        assertThat(domainOverlimit.getPeriodAmount()).isEqualByComparingTo(new BigDecimal("11.00"));
+        assertThat(budget.getTrackingDate()).isNull();
     }
 }

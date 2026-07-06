@@ -1,0 +1,15 @@
+meta {
+  name: Get Upcoming
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/api/v1/standing-orders/upcoming?days=8
+  body: none
+  auth: none
+}
+
+params:query {
+  days: 8
+}

@@ -8,6 +8,7 @@ import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.AccountMapper;
 import astoppello.wallet.model.AccountTypeEnum;
 import astoppello.wallet.model.Currency;
+import astoppello.wallet.dto.AccountDto.CurrencyEnum;
 import astoppello.wallet.repository.AccountRepository;
 import astoppello.wallet.repository.InstitutionRepository;
 import astoppello.wallet.service.impl.AccountServiceImpl;
@@ -51,13 +52,8 @@ class AccountServiceTest {
     @BeforeEach
     void setUp() {
         INSTITUTION_ID = UUID.randomUUID();
-        dto =  AccountDto.builder()
-                .name(ACCOUNT_NAME)
-                .accountType(AccountTypeEnum.LIQUIDITY)
-                .balance(BigDecimal.ZERO)
-                .currency(Currency.EUR)
-                .institution(INSTITUTION_ID)
-                .build();
+        dto = new AccountDto(ACCOUNT_NAME, AccountDto.AccountTypeEnum.LIQUIDITY, BigDecimal.ZERO, CurrencyEnum.EUR)
+                .institution(INSTITUTION_ID);
     }
 
     private Account buildDomain(UUID id) {
@@ -79,7 +75,7 @@ class AccountServiceTest {
         Institution institution = Institution.builder().id(institutionId).name(INSTITUTION_NAME).build();
         Account domain = buildDomain(null);
         Account saved = buildDomain(UUID.randomUUID());
-        AccountDto savedDto = AccountDto.builder().id(saved.getId()).name(ACCOUNT_NAME).build();
+        AccountDto savedDto = new AccountDto().id(saved.getId()).name(ACCOUNT_NAME);
 
         when(institutionRepository.findById(institutionId)).thenReturn(Optional.of(institution));
         when(mapper.toDomain(dto)).thenReturn(domain);
@@ -168,8 +164,8 @@ class AccountServiceTest {
     void update_nameAndType() {
         UUID id = UUID.randomUUID();
         Account existing = buildDomain(id);
-        AccountDto updateDto = AccountDto.builder().name("Savings").accountType(AccountTypeEnum.SAVINGS).build();
-        AccountDto updatedDto = AccountDto.builder().id(id).name("Savings").accountType(AccountTypeEnum.SAVINGS).build();
+        AccountDto updateDto = new AccountDto().name("Savings").accountType(AccountDto.AccountTypeEnum.SAVINGS);
+        AccountDto updatedDto = new AccountDto().id(id).name("Savings").accountType(AccountDto.AccountTypeEnum.SAVINGS);
 
         when(repository.findById(id)).thenReturn(Optional.of(existing));
         when(repository.save(existing)).thenReturn(existing);
@@ -178,7 +174,7 @@ class AccountServiceTest {
         AccountDto result = service.update(id, updateDto);
 
         assertThat(result.getName()).isEqualTo("Savings");
-        assertThat(result.getAccountType()).isEqualTo(AccountTypeEnum.SAVINGS);
+        assertThat(result.getAccountType()).isEqualTo(AccountDto.AccountTypeEnum.SAVINGS);
         verify(repository).findById(id);
         verify(repository).save(existing);
         verify(mapper).toDto(existing);
@@ -190,8 +186,8 @@ class AccountServiceTest {
         Account existing = buildDomain(id);
         UUID institutionID = UUID.randomUUID();
         Institution newInstitution = Institution.builder().id(UUID.randomUUID()).build();
-        AccountDto updateDto = AccountDto.builder().institution(institutionID).build();
-        AccountDto updatedDto = AccountDto.builder().id(id).institution(institutionID).build();
+        AccountDto updateDto = new AccountDto().institution(institutionID);
+        AccountDto updatedDto = new AccountDto().id(id).institution(institutionID);
 
         when(repository.findById(id)).thenReturn(Optional.of(existing));
         when(institutionRepository.findById(institutionID)).thenReturn(Optional.of(newInstitution));

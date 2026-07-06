@@ -1,8 +1,6 @@
 package astoppello.wallet.controller;
 
 import astoppello.wallet.dto.BudgetDto;
-import astoppello.wallet.dto.TrackingDateDto;
-import astoppello.wallet.model.Frequency;
 import astoppello.wallet.service.BudgetService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -32,6 +30,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(BudgetController.class)
 class BudgetControllerTest {
 
+    private static final String BASE_PATH = "/api/v1/budgets";
+
     @MockitoBean
     BudgetService budgetService;
 
@@ -45,32 +45,24 @@ class BudgetControllerTest {
 
     @BeforeEach
     void setup() {
-        budgetDto = BudgetDto.builder()
+        budgetDto = new BudgetDto("Monthly groceries", BudgetDto.PeriodEnum.MONTHLY,
+                new BigDecimal("500.00"), Set.of(UUID.randomUUID()), Set.of(UUID.randomUUID()), Set.of(UUID.randomUUID()))
                 .id(UUID.randomUUID())
-                .name("Monthly groceries")
-                .period(Frequency.MONTHLY)
-                .budgetLimit(new BigDecimal("500.00"))
-                .categoryIds(Set.of(UUID.randomUUID()))
-                .accountIds(Set.of(UUID.randomUUID()))
-                .labelIds(Set.of(UUID.randomUUID()))
                 .closed(false)
-                .trackingDate(TrackingDateDto.builder()
-                        .createdAt(OffsetDateTime.now())
-                        .updatedAt(OffsetDateTime.now())
-                        .build())
-                .build();
+                .createdAt(OffsetDateTime.now())
+                .updatedAt(OffsetDateTime.now());
     }
 
     @Test
     void getAll() throws Exception {
         given(budgetService.getAll()).willReturn(List.of(budgetDto));
 
-        mockMvc.perform(get(BudgetController.BUDGET_BASE_PATH + "/").accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(BASE_PATH).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(jsonPath("$[0].id", is(budgetDto.getId().toString())))
                 .andExpect(jsonPath("$[0].name", is(budgetDto.getName())))
-                .andExpect(jsonPath("$[0].period", is(budgetDto.getPeriod().name())))
+                .andExpect(jsonPath("$[0].period", is(budgetDto.getPeriod().getValue())))
                 .andExpect(jsonPath("$[0].createdAt").isNotEmpty())
                 .andExpect(jsonPath("$[0].updatedAt").isNotEmpty());
         then(budgetService).should().getAll();
@@ -80,12 +72,12 @@ class BudgetControllerTest {
     void getById() throws Exception {
         given(budgetService.getByID(any())).willReturn(budgetDto);
 
-        mockMvc.perform(get(BudgetController.BUDGET_BASE_PATH + "/" + budgetDto.getId()).accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(BASE_PATH + "/" + budgetDto.getId()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(jsonPath("$.id", is(budgetDto.getId().toString())))
                 .andExpect(jsonPath("$.name", is(budgetDto.getName())))
-                .andExpect(jsonPath("$.period", is(budgetDto.getPeriod().name())));
+                .andExpect(jsonPath("$.period", is(budgetDto.getPeriod().getValue())));
         then(budgetService).should().getByID(any());
     }
 
@@ -93,16 +85,10 @@ class BudgetControllerTest {
     void handlePost() throws Exception {
         given(budgetService.save(any())).willReturn(budgetDto);
 
-        String body = objectMapper.writeValueAsString(BudgetDto.builder()
-                .name(budgetDto.getName())
-                .period(budgetDto.getPeriod())
-                .budgetLimit(budgetDto.getBudgetLimit())
-                .categoryIds(budgetDto.getCategoryIds())
-                .accountIds(budgetDto.getAccountIds())
-                .labelIds(budgetDto.getLabelIds())
-                .build());
+        String body = objectMapper.writeValueAsString(new BudgetDto("Monthly groceries", BudgetDto.PeriodEnum.MONTHLY,
+                budgetDto.getBudgetLimit(), budgetDto.getCategoryIds(), budgetDto.getAccountIds(), budgetDto.getLabelIds()));
 
-        mockMvc.perform(post(BudgetController.BUDGET_BASE_PATH + "/")
+        mockMvc.perform(post(BASE_PATH)
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(body))
@@ -114,16 +100,10 @@ class BudgetControllerTest {
     void handlePut() throws Exception {
         given(budgetService.update(any(), any())).willReturn(budgetDto);
 
-        String body = objectMapper.writeValueAsString(BudgetDto.builder()
-                .name(budgetDto.getName())
-                .period(budgetDto.getPeriod())
-                .budgetLimit(budgetDto.getBudgetLimit())
-                .categoryIds(budgetDto.getCategoryIds())
-                .accountIds(budgetDto.getAccountIds())
-                .labelIds(budgetDto.getLabelIds())
-                .build());
+        String body = objectMapper.writeValueAsString(new BudgetDto("Monthly groceries", BudgetDto.PeriodEnum.MONTHLY,
+                budgetDto.getBudgetLimit(), budgetDto.getCategoryIds(), budgetDto.getAccountIds(), budgetDto.getLabelIds()));
 
-        mockMvc.perform(put(BudgetController.BUDGET_BASE_PATH + "/" + UUID.randomUUID())
+        mockMvc.perform(put(BASE_PATH + "/" + UUID.randomUUID())
                         .accept(MediaType.APPLICATION_JSON)
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(body))
@@ -133,7 +113,7 @@ class BudgetControllerTest {
 
     @Test
     void handleDelete() throws Exception {
-        mockMvc.perform(delete(BudgetController.BUDGET_BASE_PATH + "/" + UUID.randomUUID()))
+        mockMvc.perform(delete(BASE_PATH + "/" + UUID.randomUUID()))
                 .andExpect(status().isNoContent());
         then(budgetService).should().delete(any());
     }

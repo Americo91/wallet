@@ -1,56 +1,52 @@
 package astoppello.wallet.controller;
 
+import astoppello.wallet.api.CategoriesApi;
 import astoppello.wallet.dto.CategoryDto;
 import astoppello.wallet.service.CategoryService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.UUID;
 
-@RestController
-@RequestMapping(CategoryController.CATEGORY_BASE_PATH)
 @RequiredArgsConstructor
-public class CategoryController {
-    public static final String CATEGORY_BASE_PATH = "/api/v1/categories";
-    public static final String CATEGORY_ID_PATH = "/{categoryId}";
-
+@RestController
+public class CategoryController implements CategoriesApi {
 
     private final CategoryService categoryService;
 
-    @GetMapping("/")
-    public ResponseEntity<List<CategoryDto>> getAll() {
-        return new ResponseEntity<>(categoryService.getAll(), HttpStatus.OK);
+    @Override
+    public ResponseEntity<CategoryDto> createCategory(CategoryDto categoryDto) {
+        CategoryDto save = categoryService.save(categoryDto);
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("location", String.format("/api/v1/categories/%s", save.getId()));
+        return new ResponseEntity<>(save, httpHeaders, HttpStatus.CREATED);
     }
 
-    @GetMapping(CATEGORY_ID_PATH)
-    public ResponseEntity<CategoryDto> getById(@PathVariable("categoryId")UUID id) {
-        return new ResponseEntity<>(categoryService.getByID(id), HttpStatus.OK);
+    @Override
+    public ResponseEntity<Void> deleteCategory(UUID categoryId) {
+        categoryService.delete(categoryId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @GetMapping()
-    public ResponseEntity<List<CategoryDto>> getByName(@RequestParam("name") String name) {
-        return new ResponseEntity<>(categoryService.getByName(name), HttpStatus.OK);
+    @Override
+    public ResponseEntity<CategoryDto> getCategoryById(UUID categoryId) {
+        return new ResponseEntity<>(categoryService.getByID(categoryId), HttpStatus.OK);
     }
 
-    @PostMapping("/")
-    public ResponseEntity<CategoryDto> handlePost(@RequestBody @Valid CategoryDto dto) {
-        return new ResponseEntity<>(categoryService.save(dto), HttpStatus.CREATED);
+    @Override
+    public ResponseEntity<List<CategoryDto>> listCategories(String name) {
+        List<CategoryDto> categoryDtos = StringUtils.isBlank(name) ? categoryService.getAll() : categoryService.getByName(name);
+        return new ResponseEntity<>(categoryDtos, HttpStatus.OK);
     }
 
-    @PutMapping(CATEGORY_ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handlePut(@PathVariable("categoryId") UUID id, @RequestBody @Valid CategoryDto dto) {
-        categoryService.update(id, dto);
+    @Override
+    public ResponseEntity<Void> updateCategory(UUID categoryId, CategoryDto categoryDto) {
+        categoryService.update(categoryId, categoryDto);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-
-    @DeleteMapping(CATEGORY_ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handleDelete(@PathVariable("categoryId") UUID id) {
-        categoryService.delete(id);
-    }
-
 }

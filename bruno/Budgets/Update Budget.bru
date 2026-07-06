@@ -1,0 +1,27 @@
+meta {
+  name: Update Budget
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/v1/budgets/:budgetId
+  body: json
+  auth: none
+}
+
+params:path {
+  budgetId: f6a7b8c9-d0e1-2345-abcd-456789012345
+}
+
+body:json {
+  {
+    "name": "Monthly Groceries Updated",
+    "period": "MONTHLY",
+    "budgetLimit": 500.00,
+    "categoryIds": ["d4e5f6a7-b8c9-0123-defa-234567890123"],
+    "accountIds": ["b2c3d4e5-f6a7-8901-bcde-f12345678901"],
+    "labelIds": ["e5f6a7b8-c9d0-1234-efab-345678901234"],
+    "closed": false
+  }
+}

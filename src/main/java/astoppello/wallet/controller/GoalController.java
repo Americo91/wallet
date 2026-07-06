@@ -1,13 +1,14 @@
 package astoppello.wallet.controller;
 
+import astoppello.wallet.api.GoalsApi;
 import astoppello.wallet.dto.GoalDto;
 import astoppello.wallet.service.GoalService;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -15,53 +16,49 @@ import java.util.UUID;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping(GoalController.GOAL_BASE_PATH)
-public class GoalController {
+public class GoalController implements GoalsApi {
 
-    public static final String GOAL_BASE_PATH = "/api/v1/goals";
-    public static final String GOAL_ID_PATH = "/{goalId}";
     private final GoalService goalService;
 
-    @GetMapping("/")
-    public ResponseEntity<List<GoalDto>> getAll() {
-        return new ResponseEntity<>(goalService.getAll(), HttpStatus.OK);
+    @Override
+    public ResponseEntity<GoalDto> addSavedAmount(UUID goalId, Double body) {
+        return new ResponseEntity<>(goalService.addSavedAmount(goalId, BigDecimal.valueOf(body)), HttpStatus.OK);
     }
 
-    @GetMapping(GOAL_ID_PATH)
-    public ResponseEntity<GoalDto> getById(@PathVariable("goalId") UUID id) {
-        return new ResponseEntity<>(goalService.getByID(id), HttpStatus.OK);
+    @Override
+    public ResponseEntity<GoalDto> createGoal(GoalDto goalDto) {
+        GoalDto save = goalService.save(goalDto);
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add("location", String.format("/api/v1/goals/%s", save.getId()));
+        return new ResponseEntity<>(save, httpHeaders, HttpStatus.CREATED);
     }
 
-    @GetMapping
-    public ResponseEntity<GoalDto> getByName(@RequestParam("name") String name) {
-        return new ResponseEntity<>(goalService.getByName(name), HttpStatus.OK);
+    @Override
+    public ResponseEntity<Void> deleteGoal(UUID goalId) {
+        goalService.delete(goalId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @PostMapping("/")
-    public ResponseEntity<GoalDto> handlePost(@RequestBody @Valid GoalDto dto) {
-        return new ResponseEntity<>(goalService.save(dto), HttpStatus.CREATED);
+    @Override
+    public ResponseEntity<GoalDto> getGoalById(UUID goalId) {
+        return new ResponseEntity<>(goalService.getByID(goalId), HttpStatus.OK);
     }
 
-    @PutMapping(GOAL_ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handleUpdate(@PathVariable("goalId") UUID id, @RequestBody @Valid GoalDto dto) {
-        goalService.update(id, dto);
+    @Override
+    public ResponseEntity<List<GoalDto>> listGoals(String name) {
+        List<GoalDto> goalDtos = StringUtils.isBlank(name) ? goalService.getAll() : List.of(goalService.getByName(name));
+        return new ResponseEntity<>(goalDtos, HttpStatus.OK);
     }
 
-    @DeleteMapping(GOAL_ID_PATH)
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void handleDelete(@PathVariable("goalId") UUID id) {
-        goalService.delete(id);
+    @Override
+    public ResponseEntity<Void> markGoalAsReached(UUID goalId) {
+        goalService.markAsReached(goalId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    @PostMapping(GOAL_ID_PATH + "/addSavedAmount")
-    public ResponseEntity<GoalDto> addSavedAmount(@PathVariable("goalId") UUID id, @RequestBody @Valid @NotNull BigDecimal savedAmount) {
-        return new ResponseEntity<>(goalService.addSavedAmount(id, savedAmount), HttpStatus.OK);
-    }
-
-    @PostMapping(GOAL_ID_PATH + "/markAsSolved")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void markAsReached(@PathVariable("goalId") UUID id) {
-        goalService.markAsReached(id);
+    @Override
+    public ResponseEntity<Void> updateGoal(UUID goalId, GoalDto goalDto) {
+        goalService.update(goalId, goalDto);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

@@ -1,0 +1,23 @@
+meta {
+  name: Update Category
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{baseUrl}}/api/v1/categories/:categoryId
+  body: json
+  auth: none
+}
+
+params:path {
+  categoryId: {{categoryId}}
+}
+
+body:json {
+  {
+    "name": "Groceries & Food",
+    "type": "EXPENSE",
+    "parentId": null
+  }
+}

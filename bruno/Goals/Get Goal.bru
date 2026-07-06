@@ -1,0 +1,15 @@
+meta {
+  name: Get Goal
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/v1/goals/:goalId
+  body: none
+  auth: none
+}
+
+params:path {
+  goalId: {{goalId}}
+}

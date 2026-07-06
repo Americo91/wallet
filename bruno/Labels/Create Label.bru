@@ -1,0 +1,22 @@
+meta {
+  name: Create Label
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/v1/labels
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "recurringa"
+  }
+}
+
+script:post-response {
+  var label = res.body.id
+  bru.setEnvVar("labelId", label)
+}

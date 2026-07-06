@@ -7,7 +7,6 @@ import astoppello.wallet.dto.CategoryDto;
 import astoppello.wallet.dto.LabelDto;
 import astoppello.wallet.dto.TransactionDto;
 import astoppello.wallet.model.CategoryType;
-import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.service.CategoryService;
 import astoppello.wallet.service.LabelService;
 import astoppello.wallet.service.TransactionService;
@@ -23,6 +22,7 @@ import tools.jackson.databind.ObjectMapper;
 import java.io.InputStream;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -76,11 +76,11 @@ class FileServiceTest {
         when(mapper.readValue(any(InputStream.class), eq(WalletExportJson.class))).thenReturn(export);
         when(walletExportMapper.toDto(export)).thenReturn(exportDto);
         when(categoryService.getByNameAndType("Restaurant", CategoryType.EXPENSE))
-                .thenReturn(Optional.of(CategoryDto.builder().id(categoryId).name("Restaurant").build()));
+                .thenReturn(Optional.of(new CategoryDto("Restaurant").id(categoryId)));
         when(labelService.getByName("Guilty Free"))
-                .thenReturn(LabelDto.builder().id(labelId1).name("Guilty Free").build());
+                .thenReturn(new LabelDto("Guilty Free").id(labelId1));
         when(labelService.getByName("Work"))
-                .thenReturn(LabelDto.builder().id(labelId2).name("Work").build());
+                .thenReturn(new LabelDto("Work").id(labelId2));
 
         fileService.loadTransactions(accountId, "/jsonLoad/test-export.json");
 
@@ -88,7 +88,7 @@ class FileServiceTest {
         verify(transactionService).save(eq(accountId), captor.capture());
 
         TransactionDto saved = captor.getValue();
-        assertThat(saved.getType()).isEqualTo(TransactionType.EXPENSE);
+        assertThat(saved.getType()).isEqualTo(TransactionDto.TypeEnum.EXPENSE);
         assertThat(saved.getAmount()).isEqualByComparingTo(new BigDecimal("20.50"));
         assertThat(saved.getDate()).isEqualTo(LocalDate.of(2026, 4, 4));
         assertThat(saved.getCategory()).isEqualTo(categoryId);
@@ -108,7 +108,7 @@ class FileServiceTest {
         when(mapper.readValue(any(InputStream.class), eq(WalletExportJson.class))).thenReturn(export);
         when(walletExportMapper.toDto(export)).thenReturn(exportDto);
         when(categoryService.getByNameAndType("Transfer", CategoryType.INCOME))
-                .thenReturn(Optional.of(CategoryDto.builder().id(categoryId).name("Transfer").build()));
+                .thenReturn(Optional.of(new CategoryDto("Transfer").id(categoryId)));
 
         fileService.loadTransactions(accountId, "/jsonLoad/test-export.json");
 
@@ -116,7 +116,7 @@ class FileServiceTest {
         verify(transactionService).save(eq(accountId), captor.capture());
 
         TransactionDto saved = captor.getValue();
-        assertThat(saved.getType()).isEqualTo(TransactionType.INCOME);
+        assertThat(saved.getType()).isEqualTo(TransactionDto.TypeEnum.INCOME);
         assertThat(saved.getAmount()).isEqualByComparingTo(new BigDecimal("20.50"));
         assertThat(saved.getLabels()).isNull();
         verifyNoInteractions(labelService);

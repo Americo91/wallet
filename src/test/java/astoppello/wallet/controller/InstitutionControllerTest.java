@@ -1,7 +1,6 @@
 package astoppello.wallet.controller;
 
 import astoppello.wallet.dto.InstitutionDto;
-import astoppello.wallet.dto.TrackingDateDto;
 import astoppello.wallet.service.InstitutionService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -28,6 +27,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ExtendWith(MockitoExtension.class)
 @WebMvcTest(InstitutionController.class)
 class InstitutionControllerTest {
+    private static final String INSTITUTIONS_BASE_URL = "/api/v1/institutions";
 
     @MockitoBean
     InstitutionService institutionService;
@@ -42,22 +42,18 @@ class InstitutionControllerTest {
 
     @BeforeEach
     void setUp() {
-        institutionDto = InstitutionDto.builder()
+        institutionDto = new InstitutionDto("name")
                 .id(UUID.randomUUID())
-                .name("name")
                 .color("color")
-                .trackingDate(TrackingDateDto.builder()
-                        .createdAt(OffsetDateTime.now())
-                        .updatedAt(OffsetDateTime.now())
-                        .build())
-                .build();
+                .createdAt(OffsetDateTime.now())
+                .updatedAt(OffsetDateTime.now());
     }
 
     @Test
     void getById() throws Exception {
         given(institutionService.getByID(any(UUID.class))).willReturn(institutionDto);
 
-        mockMvc.perform(get(InstitutionController.INSTITUTIONS_BASE_URL + "/" + institutionDto.getId().toString()).accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(get(INSTITUTIONS_BASE_URL + "/" + institutionDto.getId().toString()).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.id", is(institutionDto.getId().toString())))
                 .andExpect(jsonPath("$.name", is(institutionDto.getName())))
@@ -71,9 +67,9 @@ class InstitutionControllerTest {
     void getByName() throws Exception {
         given(institutionService.getByName(institutionDto.getName())).willReturn(institutionDto);
 
-        mockMvc.perform(get(InstitutionController.INSTITUTIONS_BASE_URL + "?name=" + institutionDto.getName()))
+        mockMvc.perform(get(INSTITUTIONS_BASE_URL + "?name=" + institutionDto.getName()))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.name", is(institutionDto.getName())));
+                .andExpect(jsonPath("$[0].name", is(institutionDto.getName())));
         then(institutionService).should().getByName(institutionDto.getName());
     }
 
@@ -81,7 +77,7 @@ class InstitutionControllerTest {
     void getAll() throws Exception {
         given(institutionService.getAll()).willReturn(List.of(institutionDto));
 
-        mockMvc.perform(get(InstitutionController.INSTITUTIONS_BASE_URL + "/").accept(MediaType.APPLICATION_JSON.toString()))
+        mockMvc.perform(get(INSTITUTIONS_BASE_URL).accept(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON.toString()))
                 .andExpect(jsonPath("$[0].id", is(institutionDto.getId().toString())))
@@ -95,9 +91,9 @@ class InstitutionControllerTest {
     @Test
     void handlePost() throws Exception {
         given(institutionService.save(any())).willReturn(institutionDto);
-        String s = objectMapper.writeValueAsString(InstitutionDto.builder().name(institutionDto.getName()).color(institutionDto.getColor()).build());
+        String s = objectMapper.writeValueAsString(new InstitutionDto(institutionDto.getName()).color(institutionDto.getColor()));
 
-        mockMvc.perform(post(InstitutionController.INSTITUTIONS_BASE_URL + "/")
+        mockMvc.perform(post(INSTITUTIONS_BASE_URL)
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON)
                         .content(s))
@@ -107,8 +103,8 @@ class InstitutionControllerTest {
 
     @Test
     void handlePut() throws Exception {
-        String s = objectMapper.writeValueAsString(InstitutionDto.builder().name(institutionDto.getName()).color(institutionDto.getColor()).build());
-        mockMvc.perform(put(InstitutionController.INSTITUTIONS_BASE_URL + "/" + UUID.randomUUID())
+        String s = objectMapper.writeValueAsString(new InstitutionDto(institutionDto.getName()).color(institutionDto.getColor()));
+        mockMvc.perform(put(INSTITUTIONS_BASE_URL + "/" + UUID.randomUUID())
                         .content(s)
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
@@ -118,7 +114,7 @@ class InstitutionControllerTest {
 
     @Test
     void handleDelete() throws Exception {
-        mockMvc.perform(delete(InstitutionController.INSTITUTIONS_BASE_URL + "/" + UUID.randomUUID()))
+        mockMvc.perform(delete(INSTITUTIONS_BASE_URL + "/" + UUID.randomUUID()))
                 .andExpect(status().isNoContent());
         then(institutionService).should().delete(any());
     }

@@ -20,7 +20,7 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {TransactionMapperImpl.class, DateMapper.class, TrackingMapperImpl.class})
+@ContextConfiguration(classes = {TransactionMapperImpl.class, DateMapper.class})
 class TransactionMapperTest {
 
     @Autowired
@@ -39,31 +39,30 @@ class TransactionMapperTest {
                 .category(categoryName)
                 .description("description")
                 .payee("merchant")
-                .trackingDate(TrackingMapperTest.trackingDate)
+                .trackingDate(TestTrackingData.trackingDate)
                 .build();
 
         TransactionDto dto = transactionMapper.toDto(transaction);
         assertThat(dto).isNotNull();
         assertThat(dto.getId()).isEqualTo(transaction.getId());
         assertThat(dto.getAccount()).isEqualTo(accountName.getId());
-        assertThat(dto.getType()).isEqualTo(TransactionType.INCOME);
+        assertThat(dto.getType().name()).isEqualTo(TransactionType.INCOME.name());
         assertThat(dto.getAmount()).isEqualTo(new BigDecimal("20.00"));
         assertThat(dto.getDate().toString()).isEqualTo("2026-03-03");
         assertThat(dto.getCategory()).isEqualTo(categoryName.getId());
         assertThat(dto.getDescription()).isEqualTo("description");
         assertThat(dto.getPayee()).isEqualTo("merchant");
-        assertThat(dto.getTrackingDate().getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
-        assertThat(dto.getTrackingDate().getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
+        assertThat(dto.getCreatedAt()).isEqualTo("2026-01-10T09:00:00Z");
+        assertThat(dto.getUpdatedAt()).isEqualTo("2026-03-15T12:00:00Z");
     }
 
     @Test
     void toDomain() {
-        TransactionDto dto = TransactionDto.builder()
-                .type(TransactionType.INCOME)
+        TransactionDto dto = new TransactionDto()
+                .type(TransactionDto.TypeEnum.INCOME)
                 .date(LocalDate.of(2026, 2, 1))
                 .description("description")
-                .payee("merchant")
-                .build();
+                .payee("merchant");
 
         Transaction domain = transactionMapper.toDomain(dto);
         assertThat(domain).isNotNull();
@@ -74,7 +73,5 @@ class TransactionMapperTest {
         assertThat(domain.getAccount()).isNull();
         assertThat(domain.getCategory()).isNull();
         assertThat(domain.getLabels()).isNull();
-
-
     }
 }

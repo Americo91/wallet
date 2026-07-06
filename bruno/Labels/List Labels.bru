@@ -1,0 +1,20 @@
+meta {
+  name: List Labels
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/api/v1/labels
+  body: none
+  auth: none
+}
+
+params:query {
+  ~name: Fixed Cost
+}
+
+script:post-response {
+  var label = res.body[0].id
+  bru.setEnvVar("labelId", label)
+}
