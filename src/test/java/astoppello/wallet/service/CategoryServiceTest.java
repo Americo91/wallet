@@ -136,20 +136,25 @@ class CategoryServiceTest {
     @Test
     void update() {
         UUID id = UUID.randomUUID();
-        Category category = buildCategory(UUID.randomUUID());
+        Category existing = buildCategory(id);
+        Category mapped = buildCategory(null);
         CategoryDto dtoUpdated = dto;
         dtoUpdated.setId(id);
 
-        when(repository.findById(id)).thenReturn(Optional.of(category));
-        when(repository.save(category)).thenReturn(category);
-        when(mapper.toDto(category)).thenReturn(dtoUpdated);
+        when(repository.findById(id)).thenReturn(Optional.of(existing));
+        when(mapper.toDomain(dto)).thenReturn(mapped);
+        when(repository.save(mapped)).thenReturn(mapped);
+        when(mapper.toDto(mapped)).thenReturn(dtoUpdated);
 
         CategoryDto result = service.update(id, dto);
         assertThat(result.getName()).isEqualTo(CATEGORY_NAME);
         assertThat(result.getType()).isEqualTo(CategoryDto.TypeEnum.EXPENSE);
+        // the new entity keeps the existing id and createdAt
+        assertThat(mapped.getId()).isEqualTo(id);
+        assertThat(mapped.getTrackingDate().getCreatedAt()).isEqualTo(existing.getTrackingDate().getCreatedAt());
         verify(repository).findById(id);
-        verify(repository).save(category);
-        verify(mapper).toDto(category);
+        verify(repository).save(mapped);
+        verify(mapper).toDto(mapped);
     }
 
     @Test

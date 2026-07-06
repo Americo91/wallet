@@ -126,18 +126,23 @@ class GoalServiceTest {
     void update() {
         UUID id = UUID.randomUUID();
         Goal existing = Goal.builder().id(id).name("Old Goal").amount(new BigDecimal("5000.00")).trackingDate(TrackingDate.now()).build();
+        Goal mapped = Goal.builder().name(GOAL_NAME).amount(GOAL_AMOUNT).build();
         GoalDto updatedDto = new GoalDto(GOAL_NAME, GOAL_AMOUNT).id(id);
 
         when(repository.findById(id)).thenReturn(Optional.of(existing));
-        when(repository.save(existing)).thenReturn(existing);
-        when(mapper.toDto(existing)).thenReturn(updatedDto);
+        when(mapper.toDomain(dto)).thenReturn(mapped);
+        when(repository.save(mapped)).thenReturn(mapped);
+        when(mapper.toDto(mapped)).thenReturn(updatedDto);
 
         GoalDto result = service.update(id, dto);
         assertThat(result.getName()).isEqualTo(GOAL_NAME);
         assertThat(result.getAmount()).isEqualTo(GOAL_AMOUNT);
+        // the new entity keeps the existing id and createdAt
+        assertThat(mapped.getId()).isEqualTo(id);
+        assertThat(mapped.getTrackingDate().getCreatedAt()).isEqualTo(existing.getTrackingDate().getCreatedAt());
         verify(repository).findById(id);
-        verify(repository).save(existing);
-        verify(mapper).toDto(existing);
+        verify(repository).save(mapped);
+        verify(mapper).toDto(mapped);
     }
 
     @Test

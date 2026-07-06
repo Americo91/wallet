@@ -123,17 +123,22 @@ class LabelServiceTest {
     void update() {
         UUID id = UUID.randomUUID();
         Label existing = Label.builder().id(id).name("oldName").trackingDate(TrackingDate.now()).build();
+        Label mapped = Label.builder().name(LABEL_NAME).build();
         LabelDto updatedDto = new LabelDto(LABEL_NAME).id(id);
 
         when(repository.findById(id)).thenReturn(Optional.of(existing));
-        when(repository.save(existing)).thenReturn(existing);
-        when(mapper.toDto(existing)).thenReturn(updatedDto);
+        when(mapper.toDomain(dto)).thenReturn(mapped);
+        when(repository.save(mapped)).thenReturn(mapped);
+        when(mapper.toDto(mapped)).thenReturn(updatedDto);
 
         LabelDto result = service.update(id, dto);
         assertThat(result.getName()).isEqualTo(LABEL_NAME);
+        // the new entity keeps the existing id and createdAt
+        assertThat(mapped.getId()).isEqualTo(id);
+        assertThat(mapped.getTrackingDate().getCreatedAt()).isEqualTo(existing.getTrackingDate().getCreatedAt());
         verify(repository).findById(id);
-        verify(repository).save(existing);
-        verify(mapper).toDto(existing);
+        verify(repository).save(mapped);
+        verify(mapper).toDto(mapped);
     }
 
     @Test

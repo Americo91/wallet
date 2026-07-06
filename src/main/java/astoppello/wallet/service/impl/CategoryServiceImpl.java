@@ -8,10 +8,8 @@ import astoppello.wallet.mapper.CategoryMapper;
 import astoppello.wallet.model.CategoryType;
 import astoppello.wallet.repository.CategoryRepository;
 import astoppello.wallet.service.CategoryService;
-import io.micrometer.common.util.StringUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
@@ -59,11 +57,19 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public CategoryDto update(UUID id, CategoryDto dto) {
         Category byId = getById(id);
-        if (StringUtils.isNotEmpty(dto.getName())) {
-            byId.setName(dto.getName());
+
+        Category domain = mapper.toDomain(dto);
+        domain.setId(id);
+        if (dto.getParentId() != null) {
+            Category parent = getById(dto.getParentId());
+            domain.setParent(parent);
+            domain.setType(null);
+            parent.addSubcategory(domain);
         }
-        byId.getTrackingDate().touch();
-        return mapper.toDto(repository.save(byId));
+        domain.setSubcategories(byId.getSubcategories());
+        domain.setTrackingDate(byId.getTrackingDate());
+        domain.getTrackingDate().touch();
+        return mapper.toDto(repository.save(domain));
     }
 
     @Override

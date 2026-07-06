@@ -65,14 +65,14 @@ public class RecordLoader implements CommandLineRunner {
         AccountDto revolutJpy = accountService.save(institutionDto.getId(), new AccountDto().name("Revolut JPY").accountType(AccountDto.AccountTypeEnum.LIQUIDITY).balance(BigDecimal.ZERO).currency(AccountDto.CurrencyEnum.JPY).archive(true).excludeFromStats(true));
 
         fileService.loadTransactions(revolut.getId(), "/jsonLoad/Revolut.json");
-        fileService.loadTransactions(revolutJpy.getId(), "/jsonLoad/Revolut_JPY.json");
+        fileService.loadTransactions(revolutJpy.getId(), "/jsonLoad/Revolut_jpy.json");
     }
 
     private void loadPayPal() {
         InstitutionDto institutionDto = institutionService.save(new InstitutionDto().name("PayPal").color("blue"));
         AccountDto paypal = accountService.save(institutionDto.getId(), new AccountDto().name("PayPal").accountType(AccountDto.AccountTypeEnum.LIQUIDITY).balance(new BigDecimal("58.67")).currency(AccountDto.CurrencyEnum.EUR));
 
-        fileService.loadTransactions(paypal.getId(), "/jsonLoad/PayPal.json");
+        fileService.loadTransactions(paypal.getId(), "/jsonLoad/Paypal.json");
     }
 
     private void loadCash() {

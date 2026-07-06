@@ -161,43 +161,35 @@ class AccountServiceTest {
     }
 
     @Test
-    void update_nameAndType() {
+    void update() {
         UUID id = UUID.randomUUID();
         Account existing = buildDomain(id);
-        AccountDto updateDto = new AccountDto().name("Savings").accountType(AccountDto.AccountTypeEnum.SAVINGS);
+        AccountDto updateDto = new AccountDto("Savings", AccountDto.AccountTypeEnum.SAVINGS, BigDecimal.TEN, CurrencyEnum.USD);
+        Account mapped = Account.builder()
+                .name("Savings")
+                .accountType(AccountTypeEnum.SAVINGS)
+                .balance(BigDecimal.TEN)
+                .currency(Currency.USD)
+                .build();
         AccountDto updatedDto = new AccountDto().id(id).name("Savings").accountType(AccountDto.AccountTypeEnum.SAVINGS);
 
         when(repository.findById(id)).thenReturn(Optional.of(existing));
-        when(repository.save(existing)).thenReturn(existing);
-        when(mapper.toDto(existing)).thenReturn(updatedDto);
+        when(mapper.toDomain(updateDto)).thenReturn(mapped);
+        when(repository.save(mapped)).thenReturn(mapped);
+        when(mapper.toDto(mapped)).thenReturn(updatedDto);
 
         AccountDto result = service.update(id, updateDto);
 
         assertThat(result.getName()).isEqualTo("Savings");
         assertThat(result.getAccountType()).isEqualTo(AccountDto.AccountTypeEnum.SAVINGS);
+        // the new entity keeps the existing id, institution and createdAt
+        assertThat(mapped.getId()).isEqualTo(id);
+        assertThat(mapped.getInstitution()).isEqualTo(existing.getInstitution());
+        assertThat(mapped.getTrackingDate().getCreatedAt()).isEqualTo(existing.getTrackingDate().getCreatedAt());
         verify(repository).findById(id);
-        verify(repository).save(existing);
-        verify(mapper).toDto(existing);
-    }
-
-    @Test
-    void update_institution() {
-        UUID id = UUID.randomUUID();
-        Account existing = buildDomain(id);
-        UUID institutionID = UUID.randomUUID();
-        Institution newInstitution = Institution.builder().id(UUID.randomUUID()).build();
-        AccountDto updateDto = new AccountDto().institution(institutionID);
-        AccountDto updatedDto = new AccountDto().id(id).institution(institutionID);
-
-        when(repository.findById(id)).thenReturn(Optional.of(existing));
-        when(institutionRepository.findById(institutionID)).thenReturn(Optional.of(newInstitution));
-        when(repository.save(existing)).thenReturn(existing);
-        when(mapper.toDto(existing)).thenReturn(updatedDto);
-
-        AccountDto result = service.update(id, updateDto);
-
-        assertThat(result.getInstitution()).isEqualTo(institutionID);
-        verify(institutionRepository).findById(institutionID);
+        verify(repository).save(mapped);
+        verify(mapper).toDto(mapped);
+        verifyNoInteractions(institutionRepository);
     }
 
     @Test

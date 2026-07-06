@@ -5,12 +5,10 @@ import astoppello.wallet.domain.Institution;
 import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.AccountDto;
 import astoppello.wallet.exception.NotFoundException;
-import astoppello.wallet.model.AccountTypeEnum;
 import astoppello.wallet.mapper.AccountMapper;
 import astoppello.wallet.repository.AccountRepository;
 import astoppello.wallet.repository.InstitutionRepository;
 import astoppello.wallet.service.AccountService;
-import io.micrometer.common.util.StringUtils;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -42,17 +40,12 @@ public class AccountServiceImpl implements AccountService {
     public AccountDto update(UUID id, AccountDto dto) {
         Account byId = getById(id);
 
-        if (StringUtils.isNotEmpty(dto.getName())) {
-            byId.setName(dto.getName());
-        }
-        if (dto.getAccountType() != null) {
-            byId.setAccountType(AccountTypeEnum.valueOf(dto.getAccountType().name()));
-        }
-        if (dto.getInstitution() != null) {
-            institutionRepository.findById(dto.getInstitution()).ifPresent(byId::setInstitution);
-        }
-        byId.getTrackingDate().touch();
-        return mapper.toDto(repository.save(byId));
+        Account domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setInstitution(byId.getInstitution());
+        domain.setTrackingDate(byId.getTrackingDate());
+        domain.getTrackingDate().touch();
+        return mapper.toDto(repository.save(domain));
     }
 
     @Override

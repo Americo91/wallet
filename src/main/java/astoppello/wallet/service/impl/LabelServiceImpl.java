@@ -8,7 +8,6 @@ import astoppello.wallet.mapper.LabelMapper;
 import astoppello.wallet.repository.LabelRepository;
 import astoppello.wallet.service.LabelService;
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.lang3.StringUtils;
 import org.jspecify.annotations.NonNull;
 import org.springframework.stereotype.Service;
 
@@ -54,11 +53,13 @@ public class LabelServiceImpl implements LabelService {
     @Override
     public LabelDto update(UUID id, LabelDto dto) {
         Label byId = getById(id);
-        if (StringUtils.isNotEmpty(dto.getName())) {
-            byId.setName(dto.getName());
-        }
-        byId.getTrackingDate().touch();
-        return mapper.toDto(repository.save(byId));
+
+        Label domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setTransactions(byId.getTransactions());
+        domain.setTrackingDate(byId.getTrackingDate());
+        domain.getTrackingDate().touch();
+        return mapper.toDto(repository.save(domain));
     }
 
     @Override

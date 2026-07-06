@@ -184,7 +184,15 @@ class StandingOrderExecutorIT {
                 .nextOccurrence(LocalDate.now())
                 .category(expenseCategory.getId())
                 .enabled(true));
-        standingOrderService.update(saved.getId(), new StandingOrderDto().enabled(false));
+        standingOrderService.update(saved.getId(), new StandingOrderDto()
+                .name("Disabled sub")
+                .amount(BigDecimal.valueOf(10))
+                .currency(StandingOrderDto.CurrencyEnum.EUR)
+                .frequency(StandingOrderDto.FrequencyEnum.MONTHLY)
+                .type(StandingOrderDto.TypeEnum.EXPENSE)
+                .nextOccurrence(LocalDate.now())
+                .category(expenseCategory.getId())
+                .enabled(false));
 
         executor.executeStandingOrders();
 

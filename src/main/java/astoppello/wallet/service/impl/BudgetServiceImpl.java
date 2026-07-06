@@ -2,7 +2,6 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.domain.*;
 import astoppello.wallet.dto.BudgetDto;
-import astoppello.wallet.model.Frequency;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.BudgetMapper;
 import astoppello.wallet.repository.AccountRepository;
@@ -10,7 +9,6 @@ import astoppello.wallet.repository.BudgetRepository;
 import astoppello.wallet.repository.CategoryRepository;
 import astoppello.wallet.repository.LabelRepository;
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -58,29 +56,16 @@ public class BudgetServiceImpl implements astoppello.wallet.service.BudgetServic
     @Transactional
     public BudgetDto update(UUID id, BudgetDto dto) {
         Budget existing = getById(id);
-        if (StringUtils.isNotEmpty(dto.getName())) {
-            existing.setName(dto.getName());
-        }
-        if (dto.getPeriod() != null) {
-            existing.setPeriod(Frequency.valueOf(dto.getPeriod().name()));
-        }
-        if (dto.getBudgetLimit() != null) {
-            existing.setBudgetLimit(dto.getBudgetLimit());
-        }
-        if (dto.getCategoryIds() != null) {
-            existing.setCategories(resolveCategories(dto.getCategoryIds()));
-        }
-        if (dto.getAccountIds() != null) {
-            existing.setAccounts(resolveAccounts(dto.getAccountIds()));
-        }
-        if (dto.getLabelIds() != null) {
-            existing.setLabels(resolveLabels(dto.getLabelIds()));
-        }
-        if (dto.getClosed() != null) {
-            existing.setClosed(dto.getClosed());
-        }
-        existing.getTrackingDate().touch();
-        return mapper.toDto(repository.save(existing));
+
+        Budget domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setCategories(resolveCategories(dto.getCategoryIds()));
+        domain.setAccounts(resolveAccounts(dto.getAccountIds()));
+        domain.setLabels(resolveLabels(dto.getLabelIds()));
+        domain.setOverLimit(existing.getOverLimit());
+        domain.setTrackingDate(existing.getTrackingDate());
+        domain.getTrackingDate().touch();
+        return mapper.toDto(repository.save(domain));
     }
 
     @Override

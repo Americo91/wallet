@@ -9,7 +9,6 @@ import astoppello.wallet.repository.InstitutionRepository;
 import astoppello.wallet.service.InstitutionService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.jspecify.annotations.NonNull;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
@@ -37,15 +36,13 @@ public class InstitutionServiceImpl implements InstitutionService {
     public InstitutionDto update(UUID id, InstitutionDto dto) {
         Institution byId = getById(id);
 
-        if (StringUtils.isNotEmpty(dto.getColor())) {
-            byId.setColor(dto.getColor());
-        }
-        if (StringUtils.isNotEmpty(dto.getName())) {
-            byId.setName(dto.getName());
-        }
-        byId.getTrackingDate().touch();
+        Institution domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setAccounts(byId.getAccounts());
+        domain.setTrackingDate(byId.getTrackingDate());
+        domain.getTrackingDate().touch();
 
-        Institution saved = repository.save(byId);
+        Institution saved = repository.save(domain);
         return mapper.toDto(saved);
     }
 

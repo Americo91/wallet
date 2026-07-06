@@ -118,15 +118,23 @@ public class TransactionServiceImplIt {
     @Test
     void update_amount() {
         TransactionDto saved = service.save(accountDto.getId(), transactionDto);
-        TransactionDto newDto = new TransactionDto().amount(new BigDecimal("100.00"));
+        TransactionDto newDto = new TransactionDto()
+                .type(TransactionDto.TypeEnum.EXPENSE)
+                .amount(new BigDecimal("100.00"))
+                .category(categoryDto.getId());
 
         TransactionDto update = service.update(saved.getId(), newDto);
         assertThat(update.getAmount()).isEqualTo(newDto.getAmount());
+        assertThat(update.getCreatedAt()).isEqualTo(saved.getCreatedAt());
         assertThat(update.getUpdatedAt()).isAfter(update.getCreatedAt());
+        // PUT replaces the whole object: fields omitted from the input are cleared
+        assertThat(update.getDescription()).isNull();
+        assertThat(update.getPayee()).isNull();
+        assertThat(update.getLabels()).isNullOrEmpty();
     }
 
     @Test
-    void update_accountAndCategory() {
+    void update_categoryAndKeepsAccount() {
         TransactionDto saved = service.save(accountDto.getId(), transactionDto);
         CategoryDto newCategory = categoryService.save(new CategoryDto().name("newCategory").type(CategoryDto.TypeEnum.EXPENSE));
         AccountDto newAccount = accountService.save(institutionDto.getId(), new AccountDto().currency(AccountDto.CurrencyEnum.EUR).balance(BigDecimal.ZERO).accountType(AccountDto.AccountTypeEnum.LIQUIDITY).name("name"));
@@ -136,7 +144,8 @@ public class TransactionServiceImplIt {
         TransactionDto updated = service.update(saved.getId(), transactionDto);
         assertThat(updated.getId()).isEqualTo(saved.getId());
         assertThat(updated.getCategory()).isEqualTo(newCategory.getId());
-        assertThat(updated.getAccount()).isEqualTo(newAccount.getId());
+        // account is read-only on update: the existing one is kept
+        assertThat(updated.getAccount()).isEqualTo(accountDto.getId());
     }
 
     @Test

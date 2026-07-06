@@ -2,9 +2,6 @@ package astoppello.wallet.service.impl;
 
 import astoppello.wallet.domain.*;
 import astoppello.wallet.dto.StandingOrderDto;
-import astoppello.wallet.model.Currency;
-import astoppello.wallet.model.Frequency;
-import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.StandingOrderMapper;
 import astoppello.wallet.repository.AccountRepository;
@@ -14,11 +11,8 @@ import astoppello.wallet.repository.StandingOrderRepository;
 import astoppello.wallet.service.StandingOrderService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.HashSet;
@@ -62,47 +56,16 @@ public class StandingOrderServiceImpl implements StandingOrderService {
 
     @Override
     public StandingOrderDto update(UUID id, StandingOrderDto dto) {
-        StandingOrder domain = getById(id);
+        StandingOrder byId = getById(id);
+        Category category = categoryRepository.findById(dto.getCategory())
+                .orElseThrow(() -> new NotFoundException(Category.class, dto.getCategory()));
 
-        if (StringUtils.isNotEmpty(dto.getName())) {
-            domain.setName(dto.getName());
-        }
-        if (dto.getAmount() != null) {
-            domain.setAmount(dto.getAmount());
-        }
-        if (dto.getCurrency() != null) {
-            domain.setCurrency(Currency.valueOf(dto.getCurrency().name()));
-        }
-        if (dto.getFrequency() != null) {
-            domain.setFrequency(Frequency.valueOf(dto.getFrequency().name()));
-        }
-        if (dto.getType() != null) {
-            domain.setType(TransactionType.valueOf(dto.getType().name()));
-        }
-        if (dto.getNextOccurrence() != null) {
-            domain.setNextOccurrence(Timestamp.valueOf(dto.getNextOccurrence().atStartOfDay()));
-        }
-        if (dto.getCategory() != null) {
-            Category category = categoryRepository.findById(dto.getCategory())
-                    .orElseThrow(() -> new NotFoundException(Category.class, dto.getCategory()));
-            domain.setCategory(category);
-        }
-        if (dto.getAccount() != null) {
-            Account account = getAccount(dto.getAccount());
-            domain.setAccount(account);
-        }
-        if (CollectionUtils.isNotEmpty(dto.getLabels())) {
-            domain.setLabels(resolveLabels(dto.getLabels()));
-        }
-        if (dto.getDescription() != null) {
-            domain.setDescription(dto.getDescription());
-        }
-        if (dto.getPayee() != null) {
-            domain.setPayee(dto.getPayee());
-        }
-        if (dto.getEnabled() != null) {
-            domain.setEnabled(dto.getEnabled());
-        }
+        StandingOrder domain = mapper.toDomain(dto);
+        domain.setId(id);
+        domain.setAccount(byId.getAccount());
+        domain.setCategory(category);
+        domain.setLabels(resolveLabels(dto.getLabels()));
+        domain.setTrackingDate(byId.getTrackingDate());
         domain.getTrackingDate().touch();
         return mapper.toDto(repository.save(domain));
     }
