@@ -13,7 +13,6 @@ import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.service.TransactionService;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -68,41 +67,26 @@ public class TransactionServiceImpl implements TransactionService {
     public TransactionDto update(UUID id, TransactionDto dto) {
         Transaction transaction = getById(id);
         UUID categoryId = dto.getCategory();
-        UUID accountId = dto.getAccount();
-        Set<UUID> labelIds = dto.getLabels();
+        Category category = categoryRepository.findById(categoryId)
+                .orElseThrow(() -> new NotFoundException(Category.class, categoryId));
 
         // Capture old state for balance reversal
         Account oldAccount = transaction.getAccount();
         TransactionType oldType = transaction.getType();
         BigDecimal oldAmount = transaction.getAmount();
 
-        if (dto.getType() != null) {
-            transaction.setType(TransactionType.valueOf(dto.getType().name()));
+        transaction.setType(TransactionType.valueOf(dto.getType().name()));
+        transaction.setAmount(dto.getAmount());
+        transaction.setDate(dto.getDate() != null
+                ? Timestamp.valueOf(dto.getDate().atStartOfDay())
+                : Timestamp.valueOf(LocalDateTime.now()));
+        transaction.setDescription(dto.getDescription());
+        transaction.setPayee(dto.getPayee());
+        transaction.setCategory(category);
+        if (dto.getAccount() != null) {
+            transaction.setAccount(getAccount(dto.getAccount()));
         }
-        if (dto.getAmount() != null) {
-            transaction.setAmount(dto.getAmount());
-        }
-        if (dto.getDate() != null) {
-            transaction.setDate(java.sql.Timestamp.valueOf(dto.getDate().atStartOfDay()));
-        }
-        if (dto.getDescription() != null) {
-            transaction.setDescription(dto.getDescription());
-        }
-        if (dto.getPayee() != null) {
-            transaction.setPayee(dto.getPayee());
-        }
-        if (categoryId != null) {
-            Category category = categoryRepository.findById(categoryId)
-                    .orElseThrow(() -> new NotFoundException(Category.class, categoryId));
-            transaction.setCategory(category);
-        }
-        if (accountId != null) {
-            Account account = getAccount(accountId);
-            transaction.setAccount(account);
-        }
-        if (CollectionUtils.isNotEmpty(labelIds)) {
-            transaction.setLabels(resolveLabels(labelIds));
-        }
+        transaction.setLabels(resolveLabels(dto.getLabels()));
         transaction.getTrackingDate().touch();
         Transaction saved = repository.save(transaction);
 

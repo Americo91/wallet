@@ -6,11 +6,11 @@ import astoppello.wallet.domain.TrackingDate;
 import astoppello.wallet.dto.AccountDto;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.model.AccountTypeEnum;
+import astoppello.wallet.model.Currency;
 import astoppello.wallet.mapper.AccountMapper;
 import astoppello.wallet.repository.AccountRepository;
 import astoppello.wallet.repository.InstitutionRepository;
 import astoppello.wallet.service.AccountService;
-import io.micrometer.common.util.StringUtils;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -42,14 +42,16 @@ public class AccountServiceImpl implements AccountService {
     public AccountDto update(UUID id, AccountDto dto) {
         Account byId = getById(id);
 
-        if (StringUtils.isNotEmpty(dto.getName())) {
-            byId.setName(dto.getName());
-        }
-        if (dto.getAccountType() != null) {
-            byId.setAccountType(AccountTypeEnum.valueOf(dto.getAccountType().name()));
-        }
+        byId.setName(dto.getName());
+        byId.setAccountType(AccountTypeEnum.valueOf(dto.getAccountType().name()));
+        byId.setBalance(dto.getBalance());
+        byId.setCurrency(Currency.valueOf(dto.getCurrency().name()));
+        byId.setExcludeFromStats(Boolean.TRUE.equals(dto.getExcludeFromStats()));
+        byId.setArchive(Boolean.TRUE.equals(dto.getArchive()));
         if (dto.getInstitution() != null) {
-            institutionRepository.findById(dto.getInstitution()).ifPresent(byId::setInstitution);
+            Institution institution = institutionRepository.findById(dto.getInstitution())
+                    .orElseThrow(() -> new NotFoundException(Institution.class, dto.getInstitution()));
+            byId.setInstitution(institution);
         }
         byId.getTrackingDate().touch();
         return mapper.toDto(repository.save(byId));

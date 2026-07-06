@@ -10,7 +10,6 @@ import astoppello.wallet.repository.BudgetRepository;
 import astoppello.wallet.repository.CategoryRepository;
 import astoppello.wallet.repository.LabelRepository;
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -58,27 +57,13 @@ public class BudgetServiceImpl implements astoppello.wallet.service.BudgetServic
     @Transactional
     public BudgetDto update(UUID id, BudgetDto dto) {
         Budget existing = getById(id);
-        if (StringUtils.isNotEmpty(dto.getName())) {
-            existing.setName(dto.getName());
-        }
-        if (dto.getPeriod() != null) {
-            existing.setPeriod(Frequency.valueOf(dto.getPeriod().name()));
-        }
-        if (dto.getBudgetLimit() != null) {
-            existing.setBudgetLimit(dto.getBudgetLimit());
-        }
-        if (dto.getCategoryIds() != null) {
-            existing.setCategories(resolveCategories(dto.getCategoryIds()));
-        }
-        if (dto.getAccountIds() != null) {
-            existing.setAccounts(resolveAccounts(dto.getAccountIds()));
-        }
-        if (dto.getLabelIds() != null) {
-            existing.setLabels(resolveLabels(dto.getLabelIds()));
-        }
-        if (dto.getClosed() != null) {
-            existing.setClosed(dto.getClosed());
-        }
+        existing.setName(dto.getName());
+        existing.setPeriod(Frequency.valueOf(dto.getPeriod().name()));
+        existing.setBudgetLimit(dto.getBudgetLimit());
+        existing.setCategories(resolveCategories(dto.getCategoryIds()));
+        existing.setAccounts(resolveAccounts(dto.getAccountIds()));
+        existing.setLabels(resolveLabels(dto.getLabelIds()));
+        existing.setClosed(Boolean.TRUE.equals(dto.getClosed()));
         existing.getTrackingDate().touch();
         return mapper.toDto(repository.save(existing));
     }

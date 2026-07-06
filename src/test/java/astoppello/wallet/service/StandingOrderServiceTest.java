@@ -196,14 +196,14 @@ class StandingOrderServiceTest {
 
     @Test
     void update() {
-        StandingOrderDto updateDto = new StandingOrderDto()
-                .name("Spotify Premium")
-                .amount(new BigDecimal("9.99"))
-                .frequency(StandingOrderDto.FrequencyEnum.MONTHLY)
+        StandingOrderDto updateDto = new StandingOrderDto("Spotify Premium", new BigDecimal("9.99"),
+                StandingOrderDto.CurrencyEnum.EUR, StandingOrderDto.FrequencyEnum.MONTHLY,
+                StandingOrderDto.TypeEnum.EXPENSE, LocalDate.now().plusDays(10), categoryId)
                 .enabled(true);
         StandingOrderDto updatedDto = new StandingOrderDto().id(standingOrderId);
 
         when(repository.findById(standingOrderId)).thenReturn(Optional.of(standingOrder));
+        when(categoryRepository.findById(categoryId)).thenReturn(Optional.of(category));
         when(repository.save(standingOrder)).thenReturn(standingOrder);
         when(mapper.toDto(standingOrder)).thenReturn(updatedDto);
 
@@ -212,8 +212,22 @@ class StandingOrderServiceTest {
         assertThat(result.getId()).isEqualTo(standingOrderId);
         assertThat(standingOrder.getName()).isEqualTo("Spotify Premium");
         assertThat(standingOrder.getAmount()).isEqualByComparingTo(BigDecimal.valueOf(9.99));
+        assertThat(standingOrder.getNextOccurrence())
+                .isEqualTo(Timestamp.valueOf(LocalDate.now().plusDays(10).atStartOfDay()));
+        assertThat(standingOrder.getCategory()).isEqualTo(category);
         verify(repository).findById(standingOrderId);
+        verify(categoryRepository).findById(categoryId);
         verify(repository).save(standingOrder);
+    }
+
+    @Test
+    void update_categoryNotFound() {
+        when(repository.findById(standingOrderId)).thenReturn(Optional.of(standingOrder));
+        when(categoryRepository.findById(categoryId)).thenReturn(Optional.empty());
+
+        assertThatThrownBy(() -> service.update(standingOrderId, dto))
+                .isInstanceOf(NotFoundException.class);
+        verifyNoInteractions(mapper);
     }
 
     @Test

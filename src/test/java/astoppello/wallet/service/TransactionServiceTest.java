@@ -207,22 +207,29 @@ class TransactionServiceTest {
                 .amount(BigDecimal.ONE)
                 .date(LocalDate.now())
                 .description("new desc")
-                .payee("Shop");
+                .payee("Shop")
+                .category(categoryId);
         TransactionDto updatedDto = new TransactionDto().id(transactionId);
 
         when(repository.findById(transactionId)).thenReturn(Optional.of(transaction));
+        when(categoryRepository.findById(categoryId)).thenReturn(Optional.of(category));
         when(repository.save(transaction)).thenReturn(transaction);
         when(mapper.toDto(transaction)).thenReturn(updatedDto);
 
         TransactionDto result = service.update(transactionId, updateDto);
 
         assertThat(result.getId()).isEqualTo(transactionId);
+        assertThat(transaction.getType()).isEqualTo(TransactionType.INCOME);
+        assertThat(transaction.getAmount()).isEqualByComparingTo(BigDecimal.ONE);
+        assertThat(transaction.getDescription()).isEqualTo("new desc");
+        assertThat(transaction.getPayee()).isEqualTo("Shop");
         verify(repository).findById(transactionId);
+        verify(categoryRepository).findById(categoryId);
         verify(repository).save(transaction);
         // Old EXPENSE(10) reversed (+10), new INCOME(1) applied (+1) = +11
         assertThat(account.getBalance()).isEqualByComparingTo(new BigDecimal("11"));
         verify(accountRepository, times(2)).save(account);
-        verifyNoInteractions(categoryRepository, labelRepository);
+        verifyNoInteractions(labelRepository);
     }
 
     @Test
@@ -232,6 +239,11 @@ class TransactionServiceTest {
         Category newCategory = Category.builder().id(newCategoryId).name("Travel").build();
         Label label = Label.builder().id(labelId).name("trip").build();
         TransactionDto updatedDto = new TransactionDto().id(transactionId);
+        TransactionDto updateDto = new TransactionDto()
+                .type(TransactionDto.TypeEnum.EXPENSE)
+                .amount(BigDecimal.TEN)
+                .category(newCategoryId)
+                .labels(Set.of(labelId));
 
         when(repository.findById(transactionId)).thenReturn(Optional.of(transaction));
         when(categoryRepository.findById(newCategoryId)).thenReturn(Optional.of(newCategory));
@@ -239,12 +251,27 @@ class TransactionServiceTest {
         when(repository.save(transaction)).thenReturn(transaction);
         when(mapper.toDto(transaction)).thenReturn(updatedDto);
 
-        service.update(transactionId, new TransactionDto().category(newCategoryId).labels(Set.of(labelId)));
+        service.update(transactionId, updateDto);
 
         verify(categoryRepository).findById(newCategoryId);
         verify(labelRepository).findAllById(Set.of(labelId));
         assertThat(transaction.getCategory()).isEqualTo(newCategory);
         assertThat(transaction.getLabels()).contains(label);
+    }
+
+    @Test
+    void update_categoryNotFound() {
+        TransactionDto updateDto = new TransactionDto()
+                .type(TransactionDto.TypeEnum.EXPENSE)
+                .amount(BigDecimal.TEN)
+                .category(categoryId);
+
+        when(repository.findById(transactionId)).thenReturn(Optional.of(transaction));
+        when(categoryRepository.findById(categoryId)).thenReturn(Optional.empty());
+
+        assertThatThrownBy(() -> service.update(transactionId, updateDto))
+                .isInstanceOf(NotFoundException.class);
+        verifyNoInteractions(mapper);
     }
 
     @Test

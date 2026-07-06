@@ -8,7 +8,6 @@ import astoppello.wallet.mapper.GoalMapper;
 import astoppello.wallet.repository.GoalRepository;
 import astoppello.wallet.service.GoalService;
 import lombok.RequiredArgsConstructor;
-import org.apache.commons.lang3.StringUtils;
 import org.jspecify.annotations.NonNull;
 import org.springframework.stereotype.Service;
 
@@ -52,12 +51,10 @@ public class GoalServiceImpl implements GoalService {
     @Override
     public GoalDto update(UUID id, GoalDto dto) {
         Goal byId = getById(id);
-        if (StringUtils.isNotEmpty(dto.getName())) {
-            byId.setName(dto.getName());
-        }
-        if (dto.getAmount() != null) {
-            byId.setAmount(dto.getAmount());
-        }
+        byId.setName(dto.getName());
+        byId.setAmount(dto.getAmount());
+        byId.setSavedAmount(dto.getSavedAmount());
+        byId.setReached(Boolean.TRUE.equals(dto.getReached()));
         byId.getTrackingDate().touch();
         return mapper.toDto(repository.save(byId));
     }

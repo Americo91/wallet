@@ -118,11 +118,18 @@ public class TransactionServiceImplIt {
     @Test
     void update_amount() {
         TransactionDto saved = service.save(accountDto.getId(), transactionDto);
-        TransactionDto newDto = new TransactionDto().amount(new BigDecimal("100.00"));
+        TransactionDto newDto = new TransactionDto()
+                .type(TransactionDto.TypeEnum.EXPENSE)
+                .amount(new BigDecimal("100.00"))
+                .category(categoryDto.getId());
 
         TransactionDto update = service.update(saved.getId(), newDto);
         assertThat(update.getAmount()).isEqualTo(newDto.getAmount());
         assertThat(update.getUpdatedAt()).isAfter(update.getCreatedAt());
+        // PUT replaces the whole object: fields omitted from the input are cleared
+        assertThat(update.getDescription()).isNull();
+        assertThat(update.getPayee()).isNull();
+        assertThat(update.getLabels()).isNullOrEmpty();
     }
 
     @Test

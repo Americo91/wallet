@@ -102,14 +102,16 @@ class AccountServiceImplIT {
     }
 
     @Test
-    void update_nameAndType() {
+    void update_replacesAllFields() {
         AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
         AccountDto updated = service.update(saved.getId(),
-                new AccountDto().name("Updated").accountType(AccountDto.AccountTypeEnum.SAVINGS));
+                new AccountDto("Updated", AccountDto.AccountTypeEnum.SAVINGS, BigDecimal.TEN, AccountDto.CurrencyEnum.USD));
 
         assertThat(updated.getName()).isEqualTo("Updated");
         assertThat(updated.getAccountType()).isEqualTo(AccountDto.AccountTypeEnum.SAVINGS);
+        assertThat(updated.getBalance()).isEqualByComparingTo(BigDecimal.TEN);
+        assertThat(updated.getCurrency()).isEqualTo(AccountDto.CurrencyEnum.USD);
     }
 
     @Test
@@ -118,9 +120,17 @@ class AccountServiceImplIT {
         AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
 
         AccountDto updated = service.update(saved.getId(),
-                new AccountDto().institution(save.getId()));
+                buildDto("Checking").institution(save.getId()));
 
         assertThat(updated.getInstitution()).isEqualTo(save.getId());
+    }
+
+    @Test
+    void update_institutionNotFound() {
+        AccountDto saved = service.save(institutionDto.getId(), buildDto("Checking"));
+
+        assertThatThrownBy(() -> service.update(saved.getId(), buildDto("Checking").institution(UUID.randomUUID())))
+                .isInstanceOf(NotFoundException.class);
     }
 
     @Test
