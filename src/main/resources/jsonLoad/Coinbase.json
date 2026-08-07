@@ -1,87 +1,73 @@
 {
   "accountName" : "Coinbase",
-  "exportedAt" : "2026-05-14",
+  "exportedAt" : "2026-08-06",
   "totalRecords" : 5,
   "records" : [ {
     "accountId" : "342a4e02-05d2-4a00-946f-4bd9ce5d3f4e",
     "amount" : {
       "currencyCode" : "EUR",
-      "value" : -1373.19
+      "value" : 300.0
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -1373.19
-    },
+    "baseAmount" : null,
     "category" : {
       "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
       "name" : "Transfer"
     },
-    "createdAt" : "2024-03-14T18:07:18Z",
-    "id" : "2bb39c38-31ae-4a00-9751-45c3a8a0c33c",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
+    "createdAt" : "2022-08-19T08:37:08.686Z",
+    "id" : "9141f92f-1ae4-465b-994a-a0b53f875f1d",
+    "labels" : [ ],
     "note" : null,
     "payee" : null,
     "payer" : null,
-    "paymentType" : "cash",
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2024-03-14T18:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "342a4e02-05d2-4a00-946f-4bd9ce5d3f4e",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 781.79
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 781.79
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : "2024-03-08T19:16:52Z",
-    "id" : "d5f50e6f-b4d0-41f4-b384-9ce8138f17ba",
-    "labels" : [ ],
-    "note" : "Coinbase ",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-03-08T19:15:00Z",
+    "recordDate" : "2022-08-19T08:36:57.285Z",
     "recordState" : "cleared",
     "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
+    "updatedAt" : "2026-06-11T11:14:35.977Z"
+  }, {
+    "accountId" : "342a4e02-05d2-4a00-946f-4bd9ce5d3f4e",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -8.6
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#19BC9C",
+      "envelopeId" : null,
+      "id" : "5c5c1f45-0050-8000-8000-000000000000",
+      "name" : "Charges, fees"
+    },
+    "createdAt" : "2022-08-19T08:37:24.431Z",
+    "id" : "96c0b4f6-acc5-4b4a-9776-7ffe21222dd5",
+    "labels" : [ ],
+    "note" : "Coinbase fee",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2022-08-19T08:37:43.452Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.142Z"
   }, {
     "accountId" : "342a4e02-05d2-4a00-946f-4bd9ce5d3f4e",
     "amount" : {
       "currencyCode" : "EUR",
       "value" : 300.0
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
+    "baseAmount" : null,
     "category" : {
       "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
       "name" : "Transfer"
     },
-    "createdAt" : "2023-06-28T08:50:14Z",
+    "createdAt" : "2023-06-28T08:50:14.448Z",
     "id" : "e9e15458-c42d-43f8-8ae4-1e0997d4de7a",
     "labels" : [ {
       "archived" : false,
@@ -92,70 +78,69 @@
     "note" : "100 Megi",
     "payee" : null,
     "payer" : null,
-    "paymentType" : "cash",
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2023-06-28T08:45:03Z",
+    "recordDate" : "2023-06-28T08:45:03.298Z",
     "recordState" : "cleared",
     "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
+    "updatedAt" : "2026-06-11T11:14:37.219Z"
   }, {
     "accountId" : "342a4e02-05d2-4a00-946f-4bd9ce5d3f4e",
     "amount" : {
       "currencyCode" : "EUR",
-      "value" : -8.6
+      "value" : 781.79
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -8.6
-    },
+    "baseAmount" : null,
     "category" : {
-      "color" : "#19BC9C",
-      "envelopeId" : 8005,
-      "id" : "b0bb1bb3-7ac7-47e2-b3d4-9b7edf819321",
-      "name" : "Charges, fees"
+      "color" : "#A75DE7",
+      "envelopeId" : null,
+      "id" : "5c5c232a-005a-8000-8000-000000000000",
+      "name" : "Fin. investments"
     },
-    "createdAt" : "2022-08-19T08:37:24Z",
-    "id" : "96c0b4f6-acc5-4b4a-9776-7ffe21222dd5",
+    "createdAt" : "2024-03-08T19:16:52.262Z",
+    "id" : "d5f50e6f-b4d0-41f4-b384-9ce8138f17ba",
     "labels" : [ ],
-    "note" : "Coinbase fee",
+    "note" : "Coinbase ",
     "payee" : null,
     "payer" : null,
-    "paymentType" : "cash",
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2022-08-19T08:37:43Z",
+    "recordDate" : "2024-03-08T19:15:00Z",
     "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:10Z"
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:36.712Z"
   }, {
     "accountId" : "342a4e02-05d2-4a00-946f-4bd9ce5d3f4e",
     "amount" : {
       "currencyCode" : "EUR",
-      "value" : 300.0
+      "value" : -1373.19
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
+    "baseAmount" : null,
     "category" : {
       "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
       "name" : "Transfer"
     },
-    "createdAt" : "2022-08-19T08:37:08Z",
-    "id" : "9141f92f-1ae4-465b-994a-a0b53f875f1d",
-    "labels" : [ ],
+    "createdAt" : "2024-03-14T18:07:18.143Z",
+    "id" : "2bb39c38-31ae-4a00-9751-45c3a8a0c33c",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
     "note" : null,
     "payee" : null,
     "payer" : null,
-    "paymentType" : "cash",
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2022-08-19T08:36:57Z",
+    "recordDate" : "2024-03-14T18:00:00Z",
     "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:33.515Z"
   } ]
 }
