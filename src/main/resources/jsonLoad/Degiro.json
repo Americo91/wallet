@@ -1,660 +1,21 @@
 {
   "accountName" : "Degiro",
-  "exportedAt" : "2026-05-14",
+  "exportedAt" : "2026-08-06",
   "totalRecords" : 20,
   "records" : [ {
     "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
     "amount" : {
       "currencyCode" : "EUR",
-      "value" : -2550.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -2550.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-02-23T06:54:03Z",
-    "id" : "159f8e4b-aea6-479a-baba-2643a6a9c99c",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-02-12T06:45:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:06Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -2700.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -2700.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-12-14T21:38:40Z",
-    "id" : "a7bfbfe1-a25e-4647-8350-4b56e5a3d499",
-    "labels" : [ ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-12-14T21:30:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:12Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-05-09T06:24:55Z",
-    "id" : "39b6f212-29ea-541a-900e-2d243889d084",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-05-09T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-02-21T15:18:26Z",
-    "id" : "755e1e21-c2ce-5b79-8d52-bddbabe9e56a",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-02-21T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2022-12-29T18:34:59Z",
-    "id" : "6a95e3ba-9c35-4cf9-9ebf-8cffd12d0b1e",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2022-12-29T18:34:49Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2022-11-14T20:48:56Z",
-    "id" : "8eaa2e10-e691-536f-b2d6-e37a31d1462c",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2022-11-14T11:00:15Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2022-08-09T12:39:46Z",
-    "id" : "016a0cf0-148c-5e57-a00b-ba00fb296b10",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2022-08-09T10:00:55Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:06Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2022-05-11T14:04:48Z",
-    "id" : "0c11c3b8-fef8-518f-be9c-44316ff383b6",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2022-05-11T19:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:06Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2022-03-12T07:17:15Z",
-    "id" : "0aa11cbc-9d4e-4184-8ecc-19fe5e03b3c2",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Degiro",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2022-03-12T07:16:54Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:06Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2022-02-09T07:13:22Z",
-    "id" : "a4ad59ff-91bf-5590-83f6-1b9adc027ddf",
-    "labels" : [ ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2022-02-09T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:12Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2022-01-26T10:43:27Z",
-    "id" : "3b92ced2-3ac0-4777-a7fa-c6d0333a3148",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2022-01-26T10:43:18Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2021-12-21T14:40:57Z",
-    "id" : "e3430380-f715-4292-89e7-d5d2b5c6f2fa",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Degiro",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2021-12-21T14:40:08Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2021-11-11T12:22:58Z",
-    "id" : "3b769597-f5bf-531d-ae63-2367c4162496",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2021-11-11T11:00:55Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 350.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 350.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2021-10-23T17:48:35Z",
-    "id" : "22f2e44f-a6c8-4585-a0e7-d257e1a8d158",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2021-10-23T17:48:19Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2021-09-16T07:55:17Z",
-    "id" : "b923cf12-dfec-4914-9909-230b5d32fac2",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2021-09-16T07:55:26Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:12Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2021-08-09T18:50:31Z",
-    "id" : "2abc9422-7e6d-5df0-b84c-4fe5c03b2abd",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2021-08-09T10:00:56Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2021-05-29T06:56:38Z",
-    "id" : "c9197d29-8f26-4b49-b523-e5acd5615195",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2021-05-29T06:56:51Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2021-05-01T06:41:15Z",
-    "id" : "c94ded31-7dab-40b5-a26b-9562dd775845",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : "Degiro",
-    "paymentType" : "mobile_payment",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2021-03-29T08:45:44Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 300.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2021-05-01T06:41:10Z",
-    "id" : "fcbd45bb-03c9-4bc3-a66d-56609339d199",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2021-02-27T11:44:40Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
-    "amount" : {
-      "currencyCode" : "EUR",
       "value" : 10.0
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 10.0
-    },
+    "baseAmount" : null,
     "category" : {
       "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
       "name" : "Transfer"
     },
-    "createdAt" : "2021-05-01T06:41:04Z",
+    "createdAt" : "2021-05-01T06:41:04.179Z",
     "id" : "41cc864f-7b13-4821-a5cc-c6c5293dfc5b",
     "labels" : [ {
       "archived" : false,
@@ -665,12 +26,591 @@
     "note" : "Degiro",
     "payee" : null,
     "payer" : null,
-    "paymentType" : "cash",
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2021-02-12T12:56:36Z",
+    "recordDate" : "2021-02-12T12:56:36.066Z",
     "recordState" : "cleared",
     "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
+    "updatedAt" : "2026-06-11T11:14:34.203Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2021-05-01T06:41:10.27Z",
+    "id" : "fcbd45bb-03c9-4bc3-a66d-56609339d199",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2021-02-27T11:44:40.562Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:37.347Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2021-05-01T06:41:15.324Z",
+    "id" : "c94ded31-7dab-40b5-a26b-9562dd775845",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2021-03-29T08:45:44.915Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:36.413Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2021-05-29T06:56:38.662Z",
+    "id" : "c9197d29-8f26-4b49-b523-e5acd5615195",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2021-05-29T06:56:51.018Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:36.413Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 500.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2021-08-09T18:50:31.715Z",
+    "id" : "2abc9422-7e6d-5df0-b84c-4fe5c03b2abd",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2021-08-09T10:00:56.582Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:33.515Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2021-09-16T07:55:17.845Z",
+    "id" : "b923cf12-dfec-4914-9909-230b5d32fac2",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2021-09-16T07:55:26.918Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:36.746Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 350.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2021-10-23T17:48:35.407Z",
+    "id" : "22f2e44f-a6c8-4585-a0e7-d257e1a8d158",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2021-10-23T17:48:19.424Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:33.186Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2021-11-11T12:22:58.977Z",
+    "id" : "3b769597-f5bf-531d-ae63-2367c4162496",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2021-11-11T11:00:55.429Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:33.998Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2021-12-21T14:40:57.651Z",
+    "id" : "e3430380-f715-4292-89e7-d5d2b5c6f2fa",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : "Degiro",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2021-12-21T14:40:08.714Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:37.051Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 500.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2022-01-26T10:43:27.54Z",
+    "id" : "3b92ced2-3ac0-4777-a7fa-c6d0333a3148",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2022-01-26T10:43:18.114Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:34.069Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2022-02-09T07:13:22.246Z",
+    "id" : "a4ad59ff-91bf-5590-83f6-1b9adc027ddf",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2022-02-09T11:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:36.324Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 500.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2022-03-12T07:17:15.177Z",
+    "id" : "0aa11cbc-9d4e-4184-8ecc-19fe5e03b3c2",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : "Degiro",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2022-03-12T07:16:54.952Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:33.515Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2022-05-11T14:04:48.758Z",
+    "id" : "0c11c3b8-fef8-518f-be9c-44316ff383b6",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2022-05-11T19:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:33.555Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2022-08-09T12:39:46.282Z",
+    "id" : "016a0cf0-148c-5e57-a00b-ba00fb296b10",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2022-08-09T10:00:55.047Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:32.688Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2022-11-14T20:48:56.356Z",
+    "id" : "8eaa2e10-e691-536f-b2d6-e37a31d1462c",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2022-11-14T11:00:15.953Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:35.94Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 500.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2022-12-29T18:34:59.557Z",
+    "id" : "6a95e3ba-9c35-4cf9-9ebf-8cffd12d0b1e",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2022-12-29T18:34:49.483Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:35.175Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2023-02-21T15:18:26.635Z",
+    "id" : "755e1e21-c2ce-5b79-8d52-bddbabe9e56a",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2023-02-21T11:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:35.335Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : 300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2023-05-09T06:24:55.534Z",
+    "id" : "39b6f212-29ea-541a-900e-2d243889d084",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2023-05-09T10:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:33.998Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -2700.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2023-12-14T21:38:40.46Z",
+    "id" : "a7bfbfe1-a25e-4647-8350-4b56e5a3d499",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2023-12-14T21:30:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.393Z"
+  }, {
+    "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",
+    "amount" : {
+      "currencyCode" : "EUR",
+      "value" : -2550.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#0097a7",
+      "envelopeId" : null,
+      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
+      "name" : "Transfer"
+    },
+    "createdAt" : "2024-02-23T06:54:03.896Z",
+    "id" : "159f8e4b-aea6-479a-baba-2643a6a9c99c",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#f44336",
+      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+      "name" : "Investimenti"
+    } ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2024-02-12T06:45:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:33.886Z"
   } ]
 }

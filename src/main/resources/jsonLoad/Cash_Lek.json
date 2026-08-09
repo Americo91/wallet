@@ -1,684 +1,99 @@
 {
   "accountName" : "Cash Lek",
-  "exportedAt" : "2026-05-14",
+  "exportedAt" : "2026-08-06",
   "totalRecords" : 24,
   "records" : [ {
     "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
     "amount" : {
       "currencyCode" : "ALL",
-      "value" : -5100.0
+      "value" : 75000.0
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -51.58
-    },
+    "baseAmount" : null,
     "category" : {
       "color" : "#9E9E9E",
-      "envelopeId" : 11000,
-      "id" : "e107b28b-b20a-4bfe-b448-bdfc8714fbbc",
+      "envelopeId" : null,
+      "id" : "5c5c2af8-006e-8000-8000-000000000000",
       "name" : "Others"
     },
-    "createdAt" : "2025-06-10T17:44:12Z",
-    "id" : "326cced9-5aef-457f-baf3-fad9a1730dc9",
+    "createdAt" : "2025-04-10T10:19:33.07Z",
+    "id" : "0fd22b0e-dd4a-4170-a76e-c1e820f93bd2",
     "labels" : [ ],
-    "note" : "Albania",
+    "note" : "Cash",
     "payee" : null,
     "payer" : null,
-    "paymentType" : "cash",
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2025-06-10T17:30:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : 20000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 202.274864
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10010,
-      "id" : "4a8786be-4223-4702-bbd7-bac12731c577",
-      "name" : "Gifts"
-    },
-    "createdAt" : "2025-04-20T16:14:46Z",
-    "id" : "cfa03247-aba1-499a-aca6-8cae5e9f9576",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Regalo Matrimonio",
-    "payee" : null,
-    "payer" : "Berti Maca",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-20T16:14:26Z",
+    "recordDate" : "2025-04-10T10:19:15.89Z",
     "recordState" : "cleared",
     "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
+    "updatedAt" : "2026-06-11T11:14:33.658Z"
   }, {
     "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
     "amount" : {
       "currencyCode" : "ALL",
-      "value" : 10000.0
+      "value" : -1000.0
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 101.137432
-    },
+    "baseAmount" : null,
     "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10010,
-      "id" : "4a8786be-4223-4702-bbd7-bac12731c577",
-      "name" : "Gifts"
+      "color" : "#9E9E9E",
+      "envelopeId" : null,
+      "id" : "5c5c2af8-006e-8000-8000-000000000000",
+      "name" : "Others"
     },
-    "createdAt" : "2025-04-19T08:55:12Z",
-    "id" : "5b4f9052-25fa-4dad-b6a1-fda97c837088",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Regalo Matrimonio",
-    "payee" : null,
-    "payer" : "Zio Tajari",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-19T08:54:49Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : 25000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 252.84358
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10010,
-      "id" : "4a8786be-4223-4702-bbd7-bac12731c577",
-      "name" : "Gifts"
-    },
-    "createdAt" : "2025-04-19T08:54:41Z",
-    "id" : "c56ecbaa-476f-43bd-ac0e-80a881c2bf2c",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Regalo Matrimonio",
-    "payee" : null,
-    "payer" : "Zia Sanie",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-19T08:54:22Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : 15000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 151.706148
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10010,
-      "id" : "4a8786be-4223-4702-bbd7-bac12731c577",
-      "name" : "Gifts"
-    },
-    "createdAt" : "2025-04-19T08:54:11Z",
-    "id" : "607f779d-d573-4418-bfae-6add22214501",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Regalo Matrimonio",
-    "payee" : null,
-    "payer" : "Zia Marjeta",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-19T08:53:59Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : 25000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 252.84358
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10010,
-      "id" : "4a8786be-4223-4702-bbd7-bac12731c577",
-      "name" : "Gifts"
-    },
-    "createdAt" : "2025-04-19T08:53:49Z",
-    "id" : "6990f0da-5899-44f7-bf57-7c5cfaae5840",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Regalo Matrimonio",
-    "payee" : null,
-    "payer" : "Zia Klara",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-19T08:53:04Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : 20000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 202.274864
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10010,
-      "id" : "4a8786be-4223-4702-bbd7-bac12731c577",
-      "name" : "Gifts"
-    },
-    "createdAt" : "2025-04-19T08:53:27Z",
-    "id" : "7d539f09-bfc9-48c7-a2de-f06feee83651",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Regalo Matrimonio",
-    "payee" : null,
-    "payer" : "Zia Eva",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-19T08:53:04Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : 25000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 252.84358
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10010,
-      "id" : "4a8786be-4223-4702-bbd7-bac12731c577",
-      "name" : "Gifts"
-    },
-    "createdAt" : "2025-04-19T08:48:52Z",
-    "id" : "fd709cff-4ed7-41d5-ba0a-c1f554018909",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Regalo Matrimonio",
-    "payee" : null,
-    "payer" : "Zia Lelo",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-19T08:47:55Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : 250000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 2528.4358004
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10010,
-      "id" : "4a8786be-4223-4702-bbd7-bac12731c577",
-      "name" : "Gifts"
-    },
-    "createdAt" : "2025-04-19T08:47:45Z",
-    "id" : "552c10af-d0d0-44a9-8127-f1fae7c4cfbe",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Regalo Matrimonio",
-    "payee" : null,
-    "payer" : "Vladi & Silvi",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-19T08:46:52Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : 10000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 101.137432
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10010,
-      "id" : "4a8786be-4223-4702-bbd7-bac12731c577",
-      "name" : "Gifts"
-    },
-    "createdAt" : "2025-04-19T08:45:54Z",
-    "id" : "1d95a9b3-d7d2-4f55-adb9-159f0a39caae",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Regalo Matrimonio",
-    "payee" : null,
-    "payer" : "Erion Kasimi",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-19T08:44:58Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : 21000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 212.3886072
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10010,
-      "id" : "4a8786be-4223-4702-bbd7-bac12731c577",
-      "name" : "Gifts"
-    },
-    "createdAt" : "2025-04-19T08:46:18Z",
-    "id" : "72a5d3c8-2632-459a-9776-f3934c377404",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Regalo Matrimonio",
-    "payee" : null,
-    "payer" : "Esjona",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-19T08:44:58Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : -15000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -151.71
-    },
-    "category" : {
-      "color" : null,
-      "envelopeId" : 11001,
-      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
-      "name" : "Matrimonio"
-    },
-    "createdAt" : "2025-04-21T08:32:00Z",
-    "id" : "abe21c5b-8db4-4e1c-ad05-365b7959080e",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Tecnico Luci",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-15T08:30:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:12Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : -289300.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -2925.91
-    },
-    "category" : {
-      "color" : null,
-      "envelopeId" : 11001,
-      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
-      "name" : "Matrimonio"
-    },
-    "createdAt" : "2025-04-21T08:44:09Z",
-    "id" : "f93a76f4-4772-48a0-921f-797eb4dd9018",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Ristorante",
-    "payee" : "Katalea palace",
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-15T08:30:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : -88000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -890.01
-    },
-    "category" : {
-      "color" : null,
-      "envelopeId" : 11001,
-      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
-      "name" : "Matrimonio"
-    },
-    "createdAt" : "2025-04-21T08:10:11Z",
-    "id" : "c9261573-905e-45b5-9709-8adb70cc8e44",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Bus",
-    "payee" : "Moni Travel",
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-15T08:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : -700.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -7.08
-    },
-    "category" : {
-      "color" : "#f44336",
-      "envelopeId" : 1002,
-      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
-      "name" : "Coffee & Drinks"
-    },
-    "createdAt" : "2025-04-14T14:50:20Z",
-    "id" : "ac85bfa7-e013-4b58-8980-8e3d0044666f",
+    "createdAt" : "2025-04-10T10:21:29.163Z",
+    "id" : "bdf947fe-ef6c-4c0d-a69d-7bc3b2a9db78",
     "labels" : [ ],
-    "note" : null,
+    "note" : "Megi",
     "payee" : null,
     "payer" : null,
-    "paymentType" : "cash",
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2025-04-14T14:50:12Z",
+    "recordDate" : "2025-04-10T10:21:09.615Z",
     "recordState" : "cleared",
     "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:12Z"
+    "updatedAt" : "2026-06-11T11:14:36.947Z"
   }, {
     "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
     "amount" : {
       "currencyCode" : "ALL",
-      "value" : -12000.0
+      "value" : 1000.0
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -121.36
-    },
+    "baseAmount" : null,
     "category" : {
-      "color" : null,
-      "envelopeId" : 11001,
-      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
-      "name" : "Matrimonio"
+      "color" : "#9E9E9E",
+      "envelopeId" : null,
+      "id" : "5c5c2af8-006e-8000-8000-000000000000",
+      "name" : "Others"
     },
-    "createdAt" : "2025-04-13T11:45:06Z",
-    "id" : "018dc7c5-d0cf-41fd-9464-8ad0629b77f8",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Camerieri",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-13T11:44:30Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:06Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : -24800.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -250.82
-    },
-    "category" : {
-      "color" : null,
-      "envelopeId" : 11001,
-      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
-      "name" : "Matrimonio"
-    },
-    "createdAt" : "2025-04-21T08:20:06Z",
-    "id" : "49914b03-5230-4c3c-9fd6-8719c96dee87",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Drinks afterparty",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-13T08:15:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : -600.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -6.07
-    },
-    "category" : {
-      "color" : "#f44336",
-      "envelopeId" : 1002,
-      "id" : "ea6582b5-2672-40a8-9fb2-25ca06d3fc07",
-      "name" : "Coffee & Drinks"
-    },
-    "createdAt" : "2025-04-11T22:07:16Z",
-    "id" : "d320ac25-bfef-462f-9af2-cad1f763e188",
+    "createdAt" : "2025-04-10T10:23:11.268Z",
+    "id" : "fcd13bf4-f02c-4651-ae23-15e0e031a971",
     "labels" : [ ],
-    "note" : "Vino",
+    "note" : "Cash",
     "payee" : null,
     "payer" : null,
-    "paymentType" : "cash",
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2025-04-11T22:07:07Z",
+    "recordDate" : "2025-04-10T10:23:03.056Z",
     "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : -500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -5.06
-    },
-    "category" : {
-      "color" : "#4FC3F7",
-      "envelopeId" : 2002,
-      "id" : "dcf30879-acd4-40af-9713-15e09acc494b",
-      "name" : "Health and beauty"
-    },
-    "createdAt" : "2025-04-11T09:32:15Z",
-    "id" : "8aae9393-4c28-42d2-9812-464a4c452296",
-    "labels" : [ ],
-    "note" : "Barbiere",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-11T09:32:04Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : -40000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -404.5497281
-    },
-    "category" : {
-      "color" : null,
-      "envelopeId" : 11001,
-      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
-      "name" : "Matrimonio"
-    },
-    "createdAt" : "2025-04-10T15:45:35Z",
-    "id" : "d891335f-79ce-4ace-a6dc-02b9f7f415b7",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#D32F2F",
-      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
-      "name" : "Wedding"
-    } ],
-    "note" : "Ansalber",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-10T15:45:46Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:13Z"
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:37.347Z"
   }, {
     "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
     "amount" : {
       "currencyCode" : "ALL",
       "value" : -20000.0
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -202.27
-    },
+    "baseAmount" : null,
     "category" : {
       "color" : null,
-      "envelopeId" : 11001,
+      "envelopeId" : null,
       "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
       "name" : "Matrimonio"
     },
-    "createdAt" : "2025-04-10T15:35:30Z",
+    "createdAt" : "2025-04-10T15:35:30.166Z",
     "id" : "f22fbc9a-3540-4fe8-aed0-1837659461ec",
     "labels" : [ {
       "archived" : false,
@@ -689,99 +104,612 @@
     "note" : "Barista",
     "payee" : null,
     "payer" : null,
-    "paymentType" : "cash",
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2025-04-10T15:35:08Z",
+    "recordDate" : "2025-04-10T15:35:08.995Z",
     "recordState" : "cleared",
     "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:13Z"
+    "updatedAt" : "2026-06-11T11:14:37.324Z"
   }, {
     "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
     "amount" : {
       "currencyCode" : "ALL",
-      "value" : 1000.0
+      "value" : -40000.0
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 10.11
-    },
+    "baseAmount" : null,
     "category" : {
-      "color" : "#9E9E9E",
-      "envelopeId" : 11000,
-      "id" : "e107b28b-b20a-4bfe-b448-bdfc8714fbbc",
-      "name" : "Others"
+      "color" : null,
+      "envelopeId" : null,
+      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
+      "name" : "Matrimonio"
     },
-    "createdAt" : "2025-04-10T10:23:11Z",
-    "id" : "fcd13bf4-f02c-4651-ae23-15e0e031a971",
-    "labels" : [ ],
-    "note" : "Cash",
+    "createdAt" : "2025-04-10T15:45:35.713Z",
+    "id" : "d891335f-79ce-4ace-a6dc-02b9f7f415b7",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Ansalber",
     "payee" : null,
     "payer" : null,
-    "paymentType" : "cash",
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2025-04-10T10:23:03Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
-    "amount" : {
-      "currencyCode" : "ALL",
-      "value" : -1000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -10.11
-    },
-    "category" : {
-      "color" : "#9E9E9E",
-      "envelopeId" : 11000,
-      "id" : "e107b28b-b20a-4bfe-b448-bdfc8714fbbc",
-      "name" : "Others"
-    },
-    "createdAt" : "2025-04-10T10:21:29Z",
-    "id" : "bdf947fe-ef6c-4c0d-a69d-7bc3b2a9db78",
-    "labels" : [ ],
-    "note" : "Megi",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-10T10:21:09Z",
+    "recordDate" : "2025-04-10T15:45:46.508Z",
     "recordState" : "cleared",
     "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:12Z"
+    "updatedAt" : "2026-06-11T11:14:36.746Z"
   }, {
     "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
     "amount" : {
       "currencyCode" : "ALL",
-      "value" : 75000.0
+      "value" : -500.0
     },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 758.53
-    },
+    "baseAmount" : null,
     "category" : {
-      "color" : "#9E9E9E",
-      "envelopeId" : 11000,
-      "id" : "e107b28b-b20a-4bfe-b448-bdfc8714fbbc",
-      "name" : "Others"
+      "color" : "#4FC3F7",
+      "envelopeId" : null,
+      "id" : "5c5c07d2-0014-8000-8000-000000000000",
+      "name" : "Health & beauty"
     },
-    "createdAt" : "2025-04-10T10:19:33Z",
-    "id" : "0fd22b0e-dd4a-4170-a76e-c1e820f93bd2",
+    "createdAt" : "2025-04-11T09:32:15.629Z",
+    "id" : "8aae9393-4c28-42d2-9812-464a4c452296",
     "labels" : [ ],
-    "note" : "Cash",
+    "note" : "Barbiere",
     "payee" : null,
-    "payer" : "Revolut",
-    "paymentType" : "cash",
+    "payer" : null,
+    "paymentType" : null,
     "photos" : [ ],
     "place" : null,
-    "recordDate" : "2025-04-10T10:19:15Z",
+    "recordDate" : "2025-04-11T09:32:04.737Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:35.873Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : -600.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : null,
+      "id" : "5c5c03ea-000a-8000-8000-000000000000",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-04-11T22:07:16.265Z",
+    "id" : "d320ac25-bfef-462f-9af2-cad1f763e188",
+    "labels" : [ ],
+    "note" : "Vino",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-11T22:07:07.45Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.628Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : -24800.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : null,
+      "envelopeId" : null,
+      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
+      "name" : "Matrimonio"
+    },
+    "createdAt" : "2025-04-21T08:20:06.192Z",
+    "id" : "49914b03-5230-4c3c-9fd6-8719c96dee87",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Drinks afterparty",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-13T08:15:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:34.384Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : -12000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : null,
+      "envelopeId" : null,
+      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
+      "name" : "Matrimonio"
+    },
+    "createdAt" : "2025-04-13T11:45:06.984Z",
+    "id" : "018dc7c5-d0cf-41fd-9464-8ad0629b77f8",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Camerieri",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-13T11:44:30.487Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:32.688Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : -700.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#f44336",
+      "envelopeId" : null,
+      "id" : "5c5c03ea-000a-8000-8000-000000000000",
+      "name" : "Coffee & Drinks"
+    },
+    "createdAt" : "2025-04-14T14:50:20.881Z",
+    "id" : "ac85bfa7-e013-4b58-8980-8e3d0044666f",
+    "labels" : [ ],
+    "note" : null,
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-14T14:50:12.285Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.459Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : -88000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : null,
+      "envelopeId" : null,
+      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
+      "name" : "Matrimonio"
+    },
+    "createdAt" : "2025-04-21T08:10:11.058Z",
+    "id" : "c9261573-905e-45b5-9709-8adb70cc8e44",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Bus",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-15T08:00:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.413Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : -15000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : null,
+      "envelopeId" : null,
+      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
+      "name" : "Matrimonio"
+    },
+    "createdAt" : "2025-04-21T08:32:00.752Z",
+    "id" : "abe21c5b-8db4-4e1c-ad05-365b7959080e",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Tecnico Luci",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-15T08:30:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:36.459Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : -289300.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : null,
+      "envelopeId" : null,
+      "id" : "7711f292-3f29-496b-b9a9-a1e2faf2aa9a",
+      "name" : "Matrimonio"
+    },
+    "createdAt" : "2025-04-21T08:44:09.426Z",
+    "id" : "f93a76f4-4772-48a0-921f-797eb4dd9018",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Ristorante",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-15T08:30:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:37.288Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : 10000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : null,
+      "id" : "5c5c271a-0064-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-04-19T08:45:54.514Z",
+    "id" : "1d95a9b3-d7d2-4f55-adb9-159f0a39caae",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Regalo Matrimonio",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-19T08:44:58.697Z",
     "recordState" : "cleared",
     "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:06Z"
+    "updatedAt" : "2026-06-11T11:14:34.215Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : 21000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : null,
+      "id" : "5c5c271a-0064-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-04-19T08:46:18.079Z",
+    "id" : "72a5d3c8-2632-459a-9776-f3934c377404",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Regalo Matrimonio",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-19T08:44:58.697Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:35.304Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : 250000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : null,
+      "id" : "5c5c271a-0064-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-04-19T08:47:45.861Z",
+    "id" : "552c10af-d0d0-44a9-8127-f1fae7c4cfbe",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Regalo Matrimonio",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-19T08:46:52.983Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:34.721Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : 25000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : null,
+      "id" : "5c5c271a-0064-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-04-19T08:48:52.98Z",
+    "id" : "fd709cff-4ed7-41d5-ba0a-c1f554018909",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Regalo Matrimonio",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-19T08:47:55.729Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:37.347Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : 25000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : null,
+      "id" : "5c5c271a-0064-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-04-19T08:53:49.667Z",
+    "id" : "6990f0da-5899-44f7-bf57-7c5cfaae5840",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Regalo Matrimonio",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-19T08:53:04.807Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:35.145Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : 20000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : null,
+      "id" : "5c5c271a-0064-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-04-19T08:53:27.408Z",
+    "id" : "7d539f09-bfc9-48c7-a2de-f06feee83651",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Regalo Matrimonio",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-19T08:53:04.807Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:35.6Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : 15000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : null,
+      "id" : "5c5c271a-0064-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-04-19T08:54:11.091Z",
+    "id" : "607f779d-d573-4418-bfae-6add22214501",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Regalo Matrimonio",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-19T08:53:59.624Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:35.017Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : 25000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : null,
+      "id" : "5c5c271a-0064-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-04-19T08:54:41.725Z",
+    "id" : "c56ecbaa-476f-43bd-ac0e-80a881c2bf2c",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Regalo Matrimonio",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-19T08:54:22.67Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:37.147Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : 10000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : null,
+      "id" : "5c5c271a-0064-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-04-19T08:55:12.497Z",
+    "id" : "5b4f9052-25fa-4dad-b6a1-fda97c837088",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Regalo Matrimonio",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-19T08:54:49.896Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:34.926Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : 20000.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#FBC02D",
+      "envelopeId" : null,
+      "id" : "5c5c271a-0064-8000-8000-000000000000",
+      "name" : "Gifts"
+    },
+    "createdAt" : "2025-04-20T16:14:46.702Z",
+    "id" : "cfa03247-aba1-499a-aca6-8cae5e9f9576",
+    "labels" : [ {
+      "archived" : false,
+      "color" : "#D32F2F",
+      "id" : "43166655-bbbe-4239-92da-93d7604c9bb9",
+      "name" : "Wedding"
+    } ],
+    "note" : "Regalo Matrimonio",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-04-20T16:14:26.538Z",
+    "recordState" : "cleared",
+    "recordType" : "income",
+    "updatedAt" : "2026-06-11T11:14:36.533Z"
+  }, {
+    "accountId" : "b8de33e0-7ff8-4703-9822-d6ba736ed660",
+    "amount" : {
+      "currencyCode" : "ALL",
+      "value" : -5100.0
+    },
+    "baseAmount" : null,
+    "category" : {
+      "color" : "#9E9E9E",
+      "envelopeId" : null,
+      "id" : "5c5c2af8-006e-8000-8000-000000000000",
+      "name" : "Others"
+    },
+    "createdAt" : "2025-06-10T17:44:12.329Z",
+    "id" : "326cced9-5aef-457f-baf3-fad9a1730dc9",
+    "labels" : [ ],
+    "note" : "Albania",
+    "payee" : null,
+    "payer" : null,
+    "paymentType" : null,
+    "photos" : [ ],
+    "place" : null,
+    "recordDate" : "2025-06-10T17:30:00Z",
+    "recordState" : "cleared",
+    "recordType" : "expense",
+    "updatedAt" : "2026-06-11T11:14:33.672Z"
   } ]
 }

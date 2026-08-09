@@ -5,6 +5,7 @@ import astoppello.wallet.dto.TransactionDto;
 import astoppello.wallet.dto.TransferDto;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.TransactionMapper;
+import astoppello.wallet.model.CategoryType;
 import astoppello.wallet.repository.AccountRepository;
 import astoppello.wallet.repository.CategoryRepository;
 import astoppello.wallet.repository.LabelRepository;
@@ -109,8 +110,10 @@ public class TransactionServiceImpl implements TransactionService {
     public List<TransactionDto> transfer(UUID fromAccountId, UUID toAccountId, TransferDto dto) {
         Account fromAccount = getAccount(fromAccountId);
         Account toAccount = getAccount(toAccountId);
-        Category transferCategory = categoryRepository.findByName("Transfer")
-                .stream().findFirst()
+        Category transferExpenseCategory = categoryRepository.findByNameAndType("Transfer", CategoryType.EXPENSE)
+                .orElseThrow(() -> new NotFoundException(Category.class, "Transfer"));
+
+        Category transferIncomeCategory = categoryRepository.findByNameAndType("Transfer", CategoryType.INCOME)
                 .orElseThrow(() -> new NotFoundException(Category.class, "Transfer"));
 
         Set<Label> labels = resolveLabels(dto.getLabels());
@@ -123,7 +126,7 @@ public class TransactionServiceImpl implements TransactionService {
                 .type(TransactionType.EXPENSE)
                 .amount(dto.getAmount())
                 .date(date)
-                .category(transferCategory)
+                .category(transferExpenseCategory)
                 .description(dto.getDescription())
                 .payee(dto.getPayee())
                 .labels(labels)
@@ -135,7 +138,7 @@ public class TransactionServiceImpl implements TransactionService {
                 .type(TransactionType.INCOME)
                 .amount(dto.getAmount())
                 .date(date)
-                .category(transferCategory)
+                .category(transferIncomeCategory)
                 .description(dto.getDescription())
                 .payee(dto.getPayee())
                 .labels(labels)

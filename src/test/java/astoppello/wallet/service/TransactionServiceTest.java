@@ -9,6 +9,7 @@ import astoppello.wallet.dto.TransactionDto;
 import astoppello.wallet.dto.TransferDto;
 import astoppello.wallet.exception.NotFoundException;
 import astoppello.wallet.mapper.TransactionMapper;
+import astoppello.wallet.model.CategoryType;
 import astoppello.wallet.model.TransactionType;
 import astoppello.wallet.repository.AccountRepository;
 import astoppello.wallet.repository.CategoryRepository;
@@ -325,7 +326,8 @@ class TransactionServiceTest {
     void transfer() {
         UUID toAccountId = UUID.randomUUID();
         Account toAccount = Account.builder().id(toAccountId).name("Savings").balance(BigDecimal.ZERO).build();
-        Category transferCategory = Category.builder().id(UUID.randomUUID()).name("Transfer").build();
+        Category transferExpenseCategory = Category.builder().id(UUID.randomUUID()).name("Transfer").type(CategoryType.EXPENSE).build();
+        Category transferIncomeCategory = Category.builder().id(UUID.randomUUID()).name("Transfer").type(CategoryType.INCOME).build();
 
         TransferDto transferDto = new TransferDto(new BigDecimal("100.00"))
                 .date(LocalDate.now())
@@ -336,7 +338,8 @@ class TransactionServiceTest {
 
         when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
         when(accountRepository.findById(toAccountId)).thenReturn(Optional.of(toAccount));
-        when(categoryRepository.findByName("Transfer")).thenReturn(List.of(transferCategory));
+        when(categoryRepository.findByNameAndType("Transfer", CategoryType.EXPENSE)).thenReturn(Optional.of(transferExpenseCategory));
+        when(categoryRepository.findByNameAndType("Transfer", CategoryType.INCOME)).thenReturn(Optional.of(transferIncomeCategory));
         when(repository.save(any(Transaction.class))).thenAnswer(invocation -> invocation.getArgument(0));
         when(mapper.toDto(any(Transaction.class))).thenReturn(expenseDto, incomeDto);
 
@@ -382,7 +385,6 @@ class TransactionServiceTest {
 
         when(accountRepository.findById(accountId)).thenReturn(Optional.of(account));
         when(accountRepository.findById(toAccountId)).thenReturn(Optional.of(toAccount));
-        when(categoryRepository.findByName("Transfer")).thenReturn(List.of());
 
         assertThatThrownBy(() -> service.transfer(accountId, toAccountId, transferDto))
                 .isInstanceOf(NotFoundException.class);

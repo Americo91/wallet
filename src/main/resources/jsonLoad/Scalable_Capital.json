@@ -1,1910 +1,1956 @@
 {
-  "accountName" : "Scalable Capital",
-  "exportedAt" : "2026-06-15",
-  "totalRecords" : 58,
-  "records" : [ {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : null,
-      "id" : "5c5c232a-005a-8000-8000-000000000000",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "0c799448-8b52-55c6-9382-6551742845d7",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2026-06-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-06-11T11:14:33.604Z"
-  },{
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "8a64fd24-2d58-532e-b749-388bb88831c1",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2026-05-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-05-08T20:02:35Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : null,
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "56561589-c162-53f0-b769-df4da146658c",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2026-04-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-09T13:00:16Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "6981d588-ee03-50e4-8aaa-cae0bddd8954",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2026-03-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "91c84741-5eb1-5848-a548-f2e80bb7ff2d",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2026-02-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : "2026-01-09T13:28:47Z",
-    "id" : "58e42e95-3354-545f-9041-e32976c27897",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2026-01-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "8d7c29df-82bc-5f33-bdc0-2d853e7c0560",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-12-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "2da6f5b1-5841-5bbc-9b76-d7de35bd1a66",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-11-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10011,
-      "id" : "94e96661-9e6d-4f93-8638-e37d403d1ebf",
-      "name" : "Income"
-    },
-    "createdAt" : "2025-10-19T17:02:28Z",
-    "id" : "a1f38726-c879-47c1-99c2-70ac8cba6879",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : "Boursorama",
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-10-19T17:01:58Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:12Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : "2025-10-08T06:26:05Z",
-    "id" : "8c8ad55a-7566-5db1-b27c-ef207cd73e4a",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-10-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "40aae715-9791-52e8-8b70-2a5c0c619a3b",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-09-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "1695009f-10e2-5bea-b5dd-1fac2fa6caa1",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-08-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:06Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "3bde410d-c7fc-53d6-97be-499dc3167dc3",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-07-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : "2025-06-07T22:06:14Z",
-    "id" : "2469ee7e-6a22-5120-8a45-26c6960c866c",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-06-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "952c07c6-7893-5922-9c83-d1a951c11eb5",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-05-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "e9d83c4a-f0e1-5867-bfae-933bf7640004",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-04-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 1000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 1000.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2025-03-14T15:37:33Z",
-    "id" : "153a322e-ed74-496e-a321-88b5084cfd7d",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-03-14T15:37:22Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:06Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "6dd9e7d0-250b-599b-b01a-0ed6ae52005e",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-03-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "e702481d-d45c-5e57-910c-7ab9ab6473bc",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-02-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "4f5a2858-e212-5e89-86dc-480d4d36b0c2",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-01-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#A75DE7",
-      "envelopeId" : 9002,
-      "id" : "cc92e483-e33b-47d5-b692-898c9854ec9b",
-      "name" : "Fin. investments"
-    },
-    "createdAt" : null,
-    "id" : "836e04af-fd25-50b0-8aea-04286204b180",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-12-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : null,
-    "id" : "0b8ee57f-0983-5691-9162-6da2cb384a60",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-11-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:06Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-10-09T10:34:03Z",
-    "id" : "d9bf25c9-5bf3-51d3-a74c-8f4710eb3341",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-10-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : null,
-    "id" : "5756a678-5aaa-5638-a89c-30b468e0f217",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-09-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:33Z",
-    "id" : "cca15156-19ce-519f-85f1-137269c70397",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-08-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:12Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 2000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 2000.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-05T15:09:53Z",
-    "id" : "6d5ad394-d323-4c02-87c4-eb61462baa59",
-    "labels" : [ ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-08-05T15:09:47Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:33Z",
-    "id" : "18395876-2cef-544a-82bb-3804ca5403f2",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-07-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:33Z",
-    "id" : "398ed37d-b065-50d2-8898-818fbeed6017",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-06-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "7f677644-8e67-5802-90c4-c8cab7be6e8f",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-05-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "category" : {
-      "color" : "#19BC9C",
-      "envelopeId" : 8005,
-      "id" : "b0bb1bb3-7ac7-47e2-b3d4-9b7edf819321",
-      "name" : "Charges, fees"
-    },
-    "createdAt" : "2024-05-05T06:37:11Z",
-    "id" : "88ad3df2-d8c3-5444-a638-b2e5310cb469",
-    "labels" : [ ],
-    "note" : "Scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-05-04T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "e4caa127-6e43-5c10-bbf9-ec615a349ca3",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-04-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "category" : {
-      "color" : "#19BC9C",
-      "envelopeId" : 8005,
-      "id" : "b0bb1bb3-7ac7-47e2-b3d4-9b7edf819321",
-      "name" : "Charges, fees"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "ab3e6566-e237-59dc-a96a-4b96215169f7",
-    "labels" : [ ],
-    "note" : "Scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-04-04T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:12Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "7c66347c-5bb0-5ba5-ba98-99594ebd6168",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-03-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "category" : {
-      "color" : "#19BC9C",
-      "envelopeId" : 8005,
-      "id" : "b0bb1bb3-7ac7-47e2-b3d4-9b7edf819321",
-      "name" : "Charges, fees"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "33e1b860-3cd3-53fe-b936-b28519c3eee7",
-    "labels" : [ ],
-    "note" : "Scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-03-04T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-02-08T11:14:09Z",
-    "id" : "e36d6dc1-b5b8-57a2-a452-695032786b59",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-02-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "category" : {
-      "color" : "#19BC9C",
-      "envelopeId" : 8005,
-      "id" : "b0bb1bb3-7ac7-47e2-b3d4-9b7edf819321",
-      "name" : "Charges, fees"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "da56f8a4-826d-572c-85e1-2dcb9207a6da",
-    "labels" : [ ],
-    "note" : "Scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-02-04T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 20500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 20500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-01-22T22:37:19Z",
-    "id" : "4cf6d8cd-8b5b-46f7-b76f-7e39abd68804",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-01-22T22:30:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "f66225fa-9df5-5c76-a508-d9d3374fe475",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-01-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "category" : {
-      "color" : "#19BC9C",
-      "envelopeId" : 8005,
-      "id" : "b0bb1bb3-7ac7-47e2-b3d4-9b7edf819321",
-      "name" : "Charges, fees"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "103f979d-a58f-5a09-b86e-2ac63b4b7c1a",
-    "labels" : [ ],
-    "note" : "Scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2024-01-04T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:06Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 26.3
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 26.3
-    },
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : 10001,
-      "id" : "e026ce2a-6be2-4ecf-9de1-5bc15a8cdb0b",
-      "name" : "Interests, dividends"
-    },
-    "createdAt" : "2023-12-31T07:59:46Z",
-    "id" : "c90b4c58-99bc-4e85-8acc-c916863ed814",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-12-31T07:59:23Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 4000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 4000.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-12-23T11:45:27Z",
-    "id" : "ea0f0c8c-dfca-4d4e-9dbb-f49b1204e45d",
-    "labels" : [ ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-12-23T11:45:17Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "df4112f1-80dd-5529-b031-abeee9480f10",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-12-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "category" : {
-      "color" : "#19BC9C",
-      "envelopeId" : 8005,
-      "id" : "b0bb1bb3-7ac7-47e2-b3d4-9b7edf819321",
-      "name" : "Charges, fees"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "cb5ff115-8cd6-5a70-ab69-2e0cbae304f7",
-    "labels" : [ ],
-    "note" : "Scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-12-04T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 90.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 90.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-11-11T07:09:12Z",
-    "id" : "e06504ba-f88e-46c3-8d12-9bc44404abe3",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-11-11T07:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "7b4eb458-df50-588e-b0a8-9cd9bd0eda5d",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-11-07T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "category" : {
-      "color" : "#19BC9C",
-      "envelopeId" : 8005,
-      "id" : "b0bb1bb3-7ac7-47e2-b3d4-9b7edf819321",
-      "name" : "Charges, fees"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "62c6fd05-4519-55a5-8abb-3ed18ca71222",
-    "labels" : [ ],
-    "note" : "Scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-11-04T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 10.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 10.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-10-12T08:44:04Z",
-    "id" : "492817a9-ac22-4d22-a5cf-b89b7afffd3a",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-10-12T08:30:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 550.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 550.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "fef1d2b3-fdb2-5163-a404-bc9552cd3802",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-10-07T10:00:09Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "category" : {
-      "color" : "#19BC9C",
-      "envelopeId" : 8005,
-      "id" : "b0bb1bb3-7ac7-47e2-b3d4-9b7edf819321",
-      "name" : "Charges, fees"
-    },
-    "createdAt" : "2023-10-05T08:14:08Z",
-    "id" : "70890de6-815f-5cc6-bf48-19e27e92b61f",
-    "labels" : [ ],
-    "note" : "Scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-10-04T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 1000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 1000.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-09-09T06:21:37Z",
-    "id" : "36fed70f-f6d4-4e0e-8719-5fc4c01dd181",
-    "labels" : [ ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-09-09T06:21:31Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "c9826340-c1ce-571d-8abf-d3aedf360f88",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-09-07T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : -4.99
-    },
-    "category" : {
-      "color" : "#19BC9C",
-      "envelopeId" : 8005,
-      "id" : "b0bb1bb3-7ac7-47e2-b3d4-9b7edf819321",
-      "name" : "Charges, fees"
-    },
-    "createdAt" : "2023-09-05T06:03:33Z",
-    "id" : "4dba5ceb-9ad9-5a44-886d-bc189ada738d",
-    "labels" : [ ],
-    "note" : "Scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-09-04T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 500.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "1732155f-9427-5001-9622-487f64eeccab",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-08-07T10:00:24Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:07Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 1000.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 1000.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-08-02T04:30:14Z",
-    "id" : "dc40868a-17db-49b2-a427-9e6bee049a8a",
-    "labels" : [ ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-08-02T04:30:09Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 2250.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 2250.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-07-14T16:45:34Z",
-    "id" : "6cc40ac5-8aa2-46d6-9628-5dc39d6d1f5e",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-07-14T16:45:57Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:09Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 250.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 250.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2024-08-10T19:19:32Z",
-    "id" : "b4750c09-47e1-5565-a761-779fce2dd908",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Pac scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "transfer",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-07-10T10:00:02Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:12Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 1.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 1.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-07-06T21:14:22Z",
-    "id" : "6f09c8ee-d970-412c-9168-0ab1d4e28ba2",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Ingresso scalable capital",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-07-04T21:13:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:10Z"
-  }, {
-    "accountId" : "3789a8b0-5300-4755-82bf-eca9a372fdc1",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 750.0
-    },
-    "baseAmount" : {
-      "currencyCode" : "EUR",
-      "value" : 750.0
-    },
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : 20001,
-      "id" : "0f6e9643-de39-4755-ab86-c9d0f833ece9",
-      "name" : "Transfer"
-    },
-    "createdAt" : "2023-07-03T13:45:05Z",
-    "id" : "fccdb42c-4e61-4be6-918e-28e0663774f9",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : "cash",
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2023-07-03T13:44:55Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-04-04T08:57:13Z"
-  } ]
+  "accountName": "Scalable Capital",
+  "exportedAt": "2026-08-07",
+  "totalRecords": 60,
+  "records": [
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 750.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2023-07-03T13:45:05.823Z",
+      "id": "fccdb42c-4e61-4be6-918e-28e0663774f9",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-07-03T13:44:55.306Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:37.347Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 1.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2023-07-06T21:14:22.678Z",
+      "id": "6f09c8ee-d970-412c-9168-0ab1d4e28ba2",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Ingresso scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-07-04T21:13:00.535Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.235Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 250.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:32.833Z",
+      "id": "b4750c09-47e1-5565-a761-779fce2dd908",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-07-10T10:00:02.485Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.628Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 2250.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2023-07-14T16:45:34.503Z",
+      "id": "6cc40ac5-8aa2-46d6-9628-5dc39d6d1f5e",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-07-14T16:45:57.222Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.204Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 1000.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2023-08-02T04:30:14.788Z",
+      "id": "dc40868a-17db-49b2-a427-9e6bee049a8a",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-08-02T04:30:09.612Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.947Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:32.845Z",
+      "id": "1732155f-9427-5001-9622-487f64eeccab",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-08-07T10:00:24.344Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.998Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#19BC9C",
+        "envelopeId": null,
+        "id": "5c5c1f45-0050-8000-8000-000000000000",
+        "name": "Charges, fees"
+      },
+      "createdAt": "2023-09-05T06:03:33.824Z",
+      "id": "4dba5ceb-9ad9-5a44-886d-bc189ada738d",
+      "labels": [],
+      "note": "Scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-09-04T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:34.488Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:32.864Z",
+      "id": "c9826340-c1ce-571d-8abf-d3aedf360f88",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-09-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.45Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 1000.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2023-09-09T06:21:37.251Z",
+      "id": "36fed70f-f6d4-4e0e-8719-5fc4c01dd181",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-09-09T06:21:31.226Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.777Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#19BC9C",
+        "envelopeId": null,
+        "id": "5c5c1f45-0050-8000-8000-000000000000",
+        "name": "Charges, fees"
+      },
+      "createdAt": "2023-10-05T08:14:08.851Z",
+      "id": "70890de6-815f-5cc6-bf48-19e27e92b61f",
+      "labels": [],
+      "note": "Scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-10-04T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:35.267Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 550.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:32.882Z",
+      "id": "fef1d2b3-fdb2-5163-a404-bc9552cd3802",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-10-07T10:00:09.464Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:37.372Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 10.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2023-10-12T08:44:04.645Z",
+      "id": "492817a9-ac22-4d22-a5cf-b89b7afffd3a",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-10-12T08:30:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:34.384Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#19BC9C",
+        "envelopeId": null,
+        "id": "5c5c1f45-0050-8000-8000-000000000000",
+        "name": "Charges, fees"
+      },
+      "createdAt": "2024-08-10T19:19:32.895Z",
+      "id": "62c6fd05-4519-55a5-8abb-3ed18ca71222",
+      "labels": [],
+      "note": "Scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-11-04T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:35.046Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:32.895Z",
+      "id": "7b4eb458-df50-588e-b0a8-9cd9bd0eda5d",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-11-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.527Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 90.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2023-11-11T07:09:12.737Z",
+      "id": "e06504ba-f88e-46c3-8d12-9bc44404abe3",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-11-11T07:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.995Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#19BC9C",
+        "envelopeId": null,
+        "id": "5c5c1f45-0050-8000-8000-000000000000",
+        "name": "Charges, fees"
+      },
+      "createdAt": "2024-08-10T19:19:32.911Z",
+      "id": "cb5ff115-8cd6-5a70-ab69-2e0cbae304f7",
+      "labels": [],
+      "note": "Scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-12-04T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:36.45Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:32.912Z",
+      "id": "df4112f1-80dd-5529-b031-abeee9480f10",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-12-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.995Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 4000.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2023-12-23T11:45:27.551Z",
+      "id": "ea0f0c8c-dfca-4d4e-9dbb-f49b1204e45d",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-12-23T11:45:17.875Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:37.219Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 26.3
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#FBC02D",
+        "envelopeId": null,
+        "id": "5c5c2711-0064-8000-8000-000000000000",
+        "name": "Interest, dividends"
+      },
+      "createdAt": "2023-12-31T07:59:46.507Z",
+      "id": "c90b4c58-99bc-4e85-8acc-c916863ed814",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2023-12-31T07:59:23.563Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.413Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#19BC9C",
+        "envelopeId": null,
+        "id": "5c5c1f45-0050-8000-8000-000000000000",
+        "name": "Charges, fees"
+      },
+      "createdAt": "2024-08-10T19:19:32.929Z",
+      "id": "103f979d-a58f-5a09-b86e-2ac63b4b7c1a",
+      "labels": [],
+      "note": "Scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-01-04T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:33.712Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:32.93Z",
+      "id": "f66225fa-9df5-5c76-a508-d9d3374fe475",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-01-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:37.248Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 20500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-01-22T22:37:19.102Z",
+      "id": "4cf6d8cd-8b5b-46f7-b76f-7e39abd68804",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-01-22T22:30:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:34.415Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#19BC9C",
+        "envelopeId": null,
+        "id": "5c5c1f45-0050-8000-8000-000000000000",
+        "name": "Charges, fees"
+      },
+      "createdAt": "2024-08-10T19:19:32.942Z",
+      "id": "da56f8a4-826d-572c-85e1-2dcb9207a6da",
+      "labels": [],
+      "note": "Scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-02-04T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:36.881Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-02-08T11:14:09.878Z",
+      "id": "e36d6dc1-b5b8-57a2-a452-695032786b59",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-02-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:37.051Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#19BC9C",
+        "envelopeId": null,
+        "id": "5c5c1f45-0050-8000-8000-000000000000",
+        "name": "Charges, fees"
+      },
+      "createdAt": "2024-08-10T19:19:32.957Z",
+      "id": "33e1b860-3cd3-53fe-b936-b28519c3eee7",
+      "labels": [],
+      "note": "Scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-03-04T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:33.717Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:32.957Z",
+      "id": "7c66347c-5bb0-5ba5-ba98-99594ebd6168",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-03-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.527Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#19BC9C",
+        "envelopeId": null,
+        "id": "5c5c1f45-0050-8000-8000-000000000000",
+        "name": "Charges, fees"
+      },
+      "createdAt": "2024-08-10T19:19:32.969Z",
+      "id": "ab3e6566-e237-59dc-a96a-4b96215169f7",
+      "labels": [],
+      "note": "Scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-04-04T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:36.424Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:32.971Z",
+      "id": "e4caa127-6e43-5c10-bbf9-ec615a349ca3",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-04-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:37.118Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#19BC9C",
+        "envelopeId": null,
+        "id": "5c5c1f45-0050-8000-8000-000000000000",
+        "name": "Charges, fees"
+      },
+      "createdAt": "2024-05-05T06:37:11.522Z",
+      "id": "88ad3df2-d8c3-5444-a638-b2e5310cb469",
+      "labels": [],
+      "note": "Scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-05-04T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:35.837Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:32.986Z",
+      "id": "7f677644-8e67-5802-90c4-c8cab7be6e8f",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-05-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.636Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:33.002Z",
+      "id": "398ed37d-b065-50d2-8898-818fbeed6017",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-06-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.998Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:33.015Z",
+      "id": "18395876-2cef-544a-82bb-3804ca5403f2",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-07-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.998Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 2000.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-05T15:09:53.327Z",
+      "id": "6d5ad394-d323-4c02-87c4-eb61462baa59",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-08-05T15:09:47.119Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.204Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-08-10T19:19:33.034Z",
+      "id": "cca15156-19ce-519f-85f1-137269c70397",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-08-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.486Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": null,
+      "id": "5756a678-5aaa-5638-a89c-30b468e0f217",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-09-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:34.795Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2024-10-09T10:34:03.554Z",
+      "id": "d9bf25c9-5bf3-51d3-a74c-8f4710eb3341",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-10-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.881Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": null,
+      "id": "0b8ee57f-0983-5691-9162-6da2cb384a60",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-11-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.555Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "836e04af-fd25-50b0-8aea-04286204b180",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2024-12-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.722Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "4f5a2858-e212-5e89-86dc-480d4d36b0c2",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-01-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:34.488Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "e702481d-d45c-5e57-910c-7ab9ab6473bc",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-02-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:37.148Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "6dd9e7d0-250b-599b-b01a-0ed6ae52005e",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-03-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.204Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 1000.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2025-03-14T15:37:33.689Z",
+      "id": "153a322e-ed74-496e-a321-88b5084cfd7d",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-03-14T15:37:22.038Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.886Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "e9d83c4a-f0e1-5867-bfae-933bf7640004",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-04-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:37.219Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "952c07c6-7893-5922-9c83-d1a951c11eb5",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-05-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.104Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": "2025-06-07T22:06:14.816Z",
+      "id": "2469ee7e-6a22-5120-8a45-26c6960c866c",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-06-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.186Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "3bde410d-c7fc-53d6-97be-499dc3167dc3",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-07-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:34.069Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "1695009f-10e2-5bea-b5dd-1fac2fa6caa1",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-08-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.886Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "40aae715-9791-52e8-8b70-2a5c0c619a3b",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-09-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:34.203Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": "2025-10-08T06:26:05.219Z",
+      "id": "8c8ad55a-7566-5db1-b27c-ef207cd73e4a",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-10-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.903Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#FBC02D",
+        "envelopeId": null,
+        "id": "5c5c271b-0064-8000-8000-000000000000",
+        "name": "Income"
+      },
+      "createdAt": "2025-10-19T17:02:28.568Z",
+      "id": "a1f38726-c879-47c1-99c2-70ac8cba6879",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-10-19T17:01:58.607Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.215Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "2da6f5b1-5841-5bbc-9b76-d7de35bd1a66",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-11-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.555Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "8d7c29df-82bc-5f33-bdc0-2d853e7c0560",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-12-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.903Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": "2026-01-09T13:28:47.903Z",
+      "id": "58e42e95-3354-545f-9041-e32976c27897",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-01-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:34.894Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "91c84741-5eb1-5848-a548-f2e80bb7ff2d",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-02-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.063Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 500.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "6981d588-ee03-50e4-8aaa-cae0bddd8954",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-03-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.145Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 550.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "56561589-c162-53f0-b769-df4da146658c",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-04-07T10:00:05.141Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-08-06T07:45:58.075Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 550.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "8a64fd24-2d58-532e-b749-388bb88831c1",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-05-07T10:00:58.905Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-08-06T07:45:58.075Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 550.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "0c799448-8b52-55c6-9382-6551742845d7",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-06-07T10:00:49.652Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-08-06T07:45:58.075Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 550.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "aa656fee-3b6d-50da-8b3e-3cbfdb309758",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-07-07T10:00:41.109Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-08-06T07:45:58.075Z"
+    },
+    {
+      "accountId": "3789a8b0-5300-4755-82bf-eca9a372fdc1",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 550.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#A75DE7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": "2026-08-07T05:15:56.459Z",
+      "id": "5252cb77-457a-5325-aaea-113cef239b95",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-08-07T05:17:14.381Z"
+    }
+  ]
 }
