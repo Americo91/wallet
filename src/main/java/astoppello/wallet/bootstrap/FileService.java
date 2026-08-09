@@ -92,8 +92,7 @@ public class FileService {
                 continue;
             }
             try {
-                LabelDto byName = labelService.getByName(label);
-                UUID id = byName.getId();
+                UUID id = labelService.getByName(label).map(LabelDto::getId).orElse(null);
                 labelCache.put(label, id);
                 resolvedLabels.add(id);
             } catch (NotFoundException e) {

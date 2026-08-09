@@ -6,23 +6,20 @@ import astoppello.wallet.service.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 
 @RequiredArgsConstructor
 @Component
-public class RecordLoader implements CommandLineRunner {
+public class RecordLoader {
 
     private final InstitutionService institutionService;
     private final AccountService accountService;
     private final FileService fileService;
 
-    @Override
-    public void run(String... args) throws Exception {
-        loadInstitutionAndAccount();
-    }
-
-    private void loadInstitutionAndAccount() {
+    @Transactional
+    public void loadInstitutionAndAccount() {
         loadRevolut();
         loadPayPal();
         loadBousorama();

@@ -12,7 +12,7 @@ public interface LabelService {
 
     LabelDto getByID(UUID id);
 
-    LabelDto getByName(String name);
+    Optional<LabelDto> getByName(String name);
 
     LabelDto save(LabelDto dto);
 

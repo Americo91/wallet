@@ -50,7 +50,7 @@ class LabelServiceImplIT {
 
     @Test
     void getByName() {
-        assertThat(service.getByName(LABEL_NAME)).isNotNull();
+        assertThat(service.getByName(LABEL_NAME)).isPresent();
     }
 
     @Test

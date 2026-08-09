@@ -1,0 +1,29 @@
+package astoppello.wallet.bootstrap;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import static org.mockito.Mockito.verify;
+
+@ExtendWith(MockitoExtension.class)
+class GeneralLoaderTest {
+
+    @Mock
+    private RecordLoader recordLoader;
+    @Mock
+    private StandingOrderLoader standingOrderLoader;
+
+    @InjectMocks
+    private GeneralLoader generalLoader;
+
+    @Test
+    void testRun() throws Exception {
+        generalLoader.run(new String[2]);
+
+        verify(recordLoader).loadInstitutionAndAccount();
+        verify(standingOrderLoader).run();
+  }
+}

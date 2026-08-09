@@ -39,8 +39,8 @@ public class LabelServiceImpl implements LabelService {
     }
 
     @Override
-    public LabelDto getByName(String name) {
-        return repository.findByName(name).map(mapper::toDto).orElseThrow(() -> new NotFoundException(Label.class, name));
+    public Optional<LabelDto> getByName(String name) {
+        return repository.findByName(name).map(mapper::toDto);
     }
 
     @Override

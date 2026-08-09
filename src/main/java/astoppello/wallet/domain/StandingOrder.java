@@ -71,4 +71,7 @@ public class StandingOrder {
 
     @Embedded
     private TrackingDate trackingDate;
+
+    @Column(nullable = false)
+    private Timestamp startingDate;
 }

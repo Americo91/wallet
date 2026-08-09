@@ -78,9 +78,9 @@ class FileServiceTest {
         when(categoryService.getByNameAndType("Restaurant", CategoryType.EXPENSE))
                 .thenReturn(Optional.of(new CategoryDto("Restaurant").id(categoryId)));
         when(labelService.getByName("Guilty Free"))
-                .thenReturn(new LabelDto("Guilty Free").id(labelId1));
+                .thenReturn(Optional.of(new LabelDto("Guilty Free").id(labelId1)));
         when(labelService.getByName("Work"))
-                .thenReturn(new LabelDto("Work").id(labelId2));
+                .thenReturn(Optional.of(new LabelDto("Work").id(labelId2)));
 
         fileService.loadTransactions(accountId, "/jsonLoad/test-export.json");
 
