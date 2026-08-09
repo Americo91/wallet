@@ -17,36 +17,39 @@ import java.util.UUID;
 @RestController
 public class LabelController implements LabelsApi {
 
-    private final LabelService labelService;
+  private final LabelService labelService;
 
-    @Override
-    public ResponseEntity<LabelDto> createLabel(LabelDto labelDto) {
-        LabelDto save = labelService.save(labelDto);
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.add("location", String.format("/api/v1/labels/%s", save.getId()));
-        return new ResponseEntity<>(save, httpHeaders, HttpStatus.CREATED);
-    }
+  @Override
+  public ResponseEntity<LabelDto> createLabel(LabelDto labelDto) {
+    LabelDto save = labelService.save(labelDto);
+    HttpHeaders httpHeaders = new HttpHeaders();
+    httpHeaders.add("location", String.format("/api/v1/labels/%s", save.getId()));
+    return new ResponseEntity<>(save, httpHeaders, HttpStatus.CREATED);
+  }
 
-    @Override
-    public ResponseEntity<Void> deleteLabel(UUID labelId) {
-        labelService.delete(labelId);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-    }
+  @Override
+  public ResponseEntity<Void> deleteLabel(UUID labelId) {
+    labelService.delete(labelId);
+    return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+  }
 
-    @Override
-    public ResponseEntity<LabelDto> getLabelById(UUID labelId) {
-        return new ResponseEntity<>(labelService.getByID(labelId), HttpStatus.OK);
-    }
+  @Override
+  public ResponseEntity<LabelDto> getLabelById(UUID labelId) {
+    return new ResponseEntity<>(labelService.getByID(labelId), HttpStatus.OK);
+  }
 
-    @Override
-    public ResponseEntity<List<LabelDto>> listLabels(String name) {
-        List<LabelDto> labelDtos = StringUtils.isBlank(name) ? labelService.getAll() : List.of(labelService.getByName(name));
-        return new ResponseEntity<>(labelDtos, HttpStatus.OK);
-    }
+  @Override
+  public ResponseEntity<List<LabelDto>> listLabels(String name) {
+    List<LabelDto> labelDtos =
+        StringUtils.isBlank(name)
+            ? labelService.getAll()
+            : labelService.getByName(name).map(List::of).orElseGet(List::of);
+    return new ResponseEntity<>(labelDtos, HttpStatus.OK);
+  }
 
-    @Override
-    public ResponseEntity<Void> updateLabel(UUID labelId, LabelDto labelDto) {
-        labelService.update(labelId, labelDto);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-    }
+  @Override
+  public ResponseEntity<Void> updateLabel(UUID labelId, LabelDto labelDto) {
+    labelService.update(labelId, labelDto);
+    return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+  }
 }

@@ -85,9 +85,8 @@ class LabelServiceTest {
         when(repository.findByName(LABEL_NAME)).thenReturn(Optional.of(domain));
         when(mapper.toDto(domain)).thenReturn(dto);
 
-        LabelDto results = service.getByName(LABEL_NAME);
-        assertThat(results).isNotNull();
-        assertThat(results.getName()).isEqualTo(LABEL_NAME);
+        Optional<LabelDto> results = service.getByName(LABEL_NAME);
+        assertThat(results).contains(dto);
         verify(repository).findByName(LABEL_NAME);
         verify(mapper).toDto(domain);
     }
@@ -96,7 +95,7 @@ class LabelServiceTest {
     void getByName_notFound() {
         when(repository.findByName(LABEL_NAME)).thenReturn(Optional.empty());
 
-        assertThatThrownBy(() -> service.getByName(LABEL_NAME)).isInstanceOf(NotFoundException.class);
+        assertThat(service.getByName(LABEL_NAME)).isEmpty();
         verifyNoInteractions(mapper);
     }
 

@@ -8,6 +8,7 @@ import astoppello.wallet.model.Currency;
 import astoppello.wallet.model.Frequency;
 import astoppello.wallet.model.TransactionType;
 import org.junit.jupiter.api.Test;
+import org.mockito.internal.verification.Times;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.data.jpa.test.autoconfigure.DataJpaTest;
 
@@ -43,6 +44,7 @@ class StandingOrderRepositoryTest {
                         .account(account)
                         .category(category)
                         .enabled(true)
+                        .startingDate(Timestamp.valueOf(LocalDateTime.now()))
                         .build());
 
         Timestamp from = Timestamp.valueOf(now);
@@ -71,6 +73,7 @@ class StandingOrderRepositoryTest {
                         .account(account)
                         .category(category)
                         .enabled(false)
+                        .startingDate(Timestamp.valueOf(LocalDateTime.now()))
                         .build());
 
         Timestamp from = Timestamp.valueOf(now);
@@ -97,6 +100,7 @@ class StandingOrderRepositoryTest {
                         .account(account)
                         .category(category)
                         .enabled(true)
+                        .startingDate(Timestamp.valueOf(LocalDateTime.now()))
                         .build());
 
         assertThat(standingOrderRepository.findByEnabledTrue()).hasSize(1);

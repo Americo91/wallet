@@ -51,6 +51,9 @@ public class StandingOrderServiceImpl implements StandingOrderService {
         domain.setCategory(category);
         domain.setLabels(resolveLabels(dto.getLabels()));
         domain.setTrackingDate(TrackingDate.now());
+        if(domain.getStartingDate() == null ) {
+            domain.setStartingDate(domain.getTrackingDate().getCreatedAt());
+        }
         return mapper.toDto(repository.save(domain));
     }
 
