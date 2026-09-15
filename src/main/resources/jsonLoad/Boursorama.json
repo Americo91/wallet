@@ -1,7 +1,7 @@
 {
   "accountName": "Boursorama",
-  "exportedAt": "2026-08-07",
-  "totalRecords": 919,
+  "exportedAt": "2026-09-15",
+  "totalRecords": 939,
   "records": [
     {
       "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
@@ -26910,6 +26910,561 @@
       "recordState": "cleared",
       "recordType": "expense",
       "updatedAt": "2026-08-07T05:17:14.381Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14.98
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#2258ff",
+        "envelopeId": null,
+        "id": "5c5c1b59-0046-8000-8000-000000000000",
+        "name": "Phone, cell phones"
+      },
+      "createdAt": null,
+      "id": "52899bc5-9ed3-56aa-876b-45a2dcc6d7b0",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "RedBySFR",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-15T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-16T09:54:09.644Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -100.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2026-08-21T21:33:16.781Z",
+      "id": "1bcdbc24-c82f-467a-9fe2-7257b8bd7984",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-21T21:33:06.443Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-22T01:24:34.841Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -20.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2026-08-24T08:08:40.339Z",
+      "id": "b7bf27df-5f34-4b74-a6eb-515c2832f904",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-24T08:08:35.811Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-25T08:00:17.401Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -600.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2026-08-25T12:52:44.539Z",
+      "id": "95eb8c5d-ab87-4dd8-b1eb-fbfea77e11df",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-25T12:52:40.457Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-26T10:48:15.065Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 2918.35
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffcd01",
+        "envelopeId": null,
+        "id": "5c5c2710-0064-8000-8000-000000000000",
+        "name": "Wage, invoices"
+      },
+      "createdAt": "2026-08-29T18:20:25.042Z",
+      "id": "a1824841-9ec8-45f8-be69-d76d4b9e4d58",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-29T18:20:02Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-08-29T21:43:14.286Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -163.6
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "d0c14c33-1deb-4c4f-a4c1-d473271cb96b",
+        "name": "Splitwise"
+      },
+      "createdAt": "2026-09-12T07:33:09.352Z",
+      "id": "c1019cd9-aa69-40b9-9c8a-e40f08f51248",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-02T07:32:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -19.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-09-04T06:44:01.498Z",
+      "id": "13e72f8d-43b2-4cfc-b404-3d4830c6a4ae",
+      "labels": [],
+      "note": "Caffè bar spiaggia",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-04T06:43:48.139Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-04T21:27:08.23Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -250.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2026-09-04T13:55:47.233Z",
+      "id": "f8b5aaa1-54cf-42f0-ab8e-b3fcd433fbf4",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-04T13:55:45.098Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-04T21:27:08.23Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -89.75
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-09-04T14:10:51.145Z",
+      "id": "79beecb2-548c-4001-8310-a3b70de2597c",
+      "labels": [],
+      "note": "Torta",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-04T14:10:49.347Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-04T21:27:08.23Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -432.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-09-04T22:43:54.734Z",
+      "id": "c30ef51a-bea2-4944-8011-fd860403fbd4",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#ff6f00",
+          "id": "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+          "name": "Guilty Free"
+        }
+      ],
+      "note": "Compleanno",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-04T22:43:41Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -98.5
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-09-12T07:30:47.879Z",
+      "id": "4f2032a2-ea85-414c-a8c0-59664b15835c",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#ff6f00",
+          "id": "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+          "name": "Guilty Free"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-05T07:30:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -550.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#a75de7",
+        "envelopeId": null,
+        "id": "5c5c232a-005a-8000-8000-000000000000",
+        "name": "Fin. investments"
+      },
+      "createdAt": null,
+      "id": "a085faf8-607c-5659-b5d8-569c98afde28",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Pac scalable capital",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-07T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-10T00:22:08.31Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -140.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#34bff6",
+        "envelopeId": null,
+        "id": "5c5c07d0-0014-8000-8000-000000000000",
+        "name": "Clothes & shoes"
+      },
+      "createdAt": "2026-09-09T17:50:15.137Z",
+      "id": "2a43414f-0756-4015-862e-860b062368d7",
+      "labels": [],
+      "note": "Scarpe da corsa",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-09T17:49:56.208Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-10T00:22:08.31Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -34.83
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07db-0014-8000-8000-000000000000",
+        "name": "Drugstore"
+      },
+      "createdAt": "2026-09-11T04:53:26.544Z",
+      "id": "c3022c9c-dd12-44ba-82b1-60d650aa0c6b",
+      "labels": [],
+      "note": "Conception",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-11T04:53:14Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1722.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffa726",
+        "envelopeId": null,
+        "id": "5c5c0bbd-001e-8000-8000-000000000000",
+        "name": "Housing"
+      },
+      "createdAt": "2026-09-12T09:10:12.008Z",
+      "id": "8f870e2f-e41e-4e55-9cb8-5bd3cdf7b926",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-12T09:09:57Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#64dd17",
+        "envelopeId": null,
+        "id": "5c5c1778-003c-8000-8000-000000000000",
+        "name": "Tv, streaming"
+      },
+      "createdAt": null,
+      "id": "dd011991-e337-5be1-8274-de17fdb5bfa4",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#ff6f00",
+          "id": "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+          "name": "Guilty Free"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-12T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-13T21:12:57.398Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -133.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#34bff6",
+        "envelopeId": null,
+        "id": "5c5c07d0-0014-8000-8000-000000000000",
+        "name": "Clothes & shoes"
+      },
+      "createdAt": "2026-09-13T20:37:39.701Z",
+      "id": "b16884af-547c-42ca-a7c8-4a6f9a5bf15e",
+      "labels": [],
+      "note": "scarpe da corsa Megi",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-13T20:36:51Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-13T21:12:57.398Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14.98
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#2258ff",
+        "envelopeId": null,
+        "id": "5c5c1b59-0046-8000-8000-000000000000",
+        "name": "Phone, cell phones"
+      },
+      "createdAt": "2026-09-15T14:56:33.108Z",
+      "id": "01cdc487-a5ab-587f-a97a-2bb94a7266d8",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "RedBySFR",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-15T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-15T15:00:52.488Z"
+    },
+    {
+      "accountId": "fde23f7c-a99a-461c-98e2-5c45a1093447",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 400.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2026-09-15T14:55:26.024Z",
+      "id": "d1267f12-c79d-4a5f-ba1e-0b35887242a7",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-15T14:55:03.574Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-09-15T15:00:52.488Z"
     }
   ]
 }

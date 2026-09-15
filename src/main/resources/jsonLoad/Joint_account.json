@@ -1,7 +1,7 @@
 {
   "accountName": "Joint account",
-  "exportedAt": "2026-08-07",
-  "totalRecords": 1057,
+  "exportedAt": "2026-09-15",
+  "totalRecords": 1123,
   "records": [
     {
       "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
@@ -31440,6 +31440,1942 @@
       "recordState": "cleared",
       "recordType": "expense",
       "updatedAt": "2026-08-07T03:25:58.111Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -44.95
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07da-0014-8000-8000-000000000000",
+        "name": "Shopping"
+      },
+      "createdAt": "2026-08-07T10:52:18.003Z",
+      "id": "a554d710-6346-4b91-9f61-e794d4435581",
+      "labels": [],
+      "note": "Decorazioni compleanno",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-07T10:52:52.516Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-07T22:15:58.106Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -62.84
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-08-08T17:20:07.192Z",
+      "id": "692e246f-0218-4d0f-8a2d-3335ed19ce7b",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-08T17:19:54.2Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-09T11:40:58.034Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -23.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03eb-000a-8000-8000-000000000000",
+        "name": "Food & Drinks"
+      },
+      "createdAt": "2026-08-22T16:40:27.52Z",
+      "id": "d85282fc-855a-4329-89ca-96aace08b508",
+      "labels": [],
+      "note": "Pop corn",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-09T16:40:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-23T03:34:35.429Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -33.12
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#64dd17",
+        "envelopeId": null,
+        "id": "5c5c1772-003c-8000-8000-000000000000",
+        "name": "Active sport, fitness"
+      },
+      "createdAt": "2026-08-11T08:38:03.206Z",
+      "id": "5594a45d-53da-4d2b-8eb5-fd40e5b82a7f",
+      "labels": [],
+      "note": "Padel",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-11T08:37:50.296Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-11T17:29:36.593Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03eb-000a-8000-8000-000000000000",
+        "name": "Food & Drinks"
+      },
+      "createdAt": "2026-08-22T16:38:28.678Z",
+      "id": "438ebccb-f288-48bf-a1f0-50b166b8b69f",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-11T16:38:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-23T03:34:35.429Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14.1
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-08-12T06:04:44.982Z",
+      "id": "1fba60f7-247d-4e83-9183-489c228b0b1a",
+      "labels": [],
+      "note": "Pasticciotti",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-12T06:04:20.327Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-12T11:44:36.593Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -58.2
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffa726",
+        "envelopeId": null,
+        "id": "5c5c0bba-001e-8000-8000-000000000000",
+        "name": "Energy & utilities"
+      },
+      "createdAt": null,
+      "id": "4bab02db-50f7-5f94-85b4-92ebb55a3b8d",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-13T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-15T13:39:09.715Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -570.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#cccccc",
+        "envelopeId": null,
+        "id": "5c5c1779-003c-8000-8000-000000000000",
+        "name": "Holidays, trips, hotels"
+      },
+      "createdAt": "2026-08-16T05:54:47.863Z",
+      "id": "14b00297-282e-4cb4-af4c-27a00b72a08b",
+      "labels": [],
+      "note": "La maison de Lulu",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-16T05:54:08.278Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-16T09:54:09.644Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -3.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1389-0032-8000-8000-000000000000",
+        "name": "Parking"
+      },
+      "createdAt": "2026-08-16T15:51:44.332Z",
+      "id": "67322de7-2198-445f-8f4e-45e2bb45e3ab",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-16T15:51:27.089Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-17T06:09:09.647Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -11.49
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-08-17T17:58:09.053Z",
+      "id": "5840c0a2-0c69-4cec-bab0-51afe66e2cb5",
+      "labels": [],
+      "note": "Gelato",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-17T17:57:55.603Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-19T21:54:34.898Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -190.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-08-22T16:36:35.565Z",
+      "id": "312e7cca-8be0-48d0-ba5d-29a3bcd43ffd",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-19T16:36:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-23T03:34:35.429Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -37.26
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#64dd17",
+        "envelopeId": null,
+        "id": "5c5c1772-003c-8000-8000-000000000000",
+        "name": "Active sport, fitness"
+      },
+      "createdAt": "2026-08-21T21:32:40.075Z",
+      "id": "03a07792-f346-4d90-832f-fdb9712a79b1",
+      "labels": [],
+      "note": "Padel",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-21T21:32:28.28Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-22T01:24:34.841Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -88.88
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-08-22T11:36:24.763Z",
+      "id": "06949d68-8312-471d-9831-ffaae563979f",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-22T11:36:12.905Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-23T03:34:35.429Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -11.49
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-08-22T11:36:42.704Z",
+      "id": "1f8c3437-cf92-4332-9549-2188c80f8a90",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-22T11:36:28.405Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-23T03:34:35.429Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -71.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d7-0014-8000-8000-000000000000",
+        "name": "Gifts"
+      },
+      "createdAt": "2026-08-23T09:53:17.49Z",
+      "id": "3cb3f681-5422-42d3-bac3-c0dcc2a8a761",
+      "labels": [],
+      "note": "Regalo Andrea FunkPop",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-23T09:52:53.604Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-24T05:49:35.368Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -45.25
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d7-0014-8000-8000-000000000000",
+        "name": "Gifts"
+      },
+      "createdAt": "2026-08-23T17:31:46.938Z",
+      "id": "8cfe546e-8e41-4092-8e92-b6ff56ec4923",
+      "labels": [],
+      "note": "Borsa carpisa",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-23T17:31:28.968Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-24T05:49:35.368Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -201.95
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#78909c",
+        "envelopeId": null,
+        "id": "5c5c0fa2-0028-8000-8000-000000000000",
+        "name": "Long distance"
+      },
+      "createdAt": "2026-08-27T10:50:30.538Z",
+      "id": "0eff6458-856f-47b0-a9b0-fcd555556e81",
+      "labels": [],
+      "note": "Viaggio Albania Ottobre",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-27T10:49:17.314Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-27T14:08:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -54.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-08-27T19:48:01.546Z",
+      "id": "f9a5d812-0c61-47a7-a70d-df864ebc3281",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-27T19:47:45.484Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-28T17:43:15.178Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.2
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-08-28T06:35:27.034Z",
+      "id": "8a0633df-98e4-40d4-9c93-11139c220909",
+      "labels": [],
+      "note": "Pasticciotti",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-28T06:35:02.471Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-28T17:43:15.178Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14.98
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07da-0014-8000-8000-000000000000",
+        "name": "Shopping"
+      },
+      "createdAt": "2026-08-29T10:24:23.075Z",
+      "id": "8a9472fc-c330-4468-8320-20658637a5ce",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-29T10:24:09Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-29T21:43:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -67.12
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#cccccc",
+        "envelopeId": null,
+        "id": "5c5c07d4-0014-8000-8000-000000000000",
+        "name": "Casa"
+      },
+      "createdAt": "2026-08-29T11:17:30.308Z",
+      "id": "39fc2542-00d6-4440-93c2-c74cb0a76587",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-29T11:16:51Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-29T21:43:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.5
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#cccccc",
+        "envelopeId": null,
+        "id": "5c5c07d4-0014-8000-8000-000000000000",
+        "name": "Casa"
+      },
+      "createdAt": "2026-08-29T11:42:43.535Z",
+      "id": "ede13255-aa4c-4fcb-9a5a-709f1f72ee08",
+      "labels": [],
+      "note": "Acqua ferro stiro",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-29T11:42:03Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-29T21:43:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -34.9
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d7-0014-8000-8000-000000000000",
+        "name": "Gifts"
+      },
+      "createdAt": "2026-08-29T12:02:46.175Z",
+      "id": "e887a3c8-4506-4d0b-86c5-20ac231511c9",
+      "labels": [],
+      "note": "Bracciale papà",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-29T12:02:22Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-29T21:43:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -37.8
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-08-29T21:00:34.013Z",
+      "id": "0e8eb47a-69ff-4aea-bd7b-f32fcfa082ab",
+      "labels": [],
+      "note": "Burger",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-29T21:00:12.005Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-29T21:43:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-08-29T21:01:02.444Z",
+      "id": "d2cef297-4a75-4972-b6c2-6a2b42a664b9",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-29T21:00:36.881Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-29T21:43:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -65.05
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1388-0032-8000-8000-000000000000",
+        "name": "Fuel"
+      },
+      "createdAt": "2026-08-30T09:51:10.769Z",
+      "id": "63f90f95-4bf3-4f55-bd50-5f32fc9aa12c",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-30T09:51:04.566Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-08-31T02:08:14.245Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -100.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2026-08-31T05:38:43.959Z",
+      "id": "8b14cacc-0ec7-4f75-bce0-3af9827ea691",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-31T05:38:41.907Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-01T06:13:14.301Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#64dd17",
+        "envelopeId": null,
+        "id": "5c5c1773-003c-8000-8000-000000000000",
+        "name": "Culture, sport events"
+      },
+      "createdAt": "2026-08-31T08:36:39.434Z",
+      "id": "62baca29-b07a-45dd-af87-9e23568e970c",
+      "labels": [],
+      "note": "Visita chiesa Igris Matera",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-31T08:35:32.763Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-01T06:13:14.301Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.3
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1389-0032-8000-8000-000000000000",
+        "name": "Parking"
+      },
+      "createdAt": "2026-08-31T11:48:06.561Z",
+      "id": "273a9337-4cf4-41a8-a923-daa22afc5ab3",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-31T11:47:27.272Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-01T06:13:14.301Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -40.71
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-08-31T15:25:28.809Z",
+      "id": "63121e57-2a3b-44f2-9208-cbe8b0ad654f",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-08-31T15:25:19Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1389-0032-8000-8000-000000000000",
+        "name": "Parking"
+      },
+      "createdAt": "2026-09-01T06:33:49.254Z",
+      "id": "1012db8b-e8e6-4aa9-8cde-13d627882a4c",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-01T06:33:48Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -48.7
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-09-01T07:18:56.914Z",
+      "id": "dc23bf28-1c7f-4795-887a-a826338ac9df",
+      "labels": [],
+      "note": "Colazione",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-01T07:18:40.106Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-02T10:23:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -11.5
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07db-0014-8000-8000-000000000000",
+        "name": "Drugstore"
+      },
+      "createdAt": "2026-09-01T07:20:45.196Z",
+      "id": "b1d22e70-55df-4ea0-a709-6b85ebecac38",
+      "labels": [],
+      "note": "Spray zanzare",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-01T07:20:24.418Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-02T10:23:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1389-0032-8000-8000-000000000000",
+        "name": "Parking"
+      },
+      "createdAt": "2026-09-12T10:14:48.788Z",
+      "id": "ed3ce7e8-caed-49ff-a302-1fa178d3cd90",
+      "labels": [],
+      "note": "Albrobello",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-01T10:14:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -238.5
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-09-01T12:21:09.851Z",
+      "id": "2de3f699-db7d-4fdb-b6d6-fc5b61dccb40",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-01T12:20:54.133Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-02T10:23:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -3.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1389-0032-8000-8000-000000000000",
+        "name": "Parking"
+      },
+      "createdAt": "2026-09-02T09:34:12.643Z",
+      "id": "19b929fa-7589-4b51-b73c-dc4a9370ab99",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-02T09:34:06.877Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-02T10:23:14.286Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -20.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#64dd17",
+        "envelopeId": null,
+        "id": "5c5c1772-003c-8000-8000-000000000000",
+        "name": "Active sport, fitness"
+      },
+      "createdAt": "2026-09-02T15:02:35.615Z",
+      "id": "09ec1aa9-3629-431f-844f-40d9d1691c69",
+      "labels": [],
+      "note": "Amadeus padel",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-02T15:02:23.124Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-03T15:27:08.222Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -70.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "d0c14c33-1deb-4c4f-a4c1-d473271cb96b",
+        "name": "Splitwise"
+      },
+      "createdAt": "2026-09-03T07:54:43.944Z",
+      "id": "ce418dd1-42a6-4855-a723-7626f3722dd2",
+      "labels": [],
+      "note": "Lido venere",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-03T07:54:04.576Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-03T15:27:08.222Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1310.92
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffa726",
+        "envelopeId": null,
+        "id": "5c5c0bb8-001e-8000-8000-000000000000",
+        "name": "Rent"
+      },
+      "createdAt": null,
+      "id": "cf17120f-ab2c-5493-b9ea-0e1e4038bf1f",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "Affitto",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-03T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-04T21:27:08.23Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -17.86
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-09-03T11:27:10.665Z",
+      "id": "0eb4017e-4e0a-48c8-8044-c35f8f791dcf",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-03T11:26:47.778Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-03T15:27:08.222Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -20.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffa726",
+        "envelopeId": null,
+        "id": "5c5c0bba-001e-8000-8000-000000000000",
+        "name": "Energy & utilities"
+      },
+      "createdAt": null,
+      "id": "026713a3-6eb5-5645-944a-9dc0a193374a",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "Sosh",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-04T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-08T16:52:08.198Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -31.82
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1388-0032-8000-8000-000000000000",
+        "name": "Fuel"
+      },
+      "createdAt": "2026-09-05T12:16:22.292Z",
+      "id": "372a6b8e-0781-4646-a9cf-69a77722f136",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-05T12:16:11.444Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-06T04:02:08.239Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -36.9
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-09-12T10:03:44.044Z",
+      "id": "484c6e97-6c69-4398-89fc-60e7b1f791ff",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "Autostrada Bari",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-05T20:03:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6.9
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-09-06T08:34:41.604Z",
+      "id": "9f4f87dd-e404-4594-baaf-f7fa3463a7f5",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-06T08:34:30.572Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-07T10:17:08.272Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -66.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-09-12T10:04:10.535Z",
+      "id": "2d1a0b2d-c6dd-4ad9-a172-fa475ee27ab4",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "Autostrada Ventimiglia",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-06T10:03:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6.6
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-09-12T10:04:29.813Z",
+      "id": "a4818a09-1df4-429d-8171-5897f7ed7415",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "Autostrada francia",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-06T10:04:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -67.78
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#cccccc",
+        "envelopeId": null,
+        "id": "5c5c07d4-0014-8000-8000-000000000000",
+        "name": "Casa"
+      },
+      "createdAt": "2026-09-06T10:16:03.462Z",
+      "id": "15e90e0d-da19-4926-ad6a-0c22473e0414",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-06T10:15:48Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -73.53
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1388-0032-8000-8000-000000000000",
+        "name": "Fuel"
+      },
+      "createdAt": "2026-09-06T10:32:50.991Z",
+      "id": "38fe6c41-036b-435f-bada-84eb4c49ae55",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-06T10:32:36.527Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-07T10:17:08.272Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -64.31
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-09-06T11:32:02.741Z",
+      "id": "157a8efa-b998-46a4-b112-53db80a096c3",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-06T11:03:14Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15.58
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-09-06T13:43:29.017Z",
+      "id": "e32c1fbb-2573-4499-af52-8ea817ebe41f",
+      "labels": [],
+      "note": "Autogrill",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-06T13:42:40.31Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-07T10:17:08.272Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.9
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-09-06T17:35:50.794Z",
+      "id": "599432e7-2c26-4d2e-977c-e533601d2ea2",
+      "labels": [],
+      "note": "Autogrill",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-06T17:35:41.792Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-07T10:17:08.272Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -22.62
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-09-07T17:38:23.05Z",
+      "id": "1e1d11db-23f8-4210-8867-f99e9f5b5cab",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-07T17:38:05.837Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-08T16:52:08.198Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 1893.87
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffcd01",
+        "envelopeId": null,
+        "id": "5c5c2710-0064-8000-8000-000000000000",
+        "name": "Wage, invoices"
+      },
+      "createdAt": "2026-09-12T09:07:37.13Z",
+      "id": "c463e030-4a11-4ff8-af55-023a93fb769c",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-08T09:07:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -38.6
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-09-12T07:59:35.356Z",
+      "id": "07fff1d4-e343-45a7-842a-110f6629a6a5",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#ff6f00",
+          "id": "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+          "name": "Guilty Free"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-10T07:59:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -17.57
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-09-11T16:36:59.198Z",
+      "id": "246401b6-97e1-42f6-bb75-c3a13b8ff4d5",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-11T16:36:49.692Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 1722.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffcd01",
+        "envelopeId": null,
+        "id": "5c5c2710-0064-8000-8000-000000000000",
+        "name": "Wage, invoices"
+      },
+      "createdAt": "2026-09-12T09:10:30.877Z",
+      "id": "364f1897-df2e-4e0a-9aba-e4a6e9952cdd",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-12T09:10:13Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -24.96
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-09-12T10:05:42.475Z",
+      "id": "1cc8bd88-7a08-429c-b9c3-434ec1a6d576",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-12T10:05:30Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-12T16:22:09.784Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -19.88
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-09-12T16:48:52.611Z",
+      "id": "45cbb30b-49ec-4917-874a-b12d14c08566",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-12T16:48:50.215Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-13T21:12:57.398Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -81.53
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-09-13T09:47:06.553Z",
+      "id": "d025768d-afa0-41cb-8bd7-6b0f3b1e54a3",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-13T09:46:58.001Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-13T21:12:57.398Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -58.2
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffa726",
+        "envelopeId": null,
+        "id": "5c5c0bba-001e-8000-8000-000000000000",
+        "name": "Energy & utilities"
+      },
+      "createdAt": null,
+      "id": "a1a244f5-b2eb-57ac-bd43-f9d49847c1af",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-13T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-15T15:00:52.488Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.2
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1389-0032-8000-8000-000000000000",
+        "name": "Parking"
+      },
+      "createdAt": "2026-09-13T20:38:37.101Z",
+      "id": "bbac79ff-6501-4a24-bf94-5bb9d408f199",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-13T20:38:25Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-13T21:12:57.398Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -23.92
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-09-13T20:39:16.646Z",
+      "id": "f52bb0e5-af83-4ba9-b49d-98dc72e0b314",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-13T20:38:52Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-13T21:12:57.398Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.7
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-09-13T20:40:58.479Z",
+      "id": "3cd1afb6-ef6d-41b0-b018-f36a27d0c9c6",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-13T20:40:48Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-13T21:12:57.398Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -36.6
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1388-0032-8000-8000-000000000000",
+        "name": "Fuel"
+      },
+      "createdAt": "2026-09-13T20:41:39.898Z",
+      "id": "1de1c101-b45e-42c8-b34e-94de8fcd1c5c",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-13T20:41:17Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-13T21:12:57.398Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 6.26
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#9e9e9e",
+        "envelopeId": null,
+        "id": "5c5c2af9-006e-8000-8000-000000000000",
+        "name": "Missing"
+      },
+      "createdAt": "2026-09-13T20:48:22.709Z",
+      "id": "1bc29671-213d-4d50-a3ec-83662b6fddfe",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-13T20:48:12Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-09-13T21:12:57.398Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14.38
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-09-15T06:26:58.827Z",
+      "id": "3cd1ccae-1560-4043-bf5e-504255326a0a",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-15T06:26:51.474Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-15T07:02:37.537Z"
     }
   ]
 }
