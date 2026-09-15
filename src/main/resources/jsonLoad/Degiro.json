@@ -1,6 +1,6 @@
 {
   "accountName" : "Degiro",
-  "exportedAt" : "2026-08-06",
+  "exportedAt": "2026-08-06",
   "totalRecords" : 20,
   "records" : [ {
     "accountId" : "8ed4600e-9c8f-4917-8cac-7b8064c8e010",

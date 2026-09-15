@@ -1,322 +1,346 @@
 {
-  "accountName" : "Borso+",
-  "exportedAt" : "2026-08-06",
-  "totalRecords" : 11,
-  "records" : [ {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 15001.0
+  "accountName": "Borso+",
+  "exportedAt": "2026-09-15",
+  "totalRecords": 11,
+  "records": [
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 15001.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2025-06-10T17:34:34.306Z",
+      "id": "69cea539-9fcd-409b-a089-a0e9c3b2c10a",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-06-10T17:30:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.145Z"
     },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : null,
-      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
-      "name" : "Transfer"
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2025-07-12T08:58:24.539Z",
+      "id": "d66b96d7-1704-4c32-8a6d-8b7e924d6eb2",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-07-12T08:58:18.139Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.712Z"
     },
-    "createdAt" : "2025-06-10T17:34:34.306Z",
-    "id" : "69cea539-9fcd-409b-a089-a0e9c3b2c10a",
-    "labels" : [ ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-06-10T17:30:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-06-11T11:14:35.145Z"
-  }, {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 100.0
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#FBC02D",
+        "envelopeId": null,
+        "id": "5c5c271b-0064-8000-8000-000000000000",
+        "name": "Income"
+      },
+      "createdAt": null,
+      "id": "fe41bbbd-36a3-5bc8-a603-9ed476a96671",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Borso+",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-08-11T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:37.372Z"
     },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#0097a7",
-      "envelopeId" : null,
-      "id" : "5c5c4e21-00c8-8000-8000-000000000000",
-      "name" : "Transfer"
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#FBC02D",
+        "envelopeId": null,
+        "id": "5c5c271b-0064-8000-8000-000000000000",
+        "name": "Income"
+      },
+      "createdAt": null,
+      "id": "c964c359-01b6-5eda-9e4b-442209999f46",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Borso+",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-09-11T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.45Z"
     },
-    "createdAt" : "2025-07-12T08:58:24.539Z",
-    "id" : "d66b96d7-1704-4c32-8a6d-8b7e924d6eb2",
-    "labels" : [ ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-07-12T08:58:18.139Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-06-11T11:14:36.712Z"
-  }, {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 100.0
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#FBC02D",
+        "envelopeId": null,
+        "id": "5c5c271b-0064-8000-8000-000000000000",
+        "name": "Income"
+      },
+      "createdAt": "2025-10-12T09:37:43.39Z",
+      "id": "26bcaa09-2c23-51e2-92bc-f38a9e82e733",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Borso+",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-10-11T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.293Z"
     },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : null,
-      "id" : "5c5c271b-0064-8000-8000-000000000000",
-      "name" : "Income"
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#FBC02D",
+        "envelopeId": null,
+        "id": "5c5c271b-0064-8000-8000-000000000000",
+        "name": "Income"
+      },
+      "createdAt": null,
+      "id": "94d87e54-b081-520a-9fed-9fc144fe1548",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Borso+",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-11-11T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.104Z"
     },
-    "createdAt" : null,
-    "id" : "fe41bbbd-36a3-5bc8-a603-9ed476a96671",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Borso+",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-08-11T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-06-11T11:14:37.372Z"
-  }, {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 100.0
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#FBC02D",
+        "envelopeId": null,
+        "id": "5c5c271b-0064-8000-8000-000000000000",
+        "name": "Income"
+      },
+      "createdAt": null,
+      "id": "2e6b7d39-fe77-5e7d-809d-036c7961c14a",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Borso+",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-12-11T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:33.555Z"
     },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : null,
-      "id" : "5c5c271b-0064-8000-8000-000000000000",
-      "name" : "Income"
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 153.65
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#FBC02D",
+        "envelopeId": null,
+        "id": "5c5c2711-0064-8000-8000-000000000000",
+        "name": "Interest, dividends"
+      },
+      "createdAt": "2026-01-13T09:08:02.171Z",
+      "id": "dda5e600-d746-42f5-824c-cfda25a40064",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-01-02T09:07:46.334Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:36.947Z"
     },
-    "createdAt" : null,
-    "id" : "c964c359-01b6-5eda-9e4b-442209999f46",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Borso+",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-09-11T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-06-11T11:14:36.45Z"
-  }, {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 100.0
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -26.43
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#00BFA5",
+        "envelopeId": null,
+        "id": "5c5c1f40-0050-8000-8000-000000000000",
+        "name": "Taxes"
+      },
+      "createdAt": "2026-01-13T09:08:38.239Z",
+      "id": "479a789d-54cb-4ae5-aae9-f59504726a65",
+      "labels": [],
+      "note": "Prelevament sociaux",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-01-02T09:08:06.638Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:34.35Z"
     },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : null,
-      "id" : "5c5c271b-0064-8000-8000-000000000000",
-      "name" : "Income"
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -19.67
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#00BFA5",
+        "envelopeId": null,
+        "id": "5c5c1f40-0050-8000-8000-000000000000",
+        "name": "Taxes"
+      },
+      "createdAt": "2026-01-13T09:09:21.519Z",
+      "id": "b739b79d-97fa-4f39-9eed-b30388f7414e",
+      "labels": [],
+      "note": "Prelevements fiscaux",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-01-02T09:08:39.822Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:36.704Z"
     },
-    "createdAt" : "2025-10-12T09:37:43.39Z",
-    "id" : "26bcaa09-2c23-51e2-92bc-f38a9e82e733",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Borso+",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-10-11T10:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-06-11T11:14:33.293Z"
-  }, {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 100.0
-    },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : null,
-      "id" : "5c5c271b-0064-8000-8000-000000000000",
-      "name" : "Income"
-    },
-    "createdAt" : null,
-    "id" : "94d87e54-b081-520a-9fed-9fc144fe1548",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Borso+",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-11-11T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-06-11T11:14:36.104Z"
-  }, {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 100.0
-    },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : null,
-      "id" : "5c5c271b-0064-8000-8000-000000000000",
-      "name" : "Income"
-    },
-    "createdAt" : null,
-    "id" : "2e6b7d39-fe77-5e7d-809d-036c7961c14a",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Borso+",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2025-12-11T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-06-11T11:14:33.555Z"
-  }, {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 153.65
-    },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : null,
-      "id" : "5c5c2711-0064-8000-8000-000000000000",
-      "name" : "Interest, dividends"
-    },
-    "createdAt" : "2026-01-13T09:08:02.171Z",
-    "id" : "dda5e600-d746-42f5-824c-cfda25a40064",
-    "labels" : [ ],
-    "note" : null,
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2026-01-02T09:07:46.334Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-06-11T11:14:36.947Z"
-  }, {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -26.43
-    },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#00BFA5",
-      "envelopeId" : null,
-      "id" : "5c5c1f40-0050-8000-8000-000000000000",
-      "name" : "Taxes"
-    },
-    "createdAt" : "2026-01-13T09:08:38.239Z",
-    "id" : "479a789d-54cb-4ae5-aae9-f59504726a65",
-    "labels" : [ ],
-    "note" : "Prelevament sociaux",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2026-01-02T09:08:06.638Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-06-11T11:14:34.35Z"
-  }, {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : -19.67
-    },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#00BFA5",
-      "envelopeId" : null,
-      "id" : "5c5c1f40-0050-8000-8000-000000000000",
-      "name" : "Taxes"
-    },
-    "createdAt" : "2026-01-13T09:09:21.519Z",
-    "id" : "b739b79d-97fa-4f39-9eed-b30388f7414e",
-    "labels" : [ ],
-    "note" : "Prelevements fiscaux",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2026-01-02T09:08:39.822Z",
-    "recordState" : "cleared",
-    "recordType" : "expense",
-    "updatedAt" : "2026-06-11T11:14:36.704Z"
-  }, {
-    "accountId" : "fd64d854-4539-40ad-9b8c-a114559638e3",
-    "amount" : {
-      "currencyCode" : "EUR",
-      "value" : 100.0
-    },
-    "baseAmount" : null,
-    "category" : {
-      "color" : "#FBC02D",
-      "envelopeId" : null,
-      "id" : "5c5c271b-0064-8000-8000-000000000000",
-      "name" : "Income"
-    },
-    "createdAt" : null,
-    "id" : "6ec69aca-48a0-5ecc-949a-c36cf14a4e26",
-    "labels" : [ {
-      "archived" : false,
-      "color" : "#f44336",
-      "id" : "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
-      "name" : "Investimenti"
-    } ],
-    "note" : "Borso+",
-    "payee" : null,
-    "payer" : null,
-    "paymentType" : null,
-    "photos" : [ ],
-    "place" : null,
-    "recordDate" : "2026-01-11T11:00:00Z",
-    "recordState" : "cleared",
-    "recordType" : "income",
-    "updatedAt" : "2026-06-11T11:14:35.235Z"
-  } ]
+    {
+      "accountId": "fd64d854-4539-40ad-9b8c-a114559638e3",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#FBC02D",
+        "envelopeId": null,
+        "id": "5c5c271b-0064-8000-8000-000000000000",
+        "name": "Income"
+      },
+      "createdAt": null,
+      "id": "6ec69aca-48a0-5ecc-949a-c36cf14a4e26",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "28b2b5df-3fbe-4141-9e8c-92fe14d748f3",
+          "name": "Investimenti"
+        }
+      ],
+      "note": "Borso+",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-01-11T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-06-11T11:14:35.235Z"
+    }
+  ]
 }
