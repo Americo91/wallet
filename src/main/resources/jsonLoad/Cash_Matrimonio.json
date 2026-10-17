@@ -1,6 +1,6 @@
 {
   "accountName": "Cash Matrimonio",
-  "exportedAt": "2026-09-15",
+  "exportedAt": "2026-10-17",
   "totalRecords": 49,
   "records": [
     {
@@ -1633,6 +1633,33 @@
       "amount": {
         "currencyCode": "EUR",
         "value": -187.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2025-06-10T17:02:40.099Z",
+      "id": "7453225b-28c8-4a30-bf24-d2e390272ebb",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-06-10T17:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-06-11T11:14:35.335Z"
+    },
+    {
+      "accountId": "500e8e57-8512-423c-8fb0-9a6474b0dd88",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -643.0
       },
       "baseAmount": null,
       "category": {

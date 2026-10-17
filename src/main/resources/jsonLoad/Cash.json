@@ -1,7 +1,7 @@
 {
   "accountName": "Cash",
-  "exportedAt": "2026-09-15",
-  "totalRecords": 836,
+  "exportedAt": "2026-10-17",
+  "totalRecords": 837,
   "records": [
     {
       "accountId": "7e81209d-b4c4-4b88-ba1a-5e8f870b33cc",
@@ -23176,6 +23176,33 @@
       "recordState": "cleared",
       "recordType": "expense",
       "updatedAt": "2026-09-07T10:17:08.272Z"
+    },
+    {
+      "accountId": "7e81209d-b4c4-4b88-ba1a-5e8f870b33cc",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -11.9
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-10-11T08:16:19.118Z",
+      "id": "540e8925-e012-4ebb-88dc-bffc2da5aa51",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-11T08:16:14.38Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-11T09:32:37.357Z"
     }
   ]
 }
