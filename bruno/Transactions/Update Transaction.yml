@@ -1,0 +1,39 @@
+info:
+  name: Update Transaction
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/transactions/:transactionId"
+  params:
+    - name: transactionId
+      value: "{{transactionId}}"
+      type: path
+      description: Transaction UUID
+  body:
+    type: json
+    data: |-
+      {
+        "id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+        "account": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+        "type": "EXPENSE",
+        "amount": 55,
+        "date": "2025-06-15",
+        "category": "{{categoryGroceries}}",
+        "description": "Weekly groceries updated",
+        "payee": "Supermarket",
+        "labels": [
+          "{{labelId}}"
+        ],
+        "createdAt": "2025-06-15T14:20:00Z",
+        "updatedAt": "2025-06-15T14:20:00Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,0 +1,21 @@
+info:
+  name: Get Upcoming
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/standing-orders/upcoming"
+  params:
+    - name: days
+      value: "8"
+      type: query
+      description: Number of days to look ahead
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

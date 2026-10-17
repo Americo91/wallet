@@ -1,0 +1,33 @@
+info:
+  name: Update Goal
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/goals/:goalId"
+  params:
+    - name: goalId
+      value: "{{goalId}}"
+      type: path
+      description: Goal UUID
+  body:
+    type: json
+    data: |-
+      {
+        "id": "a7b8c9d0-e1f2-3456-bcde-567890123456",
+        "name": "Emergency Fund",
+        "amount": 15000,
+        "savedAmount": 3500,
+        "reached": false,
+        "createdAt": "2025-01-01T00:00:00Z",
+        "updatedAt": "2025-06-15T12:00:00Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

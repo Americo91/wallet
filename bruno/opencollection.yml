@@ -1,0 +1,28 @@
+opencollection: 1.0.0
+
+info:
+  name: Wallet API
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
+    openapi:
+      - sourceUrl: ../src/main/resources/openapi.yaml
+        groupBy: tags
+        lastSyncDate: 2026-10-17T06:00:29.395Z
+        specHash: ed9d45161c60755ac386abd1f3251238
+        autoCheck: true
+        autoCheckInterval: 5

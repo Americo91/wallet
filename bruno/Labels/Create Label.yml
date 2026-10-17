@@ -1,0 +1,32 @@
+info:
+  name: Create Label
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/labels"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "e5f6a7b8-c9d0-1234-efab-345678901234",
+        "name": "recurringa",
+        "createdAt": "2025-01-10T08:00:00Z",
+        "updatedAt": "2025-01-10T08:00:00Z"
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        var label = res.body.id
+        bru.setEnvVar("labelId", label)
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

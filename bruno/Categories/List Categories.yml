@@ -1,0 +1,27 @@
+info:
+  name: List Categories
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/categories"
+  params:
+    - name: name
+      value: Groceries
+      type: query
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        var categoryGroceries = res.body[0].id
+        bru.setEnvVar("categoryGroceries", categoryGroceries)
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

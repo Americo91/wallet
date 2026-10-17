@@ -1,0 +1,32 @@
+info:
+  name: Update Category
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/categories/:categoryId"
+  params:
+    - name: categoryId
+      value: "{{categoryId}}"
+      type: path
+      description: Category UUID
+  body:
+    type: json
+    data: |-
+      {
+        "id": "d4e5f6a7-b8c9-0123-defa-234567890123",
+        "name": "Groceries & Food",
+        "type": "EXPENSE",
+        "parentId": null,
+        "createdAt": "2025-01-10T08:00:00Z",
+        "updatedAt": "2025-01-10T08:00:00Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

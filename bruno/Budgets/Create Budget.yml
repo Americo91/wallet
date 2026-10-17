@@ -1,0 +1,43 @@
+info:
+  name: Create Budget
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/budgets"
+  body:
+    type: json
+    data: |-
+      {
+        "id": "f6a7b8c9-d0e1-2345-abcd-456789012345",
+        "name": "Monthly Groceries",
+        "period": "MONTHLY",
+        "budgetLimit": 400,
+        "categoryIds": [
+          "{{categoryGroceries}}"
+        ],
+        "accountIds": [
+          "{{accountId}}"
+        ],
+        "labelIds": [
+          "e5f6a7b8-c9d0-1234-efab-345678901234"
+        ],
+        "closed": false,
+        "overLimit": "",
+        "createdAt": "2025-02-01T00:00:00Z",
+        "updatedAt": "2025-02-01T00:00:00Z"
+      }
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: bru.setEnvVar("budgetId", res.body.id)
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

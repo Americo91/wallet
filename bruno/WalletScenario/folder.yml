@@ -1,0 +1,7 @@
+info:
+  name: WalletScenario
+  type: folder
+  seq: 10
+
+request:
+  auth: inherit

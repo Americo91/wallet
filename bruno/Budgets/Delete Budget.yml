@@ -1,0 +1,21 @@
+info:
+  name: Delete Budget
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/v1/budgets/:budgetId"
+  params:
+    - name: budgetId
+      value: f6a7b8c9-d0e1-2345-abcd-456789012345
+      type: path
+      description: Budget UUID
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

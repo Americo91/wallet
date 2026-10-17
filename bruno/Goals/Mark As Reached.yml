@@ -1,0 +1,21 @@
+info:
+  name: Mark As Reached
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/goals/:goalId/markAsSolved"
+  params:
+    - name: goalId
+      value: "{{goalId}}"
+      type: path
+      description: Goal UUID
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

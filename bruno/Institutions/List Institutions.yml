@@ -1,0 +1,29 @@
+info:
+  name: List Institutions
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/institutions"
+  params:
+    - name: name
+      value: Intesa Sanpaolo
+      type: query
+      disabled: true
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        let data = res.body;
+        let institutionId = data[0].id;
+        bru.setEnvVar("institutionId", institutionId)
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

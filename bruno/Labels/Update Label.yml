@@ -1,0 +1,30 @@
+info:
+  name: Update Label
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/labels/:labelId"
+  params:
+    - name: labelId
+      value: "{{labelId}}"
+      type: path
+      description: Label UUID
+  body:
+    type: json
+    data: |-
+      {
+        "id": "e5f6a7b8-c9d0-1234-efab-345678901234",
+        "name": "monthly-recurring",
+        "createdAt": "2025-01-10T08:00:00Z",
+        "updatedAt": "2025-01-10T08:00:00Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

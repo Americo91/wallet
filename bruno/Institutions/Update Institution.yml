@@ -1,0 +1,34 @@
+info:
+  name: Update Institution
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/api/v1/institutions/:institutionId"
+  params:
+    - name: institutionId
+      value: "{{institutionId}}"
+      type: path
+      description: Institution UUID
+  body:
+    type: json
+    data: |-
+      {
+        "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "name": "Intesa Sanpaolo Updated",
+        "color": "#4285F4",
+        "accounts": [
+          "b2c3d4e5-f6a7-8901-bcde-f12345678901"
+        ],
+        "createdAt": "2025-01-15T10:30:00Z",
+        "updatedAt": "2025-01-15T10:30:00Z"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

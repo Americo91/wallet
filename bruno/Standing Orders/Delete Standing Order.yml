@@ -1,0 +1,21 @@
+info:
+  name: Delete Standing Order
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/v1/standing-orders/:standingOrderId"
+  params:
+    - name: standingOrderId
+      value: b8c9d0e1-f2a3-4567-cdef-678901234567
+      type: path
+      description: Standing order UUID
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

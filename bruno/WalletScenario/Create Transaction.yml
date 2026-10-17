@@ -1,0 +1,38 @@
+info:
+  name: Create Transaction
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{baseUrl}}/api/v1/accounts/:accountId/transactions"
+  params:
+    - name: accountId
+      value: "{{accountId}}"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "type": "EXPENSE",
+        "amount": 420.50,
+        "date": "2025-06-15",
+        "category": "{{categoryGroceries}}",
+        "description": "Weekly groceries",
+        "payee": "Supermarket",
+        "labels": ["{{labelId}}"]
+      }
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        var transactionId = res.body.id
+        bru.setEnvVar("transactionId", transactionId)
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

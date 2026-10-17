@@ -1,0 +1,31 @@
+info:
+  name: List Accounts by name
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{baseUrl}}/api/v1/accounts"
+  params:
+    - name: name
+      value: Revolut
+      type: query
+  auth: inherit
+
+runtime:
+  variables:
+    - name: baseUrl
+      value: http://localhost:8080
+  scripts:
+    - type: after-response
+      code: |-
+        let data = res.body;
+        let accountId = data[0].id;
+        bru.setEnvVar("accountId", accountId)
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,0 +1,21 @@
+info:
+  name: Delete Label
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/v1/labels/:labelId"
+  params:
+    - name: labelId
+      value: "{{labelId}}"
+      type: path
+      description: Label UUID
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -1,0 +1,21 @@
+info:
+  name: Delete Goal
+  type: http
+  seq: 5
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/v1/goals/:goalId"
+  params:
+    - name: goalId
+      value: a7b8c9d0-e1f2-3456-bcde-567890123456
+      type: path
+      description: Goal UUID
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
