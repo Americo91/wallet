@@ -1,7 +1,7 @@
 {
   "accountName": "Revolut",
-  "exportedAt": "2026-09-15",
-  "totalRecords": 1989,
+  "exportedAt": "2026-10-17",
+  "totalRecords": 2002,
   "records": [
     {
       "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
@@ -57229,6 +57229,427 @@
       "recordState": "cleared",
       "recordType": "expense",
       "updatedAt": "2026-09-15T15:00:52.488Z"
+    },
+
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -13.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#64dd17",
+        "envelopeId": null,
+        "id": "5c5c1772-003c-8000-8000-000000000000",
+        "name": "Active sport, fitness"
+      },
+      "createdAt": "2026-09-19T07:41:54.184Z",
+      "id": "6a5c0754-fac0-4ddc-b750-4129ae12704d",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-19T07:41:35.212Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-19T20:52:41.191Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 100.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2026-09-22T04:37:02.371Z",
+      "id": "9e21e64b-3b49-4a4c-bbf3-332814104444",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-22T04:36:59.051Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-09-22T17:44:18.609Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-09-23T10:46:53.512Z",
+      "id": "ec446d08-465a-47ab-873c-f404b0c11d17",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#0d47a1",
+          "id": "7c250714-7e0d-47a3-b1de-6de91933621e",
+          "name": "Lavoro"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-23T10:46:39.388Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-24T05:14:18.422Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#64dd17",
+        "envelopeId": null,
+        "id": "5c5c1778-003c-8000-8000-000000000000",
+        "name": "Tv, streaming"
+      },
+      "createdAt": null,
+      "id": "7f1ef9f9-b373-5adf-a4ce-43d5b9134710",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#ff6f00",
+          "id": "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+          "name": "Guilty Free"
+        }
+      ],
+      "note": "Radio rossonera",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-24T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-27T04:40:12.514Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -26.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#64dd17",
+        "envelopeId": null,
+        "id": "5c5c1773-003c-8000-8000-000000000000",
+        "name": "Culture, sport events"
+      },
+      "createdAt": "2026-09-25T18:17:31.93Z",
+      "id": "aebc188a-9380-4c18-a638-3df588c99107",
+      "labels": [],
+      "note": "Tessera del tifoso",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-25T18:17:12.211Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-09-27T04:40:12.514Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-09-29T06:57:57.987Z",
+      "id": "64e73db2-959d-4b17-9c54-af120fd6892b",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#0d47a1",
+          "id": "7c250714-7e0d-47a3-b1de-6de91933621e",
+          "name": "Lavoro"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-29T06:57:39Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-11T09:32:37.357Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-09-30T11:42:29.804Z",
+      "id": "2e6ed11a-89d1-455a-9e90-7a0d166816c1",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#0d47a1",
+          "id": "7c250714-7e0d-47a3-b1de-6de91933621e",
+          "name": "Lavoro"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-09-30T11:42:23.698Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-01T17:33:11.084Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -29.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#34bff6",
+        "envelopeId": null,
+        "id": "5c5c07d6-0014-8000-8000-000000000000",
+        "name": "Electronics & accessories"
+      },
+      "createdAt": "2026-10-07T04:47:23.129Z",
+      "id": "b50f3a0c-25e3-4c1f-a9bd-c245be79553f",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
+          "name": "Amazon"
+        }
+      ],
+      "note": "Creative Pebble V3 Speakers",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-07T04:46:38.081Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-08T01:18:06.964Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-10-09T11:42:03.368Z",
+      "id": "61707190-2c11-4441-acaf-2518e52dd2eb",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#0d47a1",
+          "id": "7c250714-7e0d-47a3-b1de-6de91933621e",
+          "name": "Lavoro"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-09T11:41:55.908Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-09T16:52:37.267Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 119.96
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2026-10-10T15:02:28.657Z",
+      "id": "ac11408f-d243-4004-af85-28617f3ac27e",
+      "labels": [],
+      "note": "Spese agosto Italia",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-10T15:01:29Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-10-11T09:32:37.357Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#1565c0",
+        "envelopeId": null,
+        "id": "ea535e42-6bda-4267-bb2d-ab826ac2639a",
+        "name": "Giochi"
+      },
+      "createdAt": null,
+      "id": "1a9ba371-3f79-50a7-80f2-543433461c7e",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#ff6f00",
+          "id": "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+          "name": "Guilty Free"
+        },
+        {
+          "archived": false,
+          "color": "#26c6da",
+          "id": "5c64219f-1f11-4f15-91ea-85b524c18a64",
+          "name": "Games"
+        }
+      ],
+      "note": "Pokemon",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-13T10:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-16T12:40:58.026Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 29.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#fbc02d",
+        "envelopeId": null,
+        "id": "5c5c2718-0064-8000-8000-000000000000",
+        "name": "Refunds"
+      },
+      "createdAt": "2026-10-16T05:15:20.271Z",
+      "id": "0825e1fc-dcf9-40f7-ad9a-429a15762ea9",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
+          "name": "Amazon"
+        }
+      ],
+      "note": "Speaker",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-16T05:14:55Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-10-16T12:40:58.026Z"
+    },
+    {
+      "accountId": "b724a93a-e942-4148-b000-2667a97b3f79",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-10-16T10:40:16.484Z",
+      "id": "2f112e43-aa48-4e50-ac69-d00ad3125a35",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#0d47a1",
+          "id": "7c250714-7e0d-47a3-b1de-6de91933621e",
+          "name": "Lavoro"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-16T10:40:00.096Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-16T12:40:58.026Z"
     }
   ]
 }

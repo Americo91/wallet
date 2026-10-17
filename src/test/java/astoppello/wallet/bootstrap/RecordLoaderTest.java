@@ -151,11 +151,12 @@ class RecordLoaderTest {
         assertThat(accountsByName.get("Revolut JPY").getExcludeFromStats()).isTrue();
 
         assertThat(accountsByName.get("Coinbase").getArchive()).isTrue();
-        assertThat(accountsByName.get("Natixis").getArchive()).isTrue();
-        assertThat(accountsByName.get("Scalable Capital").getArchive()).isTrue();
+        assertThat(accountsByName.get("Natixis").getArchive()).isFalse();
+        assertThat(accountsByName.get("Natixis").getExcludeFromStats()).isFalse();
+        assertThat(accountsByName.get("Scalable Capital").getArchive()).isFalse();
 
         assertThat(accountsByName.get("PayPal").getBalance()).isEqualByComparingTo(new BigDecimal("58.67"));
-        assertThat(accountsByName.get("Cash Matrimonio").getBalance()).isEqualByComparingTo(new BigDecimal("-643.00"));
+        assertThat(accountsByName.get("Cash Matrimonio").getBalance()).isEqualByComparingTo(new BigDecimal("0.00"));
         assertThat(accountsByName.get("Cash Lek").getCurrency()).isEqualTo(AccountDto.CurrencyEnum.ALL);
 
         List<String> savingsAccounts = List.of("Livret A", "Borso+", "LDDS");

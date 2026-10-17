@@ -40,19 +40,19 @@ public class RecordLoader {
 
     private void loadCoinbase() {
         InstitutionDto institutionDto = institutionService.save(new InstitutionDto().name("Coinbase"));
-        AccountDto coinbase = accountService.save(institutionDto.getId(), new AccountDto().accountType(AccountDto.AccountTypeEnum.INVESTMENTS).name("Coinbase").archive(true).balance(BigDecimal.ZERO).currency(AccountDto.CurrencyEnum.EUR));
+        AccountDto coinbase = accountService.save(institutionDto.getId(), new AccountDto().accountType(AccountDto.AccountTypeEnum.INVESTMENTS).name("Coinbase").archive(true).excludeFromStats(true).balance(BigDecimal.ZERO).currency(AccountDto.CurrencyEnum.EUR));
         fileService.loadTransactions(coinbase.getId(), "/jsonLoad/Coinbase.json");
     }
 
     private void loadNatixis() {
         InstitutionDto institutionDto = institutionService.save(new InstitutionDto().name("Natixis"));
-        AccountDto natixis = accountService.save(institutionDto.getId(), new AccountDto().accountType(AccountDto.AccountTypeEnum.INVESTMENTS).name("Natixis").archive(true).balance(BigDecimal.ZERO).currency(AccountDto.CurrencyEnum.EUR));
+        AccountDto natixis = accountService.save(institutionDto.getId(), new AccountDto().accountType(AccountDto.AccountTypeEnum.INVESTMENTS).name("Natixis").balance(BigDecimal.ZERO).currency(AccountDto.CurrencyEnum.EUR));
         fileService.loadTransactions(natixis.getId(), "/jsonLoad/Natixis.json");
     }
 
     private void loadScalable() {
         InstitutionDto institutionDto = institutionService.save(new InstitutionDto().name("Scalable Capital"));
-        AccountDto scalable = accountService.save(institutionDto.getId(), new AccountDto().accountType(AccountDto.AccountTypeEnum.INVESTMENTS).name("Scalable Capital").archive(true).balance(BigDecimal.ZERO).currency(AccountDto.CurrencyEnum.EUR));
+        AccountDto scalable = accountService.save(institutionDto.getId(), new AccountDto().accountType(AccountDto.AccountTypeEnum.INVESTMENTS).name("Scalable Capital").balance(BigDecimal.ZERO).currency(AccountDto.CurrencyEnum.EUR));
         fileService.loadTransactions(scalable.getId(), "/jsonLoad/Scalable_Capital.json");
     }
 
@@ -77,7 +77,7 @@ public class RecordLoader {
         AccountDto cash = accountService.save(institutionDto.getId(), new AccountDto().name("Cash").accountType(AccountDto.AccountTypeEnum.LIQUIDITY).balance(BigDecimal.ZERO).currency(AccountDto.CurrencyEnum.EUR));
         fileService.loadTransactions(cash.getId(), "/jsonLoad/Cash.json");
 
-        AccountDto cashMatrimonio = accountService.save(institutionDto.getId(), new AccountDto().name("Cash Matrimonio").accountType(AccountDto.AccountTypeEnum.LIQUIDITY).balance(new BigDecimal("-643.00")).currency(AccountDto.CurrencyEnum.EUR));
+        AccountDto cashMatrimonio = accountService.save(institutionDto.getId(), new AccountDto().name("Cash Matrimonio").accountType(AccountDto.AccountTypeEnum.LIQUIDITY).balance(BigDecimal.ZERO).currency(AccountDto.CurrencyEnum.EUR)).archive(true).excludeFromStats(true);
         fileService.loadTransactions(cashMatrimonio.getId(), "/jsonLoad/Cash_Matrimonio.json");
 
         AccountDto cashLek = accountService.save(institutionDto.getId(), new AccountDto().name("Cash Lek").accountType(AccountDto.AccountTypeEnum.LIQUIDITY).balance(BigDecimal.ZERO).currency(AccountDto.CurrencyEnum.ALL));
