@@ -1,7 +1,7 @@
 {
   "accountName": "Cash",
-  "exportedAt": "2026-10-17",
-  "totalRecords": 837,
+  "exportedAt" : "2026-11-12",
+  "totalRecords": 840,
   "records": [
     {
       "accountId": "7e81209d-b4c4-4b88-ba1a-5e8f870b33cc",
@@ -23203,6 +23203,87 @@
       "recordState": "cleared",
       "recordType": "expense",
       "updatedAt": "2026-10-11T09:32:37.357Z"
+    },
+    {
+      "accountId": "7e81209d-b4c4-4b88-ba1a-5e8f870b33cc",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#cccccc",
+        "envelopeId": null,
+        "id": "5c5c1779-003c-8000-8000-000000000000",
+        "name": "Holidays, trips, hotels"
+      },
+      "createdAt": "2026-11-06T17:12:01.473Z",
+      "id": "4a320112-a6e2-4c06-be59-2f07ba5a74d9",
+      "labels": [],
+      "note": "Tassa di soggiorno",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-06T17:09:27.017Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-07T03:13:04.627Z"
+    },
+    {
+      "accountId": "7e81209d-b4c4-4b88-ba1a-5e8f870b33cc",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d7-0014-8000-8000-000000000000",
+        "name": "Gifts"
+      },
+      "createdAt": "2026-11-07T11:39:41.256Z",
+      "id": "28d9ac3f-5d95-424b-8a0c-fd3879e8e344",
+      "labels": [],
+      "note": "Ferrari",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-07T11:39:27.97Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-09T05:28:04.708Z"
+    },
+    {
+      "accountId": "7e81209d-b4c4-4b88-ba1a-5e8f870b33cc",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d7-0014-8000-8000-000000000000",
+        "name": "Gifts"
+      },
+      "createdAt": "2026-11-07T11:41:19.535Z",
+      "id": "c2f094f6-2a7c-4906-a3f8-3ff55e91752e",
+      "labels": [],
+      "note": "Piantina",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-07T11:41:05.33Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-09T05:28:04.708Z"
     }
   ]
 }

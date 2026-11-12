@@ -1,7 +1,7 @@
 {
   "accountName": "Joint account",
-  "exportedAt": "2026-10-17",
-  "totalRecords": 1177,
+  "exportedAt": "2026-11-12",
+  "totalRecords": 1238,
   "records": [
     {
       "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
@@ -119,7 +119,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -281,7 +281,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -308,7 +308,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -416,7 +416,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07db-0014-8000-8000-000000000000",
         "name": "Drugstore"
@@ -524,7 +524,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -632,7 +632,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -713,7 +713,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -821,7 +821,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -929,7 +929,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#34BFF6",
+        "color": "#34bff6",
         "envelopeId": null,
         "id": "5c5c07d0-0014-8000-8000-000000000000",
         "name": "Clothes & shoes"
@@ -1172,7 +1172,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -1280,7 +1280,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -1307,7 +1307,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -1361,7 +1361,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -1442,7 +1442,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -1577,7 +1577,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bc2-001e-8000-8000-000000000000",
         "name": "Insurance (Housing)"
@@ -1604,7 +1604,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -1631,7 +1631,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -1739,7 +1739,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -1820,7 +1820,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -1874,7 +1874,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -2063,7 +2063,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -2279,7 +2279,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -2414,7 +2414,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa2-0028-8000-8000-000000000000",
         "name": "Long distance"
@@ -2468,7 +2468,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -2495,7 +2495,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -2576,7 +2576,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d2-0014-8000-8000-000000000000",
         "name": "Health & beauty"
@@ -2711,7 +2711,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -2765,7 +2765,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -2819,7 +2819,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#26C6DA",
+        "color": "#26c6da",
         "envelopeId": null,
         "id": "7ea24a5e-8b1b-4843-a773-c593ac27ba80",
         "name": "Mobili"
@@ -2829,7 +2829,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -2934,7 +2934,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -2944,7 +2944,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -3130,7 +3130,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d2-0014-8000-8000-000000000000",
         "name": "Health & beauty"
@@ -3140,7 +3140,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -3164,7 +3164,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AB47BC",
+        "color": "#ab47bc",
         "envelopeId": null,
         "id": "0719f6a9-7731-426f-a626-ede7aefe227b",
         "name": "Lavaggio"
@@ -3218,7 +3218,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -3272,7 +3272,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -3326,7 +3326,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -3353,7 +3353,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -3380,7 +3380,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -3542,7 +3542,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -3596,7 +3596,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -3650,7 +3650,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -3677,7 +3677,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -3812,7 +3812,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#536DFE",
+        "color": "#536dfe",
         "envelopeId": null,
         "id": "5c5c1b5c-0046-8000-8000-000000000000",
         "name": "Postal services"
@@ -3839,7 +3839,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1778-003c-8000-8000-000000000000",
         "name": "Tv, streaming"
@@ -3876,7 +3876,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -3900,7 +3900,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -4116,7 +4116,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -4143,7 +4143,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -4305,7 +4305,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d2-0014-8000-8000-000000000000",
         "name": "Health & beauty"
@@ -4359,7 +4359,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa2-0028-8000-8000-000000000000",
         "name": "Long distance"
@@ -4413,7 +4413,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -4440,7 +4440,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -4467,7 +4467,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -4504,7 +4504,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -4538,7 +4538,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -4589,7 +4589,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -4653,7 +4653,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -4677,7 +4677,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1777-003c-8000-8000-000000000000",
         "name": "Books"
@@ -4704,7 +4704,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -4731,7 +4731,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c2718-0064-8000-8000-000000000000",
         "name": "Refunds"
@@ -4758,7 +4758,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -4876,7 +4876,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -4927,7 +4927,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07db-0014-8000-8000-000000000000",
         "name": "Drugstore"
@@ -4954,7 +4954,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1778-003c-8000-8000-000000000000",
         "name": "Tv, streaming"
@@ -4991,7 +4991,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -5025,7 +5025,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -5076,7 +5076,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -5130,7 +5130,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07db-0014-8000-8000-000000000000",
         "name": "Drugstore"
@@ -5157,7 +5157,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -5211,7 +5211,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -5238,7 +5238,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -5248,7 +5248,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -5272,7 +5272,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -5326,7 +5326,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -5336,7 +5336,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -5360,7 +5360,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c2718-0064-8000-8000-000000000000",
         "name": "Refunds"
@@ -5387,7 +5387,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -5397,7 +5397,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -5475,7 +5475,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1778-003c-8000-8000-000000000000",
         "name": "Tv, streaming"
@@ -5529,7 +5529,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -5583,7 +5583,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -5593,7 +5593,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#2E7D32",
+          "color": "#2e7d32",
           "id": "960a751c-f24f-48fd-9907-a92cc3926404",
           "name": "Dividere"
         }
@@ -5671,7 +5671,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07db-0014-8000-8000-000000000000",
         "name": "Drugstore"
@@ -5698,7 +5698,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -5752,7 +5752,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c2718-0064-8000-8000-000000000000",
         "name": "Refunds"
@@ -5779,7 +5779,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -5806,7 +5806,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -5887,7 +5887,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -5914,7 +5914,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -5941,7 +5941,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -5968,7 +5968,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -5995,7 +5995,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -6130,7 +6130,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c138a-0032-8000-8000-000000000000",
         "name": "Vehicle maintenance"
@@ -6238,7 +6238,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -6329,13 +6329,13 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -6386,7 +6386,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -6413,7 +6413,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1778-003c-8000-8000-000000000000",
         "name": "Tv, streaming"
@@ -6450,13 +6450,13 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -6507,7 +6507,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -6561,7 +6561,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -6588,7 +6588,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -6615,7 +6615,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AB47BC",
+        "color": "#ab47bc",
         "envelopeId": null,
         "id": "0719f6a9-7731-426f-a626-ede7aefe227b",
         "name": "Lavaggio"
@@ -6679,7 +6679,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -6811,7 +6811,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -6838,7 +6838,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#536DFE",
+        "color": "#536dfe",
         "envelopeId": null,
         "id": "5c5c1b5c-0046-8000-8000-000000000000",
         "name": "Postal services"
@@ -6973,7 +6973,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -7162,7 +7162,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -7199,7 +7199,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -7223,7 +7223,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#536DFE",
+        "color": "#536dfe",
         "envelopeId": null,
         "id": "5c5c1b5c-0046-8000-8000-000000000000",
         "name": "Postal services"
@@ -7250,7 +7250,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -7277,7 +7277,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -7304,7 +7304,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -7331,7 +7331,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -7385,7 +7385,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -7412,7 +7412,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -7466,7 +7466,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -7493,7 +7493,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -7520,7 +7520,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -7628,7 +7628,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -7655,7 +7655,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -7682,7 +7682,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -7763,7 +7763,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -7790,7 +7790,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -7800,7 +7800,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -7824,7 +7824,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -7851,7 +7851,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -7878,7 +7878,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -7888,7 +7888,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -7912,7 +7912,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -7939,7 +7939,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -7949,13 +7949,13 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -7979,7 +7979,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -7989,13 +7989,13 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -8029,7 +8029,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8053,7 +8053,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c2718-0064-8000-8000-000000000000",
         "name": "Refunds"
@@ -8063,7 +8063,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -8087,7 +8087,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -8097,13 +8097,13 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -8127,7 +8127,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -8154,7 +8154,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -8164,13 +8164,13 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -8204,13 +8204,13 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -8234,7 +8234,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -8261,7 +8261,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8271,7 +8271,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8295,7 +8295,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8305,7 +8305,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8329,7 +8329,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#536DFE",
+        "color": "#536dfe",
         "envelopeId": null,
         "id": "5c5c1b5a-0046-8000-8000-000000000000",
         "name": "Internet"
@@ -8356,7 +8356,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8366,7 +8366,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8390,7 +8390,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8400,7 +8400,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8434,7 +8434,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8458,7 +8458,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8468,7 +8468,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8492,7 +8492,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8502,7 +8502,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8526,7 +8526,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8536,7 +8536,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8560,7 +8560,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8570,7 +8570,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8594,7 +8594,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8604,7 +8604,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8628,7 +8628,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8638,7 +8638,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8662,7 +8662,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8672,7 +8672,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8696,7 +8696,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8706,7 +8706,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8730,7 +8730,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -8757,7 +8757,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8767,7 +8767,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8791,7 +8791,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8801,7 +8801,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8825,7 +8825,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -8852,7 +8852,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -8879,7 +8879,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -8889,7 +8889,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -8913,7 +8913,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -8923,7 +8923,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -8947,7 +8947,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa2-0028-8000-8000-000000000000",
         "name": "Long distance"
@@ -8974,7 +8974,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -9028,7 +9028,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -9055,7 +9055,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -9082,7 +9082,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -9136,7 +9136,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -9146,7 +9146,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -9170,7 +9170,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -9180,7 +9180,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -9285,7 +9285,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -9295,7 +9295,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -9346,7 +9346,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -9373,7 +9373,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -9400,7 +9400,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -9481,7 +9481,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#536DFE",
+        "color": "#536dfe",
         "envelopeId": null,
         "id": "5c5c1b5a-0046-8000-8000-000000000000",
         "name": "Internet"
@@ -9508,7 +9508,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -9535,7 +9535,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -9589,7 +9589,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271a-0064-8000-8000-000000000000",
         "name": "Gifts"
@@ -9599,7 +9599,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -9623,7 +9623,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -9650,7 +9650,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -9677,7 +9677,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -9704,7 +9704,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -9785,7 +9785,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#85E029",
+        "color": "#85e029",
         "envelopeId": null,
         "id": "5c5c1775-003c-8000-8000-000000000000",
         "name": "Hobbies"
@@ -9866,7 +9866,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -9893,7 +9893,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -9947,7 +9947,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -10028,7 +10028,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -10325,7 +10325,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -10362,7 +10362,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#0D47A1",
+          "color": "#0d47a1",
           "id": "7c250714-7e0d-47a3-b1de-6de91933621e",
           "name": "Lavoro"
         }
@@ -10413,7 +10413,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -10494,7 +10494,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -10521,7 +10521,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -10548,7 +10548,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -10629,7 +10629,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -10656,7 +10656,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -10683,7 +10683,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c2718-0064-8000-8000-000000000000",
         "name": "Refunds"
@@ -10764,7 +10764,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -10791,7 +10791,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#34BFF6",
+        "color": "#34bff6",
         "envelopeId": null,
         "id": "5c5c07d0-0014-8000-8000-000000000000",
         "name": "Clothes & shoes"
@@ -10845,7 +10845,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -10872,7 +10872,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -10909,7 +10909,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -10933,7 +10933,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -10960,7 +10960,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#34BFF6",
+        "color": "#34bff6",
         "envelopeId": null,
         "id": "5c5c07d6-0014-8000-8000-000000000000",
         "name": "Electronics & accessories"
@@ -10970,7 +10970,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -10994,7 +10994,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#1565C0",
+        "color": "#1565c0",
         "envelopeId": null,
         "id": "4098973e-5dfe-4be0-b4b2-35da6498175b",
         "name": "App"
@@ -11021,7 +11021,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -11075,7 +11075,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -11102,7 +11102,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -11139,7 +11139,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -11271,7 +11271,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#85E029",
+        "color": "#85e029",
         "envelopeId": null,
         "id": "5c5c1775-003c-8000-8000-000000000000",
         "name": "Hobbies"
@@ -11298,7 +11298,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#34BFF6",
+        "color": "#34bff6",
         "envelopeId": null,
         "id": "5c5c07d0-0014-8000-8000-000000000000",
         "name": "Clothes & shoes"
@@ -11352,7 +11352,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -11406,7 +11406,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -11568,7 +11568,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -11730,7 +11730,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -11811,7 +11811,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -11838,7 +11838,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -11946,7 +11946,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -12000,7 +12000,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -12054,7 +12054,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -12081,7 +12081,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -12189,7 +12189,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#34BFF6",
+        "color": "#34bff6",
         "envelopeId": null,
         "id": "5c5c07d6-0014-8000-8000-000000000000",
         "name": "Electronics & accessories"
@@ -12199,7 +12199,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -12233,7 +12233,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -12311,7 +12311,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -12365,7 +12365,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -12392,7 +12392,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -12527,7 +12527,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#34BFF6",
+        "color": "#34bff6",
         "envelopeId": null,
         "id": "5c5c07d0-0014-8000-8000-000000000000",
         "name": "Clothes & shoes"
@@ -12635,7 +12635,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -12689,7 +12689,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -12743,7 +12743,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -12959,7 +12959,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c177d-003c-8000-8000-000000000000",
         "name": "Life & Entertainment"
@@ -13013,7 +13013,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -13067,7 +13067,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d2-0014-8000-8000-000000000000",
         "name": "Health & beauty"
@@ -13121,7 +13121,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -13229,7 +13229,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -13256,7 +13256,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -13310,7 +13310,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -13418,7 +13418,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -13428,7 +13428,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -13452,7 +13452,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -13462,7 +13462,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -13513,7 +13513,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c2718-0064-8000-8000-000000000000",
         "name": "Refunds"
@@ -13523,7 +13523,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -13574,7 +13574,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07db-0014-8000-8000-000000000000",
         "name": "Drugstore"
@@ -13601,7 +13601,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#9E9E9E",
+        "color": "#9e9e9e",
         "envelopeId": null,
         "id": "5c5c2af8-006e-8000-8000-000000000000",
         "name": "Others"
@@ -13628,7 +13628,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d2-0014-8000-8000-000000000000",
         "name": "Health & beauty"
@@ -13655,7 +13655,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -13682,7 +13682,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -13817,7 +13817,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -13898,7 +13898,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -14033,7 +14033,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#536DFE",
+        "color": "#536dfe",
         "envelopeId": null,
         "id": "5c5c1b5a-0046-8000-8000-000000000000",
         "name": "Internet"
@@ -14087,7 +14087,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -14114,7 +14114,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -14141,7 +14141,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -14249,7 +14249,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07db-0014-8000-8000-000000000000",
         "name": "Drugstore"
@@ -14411,7 +14411,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -14438,7 +14438,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -14627,7 +14627,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -14789,7 +14789,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c2718-0064-8000-8000-000000000000",
         "name": "Refunds"
@@ -14799,7 +14799,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -14850,7 +14850,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -15039,7 +15039,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#9E9E9E",
+        "color": "#9e9e9e",
         "envelopeId": null,
         "id": "5c5c2af9-006e-8000-8000-000000000000",
         "name": "Missing"
@@ -15066,7 +15066,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -15093,7 +15093,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -15147,7 +15147,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -15255,7 +15255,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#536DFE",
+        "color": "#536dfe",
         "envelopeId": null,
         "id": "5c5c1b5a-0046-8000-8000-000000000000",
         "name": "Internet"
@@ -15336,7 +15336,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -15363,7 +15363,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -15390,7 +15390,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -15444,7 +15444,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bc2-001e-8000-8000-000000000000",
         "name": "Insurance (Housing)"
@@ -15525,7 +15525,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -15552,7 +15552,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -15579,7 +15579,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -15633,7 +15633,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -15687,7 +15687,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -15768,7 +15768,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -15795,7 +15795,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -15876,7 +15876,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -15930,7 +15930,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -15957,7 +15957,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -16021,7 +16021,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
           "name": "Japan"
         }
@@ -16055,7 +16055,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
           "name": "Japan"
         }
@@ -16089,7 +16089,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
           "name": "Japan"
         }
@@ -16167,7 +16167,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -16194,7 +16194,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -16244,11 +16244,38 @@
       "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
       "amount": {
         "currencyCode": "EUR",
+        "value": -70.4
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "d0c14c33-1deb-4c4f-a4c1-d473271cb96b",
+        "name": "Splitwise"
+      },
+      "createdAt": "2026-10-02T20:59:21.467Z",
+      "id": "8087366b-f022-4c28-9c9e-dad6231d1873",
+      "labels": [],
+      "note": "Bowling",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2025-09-21T20:58:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-04T20:48:11.016Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
         "value": -14.45
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -16383,7 +16410,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#34BFF6",
+        "color": "#34bff6",
         "envelopeId": null,
         "id": "5c5c07d0-0014-8000-8000-000000000000",
         "name": "Clothes & shoes"
@@ -16437,7 +16464,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -16518,7 +16545,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -16545,7 +16572,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#536DFE",
+        "color": "#536dfe",
         "envelopeId": null,
         "id": "5c5c1b5a-0046-8000-8000-000000000000",
         "name": "Internet"
@@ -16680,7 +16707,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -16717,7 +16744,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -16768,7 +16795,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -16795,7 +16822,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -16849,7 +16876,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -16859,7 +16886,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -16910,7 +16937,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -16964,7 +16991,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -16991,7 +17018,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -17072,7 +17099,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -17244,7 +17271,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
           "name": "Japan"
         }
@@ -17278,7 +17305,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "0cf5fa6b-cc95-4b14-95d1-ba09b29ba2f4",
           "name": "Japan"
         }
@@ -17309,7 +17336,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -17336,7 +17363,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -17363,7 +17390,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -17390,7 +17417,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c2718-0064-8000-8000-000000000000",
         "name": "Refunds"
@@ -17417,7 +17444,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -17633,7 +17660,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -17714,7 +17741,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c138c-0032-8000-8000-000000000000",
         "name": "Vehicle"
@@ -17876,7 +17903,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -18075,7 +18102,7 @@
       "labels": [
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -18234,7 +18261,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -18261,7 +18288,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -18288,7 +18315,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -18342,7 +18369,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -18423,7 +18450,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -18531,7 +18558,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa2-0028-8000-8000-000000000000",
         "name": "Long distance"
@@ -18612,7 +18639,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -18693,7 +18720,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -18801,7 +18828,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -18882,7 +18909,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AB47BC",
+        "color": "#ab47bc",
         "envelopeId": null,
         "id": "0719f6a9-7731-426f-a626-ede7aefe227b",
         "name": "Lavaggio"
@@ -18963,7 +18990,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1774-003c-8000-8000-000000000000",
         "name": "Life events"
@@ -19125,7 +19152,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -19152,7 +19179,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -19206,7 +19233,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -19287,7 +19314,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -19314,7 +19341,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -19422,7 +19449,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa2-0028-8000-8000-000000000000",
         "name": "Long distance"
@@ -19476,7 +19503,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -19530,7 +19557,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -19557,7 +19584,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -19618,7 +19645,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -19652,7 +19679,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -19720,7 +19747,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c177d-003c-8000-8000-000000000000",
         "name": "Life & Entertainment"
@@ -19788,7 +19815,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -19924,7 +19951,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1778-003c-8000-8000-000000000000",
         "name": "Tv, streaming"
@@ -19940,7 +19967,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -20032,7 +20059,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -20066,7 +20093,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -20134,7 +20161,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -20168,7 +20195,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -20236,7 +20263,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -20270,7 +20297,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07db-0014-8000-8000-000000000000",
         "name": "Drugstore"
@@ -20365,7 +20392,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -20433,7 +20460,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -20659,7 +20686,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -20683,7 +20710,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa2-0028-8000-8000-000000000000",
         "name": "Long distance"
@@ -20785,7 +20812,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#85E029",
+        "color": "#85e029",
         "envelopeId": null,
         "id": "5c5c1775-003c-8000-8000-000000000000",
         "name": "Hobbies"
@@ -21023,7 +21050,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -21063,7 +21090,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -21090,7 +21117,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -21151,7 +21178,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#9E9E9E",
+        "color": "#9e9e9e",
         "envelopeId": null,
         "id": "5c5c2af9-006e-8000-8000-000000000000",
         "name": "Missing"
@@ -21185,7 +21212,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -21219,7 +21246,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -21253,7 +21280,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -21287,7 +21314,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d2-0014-8000-8000-000000000000",
         "name": "Health & beauty"
@@ -21389,7 +21416,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -21457,7 +21484,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AB47BC",
+        "color": "#ab47bc",
         "envelopeId": null,
         "id": "0719f6a9-7731-426f-a626-ede7aefe227b",
         "name": "Lavaggio"
@@ -21491,7 +21518,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1778-003c-8000-8000-000000000000",
         "name": "Tv, streaming"
@@ -21507,7 +21534,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -21599,7 +21626,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -21673,7 +21700,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -21741,7 +21768,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1773-003c-8000-8000-000000000000",
         "name": "Culture, sport events"
@@ -21945,7 +21972,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa0-0028-8000-8000-000000000000",
         "name": "Public transport"
@@ -22013,7 +22040,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07db-0014-8000-8000-000000000000",
         "name": "Drugstore"
@@ -22115,7 +22142,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -22285,7 +22312,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -22312,7 +22339,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -22339,7 +22366,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -22373,7 +22400,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -22407,7 +22434,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -22611,7 +22638,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -22747,7 +22774,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -22781,7 +22808,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AB47BC",
+        "color": "#ab47bc",
         "envelopeId": null,
         "id": "0719f6a9-7731-426f-a626-ede7aefe227b",
         "name": "Lavaggio"
@@ -22815,7 +22842,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1778-003c-8000-8000-000000000000",
         "name": "Tv, streaming"
@@ -22831,7 +22858,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -22889,7 +22916,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -22957,7 +22984,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d9-0014-8000-8000-000000000000",
         "name": "Free time"
@@ -22973,7 +23000,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -23013,7 +23040,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -23071,7 +23098,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -23105,7 +23132,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -23241,7 +23268,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa0-0028-8000-8000-000000000000",
         "name": "Public transport"
@@ -23309,7 +23336,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -23377,7 +23404,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#8A9BB1",
+        "color": "#8a9bb1",
         "envelopeId": null,
         "id": "5c5c0fa4-0028-8000-8000-000000000000",
         "name": "Transportation"
@@ -23479,7 +23506,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFCD01",
+        "color": "#ffcd01",
         "envelopeId": null,
         "id": "5c5c2710-0064-8000-8000-000000000000",
         "name": "Wage, invoices"
@@ -23506,7 +23533,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFCD01",
+        "color": "#ffcd01",
         "envelopeId": null,
         "id": "5c5c2710-0064-8000-8000-000000000000",
         "name": "Wage, invoices"
@@ -23567,7 +23594,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -23635,7 +23662,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -23703,7 +23730,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -23805,7 +23832,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -23941,7 +23968,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1778-003c-8000-8000-000000000000",
         "name": "Tv, streaming"
@@ -23957,7 +23984,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -23981,7 +24008,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -24049,7 +24076,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d8-0014-8000-8000-000000000000",
         "name": "Stationery & tools"
@@ -24065,7 +24092,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -24191,7 +24218,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AB47BC",
+        "color": "#ab47bc",
         "envelopeId": null,
         "id": "0719f6a9-7731-426f-a626-ede7aefe227b",
         "name": "Lavaggio"
@@ -24225,7 +24252,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -24327,7 +24354,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d8-0014-8000-8000-000000000000",
         "name": "Stationery & tools"
@@ -24343,7 +24370,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -24367,7 +24394,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AB47BC",
+        "color": "#ab47bc",
         "envelopeId": null,
         "id": "0719f6a9-7731-426f-a626-ede7aefe227b",
         "name": "Lavaggio"
@@ -24417,7 +24444,7 @@
         },
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -24441,7 +24468,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1774-003c-8000-8000-000000000000",
         "name": "Life events"
@@ -24457,7 +24484,7 @@
         },
         {
           "archived": false,
-          "color": "#D32F2F",
+          "color": "#d32f2f",
           "id": "43166655-bbbe-4239-92da-93d7604c9bb9",
           "name": "Wedding"
         }
@@ -24481,7 +24508,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -24617,7 +24644,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -24651,7 +24678,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -24787,7 +24814,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -24855,7 +24882,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -24889,7 +24916,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa2-0028-8000-8000-000000000000",
         "name": "Long distance"
@@ -24957,7 +24984,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFCD01",
+        "color": "#ffcd01",
         "envelopeId": null,
         "id": "5c5c2710-0064-8000-8000-000000000000",
         "name": "Wage, invoices"
@@ -24984,7 +25011,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFCD01",
+        "color": "#ffcd01",
         "envelopeId": null,
         "id": "5c5c2710-0064-8000-8000-000000000000",
         "name": "Wage, invoices"
@@ -25011,7 +25038,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -25045,7 +25072,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -25079,7 +25106,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d9-0014-8000-8000-000000000000",
         "name": "Free time"
@@ -25249,7 +25276,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -25283,7 +25310,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -25351,7 +25378,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -25487,7 +25514,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1778-003c-8000-8000-000000000000",
         "name": "Tv, streaming"
@@ -25503,7 +25530,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -25724,7 +25751,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -25751,7 +25778,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d2-0014-8000-8000-000000000000",
         "name": "Health & beauty"
@@ -25819,7 +25846,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -25853,7 +25880,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -25989,7 +26016,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#85E029",
+        "color": "#85e029",
         "envelopeId": null,
         "id": "5c5c1775-003c-8000-8000-000000000000",
         "name": "Hobbies"
@@ -26057,7 +26084,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -26261,7 +26288,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#85E029",
+        "color": "#85e029",
         "envelopeId": null,
         "id": "5c5c1775-003c-8000-8000-000000000000",
         "name": "Hobbies"
@@ -26329,7 +26356,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#85E029",
+        "color": "#85e029",
         "envelopeId": null,
         "id": "5c5c1775-003c-8000-8000-000000000000",
         "name": "Hobbies"
@@ -26397,7 +26424,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -26465,7 +26492,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1773-003c-8000-8000-000000000000",
         "name": "Culture, sport events"
@@ -26533,7 +26560,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -26601,7 +26628,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c138b-0032-8000-8000-000000000000",
         "name": "Rentals"
@@ -26635,7 +26662,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -26703,7 +26730,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa0-0028-8000-8000-000000000000",
         "name": "Public transport"
@@ -26737,7 +26764,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4BB5C1",
+        "color": "#4bb5c1",
         "envelopeId": null,
         "id": "5c5c1392-0032-8000-8000-000000000000",
         "name": "Insurance (Vehicle)"
@@ -27049,7 +27076,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -27185,7 +27212,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -27253,7 +27280,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa2-0028-8000-8000-000000000000",
         "name": "Long distance"
@@ -27287,7 +27314,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -27321,7 +27348,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1778-003c-8000-8000-000000000000",
         "name": "Tv, streaming"
@@ -27337,7 +27364,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -27395,7 +27422,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#78909C",
+        "color": "#78909c",
         "envelopeId": null,
         "id": "5c5c0fa0-0028-8000-8000-000000000000",
         "name": "Public transport"
@@ -27565,7 +27592,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -27633,7 +27660,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#536DFE",
+        "color": "#536dfe",
         "envelopeId": null,
         "id": "5c5c1b5c-0046-8000-8000-000000000000",
         "name": "Postal services"
@@ -27667,7 +27694,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -27769,7 +27796,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -27796,7 +27823,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -27823,7 +27850,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d2-0014-8000-8000-000000000000",
         "name": "Health & beauty"
@@ -27891,7 +27918,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -27925,7 +27952,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07db-0014-8000-8000-000000000000",
         "name": "Drugstore"
@@ -28231,7 +28258,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#8A9BB1",
+        "color": "#8a9bb1",
         "envelopeId": null,
         "id": "5c5c0fa4-0028-8000-8000-000000000000",
         "name": "Transportation"
@@ -28299,7 +28326,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -28503,7 +28530,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d2-0014-8000-8000-000000000000",
         "name": "Health & beauty"
@@ -28537,7 +28564,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -28605,7 +28632,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -28639,7 +28666,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -28673,7 +28700,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -28843,7 +28870,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -28870,7 +28897,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -28965,7 +28992,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -28999,7 +29026,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -29101,7 +29128,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#8A9BB1",
+        "color": "#8a9bb1",
         "envelopeId": null,
         "id": "5c5c0fa4-0028-8000-8000-000000000000",
         "name": "Transportation"
@@ -29117,7 +29144,7 @@
         },
         {
           "archived": false,
-          "color": "#2E7D32",
+          "color": "#2e7d32",
           "id": "960a751c-f24f-48fd-9907-a92cc3926404",
           "name": "Dividere"
         }
@@ -29209,7 +29236,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -29243,7 +29270,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#8A9BB1",
+        "color": "#8a9bb1",
         "envelopeId": null,
         "id": "5c5c0fa4-0028-8000-8000-000000000000",
         "name": "Transportation"
@@ -29259,7 +29286,7 @@
         },
         {
           "archived": false,
-          "color": "#2E7D32",
+          "color": "#2e7d32",
           "id": "960a751c-f24f-48fd-9907-a92cc3926404",
           "name": "Dividere"
         }
@@ -29385,7 +29412,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -29521,7 +29548,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -29555,7 +29582,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#8A9BB1",
+        "color": "#8a9bb1",
         "envelopeId": null,
         "id": "5c5c0fa4-0028-8000-8000-000000000000",
         "name": "Transportation"
@@ -29827,7 +29854,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -29861,7 +29888,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4FC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07db-0014-8000-8000-000000000000",
         "name": "Drugstore"
@@ -29895,7 +29922,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -29990,7 +30017,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#64DD17",
+        "color": "#64dd17",
         "envelopeId": null,
         "id": "5c5c1772-003c-8000-8000-000000000000",
         "name": "Active sport, fitness"
@@ -30160,7 +30187,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -30296,7 +30323,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -30364,7 +30391,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -30398,7 +30425,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -30466,7 +30493,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#8A9BB1",
+        "color": "#8a9bb1",
         "envelopeId": null,
         "id": "5c5c0fa4-0028-8000-8000-000000000000",
         "name": "Transportation"
@@ -30500,7 +30527,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07da-0014-8000-8000-000000000000",
         "name": "Shopping"
@@ -30534,7 +30561,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -30584,7 +30611,7 @@
         },
         {
           "archived": false,
-          "color": "#F44336",
+          "color": "#f44336",
           "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
           "name": "Amazon"
         }
@@ -30676,7 +30703,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#536DFE",
+        "color": "#536dfe",
         "envelopeId": null,
         "id": "5c5c1b5d-0046-8000-8000-000000000000",
         "name": "PC, Communication"
@@ -30700,33 +30727,6 @@
       "recordDate": "2026-07-31T15:45:34Z",
       "recordState": "cleared",
       "recordType": "expense",
-      "updatedAt": "2026-08-03T06:31:29.744Z"
-    },
-    {
-      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
-      "amount": {
-        "currencyCode": "EUR",
-        "value": 6.26
-      },
-      "baseAmount": null,
-      "category": {
-        "color": "#9E9E9E",
-        "envelopeId": null,
-        "id": "5c5c2af9-006e-8000-8000-000000000000",
-        "name": "Missing"
-      },
-      "createdAt": "2026-08-02T16:03:04.166Z",
-      "id": "16d67c08-8a64-42f2-ab3a-81fbf24d00f2",
-      "labels": [],
-      "note": null,
-      "payee": null,
-      "payer": null,
-      "paymentType": null,
-      "photos": [],
-      "place": null,
-      "recordDate": "2026-07-31T16:02:00Z",
-      "recordState": "cleared",
-      "recordType": "income",
       "updatedAt": "2026-08-03T06:31:29.744Z"
     },
     {
@@ -30771,7 +30771,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -30805,7 +30805,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -30873,7 +30873,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -30907,7 +30907,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -30941,7 +30941,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -30975,7 +30975,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -31036,7 +31036,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1f46-0032-8000-8000-000000000000",
         "name": "Toll"
@@ -31070,7 +31070,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FBC02D",
+        "color": "#fbc02d",
         "envelopeId": null,
         "id": "5c5c271b-0064-8000-8000-000000000000",
         "name": "Income"
@@ -31097,7 +31097,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bb8-001e-8000-8000-000000000000",
         "name": "Rent"
@@ -31192,7 +31192,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -31219,7 +31219,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#FFA726",
+        "color": "#ffa726",
         "envelopeId": null,
         "id": "5c5c0bba-001e-8000-8000-000000000000",
         "name": "Energy & utilities"
@@ -31253,7 +31253,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#4fC3F7",
+        "color": "#4fc3f7",
         "envelopeId": null,
         "id": "5c5c07d7-0014-8000-8000-000000000000",
         "name": "Gifts"
@@ -31314,7 +31314,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1388-0032-8000-8000-000000000000",
         "name": "Fuel"
@@ -31368,7 +31368,7 @@
       },
       "baseAmount": null,
       "category": {
-        "color": "#AA00FF",
+        "color": "#aa00ff",
         "envelopeId": null,
         "id": "5c5c1389-0032-8000-8000-000000000000",
         "name": "Parking"
@@ -31916,17 +31916,24 @@
       },
       "createdAt": "2026-08-27T10:50:30.538Z",
       "id": "0eff6458-856f-47b0-a9b0-fcd555556e81",
-      "labels": [],
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
       "note": "Viaggio Albania Ottobre",
       "payee": null,
       "payer": null,
       "paymentType": null,
       "photos": [],
       "place": null,
-      "recordDate": "2026-08-27T10:49:17.314Z",
+      "recordDate": "2026-08-27T10:49:17Z",
       "recordState": "cleared",
       "recordType": "expense",
-      "updatedAt": "2026-08-27T14:08:14.286Z"
+      "updatedAt": "2026-10-11T09:32:37.357Z"
     },
     {
       "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
@@ -34521,46 +34528,6 @@
       "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
       "amount": {
         "currencyCode": "EUR",
-        "value": -6.99
-      },
-      "baseAmount": null,
-      "category": {
-        "color": "#64dd17",
-        "envelopeId": null,
-        "id": "5c5c1778-003c-8000-8000-000000000000",
-        "name": "Tv, streaming"
-      },
-      "createdAt": "2026-10-10T15:04:05.146Z",
-      "id": "9538da54-d208-5367-abf3-6b0224343c2b",
-      "labels": [
-        {
-          "archived": false,
-          "color": "#ff6f00",
-          "id": "2bfb86d3-8901-4827-ad23-1504fd2f726e",
-          "name": "Guilty Free"
-        },
-        {
-          "archived": false,
-          "color": "#f44336",
-          "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
-          "name": "Amazon"
-        }
-      ],
-      "note": "Amazon prime",
-      "payee": null,
-      "payer": null,
-      "paymentType": null,
-      "photos": [],
-      "place": null,
-      "recordDate": "2026-10-09T10:00:00Z",
-      "recordState": "cleared",
-      "recordType": "expense",
-      "updatedAt": "2026-10-11T09:32:37.357Z"
-    },
-    {
-      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
-      "amount": {
-        "currencyCode": "EUR",
         "value": -39.6
       },
       "baseAmount": null,
@@ -34624,6 +34591,40 @@
       "recordState": "cleared",
       "recordType": "expense",
       "updatedAt": "2026-10-11T09:32:37.357Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8.57
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-10-16T05:23:31.442Z",
+      "id": "d1d17afe-b4ce-4140-a340-6a2255050d97",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-10T05:23:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
     },
     {
       "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
@@ -35009,48 +35010,14 @@
       "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
       "amount": {
         "currencyCode": "EUR",
-        "value": -8.57
-      },
-      "baseAmount": null,
-      "category": {
-        "color": null,
-        "envelopeId": null,
-        "id": "5c5c03e8-000a-8000-8000-000000000000",
-        "name": "Groceries"
-      },
-      "createdAt": "2026-10-16T05:23:31.442Z",
-      "id": "d1d17afe-b4ce-4140-a340-6a2255050d97",
-      "labels": [
-        {
-          "archived": false,
-          "color": "#093373",
-          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
-          "name": "Fixed Cost"
-        }
-      ],
-      "note": null,
-      "payee": null,
-      "payer": null,
-      "paymentType": null,
-      "photos": [],
-      "place": null,
-      "recordDate": "2026-10-16T05:23:25Z",
-      "recordState": "cleared",
-      "recordType": "expense",
-      "updatedAt": "2026-10-16T12:40:58.026Z"
-    },
-    {
-      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
-      "amount": {
-        "currencyCode": "EUR",
         "value": -4.4
       },
       "baseAmount": null,
       "category": {
-        "color": "#aa00ff",
+        "color": "#f44336",
         "envelopeId": null,
-        "id": "5c5c1388-0032-8000-8000-000000000000",
-        "name": "Fuel"
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
       },
       "createdAt": "2026-10-17T07:52:43.402Z",
       "id": "b072beee-f14b-445b-9a76-a634d0ef7a67",
@@ -35061,10 +35028,10 @@
       "paymentType": null,
       "photos": [],
       "place": null,
-      "recordDate": "2026-10-17T07:52:40.364Z",
+      "recordDate": "2026-10-17T07:52:40Z",
       "recordState": "cleared",
       "recordType": "expense",
-      "updatedAt": "2026-10-17T09:31:36.339Z"
+      "updatedAt": "2026-10-20T23:15:58.719Z"
     },
     {
       "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
@@ -35099,6 +35066,1840 @@
       "recordState": "cleared",
       "recordType": "expense",
       "updatedAt": "2026-10-17T09:31:36.339Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -59.88
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d7-0014-8000-8000-000000000000",
+        "name": "Gifts"
+      },
+      "createdAt": "2026-11-11T09:37:58.012Z",
+      "id": "0689aa8e-6441-4731-8866-eaf3ed2eb234",
+      "labels": [],
+      "note": "Glass Juan Camillo",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-17T08:37:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -210.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d7-0014-8000-8000-000000000000",
+        "name": "Gifts"
+      },
+      "createdAt": "2026-11-11T09:38:19.449Z",
+      "id": "2261a05a-9d3d-4f59-aacb-bf407a533ef2",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-17T08:37:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -104.27
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d7-0014-8000-8000-000000000000",
+        "name": "Gifts"
+      },
+      "createdAt": "2026-11-11T09:39:04.222Z",
+      "id": "61bdbb8d-ef86-4f97-83d4-a1205beade3c",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-17T08:38:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -45.09
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d7-0014-8000-8000-000000000000",
+        "name": "Gifts"
+      },
+      "createdAt": "2026-11-11T09:38:38.918Z",
+      "id": "dbdd4441-00a0-4784-b9a1-3d94659c7973",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-17T08:38:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d7-0014-8000-8000-000000000000",
+        "name": "Gifts"
+      },
+      "createdAt": "2026-11-11T09:39:45.426Z",
+      "id": "adf469f5-2821-44ad-a529-038f99ae4448",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-17T08:39:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -25.42
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07db-0014-8000-8000-000000000000",
+        "name": "Drugstore"
+      },
+      "createdAt": "2026-11-11T09:40:00.333Z",
+      "id": "ed57806e-2cfd-4ca8-b25c-944fb33f4534",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-17T08:39:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -200.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#0097a7",
+        "envelopeId": null,
+        "id": "5c5c4e21-00c8-8000-8000-000000000000",
+        "name": "Transfer"
+      },
+      "createdAt": "2026-11-11T09:41:29.039Z",
+      "id": "a35104e8-e7df-4241-a0b8-c470117d1970",
+      "labels": [],
+      "note": "Prelievo Megi",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-17T08:41:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 575.35
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#fbc02d",
+        "envelopeId": null,
+        "id": "5c5c2718-0064-8000-8000-000000000000",
+        "name": "Refunds"
+      },
+      "createdAt": "2026-11-11T09:42:39.044Z",
+      "id": "938c6b8b-34e7-4526-bde9-fc42cd433f3e",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-17T08:42:00Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -13.8
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-10-17T16:19:05.793Z",
+      "id": "98008e1b-cf76-49c9-bb6b-f11bc5633c0a",
+      "labels": [],
+      "note": "Spremuta",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-17T16:18:45Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.31
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-10-19T16:54:54.296Z",
+      "id": "111f07cf-610c-42fd-ae49-f62e7a2e7ee2",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-19T16:54:40.587Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-20T23:15:58.719Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -22.89
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07da-0014-8000-8000-000000000000",
+        "name": "Shopping"
+      },
+      "createdAt": "2026-10-20T04:37:02.22Z",
+      "id": "9b993949-52ea-4807-988c-cc1000e5df34",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#ff6f00",
+          "id": "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+          "name": "Guilty Free"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-20T04:36:46Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-20T23:15:58.719Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -10.31
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-10-20T04:38:16.708Z",
+      "id": "fb928dcb-77a8-46d6-bd7a-f998bca906ba",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-20T04:38:08Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-20T23:15:58.719Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -9.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-11-11T09:34:23.415Z",
+      "id": "eb431d17-962b-4766-8306-651cee3b83e2",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-20T08:34:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.7
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-11-11T09:29:43.051Z",
+      "id": "07eab501-d133-42a0-a37e-b082452d4c32",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-22T08:29:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.84
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-11-11T09:29:20.301Z",
+      "id": "7a5fbd4e-e2c5-469b-9bdf-d9cc19e59c52",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-22T08:29:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.3
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03eb-000a-8000-8000-000000000000",
+        "name": "Food & Drinks"
+      },
+      "createdAt": "2026-11-11T09:33:40.006Z",
+      "id": "829099bf-ca66-48ec-bc1f-5e2fa1c0f35a",
+      "labels": [],
+      "note": "Baguette",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-22T08:33:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -33.75
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#78909c",
+        "envelopeId": null,
+        "id": "5c5c0fa2-0028-8000-8000-000000000000",
+        "name": "Long distance"
+      },
+      "createdAt": "2026-11-11T09:34:53.859Z",
+      "id": "ee41425e-506d-4e31-aeab-68b7d38e66b4",
+      "labels": [],
+      "note": "Luggage",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-22T08:34:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -42.9
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-10-23T19:36:56.005Z",
+      "id": "b9eadb25-3ae1-4f63-95ae-d89270555266",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#ff6f00",
+          "id": "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+          "name": "Guilty Free"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-23T19:36:37.985Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-24T13:57:15.363Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -15.46
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-11-11T09:28:04.064Z",
+      "id": "4c4f2059-956a-4e9c-96fe-aad4eb5a8d89",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-24T08:27:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -8.9
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07db-0014-8000-8000-000000000000",
+        "name": "Drugstore"
+      },
+      "createdAt": "2026-11-11T09:28:41.478Z",
+      "id": "08190cd5-f928-4018-9fd2-3d8ec85531ac",
+      "labels": [],
+      "note": "Sciroppo",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-24T08:28:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -131.36
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-10-24T12:52:00.527Z",
+      "id": "49965e76-594c-4fe1-bf90-0ceae5041684",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-24T12:51:48.578Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-26T10:32:15.448Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.2
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-11-11T09:27:16.824Z",
+      "id": "8a6ea68f-a407-4684-8aa7-a712b09ad5f3",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-26T09:26:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -11.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-10-26T20:41:38.795Z",
+      "id": "a1141166-60cd-4388-b292-4ef29e46d6f2",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "Polpette Ikea",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-26T20:41:24.271Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-28T06:42:58.448Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -42.51
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#cccccc",
+        "envelopeId": null,
+        "id": "5c5c07d4-0014-8000-8000-000000000000",
+        "name": "Casa"
+      },
+      "createdAt": "2026-10-26T20:42:28.579Z",
+      "id": "7a352274-b537-4b64-b17b-5610cb6899c1",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-26T20:41:45.467Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-28T06:42:58.448Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -17.14
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-11-11T09:26:40.042Z",
+      "id": "8377cd0b-d69f-47cf-9723-4518cc6596ff",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-28T09:26:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -13.28
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-10-29T19:13:39.768Z",
+      "id": "e4c0f5db-1919-4805-bf88-822f5edd8614",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-29T19:13:33.183Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-10-30T05:12:58.468Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -107.29
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-11-11T09:24:05.969Z",
+      "id": "3f7409f0-e252-47e7-add0-064453ea8e7f",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-30T09:23:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -29.8
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-11-11T09:24:53.896Z",
+      "id": "216ebc2f-c393-4075-a85d-3c775bd1a884",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-30T09:24:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -16.95
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-11-11T09:25:13.438Z",
+      "id": "641ce009-3754-4437-aed3-d9635a4cc687",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-30T09:25:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -4.5
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07d8-0014-8000-8000-000000000000",
+        "name": "Stationery & tools"
+      },
+      "createdAt": "2026-11-11T09:23:38.859Z",
+      "id": "cbe71185-41e7-4d50-ad42-8d9aedd15b89",
+      "labels": [],
+      "note": "Foto Halloween",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-31T09:23:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -23.52
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-11-11T09:25:53.109Z",
+      "id": "b16e096c-95d1-4e15-b336-84cef2924526",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-10-31T09:25:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1323.14
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffa726",
+        "envelopeId": null,
+        "id": "5c5c0bb8-001e-8000-8000-000000000000",
+        "name": "Rent"
+      },
+      "createdAt": "2026-11-04T07:06:52.542Z",
+      "id": "e0237cec-7400-51fa-aeaa-d25f27dba263",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "Affitto",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-03T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-05T02:12:58.434Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -1.7
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-11-10T23:13:15.483Z",
+      "id": "5ee9bdf5-b84c-4873-bce8-54260e42dbb1",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-03T23:13:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -20.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffa726",
+        "envelopeId": null,
+        "id": "5c5c0bba-001e-8000-8000-000000000000",
+        "name": "Energy & utilities"
+      },
+      "createdAt": null,
+      "id": "b1efe3a8-4f7b-5f8b-8000-e6cf8bfe58d3",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "Sosh",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-04T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-07T03:13:04.627Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -71.48
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1388-0032-8000-8000-000000000000",
+        "name": "Fuel"
+      },
+      "createdAt": "2026-11-04T16:41:19.631Z",
+      "id": "50806bf4-e63e-4bd0-ab1c-3b0f594ad501",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-04T16:41:31.205Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-05T02:12:58.434Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6.6
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-11-10T23:12:14.596Z",
+      "id": "9a7ccc52-60ee-446b-adcd-b55ef52d940e",
+      "labels": [],
+      "note": "Toll France",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-05T09:10:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -30.6
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-11-10T23:11:51.58Z",
+      "id": "fc6af995-e71a-417f-8cd4-e7e665451721",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-05T09:11:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -7.8
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-11-05T13:00:24.951Z",
+      "id": "903edb0a-5571-4244-8e96-b7cfd82169b5",
+      "labels": [],
+      "note": "Autogrill",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-05T12:59:57.095Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-07T03:13:04.627Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -149.66
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#78909c",
+        "envelopeId": null,
+        "id": "5c5c0fa2-0028-8000-8000-000000000000",
+        "name": "Long distance"
+      },
+      "createdAt": "2026-11-10T23:04:49.872Z",
+      "id": "5dbeb3da-aebe-4078-aae5-10b4d4614466",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-05T23:04:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -18.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#4fc3f7",
+        "envelopeId": null,
+        "id": "5c5c07da-0014-8000-8000-000000000000",
+        "name": "Shopping"
+      },
+      "createdAt": "2026-11-10T23:03:25.634Z",
+      "id": "baebe391-0d09-4a83-8729-3c29a57533e9",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-06T09:02:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -14.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1389-0032-8000-8000-000000000000",
+        "name": "Parking"
+      },
+      "createdAt": "2026-11-06T14:16:19.53Z",
+      "id": "5d5ce8ea-9698-4fea-8c1c-c8f997b8d689",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-06T14:16:13.383Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-07T03:13:04.627Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -13.3
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-11-06T17:13:09.826Z",
+      "id": "e0acb08d-0813-4c23-b5ed-a76340bd556a",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-06T17:12:57.302Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-07T03:13:04.627Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -54.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-11-10T23:04:05.351Z",
+      "id": "66b5cc48-40bb-4aee-978a-3c5313054b3c",
+      "labels": [],
+      "note": "Torta",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-07T09:03:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -20.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffa726",
+        "envelopeId": null,
+        "id": "5c5c0bba-001e-8000-8000-000000000000",
+        "name": "Energy & utilities"
+      },
+      "createdAt": "2026-11-07T07:05:16.976Z",
+      "id": "674d3a1d-69c5-5f11-bd3d-d7b07ff5b523",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": "Sosh",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-09T05:28:04.708Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#64dd17",
+        "envelopeId": null,
+        "id": "5c5c1778-003c-8000-8000-000000000000",
+        "name": "Tv, streaming"
+      },
+      "createdAt": "2026-11-10T23:02:12.035Z",
+      "id": "7dc6cc79-c617-57bc-a9e1-672a59fbf9bf",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#ff6f00",
+          "id": "2bfb86d3-8901-4827-ad23-1504fd2f726e",
+          "name": "Guilty Free"
+        },
+        {
+          "archived": false,
+          "color": "#f44336",
+          "id": "999adc8c-fa35-457c-8914-87c34b0a8a3b",
+          "name": "Amazon"
+        }
+      ],
+      "note": "Amazon prime",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-07T11:00:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-11-07T17:20:10.539Z",
+      "id": "055a3945-19a1-4936-bc62-0fd7a642907a",
+      "labels": [],
+      "note": "Caffè parma",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-07T17:19:58.799Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-09T05:28:04.708Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -64.57
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1388-0032-8000-8000-000000000000",
+        "name": "Fuel"
+      },
+      "createdAt": "2026-11-10T23:01:49.032Z",
+      "id": "d27fb19c-e06b-4ed4-a6ce-3f0533cb058b",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-07T19:01:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -96.5
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-11-07T22:30:28.86Z",
+      "id": "92fb6cf6-2071-4226-b2b4-4278c17968ad",
+      "labels": [],
+      "note": "Sushi",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-07T22:30:15.177Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-09T05:28:04.708Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -13.3
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-11-10T23:10:49.278Z",
+      "id": "36329c34-bdeb-4769-b7ba-06d2020ebc55",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-07T23:10:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -12.15
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-11-08T10:06:00.772Z",
+      "id": "a3c83002-db3e-4499-8500-15a18a508568",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-08T10:05:54.29Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-09T05:28:04.708Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -53.7
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03e9-000a-8000-8000-000000000000",
+        "name": "Restaurants"
+      },
+      "createdAt": "2026-11-08T13:03:01.777Z",
+      "id": "7a6a448b-453e-47d2-8acf-17268812a5f7",
+      "labels": [],
+      "note": "Burger Milano",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-08T13:02:50.538Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-09T05:28:04.708Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -159.99
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#cccccc",
+        "envelopeId": null,
+        "id": "5c5c07d4-0014-8000-8000-000000000000",
+        "name": "Casa"
+      },
+      "createdAt": "2026-11-10T23:07:26.849Z",
+      "id": "fd02793c-f2eb-4e79-96aa-e3d815c7ca92",
+      "labels": [],
+      "note": "Albero Natale",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-08T16:07:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -50.68
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#cccccc",
+        "envelopeId": null,
+        "id": "5c5c07d4-0014-8000-8000-000000000000",
+        "name": "Casa"
+      },
+      "createdAt": "2026-11-08T16:08:00.553Z",
+      "id": "7cd15a0b-e1f2-4250-aaf3-61eb19a9a59d",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-08T16:07:39.509Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-09T05:28:04.708Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -2.9
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#f44336",
+        "envelopeId": null,
+        "id": "5c5c03ea-000a-8000-8000-000000000000",
+        "name": "Coffee & Drinks"
+      },
+      "createdAt": "2026-11-08T18:42:45.26Z",
+      "id": "d8d2a7f4-5d6b-4fbd-88d7-25bc7dd4ee94",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-08T18:42:33.898Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-09T05:28:04.708Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -30.15
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1388-0032-8000-8000-000000000000",
+        "name": "Fuel"
+      },
+      "createdAt": "2026-11-10T23:08:36.624Z",
+      "id": "f1beaa1b-45a6-4645-b436-7a7f711d9ef4",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-08T19:08:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -30.6
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-11-08T20:34:09.391Z",
+      "id": "0676384c-3602-4cf4-a34e-5df29985dc72",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-08T20:34:03Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -6.6
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#aa00ff",
+        "envelopeId": null,
+        "id": "5c5c1f46-0032-8000-8000-000000000000",
+        "name": "Toll"
+      },
+      "createdAt": "2026-11-10T23:00:00.447Z",
+      "id": "7af3ab34-5b20-4330-ac0b-9487485b7013",
+      "labels": [],
+      "note": "Toll france",
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-08T22:59:00Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -3.2
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-11-09T12:22:23.992Z",
+      "id": "26a11728-ec40-4cee-a5b6-f5998816e37c",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-09T12:22:21.861Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": -5.66
+      },
+      "baseAmount": null,
+      "category": {
+        "color": null,
+        "envelopeId": null,
+        "id": "5c5c03e8-000a-8000-8000-000000000000",
+        "name": "Groceries"
+      },
+      "createdAt": "2026-11-09T17:34:30.819Z",
+      "id": "47808e73-6912-42a1-9823-756490316be8",
+      "labels": [
+        {
+          "archived": false,
+          "color": "#093373",
+          "id": "5c1d3f52-2221-4510-b890-24fd09d15205",
+          "name": "Fixed Cost"
+        }
+      ],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-09T17:34:28.185Z",
+      "recordState": "cleared",
+      "recordType": "expense",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 1211.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffcd01",
+        "envelopeId": null,
+        "id": "5c5c2710-0064-8000-8000-000000000000",
+        "name": "Wage, invoices"
+      },
+      "createdAt": "2026-11-10T22:50:08.887Z",
+      "id": "c1ed0d36-1e89-4304-9b6d-e3517366bc77",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-10T22:49:49Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 1422.0
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#ffcd01",
+        "envelopeId": null,
+        "id": "5c5c2710-0064-8000-8000-000000000000",
+        "name": "Wage, invoices"
+      },
+      "createdAt": "2026-11-10T23:15:45.375Z",
+      "id": "adfde607-6128-43a4-bbda-f1e5853f8eb6",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-10T23:15:24Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-11-11T07:18:04.609Z"
+    },
+    {
+      "accountId": "9d708799-6bf2-4aaf-b61b-7952097f56fa",
+      "amount": {
+        "currencyCode": "EUR",
+        "value": 31.3
+      },
+      "baseAmount": null,
+      "category": {
+        "color": "#9e9e9e",
+        "envelopeId": null,
+        "id": "5c5c2af9-006e-8000-8000-000000000000",
+        "name": "Missing"
+      },
+      "createdAt": "2026-11-11T09:54:28.429Z",
+      "id": "afc3c563-0f7e-416f-9b6e-f6b54026df64",
+      "labels": [],
+      "note": null,
+      "payee": null,
+      "payer": null,
+      "paymentType": null,
+      "photos": [],
+      "place": null,
+      "recordDate": "2026-11-11T09:54:17Z",
+      "recordState": "cleared",
+      "recordType": "income",
+      "updatedAt": "2026-11-12T07:54:43.655Z"
     }
   ]
 }
